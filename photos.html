@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Photos</title>
+
+<style>
+body{
+  margin:0;
+  font-family:-apple-system;
+  background:#f6efe4;
+  color:#3b2a20;
+}
+
+.header{
+  padding:20px 40px;
+  font-size:20px;
+  cursor:pointer;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:20px;
+  padding:40px;
+}
+
+.folder{
+  background:white;
+  border-radius:18px;
+  padding:20px;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+.folder:hover{
+  transform: translateY(-6px);
+}
+
+.icon{
+  font-size:35px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header" onclick="location.href='index.html'">
+← Back
+</div>
+
+<h2 style="padding-left:40px;">Photos</h2>
+
+<div class="grid">
+
+  <div class="folder" onclick="location.href='photos/travel.html'">
+    <div class="icon">📁</div>
+    Travel
+  </div>
+
+  <div class="folder" onclick="location.href='photos/school.html'">
+    <div class="icon">📁</div>
+    School
+  </div>
+
+</div>
+
+</body>
+</html>
