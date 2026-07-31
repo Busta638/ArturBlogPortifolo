@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Photos — Artur Tigirlas</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    :root {
+      --paper: #f6efe4;
+      --paper-deep: #eadfce;
+      --ink: #3b2a20;
+      --muted: #806b5c;
+      --line: rgba(59, 42, 32, 0.2);
+      --card: rgba(255, 252, 247, 0.86);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Times New Roman", Times, serif;
+      color: var(--ink);
+      background:
+        repeating-linear-gradient(0deg, transparent 0 4px, rgba(70, 48, 32, 0.025) 4px 5px),
+        linear-gradient(135deg, var(--paper), var(--paper-deep));
+    }
+
+    .page {
+      width: min(1050px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 20px 0 44px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 14px;
+    }
+
+    .topbar a {
+      color: inherit;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .topbar span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    header {
+      padding: 58px 0 28px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(54px, 10vw, 102px);
+      font-weight: normal;
+      line-height: 0.9;
+    }
+
+    header p {
+      max-width: 570px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .folders {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .folder {
+      min-height: 360px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 30px;
+      color: inherit;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      background: var(--card);
+      box-shadow: 9px 11px 0 rgba(77, 50, 31, 0.08);
+      transition: transform 180ms ease;
+    }
+
+    .folder:hover { transform: translate(-2px, -3px); }
+
+    .folder::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 47% 0;
+      opacity: 0.95;
+    }
+
+    .film::before {
+      background:
+        radial-gradient(circle, #ddbc75 0 4px, transparent 4.5px) 8px 14px / 25px 18px repeat-x,
+        radial-gradient(circle, #ddbc75 0 4px, transparent 4.5px) 8px calc(100% - 14px) / 25px 18px repeat-x,
+        linear-gradient(165deg, #79301e, #28100b);
+    }
+
+    .pond::before {
+      background:
+        radial-gradient(ellipse at 65% 45%, rgba(128, 205, 225, 0.7) 0 16%, transparent 17%),
+        radial-gradient(ellipse at 30% 70%, rgba(88, 181, 210, 0.55) 0 28%, transparent 29%),
+        repeating-radial-gradient(ellipse at 50% 50%, rgba(255,255,255,.16) 0 2px, transparent 3px 18px),
+        #72c9e5;
+    }
+
+    .icon {
+      position: relative;
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      position: relative;
+      margin: 0;
+      font-size: clamp(35px, 5vw, 55px);
+      font-weight: normal;
+    }
+
+    .folder p {
+      position: relative;
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .open {
+      position: relative;
+      display: inline-block;
+      margin-top: 22px;
+      font-size: 15px;
+    }
+
+    footer {
+      margin-top: 42px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 720px) {
+      .folders { grid-template-columns: 1fr; }
+      .folder { min-height: 320px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar">
+      <a href="../photos.html">← Photos</a>
+      <span>Travel folder</span>
+    </nav>
+
+    <header>
+      <h1>Travel</h1>
+      <p>The same dated photographs can be viewed through two different experiments.</p>
+    </header>
+
+    <section class="folders" aria-label="Travel galleries">
+      <a class="folder film" href="travel.html">
+        <span class="icon" aria-hidden="true">🎞️</span>
+        <h2>Film Archive</h2>
+        <p>The original scanner, dates, formats, safelight, and chronological roll.</p>
+        <span class="open">Open film scanner →</span>
+      </a>
+
+      <a class="folder pond" href="pond.html">
+        <span class="icon" aria-hidden="true">◉</span>
+        <h2>Pond Gallery</h2>
+        <p>Click the water to create ripples. Photographs rise, drift, sink, and reveal the next frame.</p>
+        <span class="open">Enter pond →</span>
+      </a>
+    </section>
+
+    <footer>© 2026 Artur Tigirlas. All photographs are original work.</footer>
+  </main>
+</body>
+</html>

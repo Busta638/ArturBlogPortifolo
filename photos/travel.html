@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   My Photo Portfolio — Film Scanner
+  </title>
+  <style>
+   
+:root {
+  --ink:#1f2a33;
+  --muted:#667b8e;
+  --line:rgba(100,145,184,.25);
+  --glass:rgba(255,255,255,.82);
+  --machine:#17232d;
+  --machine-dark:#070b0f;
+  --film:#55210f;
+  --accent:#315f8d
+}
+* {
+  box-sizing:border-box
+}
+html {
+  scroll-behavior:smooth
+}
+body {
+  margin:0;
+  overflow-x:hidden;
+  font-family: "Times New Roman", Times, serif;
+  color:var(--ink);
+  background:linear-gradient(135deg,#fff,#f4faff 55%,#edf7ff)
+}
+button {
+  font:inherit
+}
+.topbar {
+  width:min(1500px,calc(100% - 24px));
+  margin:10px auto 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 14px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--glass);
+  backdrop-filter:blur(14px)
+}
+.back {
+  color:var(--ink);
+  text-decoration:none;
+  font-weight:700
+}
+.roll-status {
+  font-size:.76rem;
+  color:var(--muted);
+  letter-spacing:.12em;
+  text-transform:uppercase
+}
+.intro {
+  width:min(1100px,calc(100% - 30px));
+  margin:12px auto 8px;
+  text-align:center
+}
+.eyebrow {
+  margin:0 0 3px;
+  color:#557b99;
+  font-size:.68rem;
+  font-weight:800;
+  letter-spacing:.17em;
+  text-transform:uppercase
+}
+h1 {
+  margin:0;
+  font-size:clamp(2rem,4.4vw,4.2rem);
+  line-height:1;
+  letter-spacing:-.05em
+}
+.intro-copy {
+  max-width:760px;
+  margin:6px auto 0;
+  color:var(--muted);
+  font-size:.93rem;
+  line-height:1.4
+}
+.ratio-shell {
+  position:relative;
+  width:min(1220px,calc(100% - 24px));
+  margin:8px auto 10px;
+  padding:0 48px
+}
+.ratio-bar {
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  scrollbar-width:none;
+  padding:2px
+}
+.ratio-bar::-webkit-scrollbar {
+  display:none
+}
+.ratio-btn {
+  flex:0 0 clamp(138px,15vw,172px);
+  scroll-snap-align:start;
+  min-width:0;
+  padding:9px 8px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:rgba(255,255,255,.68);
+  color:var(--muted);
+  cursor:pointer;
+  transition:.2s
+}
+.ratio-btn:hover {
+  transform:translateY(-2px)
+}
+.ratio-btn.active {
+  background:var(--accent);
+  color:#fff;
+  border-color:var(--accent)
+}
+.ratio-icon {
+  height:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:3px
+}
+.ratio-icon i {
+  display:block;
+  height:18px;
+  aspect-ratio:var(--icon-ratio);
+  max-width:58px;
+  border:2px solid currentColor;
+  border-radius:2px
+}
+.ratio-name {
+  display:block;
+  font-size:.75rem;
+  font-weight:800;
+  white-space:nowrap
+}
+.ratio-value {
+  display:block;
+  font-size:.66rem;
+  opacity:.82;
+  margin-top:1px
+}
+.ratio-arrow {
+  position:absolute;
+  top:50%;
+  z-index:3;
+  width:30px;
+  height:30px;
+  transform:translateY(-50%);
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(91,126,157,.18);
+  border-radius:50%;
+  background:rgba(255,255,255,.58);
+  color:rgba(49,95,141,.55);
+  cursor:pointer;
+  backdrop-filter:blur(8px);
+  box-shadow:0 4px 14px rgba(45,83,116,.08);
+  transition:.2s
+}
+.ratio-arrow:hover {
+  color:var(--accent);
+  background:rgba(255,255,255,.9);
+  transform:translateY(-50%) scale(1.05)
+}
+.ratio-arrow.prev {
+  left:5px
+}
+.ratio-arrow.next {
+  right:5px
+}
+.ratio-arrow::before {
+  content:"";
+  width:8px;
+  height:8px;
+  border-top:1.5px solid currentColor;
+  border-right:1.5px solid currentColor
+}
+.ratio-arrow.prev::before {
+  transform:rotate(-135deg);
+  margin-left:3px
+}
+.ratio-arrow.next::before {
+  transform:rotate(45deg);
+  margin-right:3px
+}
+.scanner-wrap {
+  width:min(1640px,100%);
+  margin:0 auto 18px
+}
+.machine {
+  position:relative;
+  padding:72px 0 58px;
+  overflow:hidden;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.018) 0 1px,transparent 1px 6px),linear-gradient(155deg,#3a4b57,#18252f 32%,#070b0f);
+  border-block:1px solid rgba(255,255,255,.14);
+  box-shadow:0 24px 60px rgba(20,45,65,.22),inset 0 1px rgba(255,255,255,.18);
+  user-select:none
+}
+.machine::before {
+  content:"";
+  position:absolute;
+  top:8px;
+  left:18px;
+  right:18px;
+  height:30px;
+  border-radius:9px;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 2px,transparent 2px 8px),linear-gradient(#536674,#202c35);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:inset 0 2px 5px rgba(255,255,255,.08),inset 0 -7px 11px rgba(0,0,0,.38)
+}
+.machine::after {
+  content:"ARTUR · TRAVEL ARCHIVE     VARIABLE FORMAT FILM TRANSPORT";
+  position:absolute;
+  left:38px;
+  bottom:15px;
+  color:rgba(210,226,238,.52);
+  font-size:.64rem;
+  letter-spacing:.18em
+}
+.rail {
+  position:absolute;
+  left:0;
+  right:0;
+  height:26px;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 2px,transparent 2px 10px),linear-gradient(#30424f,#111920);
+  border-top:1px solid rgba(255,255,255,.08);
+  border-bottom:1px solid rgba(0,0,0,.8)
+}
+.rail.top {
+  top:42px
+}
+.rail.bottom {
+  bottom:34px
+}
+.detail-strip {
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:2px;
+  height:28px;
+  background:repeating-linear-gradient(90deg,#10171d 0 14px,#1c2831 14px 18px,#0a1015 18px 30px);
+  opacity:.9
+}
+.film-viewport {
+  position:relative;
+  height:clamp(520px,69vh,780px);
+  overflow:hidden;
+  background:#160b07;
+  border-block:1px solid rgba(255,177,100,.35);
+  box-shadow:inset 0 0 90px rgba(255,92,32,.24);
+  cursor:grab;
+  touch-action:pan-y
+}
+.film-viewport.dragging {
+  cursor:grabbing
+}
+.film-strip {
+  position:absolute;
+  inset-block:0;
+  left:0;
+  display:flex;
+  align-items:center;
+  gap:28px;
+  width:max-content;
+  padding-inline:50vw;
+  background:linear-gradient(#32140d,#6a2915 48%,#32140d);
+  will-change:transform
+}
+.film-strip::before,.film-strip::after {
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  height:28px;
+  background:repeating-linear-gradient(90deg,#190b07 0 15px,#a96738 15px 29px,#241009 29px 43px);
+  border-block:1px solid rgba(255,190,125,.2)
+}
+.film-strip::before {
+  top:17px
+}
+.film-strip::after {
+  bottom:17px
+}
+.frame {
+  width:min(760px,84vw);
+  height:clamp(390px,57vh,630px);
+  flex:0 0 auto;
+  display:grid;
+  place-items:center;
+  position:relative;
+  padding:18px;
+  background:#25100b;
+  border:1px solid rgba(255,178,110,.3);
+  box-shadow:0 0 0 5px rgba(255,102,42,.05);
+  opacity:.36;
+  transform:scale(.92);
+  transition:opacity .35s ease,transform .45s ease
+}
+.frame.active {
+  opacity:1;
+  transform:scale(1)
+}
+.aperture {
+  position:relative;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  background:#130806;
+  border:10px solid #38150d;
+  box-shadow:0 0 0 1px rgba(255,179,115,.22),0 12px 30px rgba(0,0,0,.28);
+  transition:width .38s cubic-bezier(.2,.8,.2,1),height .38s cubic-bezier(.2,.8,.2,1)
+}
+.aperture img {
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  filter:sepia(1) saturate(1.85) hue-rotate(325deg) brightness(.72) contrast(1.2);
+  transition:filter .55s ease
+}
+.aperture.original img {
+  object-fit:contain;
+  background:#120806
+}
+body.lights-on .aperture img {
+  filter:none
+}
+.frame-number {
+  position:absolute;
+  right:28px;
+  bottom:25px;
+  padding:5px 8px;
+  border-radius:999px;
+  color:#fff4e8;
+  background:rgba(18,8,5,.62);
+  font-size:.67rem;
+  letter-spacing:.12em
+}
+.scan-window {
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:min(800px,88vw);
+  height:calc(clamp(390px,57vh,630px) + 38px);
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+  border:3px solid rgba(244,249,252,.92);
+  border-radius:16px;
+  box-shadow:0 0 0 999px rgba(5,10,14,.17),0 0 55px rgba(255,167,90,.42),inset 0 0 34px rgba(255,192,125,.16)
+}
+.scan-window::before {
+  content:"";
+  position:absolute;
+  inset:11px;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:9px
+}
+.wheel {
+  position:absolute;
+  bottom:4px;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  border:9px solid #475866;
+  background:repeating-conic-gradient(#18232b 0 9deg,#3a4c59 9deg 18deg),radial-gradient(circle,#0d1419 0 20%,#26343e 21% 56%,#0d1419 57%);
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.09),0 7px 13px rgba(0,0,0,.4)
+}
+.wheel::after {
+  content:"";
+  position:absolute;
+  inset:19px;
+  border-radius:50%;
+  background:#0b1116;
+  border:2px solid #657681
+}
+.wheel.left {
+  left:8%
+}
+.wheel.right {
+  right:8%
+}
+.console {
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(240px,1fr) auto;
+  gap:20px;
+  align-items:center;
+  margin:0 10px;
+  padding:16px 20px 18px;
+  border-radius:0 0 28px 28px;
+  color:#dfe8ee;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.018) 0 1px,transparent 1px 5px),linear-gradient(180deg,#2a3034,#171b1e 45%,#0b0e10);
+  border:1px solid #090b0d;
+  border-top-color:#4d555a;
+  box-shadow:0 18px 38px rgba(7,16,23,.28),inset 0 1px rgba(255,255,255,.12),inset 0 -10px 18px rgba(0,0,0,.36)
+}
+.display {
+  min-width:0;
+  padding:10px 14px;
+  border:1px solid #080b0d;
+  border-radius:7px;
+  background:linear-gradient(#10171b,#05090b);
+  box-shadow:inset 0 0 18px rgba(74,145,183,.12),0 1px rgba(255,255,255,.08)
+}
+.display-top {
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  color:#9fb4c0;
+  font-size:.64rem;
+  letter-spacing:.14em;
+  text-transform:uppercase
+}
+.display-main {
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:18px;
+  margin-top:6px
+}
+.display-date {
+  min-width:0;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size:.86rem;
+  color:#ecf5f9
+}
+.display-count {
+  font-variant-numeric:tabular-nums;
+  color:#83c8ec;
+  font-weight:800;
+  letter-spacing:.1em
+}
+.knob-bank {
+  display:flex;
+  gap:14px;
+  align-items:end;
+  justify-content:center
+}
+.knob-control {
+  display:grid;
+  justify-items:center;
+  gap:6px;
+  color:#b9c6cd;
+  font-size:.6rem;
+  letter-spacing:.1em;
+  text-transform:uppercase
+}
+.knob {
+  position:relative;
+  width:54px;
+  height:54px;
+  border:0;
+  border-radius:50%;
+  cursor:pointer;
+  color:#fff;
+  background:repeating-conic-gradient(#3c4246 0 7deg,#202529 7deg 13deg),radial-gradient(circle,#3c4247 0 14%,#202428 15% 57%,#0a0d0f 58%);
+  box-shadow:0 5px 8px rgba(0,0,0,.55),inset 0 0 0 2px #535b60,inset 0 0 0 8px #161a1d;
+  transition:transform .16s,filter .16s
+}
+.knob:hover {
+  filter:brightness(1.14)
+}
+.knob:active {
+  transform:translateY(2px)
+}
+.knob::before {
+  content:"";
+  position:absolute;
+  left:50%;
+  top:7px;
+  width:2px;
+  height:13px;
+  border-radius:2px;
+  background:#dce7ed;
+  transform:translateX(-50%)
+}
+.knob.active::before {
+  background:#ffbd70;
+  box-shadow:0 0 9px #ff9d42
+}
+.capture-knob {
+  background:repeating-conic-gradient(#3b4348 0 7deg,#1c2226 7deg 13deg),radial-gradient(circle,#315f8d 0 17%,#20272c 18% 57%,#090c0e 58%)
+}
+.hint {
+  text-align:center;
+  margin:7px 0 0;
+  color:var(--muted);
+  font-size:.76rem
+}
+.flash {
+  position:fixed;
+  inset:0;
+  z-index:50;
+  pointer-events:none;
+  background:#fff;
+  opacity:0
+}
+.flash.fire {
+  animation:flash .32s ease-out
+}
+@keyframes flash {
+  0% {
+    opacity:0
+  }
+  18% {
+    opacity:1
+  }
+  100% {
+    opacity:0
+  }
+}
+.lightbox {
+  position:fixed;
+  inset:0;
+  z-index:40;
+  display:none;
+  place-items:center;
+  padding:22px;
+  background:rgba(7,12,17,.94);
+  backdrop-filter:blur(18px)
+}
+.lightbox.open {
+  display:grid
+}
+.lightbox-inner {
+  width:min(1450px,100%)
+}
+.lightbox img {
+  width:100%;
+  max-height:86vh;
+  display:block;
+  object-fit:contain;
+  border-radius:14px;
+  background:#0d151b;
+  opacity:0;
+  transform:scale(.985);
+  transition:opacity .24s ease,transform .24s ease
+}
+.lightbox.open img.loaded {
+  opacity:1;
+  transform:scale(1)
+}
+.lightbox-bar {
+  display:flex;
+  justify-content:flex-end;
+  margin-top:10px
+}
+.close {
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:999px;
+  padding:9px 14px;
+  color:#fff;
+  background:rgba(255,255,255,.1);
+  cursor:pointer
+}
+.empty {
+  display:grid;
+  place-items:center;
+  width:min(760px,90vw);
+  height:300px;
+  padding:30px;
+  text-align:center;
+  color:#ffe7d2;
+  border:1px dashed rgba(255,220,190,.45)
+}
+@media(max-width:900px) {
+  .ratio-shell {
+    padding-inline:40px
+  }
+  .ratio-btn {
+    flex-basis:150px
+  }
+  .console {
+    grid-template-columns:1fr
+  }
+  .knob-bank {
+    flex-wrap:wrap
+  }
+  .machine::after {
+    display:none
+  }
+  .frame {
+    width:min(700px,88vw)
+  }
+}
+@media(max-width:620px) {
+  .roll-status {
+    display:none
+  }
+  .film-viewport {
+    height:500px
+  }
+  .frame {
+    width:88vw;
+    height:350px
+  }
+  .scan-window {
+    width:92vw;
+    height:388px
+  }
+  .knob {
+    width:48px;
+    height:48px
+  }
+  .knob-bank {
+    gap:9px
+  }
+  .console {
+    padding:14px 12px
+  }
+  .intro-copy {
+    padding-inline:8px
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  * {
+    animation:none!important;
+    transition-duration:.01ms!important
+  }
+}
+.about-photography {
+  width:min(980px,calc(100% - 32px));
+  margin:52px auto 70px;
+  padding:34px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:rgba(255,255,255,.72);
+  backdrop-filter:blur(14px);
+  box-shadow:0 18px 44px rgba(47,87,120,.11)
+}
+.about-grid {
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr);
+  gap:34px;
+  align-items:center
+}
+.about-kicker {
+  margin:0 0 8px;
+  color:var(--accent);
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:.16em;
+  text-transform:uppercase
+}
+.about-photography h2 {
+  margin:0 0 18px;
+  font-size:clamp(2rem,4vw,3.4rem);
+  line-height:1
+}
+.about-copy {
+  display:grid;
+  gap:14px
+}
+.about-copy p {
+  margin:0;
+  color:var(--muted);
+  font-size:1rem;
+  line-height:1.72
+}
+.about-image {
+  min-height:360px;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:linear-gradient(145deg,rgba(219,236,250,.95),rgba(255,255,255,.78));
+  display:grid;
+  place-items:center;
+  color:var(--muted);
+  text-align:center;
+  padding:24px
+}
+.about-image img {
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover
+}
+.about-image span {
+  max-width:220px;
+  font-size:.86rem;
+  line-height:1.5
+}
+@media(max-width:760px) {
+  .about-photography {
+    margin-top:34px;
+    padding:24px
+  }
+  .about-grid {
+    grid-template-columns:1fr
+  }
+  .about-image {
+    min-height:280px;
+    order:-1
+  }
+}
+
+  </style>
+ </head>
+ <body>
+  <header class="topbar">
+   <a class="back" href="../photos.html">
+    ← Photos
+   </a>
+   <div class="roll-status">
+    Travel roll ·
+    <span id="rollCount">
+     0
+    </span>
+    frames
+   </div>
+  </header>
+  <section class="intro">
+   <p class="eyebrow">
+    My photo portfolio
+   </p>
+   <h1>
+    Film Scanner
+   </h1>
+   <p class="intro-copy">
+    Choose a format, move through the roll, turn on the light for every frame, or start auto-roll. Capture opens the current photograph up close.
+   </p>
+  </section>
+  <div aria-label="Photo aspect ratio selector" class="ratio-shell">
+   <button aria-label="Show previous aspect ratios" class="ratio-arrow prev" id="ratioPrev">
+   </button>
+   <nav aria-label="Photo aspect ratio" class="ratio-bar" id="ratioBar">
+    <button class="ratio-btn active" data-ratio="original" style="--icon-ratio:1.5">
+     <span class="ratio-icon">
+      <i>
+      </i>
+     </span>
+     <span class="ratio-name">
+      Original
+     </span>
+     <span class="ratio-value" id="originalRatio">
+      Auto
+     </span>
+    </button>
+    <button class="ratio-btn" data-ratio="1.333" style="--icon-ratio:1.333">
+     <span class="ratio-icon">
+      <i>
+      </i>
+     </span>
+     <span class="ratio-name">
+      4:3
+     </span>
+     <span class="ratio-value">
+      1.33:1
+     </span>
+    </button>
+    <button class="ratio-btn" data-ratio="1.43" style="--icon-ratio:1.43">
+     <span class="ratio-icon">
+      <i>
+      </i>
+     </span>
+     <span class="ratio-name">
+      IMAX 70MM
+     </span>
+     <span class="ratio-value">
+      1.43:1
+     </span>
+    </button>
+    <button class="ratio-btn" data-ratio="1.5" style="--icon-ratio:1.5">
+     <span class="ratio-icon">
+      <i>
+      </i>
+     </span>
+     <span class="ratio-name">
+      35MM Photo
+     </span>
+     <span class="ratio-value">
+      1.50:1
+     </span>
+    </button>
+    <button class="ratio-btn" data-ratio="1.778" style="--icon-ratio:1.778">
+     <span class="ratio-icon">
+      <i>
+      </i>
+     </span>
+     <span class="ratio-name">
+      16:9
+     </span>
+     <span class="ratio-value">
+      1.78:1
+     </span>
+    </button>
+    <button class="ratio-btn" data-ratio="1.85" style="--icon-ratio:1.85">
+     <span class="ratio-icon">
+      <i>
+      </i>
+     </span>
+     <span class="ratio-name">
+      Dolby Vision
+     </span>
+     <span class="ratio-value">
+      1.85:1
+     </span>
+    </button>
+    <button class="ratio-btn" data-ratio="1.90" style="--icon-ratio:1.90">
+     <span class="ratio-icon">
+      <i>
+      </i>
+     </span>
+     <span class="ratio-name">
+      IMAX
+     </span>
+     <span class="ratio-value">
+      1.90:1
+     </span>
+    </button>
+    <button class="ratio-btn" data-ratio="2.20" style="--icon-ratio:2.20">
+     <span class="ratio-icon">
+      <i>
+      </i>
+     </span>
+     <span class="ratio-name">
+      70MM
+     </span>
+     <span class="ratio-value">
+      2.20:1
+     </span>
+    </button>
+    <button class="ratio-btn" data-ratio="2.39" style="--icon-ratio:2.39">
+     <span class="ratio-icon">
+      <i>
+      </i>
+     </span>
+     <span class="ratio-name">
+      35MM Scope
+     </span>
+     <span class="ratio-value">
+      2.39:1
+     </span>
+    </button>
+    <button class="ratio-btn" data-ratio="1.85" style="--icon-ratio:1.85">
+     <span class="ratio-icon">
+      <i>
+      </i>
+     </span>
+     <span class="ratio-name">
+      Large Format
+     </span>
+     <span class="ratio-value">
+      1.85:1
+     </span>
+    </button>
+    <button class="ratio-btn" data-ratio="2.39" style="--icon-ratio:2.39">
+     <span class="ratio-icon">
+      <i>
+      </i>
+     </span>
+     <span class="ratio-name">
+      Large Format
+     </span>
+     <span class="ratio-value">
+      2.39:1
+     </span>
+    </button>
+   </nav>
+   <button aria-label="Show more aspect ratios" class="ratio-arrow next" id="ratioNext">
+   </button>
+  </div>
+  <main class="scanner-wrap">
+   <section class="machine" id="machine">
+    <div class="rail top">
+    </div>
+    <div class="rail bottom">
+    </div>
+    <div class="film-viewport" id="viewport">
+     <div class="film-strip" id="filmStrip">
+     </div>
+     <div class="scan-window">
+     </div>
+    </div>
+    <div class="wheel left">
+    </div>
+    <div class="wheel right">
+    </div>
+    <div class="detail-strip">
+    </div>
+   </section>
+   <section aria-live="polite" class="console">
+    <div class="display">
+     <div class="display-top">
+      <span>
+       Travel archive
+      </span>
+      <span id="modeLabel">
+       Safelight
+      </span>
+     </div>
+     <div class="display-main">
+      <span class="display-date" id="dateLabel">
+       —
+      </span>
+      <span class="display-count">
+       <span id="current">
+        00
+       </span>
+       /
+       <span id="total">
+        00
+       </span>
+      </span>
+     </div>
+    </div>
+    <div class="knob-bank">
+     <label class="knob-control">
+      <button aria-label="Previous frame" class="knob" id="prev">
+      </button>
+      <span>
+       Previous
+      </span>
+     </label>
+     <label class="knob-control">
+      <button aria-label="Toggle light" class="knob" id="light">
+      </button>
+      <span>
+       Light
+      </span>
+     </label>
+     <label class="knob-control">
+      <button aria-label="Toggle auto roll" class="knob" id="play">
+      </button>
+      <span>
+       Auto roll
+      </span>
+     </label>
+     <label class="knob-control">
+      <button aria-label="Capture current frame" class="knob capture-knob" id="capture">
+      </button>
+      <span>
+       Capture
+      </span>
+     </label>
+     <label class="knob-control">
+      <button aria-label="Next frame" class="knob" id="next">
+      </button>
+      <span>
+       Next
+      </span>
+     </label>
+    </div>
+   </section>
+   <p class="hint">
+    Use the wheel over the film, drag it, or use the hardware controls.
+   </p>
+  </main>
+  <section aria-labelledby="photography-heading" class="about-photography">
+   <div class="about-grid">
+    <div>
+     <p class="about-kicker">
+      Behind the roll
+     </p>
+     <h2 id="photography-heading">
+      Photography
+     </h2>
+     <div class="about-copy">
+      <p>
+       Photography is a hobby that gives me a way to document the colors, details, and atmosphere of the world around me. I am especially drawn to street scenes, cars, motorsports, and architecture, while also exploring sports, portraits, nature, and wildlife.
+      </p>
+      <p>
+       Color and light shape the mood of every image I edit. Sometimes that mood is cinematic or dramatic; other times it is quiet, nostalgic, or natural. I focus on what catches my attention in the moment and use editing to strengthen the feeling that was already there.
+      </p>
+      <p>
+       Every frame in the film roll includes a date, turning the gallery into a timeline of my work. It shows how my photography has changed, where I have improved, and even the days when the results were not as strong. Those photographs still belong in the story because progress is easier to understand when the imperfect moments are included too.
+      </p>
+      <p>
+       This portfolio is not meant to present perfection. It is a collection of work I have chosen to put into the world because it represents how I see my surroundings and what I am capable of creating. Photography remains something I do as a hobby, and I am proud to share the process as much as the finished images.
+      </p>
+     </div>
+    </div>
+    <figure class="about-image">
+     <!-- Replace this placeholder with: <img src="travel-photos/your-photo.jpg" alt="A photograph that represents my style"> -->
+     <span>
+      Add one of your photographs here when you choose it.
+     </span>
+    </figure>
+   </div>
+  </section>
+  <div class="flash" id="flash">
+  </div>
+  <div aria-modal="true" class="lightbox" id="lightbox" role="dialog">
+   <div class="lightbox-inner">
+    <img alt="Expanded travel photograph" id="largeImage"/>
+    <div class="lightbox-bar">
+     <button class="close" id="close">
+      Close
+     </button>
+    </div>
+   </div>
+  </div>
+  <script src="photos-data.js">
+  </script>
+  <script>
+   
+const photos=Array.isArray(window.TRAVEL_PHOTOS)?window.TRAVEL_PHOTOS:[];
+const strip=document.getElementById('filmStrip'),viewport=document.getElementById('viewport'),framesRoot=strip;
+const wheels=[...document.querySelectorAll('.wheel')],ratioButtons=[...document.querySelectorAll('.ratio-btn')];
+const ratioBar=document.getElementById('ratioBar');
+const dateLabel=document.getElementById('dateLabel'),current=document.getElementById('current'),total=document.getElementById('total'),rollCount=document.getElementById('rollCount'),modeLabel=document.getElementById('modeLabel'),originalRatio=document.getElementById('originalRatio');
+const light=document.getElementById('light'),play=document.getElementById('play'),capture=document.getElementById('capture'),lightbox=document.getElementById('lightbox'),largeImage=document.getElementById('largeImage'),flash=document.getElementById('flash');
+let frames=[],index=0,selectedRatio='original',lightsOn=false,autoRoll=false,autoTimer=null,dragging=false,dragStart=0,dragBase=0,currentX=0,targetX=0,wheelBuffer=0,wheelTimer=null,raf=0;
+function formatDate(value) {
+  if(!value)return'';
+  const d=new Date(value+'T00:00:00');
+  return Number.isNaN(d.getTime())?'':d.toLocaleDateString(undefined, {
+    year:'numeric',month:'long',day:'numeric'
+  }
+  )
+}
+function build() {
+  if(!photos.length) {
+    strip.innerHTML='<div class="empty">Add JPG, JPEG, PNG, or WEBP files to <strong>photos/travel-photos</strong>, then run <strong>update-photos.bat</strong>.</div>';
+    return
+  }
+  strip.innerHTML=photos.map((p,i)=>`<figure class="frame${i===0?' active':''}" data-date="${p.date||''}"><div class="aperture original"><img src="${encodeURI(p.src)}" alt="Travel photograph ${i+1}"></div><figcaption class="frame-number">${String(i+1).padStart(2,'0')}A</figcaption></figure>`).join('');
+  frames=[...document.querySelectorAll('.frame')];
+  frames.forEach((f,i)=> {
+    const img=f.querySelector('img');img.addEventListener('load',()=> {
+      f.dataset.ratio=(img.naturalWidth/img.naturalHeight).toFixed(5);layoutAperture(f);if(i===index)updateReadout()
+    }
+    )
+  }
+  )
+}
+function nativeRatio(f=frames[index]) {
+  const r=Number(f?.dataset.ratio);
+  return Number.isFinite(r)&&r>0?r:1.5
+}
+function chosenRatio(f) {
+  return selectedRatio==='original'?nativeRatio(f):Number(selectedRatio)
+}
+function layoutAperture(f) {
+  if(!f)return;
+  const r=chosenRatio(f),maxW=Math.min(f.clientWidth-52,700),maxH=Math.min(f.clientHeight-52,560);
+  let w=maxW,h=w/r;
+  if(h>maxH) {
+    h=maxH;
+    w=h*r
+  }
+  const a=f.querySelector('.aperture');
+  a.style.width=`${Math.max(120,w)}px`;
+  a.style.height=`${Math.max(120,h)}px`;
+  a.classList.toggle('original',selectedRatio==='original')
+}
+function layoutAll() {
+  frames.forEach(layoutAperture);
+  requestAnimationFrame(()=>snap(false))
+}
+function centerFor(i) {
+  const f=frames[i];
+  return viewport.clientWidth/2-(f.offsetLeft+f.offsetWidth/2)
+}
+function animate() {
+  currentX+=(targetX-currentX)*.14;
+  if(Math.abs(targetX-currentX)<.1)currentX=targetX;
+  strip.style.transform=`translate3d(${currentX}px,0,0)`;
+  const rot=-currentX*.18;
+  wheels[0].style.transform=`rotate(${rot}deg)`;
+  wheels[1].style.transform=`rotate(${-rot}deg)`;
+  raf=requestAnimationFrame(animate)
+}
+function updateReadout() {
+  if(!frames.length) {
+    total.textContent=current.textContent='00';
+    rollCount.textContent='0';
+    return
+  }
+  frames.forEach((f,i)=>f.classList.toggle('active',i===index));
+  const f=frames[index];
+  dateLabel.textContent=formatDate(f.dataset.date);
+  current.textContent=String(index+1).padStart(2,'0');
+  total.textContent=String(frames.length).padStart(2,'0');
+  rollCount.textContent=frames.length;
+  document.body.classList.toggle('lights-on',lightsOn);
+  light.classList.toggle('active',lightsOn);
+  play.classList.toggle('active',autoRoll);
+  modeLabel.textContent=autoRoll?'Auto roll':lightsOn?'Full color':'Safelight';
+  originalRatio.textContent=nativeRatio().toFixed(2)+':1'
+}
+function snap(update=true) {
+  if(!frames.length)return;
+  targetX=centerFor(index);
+  if(update)updateReadout()
+}
+function go(i) {
+  if(!frames.length)return;
+  index=(i+frames.length)%frames.length;
+  layoutAperture(frames[index]);
+  snap(true)
+}
+function move(d) {
+  go(index+d)
+}
+function stopAuto() {
+  autoRoll=false;
+  clearInterval(autoTimer);
+  autoTimer=null;
+  updateReadout()
+}
+function startAuto() {
+  if(frames.length<2)return;
+  autoRoll=true;
+  clearInterval(autoTimer);
+  autoTimer=setInterval(()=>go(index+1),2800);
+  updateReadout()
+}
+ratioButtons.forEach(b=>b.addEventListener('click',()=> {
+  selectedRatio=b.dataset.ratio;ratioButtons.forEach(x=>x.classList.toggle('active',x===b));layoutAll();updateReadout()
+}
+));
+document.getElementById('ratioPrev').addEventListener('click',()=>ratioBar.scrollBy( {
+  left:-Math.max(280,ratioBar.clientWidth*.7),behavior:'smooth'
+}
+));
+document.getElementById('ratioNext').addEventListener('click',()=>ratioBar.scrollBy( {
+  left:Math.max(280,ratioBar.clientWidth*.7),behavior:'smooth'
+}
+));
+viewport.addEventListener('wheel',e=> {
+  e.preventDefault();if(autoRoll)stopAuto();wheelBuffer+=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX;clearTimeout(wheelTimer);wheelTimer=setTimeout(()=> {
+    if(Math.abs(wheelBuffer)>18)move(wheelBuffer>0?1:-1);wheelBuffer=0
+  }
+  ,85)
+}
+, {
+  passive:false
+}
+);
+viewport.addEventListener('pointerdown',e=> {
+  if(autoRoll)stopAuto();dragging=true;dragStart=e.clientX;dragBase=targetX;viewport.setPointerCapture(e.pointerId);viewport.classList.add('dragging')
+}
+);
+viewport.addEventListener('pointermove',e=> {
+  if(!dragging)return;targetX=dragBase+(e.clientX-dragStart)
+}
+);
+function endDrag(e) {
+  if(!dragging)return;
+  dragging=false;
+  viewport.classList.remove('dragging');
+  const delta=e.clientX-dragStart;
+  if(Math.abs(delta)>70)move(delta<0?1:-1);
+  else snap(false)
+}
+viewport.addEventListener('pointerup',endDrag);
+viewport.addEventListener('pointercancel',()=> {
+  dragging=false;snap(false)
+}
+);
+document.getElementById('prev').addEventListener('click',()=> {
+  stopAuto();move(-1)
+}
+);
+document.getElementById('next').addEventListener('click',()=> {
+  stopAuto();move(1)
+}
+);
+light.addEventListener('click',()=> {
+  lightsOn=!lightsOn;updateReadout()
+}
+);
+play.addEventListener('click',()=>autoRoll?stopAuto():startAuto());
+capture.addEventListener('click',()=> {
+  if(!frames.length)return;stopAuto();flash.classList.remove('fire');void flash.offsetWidth;flash.classList.add('fire');largeImage.classList.remove('loaded');largeImage.src=frames[index].querySelector('img').src;setTimeout(()=> {
+    lightbox.classList.add('open');document.body.style.overflow='hidden'
+  }
+  ,150)
+}
+);
+largeImage.addEventListener('load',()=>largeImage.classList.add('loaded'));
+function closeBox() {
+  lightbox.classList.remove('open');
+  largeImage.classList.remove('loaded');
+  document.body.style.overflow=''
+}
+document.getElementById('close').addEventListener('click',closeBox);
+lightbox.addEventListener('click',e=> {
+  if(e.target===lightbox)closeBox()
+}
+);
+document.addEventListener('keydown',e=> {
+  if(e.key==='Escape')closeBox();if(!lightbox.classList.contains('open')&&e.key==='ArrowRight') {
+    stopAuto();move(1)
+  }
+  if(!lightbox.classList.contains('open')&&e.key==='ArrowLeft') {
+    stopAuto();move(-1)
+  }
+}
+);
+window.addEventListener('resize',()=> {
+  layoutAll();snap(false)
+}
+);
+build();
+requestAnimationFrame(()=> {
+  layoutAll();currentX=targetX=centerFor(0);updateReadout();animate()
+}
+);
+
+  </script>
+ </body>
+</html>

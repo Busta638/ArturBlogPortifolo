@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected Work — Artur Tigirlas</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --background: #081018;
+      --panel: rgba(16, 28, 39, 0.84);
+      --panel-soft: rgba(255, 255, 255, 0.06);
+      --text: #f2f6f9;
+      --muted: #92a5b6;
+      --line: rgba(255, 255, 255, 0.12);
+      --accent: #7eb9e8;
+      --warm-light: rgba(255, 224, 181, 0.18);
+      --cool-light: rgba(126, 185, 232, 0.16);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      font-family: "Times New Roman", Times, serif;
+      color: var(--text);
+      background:
+        linear-gradient(180deg, #05090e, var(--background));
+    }
+
+    button,
+    a {
+      font: inherit;
+    }
+
+    .page-shell {
+      width: min(1560px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 12px;
+      z-index: 30;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 12px;
+      padding: 14px 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(7, 14, 21, 0.78);
+      backdrop-filter: blur(18px);
+    }
+
+    .back-link {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 650;
+    }
+
+    .topbar-label {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 62px auto 18px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(44px, 8vw, 92px);
+      font-weight: 700;
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+    }
+
+    .intro p:last-child {
+      max-width: 640px;
+      margin: 20px auto 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .gallery {
+      position: relative;
+      min-height: 820px;
+      display: grid;
+      grid-template-rows: minmax(620px, 1fr) auto auto;
+      align-items: center;
+      padding: 8px 0 54px;
+      isolation: isolate;
+    }
+
+    /* Four corner lights point inward and keep the center image emphasized. */
+    .spotlight {
+      position: absolute;
+      z-index: -1;
+      width: 48%;
+      height: 52%;
+      pointer-events: none;
+      filter: blur(8px);
+      opacity: 0.95;
+    }
+
+    .spotlight.top-left {
+      top: 2%;
+      left: -5%;
+      background: radial-gradient(ellipse at 0 0, var(--cool-light), transparent 68%);
+    }
+
+    .spotlight.top-right {
+      top: 2%;
+      right: -5%;
+      background: radial-gradient(ellipse at 100% 0, var(--warm-light), transparent 68%);
+    }
+
+    .spotlight.bottom-left {
+      bottom: 12%;
+      left: -5%;
+      background: radial-gradient(ellipse at 0 100%, var(--warm-light), transparent 68%);
+    }
+
+    .spotlight.bottom-right {
+      right: -5%;
+      bottom: 12%;
+      background: radial-gradient(ellipse at 100% 100%, var(--cool-light), transparent 68%);
+    }
+
+    .stage {
+      position: relative;
+      min-height: 620px;
+      perspective: 1700px;
+      overflow: visible;
+      touch-action: pan-y;
+      user-select: none;
+    }
+
+    .slide {
+      --offset: 0;
+      --distance: 0;
+      --slide-width: 900px;
+      --slide-height: 600px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: var(--slide-width);
+      height: var(--slide-height);
+      transform:
+        translate(-50%, -50%)
+        translateX(calc(var(--offset) * min(29vw, 410px)))
+        translateZ(calc(var(--distance) * -190px))
+        rotateY(calc(var(--offset) * -42deg))
+        scale(calc(1 - var(--distance) * 0.07));
+      transform-origin: center;
+      opacity: calc(1 - var(--distance) * 0.16);
+      filter: brightness(calc(1 - var(--distance) * 0.12));
+      pointer-events: none;
+      transition:
+        transform 700ms cubic-bezier(.2, .8, .2, 1),
+        width 500ms cubic-bezier(.2, .8, .2, 1),
+        height 500ms cubic-bezier(.2, .8, .2, 1),
+        opacity 500ms ease,
+        filter 500ms ease;
+    }
+
+    .slide.is-active {
+      pointer-events: auto;
+    }
+
+    .photo-frame {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 7px;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.025));
+      box-shadow:
+        0 36px 90px rgba(0, 0, 0, 0.48),
+        inset 0 1px rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(10px);
+    }
+
+    .photo-frame::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      border-radius: inherit;
+      background:
+        linear-gradient(115deg, rgba(255, 255, 255, 0.16), transparent 25%),
+        linear-gradient(295deg, rgba(126, 185, 232, 0.08), transparent 34%);
+      mix-blend-mode: screen;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 5px;
+      object-fit: contain;
+      background: #030608;
+      -webkit-user-drag: none;
+    }
+
+    .reflection {
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      top: calc(100% + 12px);
+      height: 18%;
+      border-radius: 5px;
+      background-image: var(--image);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: scaleY(-1);
+      opacity: 0.13;
+      filter: blur(3px);
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), transparent);
+      pointer-events: none;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 14px;
+    }
+
+    .control-button {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--text);
+      background: var(--panel-soft);
+      cursor: pointer;
+      transition: transform 180ms ease, background 180ms ease;
+    }
+
+    .control-button:hover {
+      transform: scale(1.05);
+      background: rgba(126, 185, 232, 0.14);
+    }
+
+    .counter {
+      min-width: 110px;
+      text-align: center;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .date-line {
+      min-height: 30px;
+      margin: 22px 0 0;
+      text-align: center;
+      color: var(--text);
+      font-size: 15px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hint {
+      margin: 8px 0 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer {
+      margin-top: 26px;
+      padding: 30px 20px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 13px;
+      border-top: 1px solid var(--line);
+    }
+
+    .empty-state {
+      max-width: 600px;
+      margin: 120px auto;
+      padding: 34px;
+      text-align: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .empty-state code {
+      color: var(--accent);
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        min-height: 670px;
+        grid-template-rows: minmax(480px, 1fr) auto auto;
+      }
+
+      .stage {
+        min-height: 480px;
+      }
+
+      .slide {
+        transform:
+          translate(-50%, -50%)
+          translateX(calc(var(--offset) * 55vw))
+          translateZ(calc(var(--distance) * -120px))
+          rotateY(calc(var(--offset) * -34deg))
+          scale(calc(1 - var(--distance) * 0.08));
+      }
+
+      .intro {
+        margin-top: 48px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="back-link" href="../photos.html">← Photos</a>
+      <span class="topbar-label">📁 Selected Work</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">Curated Photography</p>
+      <h1>Selected Work</h1>
+      <p>
+        A smaller collection of photographs chosen for their color, composition,
+        atmosphere, and the details that first caught my attention.
+      </p>
+    </section>
+
+    <main id="galleryRoot" class="gallery" aria-live="polite">
+      <span class="spotlight top-left" aria-hidden="true"></span>
+      <span class="spotlight top-right" aria-hidden="true"></span>
+      <span class="spotlight bottom-left" aria-hidden="true"></span>
+      <span class="spotlight bottom-right" aria-hidden="true"></span>
+
+      <div id="stage" class="stage" aria-label="Selected photography gallery"></div>
+
+      <div class="controls">
+        <button id="previousButton" class="control-button" type="button" aria-label="Previous photograph">
+          ←
+        </button>
+
+        <div id="counter" class="counter">01 / 01</div>
+
+        <button id="nextButton" class="control-button" type="button" aria-label="Next photograph">
+          →
+        </button>
+      </div>
+
+      <div>
+        <p id="dateLine" class="date-line"></p>
+        <p class="hint">Drag, scroll, or use the arrow keys</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      © 2026 Artur Tigirlas. All photographs are original work and may not be
+      reproduced or redistributed without permission.
+    </footer>
+  </div>
+
+  <script src="selected-data.js"></script>
+  <script>
+    const stage = document.getElementById("stage");
+    const counter = document.getElementById("counter");
+    const dateLine = document.getElementById("dateLine");
+    const previousButton = document.getElementById("previousButton");
+    const nextButton = document.getElementById("nextButton");
+
+    let selectedPhotos = shuffle(window.SELECTED_PHOTOS || []);
+    let currentIndex = 0;
+    let dragStartX = 0;
+    let dragging = false;
+    let wheelTimeout = null;
+    let wheelAmount = 0;
+
+    function shuffle(items) {
+      const copy = [...items];
+
+      for (let index = copy.length - 1; index > 0; index -= 1) {
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [copy[index], copy[randomIndex]] = [copy[randomIndex], copy[index]];
+      }
+
+      return copy;
+    }
+
+    function formatDate(value) {
+      if (!value) {
+        return "";
+      }
+
+      const date = new Date(`${value}T12:00:00`);
+
+      return new Intl.DateTimeFormat("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      }).format(date);
+    }
+
+    function calculateSlideSize(slide, ratio) {
+      const stageWidth = Math.max(stage.clientWidth, 320);
+      const stageHeight = Math.max(stage.clientHeight, 420);
+      const maxWidth = Math.min(stageWidth * 0.68, 1040);
+      const maxHeight = Math.min(stageHeight * 0.82, 690);
+
+      let width = maxWidth;
+      let height = width / ratio;
+
+      if (height > maxHeight) {
+        height = maxHeight;
+        width = height * ratio;
+      }
+
+      slide.style.setProperty("--slide-width", `${Math.round(width)}px`);
+      slide.style.setProperty("--slide-height", `${Math.round(height)}px`);
+    }
+
+    function createSlides() {
+      stage.innerHTML = "";
+
+      if (!selectedPhotos.length) {
+        stage.innerHTML = `
+          <div class="empty-state">
+            <strong>No selected photos found</strong>
+            <p>
+              Add JPG, JPEG, PNG, or WEBP files to
+              <code>photos/selected-work/</code>, then run
+              <code>update-photos.bat</code>.
+            </p>
+          </div>
+        `;
+        return;
+      }
+
+      selectedPhotos.forEach((photo, index) => {
+        const slide = document.createElement("article");
+        slide.className = "slide";
+        slide.dataset.index = index;
+
+        const frame = document.createElement("div");
+        frame.className = "photo-frame";
+
+        const image = document.createElement("img");
+        image.src = photo.src;
+        image.alt = `Selected photograph taken ${formatDate(photo.date)}`;
+        image.loading = index < 3 ? "eager" : "lazy";
+
+        image.addEventListener("load", () => {
+          const ratio = image.naturalWidth / image.naturalHeight;
+          slide.dataset.ratio = ratio.toFixed(4);
+          slide.style.setProperty("--image", `url("${image.src}")`);
+          calculateSlideSize(slide, ratio);
+        });
+
+        image.addEventListener("error", () => {
+          frame.innerHTML = `
+            <div class="empty-state">
+              <strong>Photo not found</strong>
+              <p>Check <code>${photo.src}</code>.</p>
+            </div>
+          `;
+        });
+
+        const reflection = document.createElement("div");
+        reflection.className = "reflection";
+        reflection.setAttribute("aria-hidden", "true");
+
+        frame.appendChild(image);
+        slide.appendChild(frame);
+        slide.appendChild(reflection);
+        stage.appendChild(slide);
+      });
+    }
+
+    function shortestOffset(index) {
+      const count = selectedPhotos.length;
+      let offset = index - currentIndex;
+
+      if (offset > count / 2) {
+        offset -= count;
+      }
+
+      if (offset < -count / 2) {
+        offset += count;
+      }
+
+      return offset;
+    }
+
+    function render() {
+      const slides = stage.querySelectorAll(".slide");
+
+      slides.forEach((slide, index) => {
+        const offset = shortestOffset(index);
+        const distance = Math.min(Math.abs(offset), 3);
+
+        slide.style.setProperty("--offset", offset);
+        slide.style.setProperty("--distance", distance);
+        slide.style.zIndex = String(20 - distance);
+
+        slide.classList.toggle("is-active", index === currentIndex);
+        slide.setAttribute("aria-hidden", index === currentIndex ? "false" : "true");
+      });
+
+      if (!selectedPhotos.length) {
+        counter.textContent = "00 / 00";
+        dateLine.textContent = "";
+        return;
+      }
+
+      const number = String(currentIndex + 1).padStart(2, "0");
+      const total = String(selectedPhotos.length).padStart(2, "0");
+
+      counter.textContent = `${number} / ${total}`;
+      dateLine.textContent = formatDate(selectedPhotos[currentIndex]?.date);
+    }
+
+    function move(direction) {
+      if (selectedPhotos.length < 2) {
+        return;
+      }
+
+      currentIndex =
+        (currentIndex + direction + selectedPhotos.length) %
+        selectedPhotos.length;
+
+      render();
+    }
+
+    previousButton.addEventListener("click", () => {
+      move(-1);
+    });
+
+    nextButton.addEventListener("click", () => {
+      move(1);
+    });
+
+    stage.addEventListener(
+      "wheel",
+      (event) => {
+        event.preventDefault();
+
+        wheelAmount += event.deltaY + event.deltaX;
+        clearTimeout(wheelTimeout);
+
+        wheelTimeout = setTimeout(() => {
+          if (Math.abs(wheelAmount) > 24) {
+            move(wheelAmount > 0 ? 1 : -1);
+          }
+
+          wheelAmount = 0;
+        }, 100);
+      },
+      { passive: false }
+    );
+
+    stage.addEventListener("pointerdown", (event) => {
+      dragging = true;
+      dragStartX = event.clientX;
+      stage.setPointerCapture(event.pointerId);
+    });
+
+    stage.addEventListener("pointerup", (event) => {
+      if (!dragging) {
+        return;
+      }
+
+      const distance = event.clientX - dragStartX;
+      dragging = false;
+
+      if (Math.abs(distance) > 45) {
+        move(distance < 0 ? 1 : -1);
+      }
+    });
+
+    stage.addEventListener("pointercancel", () => {
+      dragging = false;
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") {
+        move(1);
+      }
+
+      if (event.key === "ArrowLeft") {
+        move(-1);
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      stage.querySelectorAll(".slide").forEach((slide) => {
+        const ratio = Number(slide.dataset.ratio || 1.5);
+        calculateSlideSize(slide, ratio);
+      });
+    });
+
+    createSlides();
+    render();
+  </script>
+</body>
+</html>
