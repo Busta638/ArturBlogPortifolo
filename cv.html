@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script>
+(() => {
+  try {
+    const direction = sessionStorage.getItem("panorama-direction");
+    if (direction === "next" || direction === "prev") {
+      document.documentElement.dataset.panoramaDirection = direction;
+    }
+  } catch (error) {}
+})();
+</script>
+
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CV — Artur Tigirlas</title>
+<style>
+*{box-sizing:border-box}
+:root{
+  --bg:#060707;
+  --text:#f4f1eb;
+  --muted:#a69f93;
+  --line:rgba(244,241,235,.15);
+  --accent:#d2554f;
+}
+html{background:var(--bg)}
+body{
+  margin:0;
+  min-height:100vh;
+  overflow-x:hidden;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 76% 16%,rgba(108,13,13,.17),transparent 30rem),
+    linear-gradient(145deg,#0b0d0f,#050607);
+  font-family:"Times New Roman",Times,serif;
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.10;
+  background-image:radial-gradient(circle,rgba(255,255,255,.65) 0 .45px,transparent .8px);
+  background-size:8px 8px;
+}
+.cv-page{
+  width:min(1320px,calc(100% - 36px));
+  min-height:100vh;
+  margin:auto;
+  padding:42px 0 100px;
+  display:grid;
+  grid-template-rows:auto 1fr;
+}
+.cv-top{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  padding-bottom:20px;
+  border-bottom:1px solid var(--line);
+  color:var(--muted);
+  font-size:11px;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.cv-top > :last-child{
+  justify-self:end;
+}
+.cv-back{
+  justify-self:start;
+  color:var(--text);
+  text-decoration:none;
+  transition:opacity .2s ease,transform .2s ease;
+}
+.cv-back:hover,
+.cv-back:focus-visible{
+  opacity:.72;
+  transform:translateX(-3px);
+  outline:none;
+}
+.cv-main{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(260px,420px);
+  gap:56px;
+  align-items:center;
+}
+h1{
+  margin:0;
+  font-size:clamp(72px,12vw,178px);
+  line-height:.82;
+  font-weight:normal;
+  letter-spacing:-.065em;
+}
+.cv-copy{
+  margin:28px 0 0;
+  max-width:670px;
+  color:var(--muted);
+  font-size:clamp(18px,2vw,27px);
+  line-height:1.5;
+}
+.cv-card{
+  padding:28px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:rgba(10,11,11,.66);
+  backdrop-filter:blur(18px);
+}
+.cv-card h2{margin:0;font-size:34px;font-weight:normal}
+.cv-card p{color:var(--muted);line-height:1.6}
+.cv-open{
+  display:flex;
+  justify-content:space-between;
+  margin-top:28px;
+  padding:16px 0 0;
+  border-top:1px solid var(--line);
+  color:var(--text);
+  text-decoration:none;
+}
+@media(max-width:800px){
+  .cv-top{
+    grid-template-columns:1fr auto;
+  }
+  .cv-top > :nth-child(2){
+    display:none;
+  }
+  .cv-main{grid-template-columns:1fr;align-content:center;padding-top:58px}
+  .cv-card{margin-bottom:34px}
+}
+
+
+
+/* TRUE HORIZONTAL CROSS-PAGE PANORAMA */
+@view-transition { navigation: auto; }
+
+::view-transition-group(root) {
+  animation-duration: 920ms;
+  animation-timing-function: cubic-bezier(.22,.82,.22,1);
+}
+
+::view-transition-image-pair(root) {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 920ms;
+  animation-timing-function: cubic-bezier(.22,.82,.22,1);
+  mix-blend-mode: normal;
+  height: 100%;
+}
+
+html[data-panorama-direction="next"]::view-transition-old(root) {
+  animation:
+    panorama-old-left 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-old-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="next"]::view-transition-new(root) {
+  animation:
+    panorama-new-right 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-new-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="prev"]::view-transition-old(root) {
+  animation:
+    panorama-old-right 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-old-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="prev"]::view-transition-new(root) {
+  animation:
+    panorama-new-left 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-new-color-hard 920ms ease-in-out;
+}
+
+::view-transition-image-pair(root)::after {
+  content:"";
+  position:absolute;
+  inset:-4%;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(17,34,59,.42) 0%,
+      rgba(74,16,20,.30) 30%,
+      rgba(214,72,56,.58) 49%,
+      rgba(242,174,133,.42) 54%,
+      rgba(28,53,80,.34) 70%,
+      transparent 100%
+    );
+  mix-blend-mode:screen;
+  filter:blur(7px) saturate(1.28);
+  opacity:0;
+  animation:panoramaBlendFlashHard 920ms ease-in-out;
+}
+
+::view-transition-image-pair(root)::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(255,212,186,.30) 0%,
+      rgba(194,49,37,.24) 24%,
+      rgba(19,35,60,.18) 48%,
+      transparent 72%
+    );
+  mix-blend-mode:color-dodge;
+  opacity:0;
+  animation:panoramaCenterBloomHard 920ms ease-in-out;
+}
+
+@keyframes panorama-old-left { from{transform:translateX(0)} to{transform:translateX(-100%)} }
+@keyframes panorama-new-right { from{transform:translateX(100%)} to{transform:translateX(0)} }
+@keyframes panorama-old-right { from{transform:translateX(0)} to{transform:translateX(100%)} }
+@keyframes panorama-new-left { from{transform:translateX(-100%)} to{transform:translateX(0)} }
+
+@keyframes panorama-old-color-hard {
+  0%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
+  38%{filter:saturate(.88) hue-rotate(-14deg) brightness(.90) contrast(1.05)}
+  72%{filter:saturate(.72) hue-rotate(-22deg) brightness(.72) contrast(1.12)}
+  100%{filter:saturate(.64) hue-rotate(-26deg) brightness(.58) contrast(1.14)}
+}
+@keyframes panorama-new-color-hard {
+  0%{filter:saturate(.60) hue-rotate(24deg) brightness(.56) contrast(1.14)}
+  30%{filter:saturate(.72) hue-rotate(18deg) brightness(.68) contrast(1.12)}
+  64%{filter:saturate(.88) hue-rotate(8deg) brightness(.88) contrast(1.05)}
+  100%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
+}
+@keyframes panoramaBlendFlashHard {
+  0%,100%{opacity:0}
+  28%{opacity:.20}
+  45%{opacity:.62}
+  54%{opacity:.88}
+  66%{opacity:.42}
+  78%{opacity:.12}
+}
+@keyframes panoramaCenterBloomHard {
+  0%,100%{opacity:0;transform:scale(.96)}
+  42%{opacity:.18;transform:scale(1)}
+  52%{opacity:.58;transform:scale(1.06)}
+  64%{opacity:.22;transform:scale(1.10)}
+}
+
+/* Fallback when cross-document View Transitions are unavailable. */
+html.panorama-fallback-next body {
+  animation:fallback-enter-right 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+html.panorama-fallback-prev body {
+  animation:fallback-enter-left 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+body.panorama-fallback-exit-next {
+  animation:fallback-exit-left 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+body.panorama-fallback-exit-prev {
+  animation:fallback-exit-right 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+@keyframes fallback-enter-right { from{transform:translateX(18vw);opacity:.72} to{transform:none;opacity:1} }
+@keyframes fallback-enter-left { from{transform:translateX(-18vw);opacity:.72} to{transform:none;opacity:1} }
+@keyframes fallback-exit-left { from{transform:none;opacity:1} to{transform:translateX(-18vw);opacity:.72} }
+@keyframes fallback-exit-right { from{transform:none;opacity:1} to{transform:translateX(18vw);opacity:.72} }
+
+@media(prefers-reduced-motion:reduce) {
+  ::view-transition-group(root),
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  html.panorama-fallback-next body,
+  html.panorama-fallback-prev body,
+  body.panorama-fallback-exit-next,
+  body.panorama-fallback-exit-prev {
+    animation-duration:.01ms!important;
+  }
+}
+
+</style>
+</head>
+<body>
+<main class="cv-page">
+  <header class="cv-top">
+    <a class="cv-back" href="projects.html">← Projects</a>
+    <span>Portfolio / CV</span>
+    <span>Updated 2026</span>
+  </header>
+  <section class="cv-main">
+    <div>
+      <h1>CV</h1>
+      <p class="cv-copy">
+        Education, engineering experience, technical projects, photography,
+        development work, and additional qualifications.
+      </p>
+    </div>
+    <div class="cv-card">
+      <h2>Artur Tigirlas</h2>
+      <p>Open the complete résumé as a PDF.</p>
+      <a class="cv-open" href="assets/resume.pdf" target="_blank" rel="noopener">
+        <span>Open résumé PDF</span><span>↗</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+
+
+
+<script>
+(() => {
+  const order = ["home.html","photos.html","photos/travel-menu.html","photos/travel.html","photos/pond.html","photos/selected.html","projects.html","cv.html"];
+  let navigating = false;
+
+  function normalizedPath(urlLike) {
+    try {
+      const url = new URL(urlLike, location.href);
+      let path = url.pathname.replace(/^\/+/, "");
+      const marker = "/photos/";
+      if (path.includes(marker)) path = "photos/" + path.split(marker).pop();
+      else path = path.split("/").pop() || "home.html";
+      return decodeURIComponent(path).toLowerCase();
+    } catch (error) {
+      return "";
+    }
+  }
+
+  const currentPath = normalizedPath(location.href);
+  const currentIndex = order.indexOf(currentPath);
+  const supportsCrossDocumentTransition =
+    CSS.supports("view-transition-name", "root");
+
+  function directionFor(href) {
+    const targetIndex = order.indexOf(normalizedPath(href));
+    if (targetIndex === -1 || currentIndex === -1) return "next";
+    return targetIndex >= currentIndex ? "next" : "prev";
+  }
+
+  function navigateTo(href, direction) {
+    if (navigating) return;
+    navigating = true;
+
+    try {
+      sessionStorage.setItem("panorama-direction", direction);
+    } catch (error) {}
+
+    document.documentElement.dataset.panoramaDirection = direction;
+
+    if (supportsCrossDocumentTransition) {
+      location.href = href;
+      return;
+    }
+
+    document.body.classList.add(
+      direction === "next"
+        ? "panorama-fallback-exit-next"
+        : "panorama-fallback-exit-prev"
+    );
+
+    setTimeout(() => { location.href = href; }, 640);
+  }
+
+  document.querySelectorAll('a[href]').forEach(link => {
+    link.addEventListener("click", event => {
+      const href = link.getAttribute("href");
+      if (
+        !href ||
+        href.startsWith("#") ||
+        href.startsWith("javascript:") ||
+        href.startsWith("mailto:") ||
+        event.metaKey || event.ctrlKey || event.shiftKey || event.altKey ||
+        event.button !== 0
+      ) return;
+
+      const targetPath = normalizedPath(href);
+      if (!order.includes(targetPath)) return;
+
+      event.preventDefault();
+      navigateTo(href, directionFor(href));
+    });
+  });
+
+  addEventListener("pageshow", () => {
+    try {
+      const direction = sessionStorage.getItem("panorama-direction");
+      if (!supportsCrossDocumentTransition && (direction === "next" || direction === "prev")) {
+        document.documentElement.classList.add(
+          direction === "prev" ? "panorama-fallback-prev" : "panorama-fallback-next"
+        );
+      }
+
+      setTimeout(() => {
+        sessionStorage.removeItem("panorama-direction");
+        delete document.documentElement.dataset.panoramaDirection;
+        document.documentElement.classList.remove(
+          "panorama-fallback-next",
+          "panorama-fallback-prev"
+        );
+      }, 1000);
+    } catch (error) {}
+  });
+})();
+</script>
+</body>
+</html>

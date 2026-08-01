@@ -245,6 +245,7 @@
       }
     }
 
+
     @media (max-width: 700px) {
       .brand {
         letter-spacing: 0.1em;
@@ -254,7 +255,26 @@
         letter-spacing: 0.17em;
       }
 
+      /* Show the full video frame on narrow screens instead of cropping the headlights. */
+      .bg-video {
+        object-fit: contain;
+        object-position: center center;
+        transform: scale(0.98);
+        background: #020306;
+      }
+
+      body.entering .bg-video {
+        transform: scale(1.015);
+      }
+
+      .light-bloom {
+        bottom: 24%;
+        width: 94vw;
+        height: 16vh;
+        opacity: 0.5;
+      }
     }
+
 
     @media (prefers-reduced-motion: reduce) {
       .intro::after,

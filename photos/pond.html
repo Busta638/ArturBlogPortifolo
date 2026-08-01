@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<script>
+(() => {
+  try {
+    const direction = sessionStorage.getItem("panorama-direction");
+    if (direction === "next" || direction === "prev") {
+      document.documentElement.dataset.panoramaDirection = direction;
+    }
+  } catch (error) {}
+})();
+</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pond Gallery — Artur Tigirlas</title>
@@ -600,7 +612,222 @@
         animation: none;
       }
     }
-  </style>
+  
+
+    /* Fishing interaction — preserves the original pond design */
+    .scene { z-index: 10; }
+    .floating-photo { z-index: 14; }
+    .ripple-ring { z-index: 16; }
+    .bubble { z-index: 17; }
+
+    .fishing-rig {
+      position: fixed;
+      top: 74px;
+      left: 50%;
+      z-index: 35;
+      width: 0;
+      height: 0;
+      pointer-events: none;
+      transition: left .16s ease;
+      --cast-depth: 0px;
+    }
+
+    .fishing-line {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: var(--cast-depth);
+      background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.28));
+      box-shadow: 0 0 5px rgba(255,255,255,.18);
+      transition: height .5s cubic-bezier(.22,.82,.22,1);
+    }
+
+    .fishing-hook {
+      position: absolute;
+      left: -9px;
+      top: calc(var(--cast-depth) - 2px);
+      width: 18px;
+      height: 25px;
+      border: 2px solid rgba(255,255,255,.84);
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-radius: 0 0 15px 15px;
+      transform: rotate(14deg);
+      filter: drop-shadow(0 0 8px rgba(255,255,255,.15));
+      transition: top .5s cubic-bezier(.22,.82,.22,1);
+    }
+
+    .fishing-hook::after {
+      content: "";
+      position: absolute;
+      right: -2px;
+      bottom: 3px;
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid rgba(255,255,255,.84);
+      border-bottom: 2px solid rgba(255,255,255,.84);
+      border-radius: 0 0 8px 0;
+      transform: rotate(22deg);
+    }
+
+    .catch-count {
+      white-space: nowrap;
+      font-size: 13px;
+      opacity: .78;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 760px) {
+      .fishing-rig { top: 124px; }
+      .catch-count { width: 100%; text-align: center; }
+    }
+
+/* TRUE HORIZONTAL CROSS-PAGE PANORAMA */
+@view-transition { navigation: auto; }
+
+::view-transition-group(root) {
+  animation-duration: 920ms;
+  animation-timing-function: cubic-bezier(.22,.82,.22,1);
+}
+
+::view-transition-image-pair(root) {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 920ms;
+  animation-timing-function: cubic-bezier(.22,.82,.22,1);
+  mix-blend-mode: normal;
+  height: 100%;
+}
+
+html[data-panorama-direction="next"]::view-transition-old(root) {
+  animation:
+    panorama-old-left 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-old-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="next"]::view-transition-new(root) {
+  animation:
+    panorama-new-right 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-new-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="prev"]::view-transition-old(root) {
+  animation:
+    panorama-old-right 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-old-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="prev"]::view-transition-new(root) {
+  animation:
+    panorama-new-left 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-new-color-hard 920ms ease-in-out;
+}
+
+::view-transition-image-pair(root)::after {
+  content:"";
+  position:absolute;
+  inset:-4%;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(17,34,59,.42) 0%,
+      rgba(74,16,20,.30) 30%,
+      rgba(214,72,56,.58) 49%,
+      rgba(242,174,133,.42) 54%,
+      rgba(28,53,80,.34) 70%,
+      transparent 100%
+    );
+  mix-blend-mode:screen;
+  filter:blur(7px) saturate(1.28);
+  opacity:0;
+  animation:panoramaBlendFlashHard 920ms ease-in-out;
+}
+
+::view-transition-image-pair(root)::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(255,212,186,.30) 0%,
+      rgba(194,49,37,.24) 24%,
+      rgba(19,35,60,.18) 48%,
+      transparent 72%
+    );
+  mix-blend-mode:color-dodge;
+  opacity:0;
+  animation:panoramaCenterBloomHard 920ms ease-in-out;
+}
+
+@keyframes panorama-old-left { from{transform:translateX(0)} to{transform:translateX(-100%)} }
+@keyframes panorama-new-right { from{transform:translateX(100%)} to{transform:translateX(0)} }
+@keyframes panorama-old-right { from{transform:translateX(0)} to{transform:translateX(100%)} }
+@keyframes panorama-new-left { from{transform:translateX(-100%)} to{transform:translateX(0)} }
+
+@keyframes panorama-old-color-hard {
+  0%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
+  38%{filter:saturate(.88) hue-rotate(-14deg) brightness(.90) contrast(1.05)}
+  72%{filter:saturate(.72) hue-rotate(-22deg) brightness(.72) contrast(1.12)}
+  100%{filter:saturate(.64) hue-rotate(-26deg) brightness(.58) contrast(1.14)}
+}
+@keyframes panorama-new-color-hard {
+  0%{filter:saturate(.60) hue-rotate(24deg) brightness(.56) contrast(1.14)}
+  30%{filter:saturate(.72) hue-rotate(18deg) brightness(.68) contrast(1.12)}
+  64%{filter:saturate(.88) hue-rotate(8deg) brightness(.88) contrast(1.05)}
+  100%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
+}
+@keyframes panoramaBlendFlashHard {
+  0%,100%{opacity:0}
+  28%{opacity:.20}
+  45%{opacity:.62}
+  54%{opacity:.88}
+  66%{opacity:.42}
+  78%{opacity:.12}
+}
+@keyframes panoramaCenterBloomHard {
+  0%,100%{opacity:0;transform:scale(.96)}
+  42%{opacity:.18;transform:scale(1)}
+  52%{opacity:.58;transform:scale(1.06)}
+  64%{opacity:.22;transform:scale(1.10)}
+}
+
+/* Fallback when cross-document View Transitions are unavailable. */
+html.panorama-fallback-next body {
+  animation:fallback-enter-right 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+html.panorama-fallback-prev body {
+  animation:fallback-enter-left 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+body.panorama-fallback-exit-next {
+  animation:fallback-exit-left 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+body.panorama-fallback-exit-prev {
+  animation:fallback-exit-right 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+@keyframes fallback-enter-right { from{transform:translateX(18vw);opacity:.72} to{transform:none;opacity:1} }
+@keyframes fallback-enter-left { from{transform:translateX(-18vw);opacity:.72} to{transform:none;opacity:1} }
+@keyframes fallback-exit-left { from{transform:none;opacity:1} to{transform:translateX(-18vw);opacity:.72} }
+@keyframes fallback-exit-right { from{transform:none;opacity:1} to{transform:translateX(18vw);opacity:.72} }
+
+@media(prefers-reduced-motion:reduce) {
+  ::view-transition-group(root),
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  html.panorama-fallback-next body,
+  html.panorama-fallback-prev body,
+  body.panorama-fallback-exit-next,
+  body.panorama-fallback-exit-prev {
+    animation-duration:.01ms!important;
+  }
+}
+
+</style>
 </head>
 <body>
   <main id="pond" class="pond" aria-label="Automatic ripple photo gallery">
@@ -614,9 +841,15 @@
     <nav class="toolbar">
       <a href="travel-menu.html">← Travel</a>
       <strong>Pond Gallery</strong>
-      <span class="toolbar-note">A few ripples appear on their own — click a photo to enlarge it</span>
-      <button id="nextButton" type="button">Ripple now</button>
+      <span class="toolbar-note">Move the hook, then click the water to catch a random photo</span>
+      <button id="nextButton" type="button">Cast line</button>
+      <span id="catchCount" class="catch-count">Caught 0</span>
     </nav>
+
+    <div id="fishingRig" class="fishing-rig" aria-hidden="true">
+      <span class="fishing-line"></span>
+      <span class="fishing-hook"></span>
+    </div>
 
     <p id="emptyMessage" class="empty-message" hidden>
       Add JPG, JPEG, PNG, or WEBP files to <strong>photos/travel-photos</strong>, run
@@ -639,6 +872,8 @@
     const lightbox = document.getElementById("lightbox");
     const largeImage = document.getElementById("largeImage");
     const largeDate = document.getElementById("largeDate");
+    const fishingRig = document.getElementById("fishingRig");
+    const catchCount = document.getElementById("catchCount");
 
     const sourcePhotos = Array.isArray(window.TRAVEL_PHOTOS)
       ? [...window.TRAVEL_PHOTOS]
@@ -650,6 +885,9 @@
     let photoQueue = [];
     let activeScenes = [];
     let automaticTimer = null;
+    let isCasting = false;
+    let rigX = window.innerWidth / 2;
+    let caughtTotal = 0;
 
     function shuffle(items) {
       const copy = [...items];
@@ -833,7 +1071,7 @@
       sceneElement.remove();
     }
 
-    function createRippleScene() {
+    function createRippleScene(pointOverride = null) {
       if (!sourcePhotos.length || lightbox.classList.contains("open")) {
         return;
       }
@@ -842,8 +1080,10 @@
         return;
       }
 
-      const point = getRandomPoint();
+      const point = pointOverride || getRandomPoint();
       const photo = getNextPhoto();
+      caughtTotal += 1;
+      catchCount.textContent = `Caught ${caughtTotal}`;
       const scene = document.createElement("section");
       const figure = document.createElement("figure");
       const image = document.createElement("img");
@@ -908,21 +1148,44 @@
       );
     }
 
-    function startAutomaticRipples() {
-      clearInterval(automaticTimer);
-      automaticTimer = window.setInterval(() => {
-        if (lightbox.classList.contains("open")) {
-          return;
-        }
+    function setRigX(x) {
+      rigX = Math.max(34, Math.min(window.innerWidth - 34, x));
+      fishingRig.style.left = `${rigX}px`;
+    }
 
-        if (activeScenes.length < maximumScenes) {
-          createRippleScene();
-        }
-      }, 1850);
+    function castAt(point) {
+      if (isCasting || lightbox.classList.contains("open") || !sourcePhotos.length) return;
+      isCasting = true;
+      setRigX(point.x);
+      const depth = Math.max(80, point.y - 74);
+      fishingRig.style.setProperty("--cast-depth", `${depth}px`);
+
+      window.setTimeout(() => createRippleScene(point), 420);
+      window.setTimeout(() => fishingRig.style.setProperty("--cast-depth", "0px"), 980);
+      window.setTimeout(() => { isCasting = false; }, 1450);
     }
 
     nextButton.addEventListener("click", () => {
-      createRippleScene();
+      castAt({ x: rigX, y: Math.max(260, window.innerHeight * 0.56) });
+    });
+
+    pond.addEventListener("pointermove", (event) => {
+      if (isCasting || event.target.closest(".toolbar")) return;
+      setRigX(event.clientX);
+    });
+
+    pond.addEventListener("click", (event) => {
+      if (
+        event.target.closest(".toolbar") ||
+        event.target.closest(".floating-photo") ||
+        lightbox.classList.contains("open")
+      ) return;
+
+      const point = {
+        x: Math.max(60, Math.min(window.innerWidth - 60, event.clientX)),
+        y: Math.max(220, Math.min(window.innerHeight - 90, event.clientY))
+      };
+      castAt(point);
     });
 
     lightbox.addEventListener("click", closeLightbox);
@@ -932,8 +1195,9 @@
         closeLightbox();
       }
 
-      if (event.key === "ArrowRight" && !lightbox.classList.contains("open")) {
-        createRippleScene();
+      if ((event.key === " " || event.key === "Enter") && !lightbox.classList.contains("open")) {
+        event.preventDefault();
+        castAt({ x: rigX, y: Math.max(260, window.innerHeight * 0.56) });
       }
     });
 
@@ -943,15 +1207,109 @@
     window.addEventListener("resize", () => {
       buildWaterHalftone();
       buildSandHalftone();
+      setRigX(rigX);
     });
 
-    if (sourcePhotos.length) {
-      window.setTimeout(createRippleScene, 550);
-      window.setTimeout(createRippleScene, 1450);
-      startAutomaticRipples();
-    } else {
+    setRigX(window.innerWidth / 2);
+
+    if (!sourcePhotos.length) {
       emptyMessage.hidden = false;
     }
   </script>
+
+<script>
+(() => {
+  const order = ["home.html","photos.html","photos/travel-menu.html","photos/travel.html","photos/pond.html","photos/selected.html","projects.html","cv.html"];
+  let navigating = false;
+
+  function normalizedPath(urlLike) {
+    try {
+      const url = new URL(urlLike, location.href);
+      let path = url.pathname.replace(/^\/+/, "");
+      const marker = "/photos/";
+      if (path.includes(marker)) path = "photos/" + path.split(marker).pop();
+      else path = path.split("/").pop() || "home.html";
+      return decodeURIComponent(path).toLowerCase();
+    } catch (error) {
+      return "";
+    }
+  }
+
+  const currentPath = normalizedPath(location.href);
+  const currentIndex = order.indexOf(currentPath);
+  const supportsCrossDocumentTransition =
+    CSS.supports("view-transition-name", "root");
+
+  function directionFor(href) {
+    const targetIndex = order.indexOf(normalizedPath(href));
+    if (targetIndex === -1 || currentIndex === -1) return "next";
+    return targetIndex >= currentIndex ? "next" : "prev";
+  }
+
+  function navigateTo(href, direction) {
+    if (navigating) return;
+    navigating = true;
+
+    try {
+      sessionStorage.setItem("panorama-direction", direction);
+    } catch (error) {}
+
+    document.documentElement.dataset.panoramaDirection = direction;
+
+    if (supportsCrossDocumentTransition) {
+      location.href = href;
+      return;
+    }
+
+    document.body.classList.add(
+      direction === "next"
+        ? "panorama-fallback-exit-next"
+        : "panorama-fallback-exit-prev"
+    );
+
+    setTimeout(() => { location.href = href; }, 640);
+  }
+
+  document.querySelectorAll('a[href]').forEach(link => {
+    link.addEventListener("click", event => {
+      const href = link.getAttribute("href");
+      if (
+        !href ||
+        href.startsWith("#") ||
+        href.startsWith("javascript:") ||
+        href.startsWith("mailto:") ||
+        event.metaKey || event.ctrlKey || event.shiftKey || event.altKey ||
+        event.button !== 0
+      ) return;
+
+      const targetPath = normalizedPath(href);
+      if (!order.includes(targetPath)) return;
+
+      event.preventDefault();
+      navigateTo(href, directionFor(href));
+    });
+  });
+
+  addEventListener("pageshow", () => {
+    try {
+      const direction = sessionStorage.getItem("panorama-direction");
+      if (!supportsCrossDocumentTransition && (direction === "next" || direction === "prev")) {
+        document.documentElement.classList.add(
+          direction === "prev" ? "panorama-fallback-prev" : "panorama-fallback-next"
+        );
+      }
+
+      setTimeout(() => {
+        sessionStorage.removeItem("panorama-direction");
+        delete document.documentElement.dataset.panoramaDirection;
+        document.documentElement.classList.remove(
+          "panorama-fallback-next",
+          "panorama-fallback-prev"
+        );
+      }, 1000);
+    } catch (error) {}
+  });
+})();
+</script>
 </body>
 </html>

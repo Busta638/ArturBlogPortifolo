@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<script>
+(() => {
+  try {
+    const direction = sessionStorage.getItem("panorama-direction");
+    if (direction === "next" || direction === "prev") {
+      document.documentElement.dataset.panoramaDirection = direction;
+    }
+  } catch (error) {}
+})();
+</script>
+
+
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — Artur Tigirlas</title>
@@ -126,11 +141,11 @@
 
     .intro {
       width: min(1380px, calc(100% - 36px));
-      min-height: 92vh;
+      min-height: 0;
       margin: 0 auto;
       display: grid;
-      align-content: end;
-      padding: 150px 0 84px;
+      align-content: start;
+      padding: 132px 0 46px;
     }
 
     .eyebrow {
@@ -156,7 +171,7 @@
       justify-content: space-between;
       align-items: end;
       gap: 40px;
-      margin-top: 44px;
+      margin-top: 30px;
     }
 
     .intro-copy {
@@ -211,7 +226,7 @@
 
     .project {
       position: relative;
-      min-height: 180vh;
+      min-height: 148vh;
       border-top: 1px solid var(--line);
     }
 
@@ -384,7 +399,7 @@
     .journal {
       width: min(880px, calc(100% - 36px));
       margin: 0 auto;
-      padding: 130px 0 150px;
+      padding: 72px 0 92px;
     }
 
     .journal-label {
@@ -407,8 +422,8 @@
       display: grid;
       grid-template-columns: 150px minmax(0, 1fr);
       gap: 34px;
-      margin-top: 60px;
-      padding-top: 26px;
+      margin-top: 36px;
+      padding-top: 20px;
       border-top: 1px solid var(--line);
     }
 
@@ -459,7 +474,8 @@
       .index-link { display: none; }
 
       .intro {
-        min-height: 82vh;
+        min-height: 0;
+        padding: 76px 0 24px;
       }
 
       .intro-bottom,
@@ -482,7 +498,7 @@
       .project-shell {
         position: relative;
         min-height: auto;
-        padding: 100px 0 70px;
+        padding: 58px 0 28px;
       }
 
       .stage {
@@ -501,15 +517,26 @@
         justify-self: start;
       }
 
+      .journal {
+        padding: 28px 0 48px;
+      }
+
       .journal-entry {
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 8px;
+        margin-top: 18px;
+        padding-top: 12px;
       }
     }
 
     @media (max-width: 560px) {
       .site-header {
         border-radius: 18px;
+      }
+
+      .intro {
+        padding-top: 92px;
+        padding-bottom: 24px;
       }
 
       .home-link {
@@ -522,7 +549,19 @@
       }
 
       h1 {
-        font-size: clamp(62px, 22vw, 105px);
+        font-size: clamp(58px, 19vw, 92px);
+      }
+
+      .intro-copy {
+        font-size: 18px;
+      }
+
+      .project h2 {
+        font-size: clamp(43px, 15vw, 72px);
+      }
+
+      .journal h3 {
+        font-size: clamp(38px, 12vw, 62px);
       }
 
       .project-index a {
@@ -551,7 +590,152 @@
         transition-duration: .01ms !important;
       }
     }
-  </style>
+  
+
+/* TRUE HORIZONTAL CROSS-PAGE PANORAMA */
+@view-transition { navigation: auto; }
+
+::view-transition-group(root) {
+  animation-duration: 920ms;
+  animation-timing-function: cubic-bezier(.22,.82,.22,1);
+}
+
+::view-transition-image-pair(root) {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 920ms;
+  animation-timing-function: cubic-bezier(.22,.82,.22,1);
+  mix-blend-mode: normal;
+  height: 100%;
+}
+
+html[data-panorama-direction="next"]::view-transition-old(root) {
+  animation:
+    panorama-old-left 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-old-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="next"]::view-transition-new(root) {
+  animation:
+    panorama-new-right 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-new-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="prev"]::view-transition-old(root) {
+  animation:
+    panorama-old-right 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-old-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="prev"]::view-transition-new(root) {
+  animation:
+    panorama-new-left 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-new-color-hard 920ms ease-in-out;
+}
+
+::view-transition-image-pair(root)::after {
+  content:"";
+  position:absolute;
+  inset:-4%;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(17,34,59,.42) 0%,
+      rgba(74,16,20,.30) 30%,
+      rgba(214,72,56,.58) 49%,
+      rgba(242,174,133,.42) 54%,
+      rgba(28,53,80,.34) 70%,
+      transparent 100%
+    );
+  mix-blend-mode:screen;
+  filter:blur(7px) saturate(1.28);
+  opacity:0;
+  animation:panoramaBlendFlashHard 920ms ease-in-out;
+}
+
+::view-transition-image-pair(root)::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(255,212,186,.30) 0%,
+      rgba(194,49,37,.24) 24%,
+      rgba(19,35,60,.18) 48%,
+      transparent 72%
+    );
+  mix-blend-mode:color-dodge;
+  opacity:0;
+  animation:panoramaCenterBloomHard 920ms ease-in-out;
+}
+
+@keyframes panorama-old-left { from{transform:translateX(0)} to{transform:translateX(-100%)} }
+@keyframes panorama-new-right { from{transform:translateX(100%)} to{transform:translateX(0)} }
+@keyframes panorama-old-right { from{transform:translateX(0)} to{transform:translateX(100%)} }
+@keyframes panorama-new-left { from{transform:translateX(-100%)} to{transform:translateX(0)} }
+
+@keyframes panorama-old-color-hard {
+  0%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
+  38%{filter:saturate(.88) hue-rotate(-14deg) brightness(.90) contrast(1.05)}
+  72%{filter:saturate(.72) hue-rotate(-22deg) brightness(.72) contrast(1.12)}
+  100%{filter:saturate(.64) hue-rotate(-26deg) brightness(.58) contrast(1.14)}
+}
+@keyframes panorama-new-color-hard {
+  0%{filter:saturate(.60) hue-rotate(24deg) brightness(.56) contrast(1.14)}
+  30%{filter:saturate(.72) hue-rotate(18deg) brightness(.68) contrast(1.12)}
+  64%{filter:saturate(.88) hue-rotate(8deg) brightness(.88) contrast(1.05)}
+  100%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
+}
+@keyframes panoramaBlendFlashHard {
+  0%,100%{opacity:0}
+  28%{opacity:.20}
+  45%{opacity:.62}
+  54%{opacity:.88}
+  66%{opacity:.42}
+  78%{opacity:.12}
+}
+@keyframes panoramaCenterBloomHard {
+  0%,100%{opacity:0;transform:scale(.96)}
+  42%{opacity:.18;transform:scale(1)}
+  52%{opacity:.58;transform:scale(1.06)}
+  64%{opacity:.22;transform:scale(1.10)}
+}
+
+/* Fallback when cross-document View Transitions are unavailable. */
+html.panorama-fallback-next body {
+  animation:fallback-enter-right 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+html.panorama-fallback-prev body {
+  animation:fallback-enter-left 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+body.panorama-fallback-exit-next {
+  animation:fallback-exit-left 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+body.panorama-fallback-exit-prev {
+  animation:fallback-exit-right 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+@keyframes fallback-enter-right { from{transform:translateX(18vw);opacity:.72} to{transform:none;opacity:1} }
+@keyframes fallback-enter-left { from{transform:translateX(-18vw);opacity:.72} to{transform:none;opacity:1} }
+@keyframes fallback-exit-left { from{transform:none;opacity:1} to{transform:translateX(-18vw);opacity:.72} }
+@keyframes fallback-exit-right { from{transform:none;opacity:1} to{transform:translateX(18vw);opacity:.72} }
+
+@media(prefers-reduced-motion:reduce) {
+  ::view-transition-group(root),
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  html.panorama-fallback-next body,
+  html.panorama-fallback-prev body,
+  body.panorama-fallback-exit-next,
+  body.panorama-fallback-exit-prev {
+    animation-duration:.01ms!important;
+  }
+}
+
+</style>
 </head>
 
 <body class="night">
@@ -568,7 +752,6 @@
 
   <main>
     <section class="intro">
-      <p class="eyebrow">Selected builds / experiments / ongoing work</p>
       <h1>Projects</h1>
 
       <div class="intro-bottom">
@@ -891,5 +1074,102 @@
       }, { passive: false });
     });
   </script>
+
+
+
+<script>
+(() => {
+  const order = ["home.html","photos.html","photos/travel-menu.html","photos/travel.html","photos/pond.html","photos/selected.html","projects.html","cv.html"];
+  let navigating = false;
+
+  function normalizedPath(urlLike) {
+    try {
+      const url = new URL(urlLike, location.href);
+      let path = url.pathname.replace(/^\/+/, "");
+      const marker = "/photos/";
+      if (path.includes(marker)) path = "photos/" + path.split(marker).pop();
+      else path = path.split("/").pop() || "home.html";
+      return decodeURIComponent(path).toLowerCase();
+    } catch (error) {
+      return "";
+    }
+  }
+
+  const currentPath = normalizedPath(location.href);
+  const currentIndex = order.indexOf(currentPath);
+  const supportsCrossDocumentTransition =
+    CSS.supports("view-transition-name", "root");
+
+  function directionFor(href) {
+    const targetIndex = order.indexOf(normalizedPath(href));
+    if (targetIndex === -1 || currentIndex === -1) return "next";
+    return targetIndex >= currentIndex ? "next" : "prev";
+  }
+
+  function navigateTo(href, direction) {
+    if (navigating) return;
+    navigating = true;
+
+    try {
+      sessionStorage.setItem("panorama-direction", direction);
+    } catch (error) {}
+
+    document.documentElement.dataset.panoramaDirection = direction;
+
+    if (supportsCrossDocumentTransition) {
+      location.href = href;
+      return;
+    }
+
+    document.body.classList.add(
+      direction === "next"
+        ? "panorama-fallback-exit-next"
+        : "panorama-fallback-exit-prev"
+    );
+
+    setTimeout(() => { location.href = href; }, 640);
+  }
+
+  document.querySelectorAll('a[href]').forEach(link => {
+    link.addEventListener("click", event => {
+      const href = link.getAttribute("href");
+      if (
+        !href ||
+        href.startsWith("#") ||
+        href.startsWith("javascript:") ||
+        href.startsWith("mailto:") ||
+        event.metaKey || event.ctrlKey || event.shiftKey || event.altKey ||
+        event.button !== 0
+      ) return;
+
+      const targetPath = normalizedPath(href);
+      if (!order.includes(targetPath)) return;
+
+      event.preventDefault();
+      navigateTo(href, directionFor(href));
+    });
+  });
+
+  addEventListener("pageshow", () => {
+    try {
+      const direction = sessionStorage.getItem("panorama-direction");
+      if (!supportsCrossDocumentTransition && (direction === "next" || direction === "prev")) {
+        document.documentElement.classList.add(
+          direction === "prev" ? "panorama-fallback-prev" : "panorama-fallback-next"
+        );
+      }
+
+      setTimeout(() => {
+        sessionStorage.removeItem("panorama-direction");
+        delete document.documentElement.dataset.panoramaDirection;
+        document.documentElement.classList.remove(
+          "panorama-fallback-next",
+          "panorama-fallback-prev"
+        );
+      }, 1000);
+    } catch (error) {}
+  });
+})();
+</script>
 </body>
 </html>
