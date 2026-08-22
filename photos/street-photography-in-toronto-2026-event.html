@@ -127,11 +127,6 @@ h1 {
   column-gap: 18px;
 }
 
-/* keep the gallery hidden while all photos are loading.
-   this stops the masonry from visibly shifting down as images finish loading. */
-.gallery.is-loading {
-  visibility: hidden;
-}
 .photo {
   break-inside: avoid;
   margin: 0 0 18px;
@@ -503,39 +498,75 @@ if (!eventPhotos.length) {
     through <code>photos-data.js</code>.
   `;
 } else {
-  // hide the finished masonry until every image has loaded.
-  // this prevents the photos from visibly dropping into place one by one on mobile.
-  gallery.classList.add("is-loading");
+  /*
+    split the event into four chunks.
 
-  const loadPromises = eventPhotos.map(photo => {
-    return new Promise(resolve => {
+    the first quarter gets loaded and shown first so the person has photos
+    to look at quickly. the other three quarters keep loading automatically
+    in the background and each quarter appears together when it is ready.
+  */
+  const chunkSize = Math.ceil(eventPhotos.length / 4);
+  const photoChunks = [];
+
+  for (let start = 0; start < eventPhotos.length; start += chunkSize) {
+    photoChunks.push(eventPhotos.slice(start, start + chunkSize));
+  }
+
+  // preloads one whole quarter before adding it to the visible masonry.
+  // this keeps each new section clean instead of dropping photos in one by one.
+  async function loadPhotoChunk(chunk, chunkIndex) {
+    const readyPhotos = await Promise.all(
+      chunk.map(photo => {
+        return new Promise(resolve => {
+          const preload = new Image();
+          preload.src = photo.src;
+          preload.decoding = "async";
+
+          const finish = () => resolve(photo);
+          preload.addEventListener("load", finish, { once: true });
+          preload.addEventListener("error", finish, { once: true });
+
+          // browser cache can finish before the listener gets a chance to fire.
+          if (preload.complete) resolve(photo);
+        });
+      })
+    );
+
+    const fragment = document.createDocumentFragment();
+
+    readyPhotos.forEach(photo => {
       const figure = document.createElement("figure");
       figure.className = "photo";
 
       const img = document.createElement("img");
       img.src = photo.src;
       img.alt = "";
-      img.loading = "eager";
       img.decoding = "async";
 
-      const finish = () => resolve();
-      img.addEventListener("load", finish, { once: true });
-      img.addEventListener("error", finish, { once: true });
+      // first quarter is already needed immediately.
+      // later quarters are already preloaded by the time they are inserted.
+      img.loading = chunkIndex === 0 ? "eager" : "lazy";
 
       figure.appendChild(img);
       figure.addEventListener("click", () => openPhotoLightbox(photo));
-      gallery.appendChild(figure);
-
-      // cached images can already be complete before the load listener fires.
-      if (img.complete) resolve();
+      fragment.appendChild(figure);
     });
-  });
 
-  Promise.all(loadPromises).then(() => {
-    requestAnimationFrame(() => {
-      gallery.classList.remove("is-loading");
-    });
-  });
+    gallery.appendChild(fragment);
+  }
+
+  // show quarter one first, then keep loading 2, 3 and 4 automatically.
+  async function loadGalleryInQuarters() {
+    for (let i = 0; i < photoChunks.length; i++) {
+      await loadPhotoChunk(photoChunks[i], i);
+
+      // gives the browser one frame to paint the quarter that just finished
+      // before it starts working on the next group.
+      await new Promise(resolve => requestAnimationFrame(resolve));
+    }
+  }
+
+  loadGalleryInQuarters();
 }
 </script>
 </body>

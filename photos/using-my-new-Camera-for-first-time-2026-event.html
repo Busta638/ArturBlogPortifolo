@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-/* Clean nested GitHub Pages URL: /photos/<page-name> */
-(() => {
-  const cleanPath = '/photos/using-my-new-camera-for-first-time-2026';
-  const currentPath = window.location.pathname;
-  if (currentPath.endsWith("/using-my-new-Camera-for-first-time-2026-event.html")) {
-    window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
-  }
-})();
-</script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Using my New camera for first Time 2026... — Artur Tigirlas</title>
@@ -348,7 +337,7 @@ footer {
 </head>
 <body>
 <header>
-  <a href="/photos/photography">← Photography</a>
+  <a href="selected.html">← Photography</a>
   <span>Event</span>
 </header>
 
@@ -497,19 +486,75 @@ if (!eventPhotos.length) {
     through <code>photos-data.js</code>.
   `;
 } else {
-  eventPhotos.forEach(photo => {
-    const figure = document.createElement("figure");
-    figure.className = "photo";
+  /*
+    split the event into four chunks.
 
-    const img = document.createElement("img");
-    img.src = photo.src;
-    img.alt = "";
-    img.loading = "lazy";
+    the first quarter gets loaded and shown first so the person has photos
+    to look at quickly. the other three quarters keep loading automatically
+    in the background and each quarter appears together when it is ready.
+  */
+  const chunkSize = Math.ceil(eventPhotos.length / 4);
+  const photoChunks = [];
 
-    figure.appendChild(img);
-    figure.addEventListener("click", () => openPhotoLightbox(photo));
-    gallery.appendChild(figure);
-  });
+  for (let start = 0; start < eventPhotos.length; start += chunkSize) {
+    photoChunks.push(eventPhotos.slice(start, start + chunkSize));
+  }
+
+  // preloads one whole quarter before adding it to the visible masonry.
+  // this keeps each new section clean instead of dropping photos in one by one.
+  async function loadPhotoChunk(chunk, chunkIndex) {
+    const readyPhotos = await Promise.all(
+      chunk.map(photo => {
+        return new Promise(resolve => {
+          const preload = new Image();
+          preload.src = photo.src;
+          preload.decoding = "async";
+
+          const finish = () => resolve(photo);
+          preload.addEventListener("load", finish, { once: true });
+          preload.addEventListener("error", finish, { once: true });
+
+          // browser cache can finish before the listener gets a chance to fire.
+          if (preload.complete) resolve(photo);
+        });
+      })
+    );
+
+    const fragment = document.createDocumentFragment();
+
+    readyPhotos.forEach(photo => {
+      const figure = document.createElement("figure");
+      figure.className = "photo";
+
+      const img = document.createElement("img");
+      img.src = photo.src;
+      img.alt = "";
+      img.decoding = "async";
+
+      // first quarter is already needed immediately.
+      // later quarters are already preloaded by the time they are inserted.
+      img.loading = chunkIndex === 0 ? "eager" : "lazy";
+
+      figure.appendChild(img);
+      figure.addEventListener("click", () => openPhotoLightbox(photo));
+      fragment.appendChild(figure);
+    });
+
+    gallery.appendChild(fragment);
+  }
+
+  // show quarter one first, then keep loading 2, 3 and 4 automatically.
+  async function loadGalleryInQuarters() {
+    for (let i = 0; i < photoChunks.length; i++) {
+      await loadPhotoChunk(photoChunks[i], i);
+
+      // gives the browser one frame to paint the quarter that just finished
+      // before it starts working on the next group.
+      await new Promise(resolve => requestAnimationFrame(resolve));
+    }
+  }
+
+  loadGalleryInQuarters();
 }
 </script>
 </body>
