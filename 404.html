@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting…</title>
+
+  <script>
+  /*
+    GitHub Pages clean URL recovery.
+
+    Some pages hide .html with history.replaceState().
+    If the browser later reloads one of those clean URLs, GitHub Pages
+    can send us here because that clean path is not a real file.
+
+    This page sends those clean URLs back to their real HTML files.
+    Once the real page loads, its own clean URL script hides .html again.
+  */
+  (() => {
+    const path = window.location.pathname;
+    const search = window.location.search;
+    const hash = window.location.hash;
+
+    // clean names that do not directly match their real HTML filename
+    const routes = {
+      "/home": "/home.html",
+      "/photos": "/photos.html",
+      "/projects": "/projects.html",
+      "/cv": "/cv.html",
+
+      "/photos/photography": "/photos/selected.html",
+      "/photos/FilmSim": "/photos/FilmSim.html",
+      "/photos/filmsim": "/photos/FilmSim.html",
+      "/photos/travel-archive": "/photos/travel-menu.html",
+      "/photos/pond-gallery": "/photos/pond.html"
+    };
+
+    let target = routes[path];
+
+    // event pages use the same clean name as their HTML file,
+    // just without the .html extension.
+    if (!target && path.startsWith("/photos/") && path.endsWith("-event")) {
+      target = path + ".html";
+    }
+
+    // generic fallback for any other clean path that simply hides .html.
+    // keeps this useful if another page gets a matching clean URL later.
+    if (!target && path !== "/" && !path.includes(".")) {
+      target = path + ".html";
+    }
+
+    if (target) {
+      window.location.replace(target + search + hash);
+    }
+  })();
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: "Times New Roman", Times, serif;
+      color: #f2f6f9;
+      background:
+        radial-gradient(circle at 70% 20%, rgba(126,185,232,.12), transparent 28rem),
+        #071018;
+    }
+
+    main {
+      max-width: 620px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(42px, 8vw, 82px);
+      font-weight: normal;
+    }
+
+    p {
+      margin: 0;
+      color: #91a4b5;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #f2f6f9;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Page not found.</h1>
+    <p>
+      If this was one of the portfolio's clean URLs, it should redirect automatically.
+      Otherwise, <a href="/index.html">return to the site</a>.
+    </p>
+  </main>
+</body>
+</html>

@@ -126,6 +126,12 @@ h1 {
   columns: 2 420px;
   column-gap: 18px;
 }
+
+/* keep the gallery hidden while all photos are loading.
+   this stops the masonry from visibly shifting down as images finish loading. */
+.gallery.is-loading {
+  visibility: hidden;
+}
 .photo {
   break-inside: avoid;
   margin: 0 0 18px;
@@ -497,18 +503,38 @@ if (!eventPhotos.length) {
     through <code>photos-data.js</code>.
   `;
 } else {
-  eventPhotos.forEach(photo => {
-    const figure = document.createElement("figure");
-    figure.className = "photo";
+  // hide the finished masonry until every image has loaded.
+  // this prevents the photos from visibly dropping into place one by one on mobile.
+  gallery.classList.add("is-loading");
 
-    const img = document.createElement("img");
-    img.src = photo.src;
-    img.alt = "";
-    img.loading = "lazy";
+  const loadPromises = eventPhotos.map(photo => {
+    return new Promise(resolve => {
+      const figure = document.createElement("figure");
+      figure.className = "photo";
 
-    figure.appendChild(img);
-    figure.addEventListener("click", () => openPhotoLightbox(photo));
-    gallery.appendChild(figure);
+      const img = document.createElement("img");
+      img.src = photo.src;
+      img.alt = "";
+      img.loading = "eager";
+      img.decoding = "async";
+
+      const finish = () => resolve();
+      img.addEventListener("load", finish, { once: true });
+      img.addEventListener("error", finish, { once: true });
+
+      figure.appendChild(img);
+      figure.addEventListener("click", () => openPhotoLightbox(photo));
+      gallery.appendChild(figure);
+
+      // cached images can already be complete before the load listener fires.
+      if (img.complete) resolve();
+    });
+  });
+
+  Promise.all(loadPromises).then(() => {
+    requestAnimationFrame(() => {
+      gallery.classList.remove("is-loading");
+    });
   });
 }
 </script>
