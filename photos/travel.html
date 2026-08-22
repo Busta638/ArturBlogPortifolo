@@ -1642,25 +1642,62 @@ allPhotos.forEach(photo=>{
   rollMap.get(event).push(photo);
 });
 
-function rollTimestamp(rollName){
-  const rollPhotos=rollMap.get(rollName)||[];
+// Manual dates for each roll.
+// These are the dates I provided for each photo set.
+// The actual image file dates are NOT used for roll sorting because Lightroom
+// exports can change metadata/file dates when I replace photos with 2049px versions.
+const ROLL_DATES={
+  "blue-jays-game-my-first-baseball-game":"June 22, 2025",
+  "burlington-beach-walk-2026":"June 3, 2026",
+  "burlington-bridge-on-the-ice-2025":"February 9, 2026",
+  "first-time-doing-portiort-2024":"May 1, 2024",
+  "hiking-with-ben-june-6-2026":"June 6, 2026",
+  "hiking-with-sister-camping":"",
+  "import-expo-2024":"April 21, 2024",
+  "importfest-2024-drift-event":"August 18, 2024",
+  "importfest-2025-drift-event":"June 18, 2025",
+  "importfest-aug-8-2026-drift-event":"Aug 8, 2026",
+  "jordan-harbour-light-2026":"June 29, 2026",
+  "photos-from-school-2025":"March 12, 2025",
+  "random-stuff":"Random.",
+  "street-photography-in-toronto-2025":"January 5, 2026",
+  "street-photography-in-toronto-2026":"July 8, 2026",
+  "toronto-autoshow-2024":"March 2, 2024",
+  "toronto-autoshow-2025":"February 19, 2025",
+  "toronto-autoshow-2026":"February 22, 2026",
+  "track-and-field-at-my-highschool-2024":"May 15, 2024",
+  "using-my-first-camera-while-hiking-2024":"March 12, 2024",
+  "using-my-new-camera-for-first-time-2026":"January 5, 2026",
+  "walk-to-parking-lot-at-school-2025":"March 5, 2025",
+  "walk-with-girlfriend-2024":"October 18, 2024",
+  "walk-with-girlfriend-aug-2026":"August 5, 2026",
+  "walk-with-girlfriend-march-2025":"March 19, 2025"
+};
 
-  const timestamps=rollPhotos
-    .map(photo=>String(photo?.date||"").trim())
-    .filter(Boolean)
-    .map(value=>{
-      const date=/^\d{4}-\d{2}-\d{2}$/.test(value)
-        ? new Date(`${value}T12:00:00`)
-        : new Date(value);
-
-      return date.getTime();
-    })
-    .filter(Number.isFinite);
-
-  return timestamps.length ? Math.max(...timestamps) : -Infinity;
+function normalizeRollKey(value){
+  return String(value||"")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g,"")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g,"-")
+    .replace(/^-+|-+$/g,"");
 }
 
-// Newest photo events first. Rolls without a usable date go last.
+function rollTimestamp(rollName){
+  const value=ROLL_DATES[normalizeRollKey(rollName)]||"";
+  if(!value)return -Infinity;
+
+  const text=String(value).trim();
+  const date=/^\d{4}-\d{2}-\d{2}$/.test(text)
+    ? new Date(`${text}T12:00:00`)
+    : new Date(text);
+
+  const timestamp=date.getTime();
+  return Number.isFinite(timestamp) ? timestamp : -Infinity;
+}
+
+// Newest rolls first using ONLY my manual dates above.
+// Undated rolls such as Random or Hiking With Sister go last.
 const rollNames=[...rollMap.keys()].sort((a,b)=>{
   const dateDifference=rollTimestamp(b)-rollTimestamp(a);
   return dateDifference || a.localeCompare(b,undefined,{numeric:true});
