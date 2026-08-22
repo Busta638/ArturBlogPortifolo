@@ -282,7 +282,7 @@ body.panorama-fallback-exit-prev {
   </section>
 
   <main class="book">
-    <a class="chapter" href="/photos/FilmSim">
+    <a class="chapter" href="FilmSim.html">
       <span class="chapter-no">01</span>
       <div class="film-visual"><div id="filmRoll" class="film-roll"></div></div>
       <h2>Film Scanner</h2>
@@ -337,7 +337,13 @@ try{setTheme(localStorage.getItem("artur-theme")||"night")}catch(error){setTheme
       const marker = "/photos/";
       if (path.includes(marker)) path = "photos/" + path.split(marker).pop();
       else path = path.split("/").pop() || "home.html";
-      return decodeURIComponent(path).toLowerCase();
+      const normalized = decodeURIComponent(path).toLowerCase();
+
+      // FilmSim.html replaced travel.html, but it keeps the same spot in the
+      // original panorama so the transition behaves exactly like before.
+      if (normalized === "photos/filmsim.html") return "photos/travel.html";
+
+      return normalized;
     } catch (error) {
       return "";
     }

@@ -6,7 +6,7 @@
 (() => {
   const cleanPath = '/photos/FilmSim';
   const currentPath = window.location.pathname;
-  if (currentPath.endsWith("/travel.html")) {
+  if (currentPath.endsWith("/FilmSim.html")) {
     window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
   }
 })();
@@ -2077,7 +2077,13 @@ requestAnimationFrame(()=> {
       const marker = "/photos/";
       if (path.includes(marker)) path = "photos/" + path.split(marker).pop();
       else path = path.split("/").pop() || "home.html";
-      return decodeURIComponent(path).toLowerCase();
+      const normalized = decodeURIComponent(path).toLowerCase();
+
+      // FilmSim.html replaced travel.html, but it keeps the same spot in the
+      // original panorama so the transition behaves exactly like before.
+      if (normalized === "photos/filmsim.html") return "photos/travel.html";
+
+      return normalized;
     } catch (error) {
       return "";
     }
