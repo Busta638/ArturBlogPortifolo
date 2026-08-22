@@ -4,116 +4,116 @@
 
 window.PHOTOS = [
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_180926923.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_180926923.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_180926923.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_180926923.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_182712977.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_181329791.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_182712977.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_181329791.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_184315389.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_182712977.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_184315389.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_182712977.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_181329791.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_184315389.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_181329791.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_184315389.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_191212460.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_191212460.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_191212460.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_191212460.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_194948308.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_194948308.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_194948308.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_194948308.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_195210348.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_195210348.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_195210348.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_195210348.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_195727918.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_195727918.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_195727918.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_195727918.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_200152581.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_200152581.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_200152581.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_200152581.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_200404390.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_200404390.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_200404390.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_200404390.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_201934285.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_201934285.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_201934285.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_201934285.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_202311998.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_202311998.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_202311998.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_202311998.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_202325695.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_202325695.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_202325695.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_202325695.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_202326333.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_202326333.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_202326333.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_202326333.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_202326629.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_202326629.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_202326629.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_202326629.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_210225144.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg",
+    "src": "photos/Blue jays game - My first Baseball Game!/PXL_20250621_210225144.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp",
     "event": "Blue jays game - My first Baseball Game!",
     "eventSlug": "blue-jays-game-my-first-baseball-game",
-    "date": "2026-08-21",
-    "file": "PXL_20250621_210225144.RAW-02.ORIGINAL-Enhanced-NR_2048px.jpg"
+    "date": "2025-06-21",
+    "file": "PXL_20250621_210225144.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
     "src": "photos/Burlington Beach Walk 2026/DSC_6314.jpg",
@@ -1481,795 +1481,795 @@ window.PHOTOS = [
     "file": "PXL_20250608_011918767.RAW-02.ORIGINAL.jpg"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7601_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7599_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7601_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7599_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7604_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7601_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7604_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7601_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7599_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7604_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7599_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7604_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7609_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7609_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7609_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7609_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7611_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7611_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7611_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7611_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7613_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7613_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7613_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7613_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7615_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7615_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7615_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7615_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7621_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7621_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7621_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7621_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7626_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7626_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7626_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7626_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7633_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7633_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7633_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7633_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7636_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7636_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7636_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7636_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7672_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7672_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7672_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7672_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7683_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7683_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7683_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7683_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7690_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7690_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7690_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7690_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7694_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7694_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7694_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7694_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7699_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7699_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7699_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7699_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7708_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7708_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7708_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7708_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7737_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7737_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7737_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7737_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7740_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7740_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7740_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7740_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7743_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7743_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7743_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7743_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7746_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7746_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7746_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7746_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7752_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7752_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7752_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7752_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7753_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7753_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7753_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7753_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7754_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7754_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7754_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7754_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7762_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7762_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7762_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7762_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7770_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7770_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7770_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7770_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7771_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7771_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7771_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7771_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7773_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7773_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7773_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7773_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7779_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7779_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7779_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7779_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7790_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7790_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7790_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7790_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7796_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7796_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7796_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7796_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7800_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7800_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7800_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7800_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7803_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7803_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7803_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7803_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7812_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7812_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7812_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7812_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7815_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7815_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7815_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7815_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7820_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7820_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7820_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7820_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7822_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7822_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7822_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7822_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7828_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7828_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7828_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7828_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7835_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7835_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7835_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7835_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7837_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7837_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7837_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7837_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7839_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7839_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7839_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7839_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7853_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7853_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7853_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7853_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7857_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7857_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7857_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7857_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7861_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7861_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7861_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7861_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7864_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7864_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7864_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7864_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7868_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7868_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7868_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7868_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7878_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7878_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7878_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7878_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7905_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7905_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7905_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7905_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7911_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7911_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7911_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7911_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7917_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7917_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7917_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7917_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7929_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7929_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7929_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7929_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7943_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7943_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7943_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7943_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7969_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7969_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_7969_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_7969_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8027_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8027_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8027_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8027_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8037_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8037_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8037_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8037_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8091_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8084_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8091_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8084_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8084_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8091_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8084_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8091_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8101_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8101_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8101_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8101_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8132_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8132_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8132_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8132_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8141_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8141_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8141_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8141_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8150_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8150_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8150_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8150_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8187_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8187_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8187_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8187_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8191_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8191_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8191_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8191_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8196_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8196_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8196_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8196_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8204_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8204_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8204_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8204_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8224_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8224_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8224_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8224_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8242_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8242_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8242_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8242_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8274_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8258_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8274_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8258_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8258_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8274_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8258_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8274_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8285_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8285_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8285_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8285_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8301_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8301_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8301_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8301_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8310_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8310_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8310_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8310_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8313_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8313_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8313_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8313_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8324_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8324_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8324_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8324_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8359_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8359_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8359_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8359_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8380_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8380_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8380_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8380_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8385_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8385_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8385_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8385_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8397_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8397_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8397_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8397_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8399_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8399_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8399_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8399_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8426_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8426_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8426_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8426_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8427_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8427_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8427_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8427_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8429_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8429_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8429_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8429_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8430_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8430_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8430_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8430_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8454_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8454_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8454_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8454_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8458_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8458_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8458_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8458_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8474_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8474_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8474_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8474_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8525_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8525_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8525_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8525_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8535_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8535_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8535_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8535_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8554_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8554_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8554_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8554_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8555_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8555_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8555_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8555_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8593_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8593_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8593_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8593_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8616_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8616_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8616_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8616_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8617_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8617_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8617_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8617_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8621_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8621_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8621_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8621_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8623_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8623_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8623_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8623_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8631_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8631_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8631_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8631_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8652_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8652_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8652_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8652_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8681_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8681_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8681_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8681_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8697_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8697_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8697_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8697_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8719_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8719_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8719_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8719_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8734_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8734_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8734_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8734_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8742_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8742_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8742_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8742_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8752_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8752_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8752_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8752_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8758_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8758_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8758_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8758_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8766_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8766_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8766_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8766_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8771_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8771_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8771_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8771_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8808_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8808_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8808_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8808_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8811_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8811_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8811_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8811_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8812_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8812_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8812_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8812_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8819_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8819_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8819_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8819_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8824_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8824_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8824_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8824_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8828_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8828_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8828_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8828_fullres_result.webp"
   },
   {
-    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8851_fullres.jpg",
+    "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_8851_fullres_result.webp",
     "event": "ImportFest Aug 8 2026 Drift Event",
     "eventSlug": "importfest-aug-8-2026-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC_8851_fullres.jpg"
+    "date": "2026-08-22",
+    "file": "DSC_8851_fullres_result.webp"
   },
   {
     "src": "photos/Jordan Harbour Light 2026/DSC_6731.jpg",
