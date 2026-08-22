@@ -5,8 +5,11 @@
 <script>
 (() => {
   try {
+    // saves this in direction so this part can reuse the same value instead of finding/calculating it again
     const direction = sessionStorage.getItem("panorama-direction");
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if (direction === "next" || direction === "prev") {
+      // puts/reads a small value in a data-* attribute so css or other javascript can react to it
       document.documentElement.dataset.panoramaDirection = direction;
     }
   } catch (error) {}
@@ -38,14 +41,21 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:0;
+  /* makes sure this stays at least this tall but it can still grow if the content needs more room */
   min-height:100vh;
+  /* only controls left/right overflow so i can stop side scrolling without touching vertical scroll */
   overflow-x:hidden;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     radial-gradient(circle at 14% 8%, rgba(211,232,255,.9), transparent 34%),
     linear-gradient(135deg,var(--bg-2),var(--bg));
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--text);
+  /* sets the font used here and gives backup fonts if the first one isnt available */
   font-family:"Times New Roman",Times,serif;
+  /* smooths changes between old/new css values so hover/class changes dont just snap */
   transition:background .45s ease,color .45s ease;
 }
 
@@ -61,6 +71,7 @@ body.night{
   --accent:#d2554f;
   --accent-soft:rgba(154,24,24,.18);
   --shadow:0 26px 70px rgba(0,0,0,.36);
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     radial-gradient(circle at 76% 16%, rgba(116,18,18,.20), transparent 31%),
     radial-gradient(circle at 12% 88%, rgba(88,7,7,.17), transparent 37%),
@@ -69,247 +80,406 @@ body.night{
 
 body::after{
   content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:fixed;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
   inset:-20%;
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
   pointer-events:none;
+  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:-1;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:.05;
+  /* adds a gradient/image behind the content without needing another html element */
   background-image:
     radial-gradient(circle,rgba(255,255,255,.48) 0 .45px,transparent .75px);
+  /* controls how big the background image/pattern is which also changes how often it repeats */
   background-size:13px 13px;
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:grain .42s steps(2) infinite;
 }
 body.night::after{
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:.10;
+  /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
   mix-blend-mode:screen;
 }
 body:not(.night)::after{opacity:.025}
 
 .wave-bg{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:fixed;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
   inset:-16%;
+  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:-2;
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
   pointer-events:none;
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:rotate(-3deg) scale(1.16);
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:.68;
+  /* smooths changes between old/new css values so hover/class changes dont just snap */
   transition:opacity .45s ease,filter .45s ease;
 }
 .wave-bg svg{width:100%;height:100%;display:block}
 body.night .wave-bg{
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:.34;
+  /* changes the finished layer with stuff like blur brightness contrast and saturation */
   filter:saturate(.92) contrast(1.04);
 }
 
 .page{
+  /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
   width:min(1480px,100%);
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:0 auto;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:26px 30px 44px;
 }
 
 .topbar{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:flex;
+  /* lines the children up across the other axis so they sit where i want inside the row/grid */
   align-items:center;
+  /* controls how the children spread out across the main flex/grid direction */
   justify-content:space-between;
+  /* adds space between flex/grid items without needing margins on every child */
   gap:20px;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:8px 0 26px;
 }
 
 .wordmark{
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:13px;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.18em;
+  /* changes how the text LOOKS like uppercase without changing the actual html text */
   text-transform:uppercase;
 }
 
 .theme-toggle{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:flex;
+  /* lines the children up across the other axis so they sit where i want inside the row/grid */
   align-items:center;
+  /* adds space between flex/grid items without needing margins on every child */
   gap:4px;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:4px;
+  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
   border:1px solid var(--line);
+  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
   border-radius:999px;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:var(--panel);
+  /* blurs whatever is BEHIND this transparent box which is what gives the glass look */
   backdrop-filter:blur(18px);
+  /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
   box-shadow:0 8px 24px rgba(0,0,0,.04);
 }
 .theme-toggle button{
+  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
   border:0;
+  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
   border-radius:999px;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:transparent;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:9px 14px;
+  /* copies/sets the font in one line so buttons/links dont fall back to browser default fonts */
   font:inherit;
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:12px;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.12em;
+  /* changes how the text LOOKS like uppercase without changing the actual html text */
   text-transform:uppercase;
+  /* changes the mouse cursor so this feels clickable/interactable instead of plain content */
   cursor:pointer;
 }
 .theme-toggle button.active{
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:var(--text);
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--bg-2);
 }
 
 .hero{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:64px 0 50px;
+  /* only puts the divider line on the top edge */
   border-top:1px solid var(--line);
+  /* only puts the divider line on the bottom edge */
   border-bottom:1px solid var(--line);
 }
 .hero-title{
+  /* stops this getting too wide on big screens so the layout/text still looks right */
   max-width:980px;
 }
 .hero h1{
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:0;
+  /* stops this getting too wide on big screens so the layout/text still looks right */
   max-width:980px;
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:clamp(54px,8vw,118px);
+  /* controls space between text lines so paragraphs/headings dont get too cramped */
   line-height:.82;
+  /* controls how bold/light the text looks */
   font-weight:normal;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:-.055em;
 }
 .hero .subtitle{
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:24px 0 0;
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:13px;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.17em;
+  /* changes how the text LOOKS like uppercase without changing the actual html text */
   text-transform:uppercase;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
 }
 .hero-meta{
+  /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
   width:max-content;
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:18px 0 0 auto;
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:flex;
+  /* adds space between flex/grid items without needing margins on every child */
   gap:20px;
+  /* only adds inside space at the top */
   padding-top:14px;
+  /* only puts the divider line on the top edge */
   border-top:1px solid var(--line);
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:10px;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.14em;
+  /* changes how the text LOOKS like uppercase without changing the actual html text */
   text-transform:uppercase;
 }
 
 .layout{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:grid;
+  /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
   grid-template-columns:minmax(0,1fr) 280px;
+  /* adds space between flex/grid items without needing margins on every child */
   gap:34px;
+  /* only adds inside space at the top */
   padding-top:30px;
 }
 
 .section-label{
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:0 0 12px;
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:11px;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.18em;
+  /* changes how the text LOOKS like uppercase without changing the actual html text */
   text-transform:uppercase;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
 }
 .journal-reset{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:inline-flex;
+  /* lines the children up across the other axis so they sit where i want inside the row/grid */
   align-items:center;
+  /* adds space between flex/grid items without needing margins on every child */
   gap:8px;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:0;
+  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
   border:0;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:transparent;
+  /* sets the font used here and gives backup fonts if the first one isnt available */
   font-family:inherit;
+  /* changes the mouse cursor so this feels clickable/interactable instead of plain content */
   cursor:pointer;
+  /* smooths changes between old/new css values so hover/class changes dont just snap */
   transition:color .2s ease;
 }
 .journal-reset::after{content:"↺";font-size:12px;opacity:.65}
 .journal-reset:hover{color:var(--text)}
 
 .journal{
+  /* only puts the divider line on the top edge */
   border-top:1px solid var(--line);
 }
 
 .journal-empty{
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:0;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:28px 4px;
+  /* only puts the divider line on the bottom edge */
   border-bottom:1px solid var(--line);
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:14px;
 }
 .entry[hidden]{display:none}
 
 .entry{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
+  /* only puts the divider line on the bottom edge */
   border-bottom:1px solid var(--line);
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:transparent;
+  /* smooths changes between old/new css values so hover/class changes dont just snap */
   transition:background .25s ease;
+  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
   overflow:hidden;
 }
 .entry:hover{background:var(--accent-soft)}
 .entry-head{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:grid;
+  /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
   grid-template-columns:1fr auto auto;
+  /* adds space between flex/grid items without needing margins on every child */
   gap:18px;
+  /* lines the children up across the other axis so they sit where i want inside the row/grid */
   align-items:center;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:22px 4px;
+  /* changes the mouse cursor so this feels clickable/interactable instead of plain content */
   cursor:pointer;
 }
 .entry-title{
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:clamp(24px,3vw,42px);
+  /* controls space between text lines so paragraphs/headings dont get too cramped */
   line-height:1;
+  /* controls how bold/light the text looks */
   font-weight:normal;
 }
 .entry-date,
 .entry-index{
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:10px;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.14em;
+  /* changes how the text LOOKS like uppercase without changing the actual html text */
   text-transform:uppercase;
 }
 .entry-icon{
+  /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
   width:28px;
+  /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
   height:28px;
+  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
   border:1px solid var(--line);
+  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
   border-radius:50%;
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:grid;
+  /* short way of lining grid items up in both directions. center puts them right in the middle */
   place-items:center;
+  /* smooths changes between old/new css values so hover/class changes dont just snap */
   transition:transform .3s ease,background .3s ease;
 }
 .entry.open .entry-icon{transform:rotate(45deg);background:var(--text);color:var(--bg-2)}
 .entry-body{
+  /* caps the height so this doesnt keep growing past the space i want it to use */
   max-height:0;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:0;
+  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
   overflow:hidden;
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:translateY(-8px);
+  /* smooths changes between old/new css values so hover/class changes dont just snap */
   transition:max-height .4s ease,opacity .3s ease,transform .3s ease,padding .3s ease;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:0 4px;
 }
 .entry.open .entry-body{
+  /* caps the height so this doesnt keep growing past the space i want it to use */
   max-height:240px;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:1;
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:translateY(0);
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:0 4px 24px;
 }
 .entry-body p{
+  /* stops this getting too wide on big screens so the layout/text still looks right */
   max-width:720px;
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:0;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:16px;
+  /* controls space between text lines so paragraphs/headings dont get too cramped */
   line-height:1.65;
 }
 
 .sidebar{
+  /* only puts the divider line on the left edge */
   border-left:1px solid var(--line);
+  /* only adds inside space on the left */
   padding-left:26px;
 }
 .widget{padding:0 0 28px;margin:0 0 28px;border-bottom:1px solid var(--line)}
 .widget:last-child{border-bottom:0}
 .widget h3{
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:0 0 12px;
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:11px;
+  /* controls how bold/light the text looks */
   font-weight:normal;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.18em;
+  /* changes how the text LOOKS like uppercase without changing the actual html text */
   text-transform:uppercase;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
 }
 .nav-link{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:flex;
+  /* lines the children up across the other axis so they sit where i want inside the row/grid */
   align-items:center;
+  /* controls how the children spread out across the main flex/grid direction */
   justify-content:space-between;
+  /* adds space between flex/grid items without needing margins on every child */
   gap:12px;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:14px 0;
+  /* only puts the divider line on the bottom edge */
   border-bottom:1px solid var(--line);
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--text);
+  /* removes/adds stuff like the normal browser underline on links */
   text-decoration:none;
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:18px;
+  /* smooths changes between old/new css values so hover/class changes dont just snap */
   transition:padding .2s ease,color .2s ease;
 }
 .nav-link:hover{padding-left:8px;color:var(--accent)}
@@ -321,78 +491,121 @@ body.night .wave-bg{
 ========================= */
 
 .night-command{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
 body.night .sidebar .widget:first-child{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
 body.night .layout{
+  /* only adds inside space at the bottom */
   padding-bottom:28px;
 }
 
 body.night .night-command{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
+  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:30;
+  /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
   width:100%;
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:block;
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:28px 0 0;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:8px 10px;
+  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
   overflow:hidden;
+  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
   border:1px solid rgba(244,241,235,.12);
+  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
   border-radius:18px;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     linear-gradient(180deg,rgba(13,9,9,.86),rgba(4,4,4,.94));
+  /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
   box-shadow:
     0 20px 58px rgba(0,0,0,.48),
     0 0 38px rgba(105,10,10,.09),
     inset 0 1px rgba(255,255,255,.035);
+  /* blurs whatever is BEHIND this transparent box which is what gives the glass look */
   backdrop-filter:blur(18px);
 }
 
 .command-haze{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
   inset:-55% -15%;
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
   pointer-events:none;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:.58;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     radial-gradient(ellipse at 22% 56%,rgba(144,18,18,.28),transparent 28%),
     radial-gradient(ellipse at 74% 42%,rgba(93,7,7,.22),transparent 31%);
+  /* changes the finished layer with stuff like blur brightness contrast and saturation */
   filter:blur(24px);
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:commandHaze 8s ease-in-out infinite alternate;
 }
 
 @keyframes commandHaze{
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   from{transform:translate3d(-3%,1%,0) scale(1)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   to{transform:translate3d(5%,-2%,0) scale(1.08)}
 }
 
 .command-id{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
 .command-links{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
+  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:2;
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:grid;
+  /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
   grid-template-columns:repeat(4,minmax(0,1fr));
+  /* adds space between flex/grid items without needing margins on every child */
   gap:4px;
 }
 
 .command-link{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
+  /* stops this from shrinking past this size so the content/control doesnt get crushed */
   min-width:0;
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:grid;
+  /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
   grid-template-columns:28px minmax(0,1fr) 28px;
+  /* lines the children up across the other axis so they sit where i want inside the row/grid */
   align-items:center;
+  /* adds space between flex/grid items without needing margins on every child */
   gap:9px;
+  /* makes sure this stays at least this tall but it can still grow if the content needs more room */
   min-height:56px;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:8px 14px;
+  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
   border-radius:12px;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:rgba(244,241,235,.58);
+  /* removes/adds stuff like the normal browser underline on links */
   text-decoration:none;
+  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
   overflow:hidden;
+  /* smooths changes between old/new css values so hover/class changes dont just snap */
   transition:
     color .2s ease,
     background .2s ease,
@@ -400,37 +613,59 @@ body.night .night-command{
 }
 
 .command-link + .command-link{
+  /* only puts the divider line on the left edge */
   border-left:1px solid rgba(255,255,255,.07);
 }
 
 .command-link::before{
   content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
+  /* sets how far this sits from the left edge when its positioned */
   left:8%;
+  /* sets how far this sits from the right edge when its positioned */
   right:8%;
+  /* sets how far this sits from the bottom edge when its positioned */
   bottom:0;
+  /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
   height:1px;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:0;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:#d2554f;
+  /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
   box-shadow:0 0 12px rgba(210,85,79,.55);
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:scaleX(.35);
+  /* smooths changes between old/new css values so hover/class changes dont just snap */
   transition:opacity .2s ease,transform .25s ease;
 }
 
 .command-index{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
+  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:2;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:rgba(210,85,79,.62);
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:9px;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.14em;
 }
 
 .command-link strong{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
+  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:2;
+  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
   overflow:hidden;
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:17px;
+  /* controls how bold/light the text looks */
   font-weight:normal;
+  /* controls where the text lines up inside this box */
   text-align:center;
   white-space:nowrap;
   text-overflow:ellipsis;
@@ -438,171 +673,264 @@ body.night .night-command{
 
 .command-link strong::after{
   content:"";
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:block;
+  /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
   width:18px;
+  /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
   height:1px;
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:6px auto 0;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:0;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:#d2554f;
+  /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
   box-shadow:0 0 10px rgba(210,85,79,.55);
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:scaleX(.4);
+  /* smooths changes between old/new css values so hover/class changes dont just snap */
   transition:opacity .2s ease,transform .24s ease;
 }
 
 .command-link:hover strong::after,
 .command-link:focus-visible strong::after{
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:1;
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:scaleX(1);
 }
 
 .command-link small{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
 .command-link:hover,
 .command-link:focus-visible{
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:#fff;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     linear-gradient(180deg,rgba(118,18,18,.18),rgba(70,7,7,.10));
+  /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
   box-shadow:
     inset 0 0 22px rgba(150,28,28,.07),
     0 8px 24px rgba(0,0,0,.18);
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:translateY(-2px);
   outline:none;
 }
 
 .command-link:hover::before,
 .command-link:focus-visible::before{
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:1;
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:scaleX(1);
 }
 
 .command-status{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
 /* Glass keeps the original navigation rail. */
 body:not(.night) .night-command{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
 .calendar-shell{
+  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
   border:1px solid var(--line);
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:var(--panel);
+  /* blurs whatever is BEHIND this transparent box which is what gives the glass look */
   backdrop-filter:blur(18px);
+  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
   overflow:hidden;
 }
 .calendar-top{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:flex;
+  /* lines the children up across the other axis so they sit where i want inside the row/grid */
   align-items:center;
+  /* controls how the children spread out across the main flex/grid direction */
   justify-content:space-between;
+  /* adds space between flex/grid items without needing margins on every child */
   gap:14px;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:13px 14px;
+  /* only puts the divider line on the bottom edge */
   border-bottom:1px solid var(--line);
 }
 .calendar-month{
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:15px;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--text);
 }
 .calendar-controls{display:flex;gap:4px}
 .calendar-control{
+  /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
   width:30px;
+  /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
   height:30px;
+  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
   border:0;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:transparent;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
+  /* copies/sets the font in one line so buttons/links dont fall back to browser default fonts */
   font:inherit;
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:18px;
+  /* changes the mouse cursor so this feels clickable/interactable instead of plain content */
   cursor:pointer;
 }
 .calendar-control:hover{background:var(--accent-soft);color:var(--text)}
 .calendar-grid{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:grid;
+  /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
   grid-template-columns:repeat(7,1fr);
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:8px;
 }
 .calendar-weekday,
 .calendar-day{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:grid;
+  /* short way of lining grid items up in both directions. center puts them right in the middle */
   place-items:center;
+  /* keeps this same width/height proportion automatically while the element resizes */
   aspect-ratio:1;
+  /* stops this from shrinking past this size so the content/control doesnt get crushed */
   min-width:0;
 }
 .calendar-weekday{
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:9px;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.08em;
+  /* changes how the text LOOKS like uppercase without changing the actual html text */
   text-transform:uppercase;
 }
 .calendar-day{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
   appearance:none;
   -webkit-appearance:none;
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:0;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:0;
+  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
   border:1px solid transparent;
+  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
   border-radius:0;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:transparent;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--text);
+  /* copies/sets the font in one line so buttons/links dont fall back to browser default fonts */
   font:inherit;
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:13px;
+  /* controls space between text lines so paragraphs/headings dont get too cramped */
   line-height:1;
+  /* changes the mouse cursor so this feels clickable/interactable instead of plain content */
   cursor:pointer;
 }
 .calendar-day:hover{background:var(--accent-soft)}
 .calendar-day.outside{color:var(--muted);opacity:.42}
 .calendar-day.today{
   border-color:var(--accent);
+  /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
   box-shadow:inset 0 0 0 1px var(--accent);
 }
 .calendar-day.has-entry::after{
   content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
+  /* sets how far this sits from the left edge when its positioned */
   left:50%;
+  /* sets how far this sits from the bottom edge when its positioned */
   bottom:3px;
+  /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
   width:4px;
+  /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
   height:4px;
+  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
   border-radius:50%;
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:translateX(-50%);
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:var(--accent);
 }
 .calendar-day.selected{
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:var(--text);
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--bg-2);
 }
 .calendar-day.selected.has-entry::after{background:currentColor}
 .calendar-footer{
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:10px 14px 12px;
+  /* only puts the divider line on the top edge */
   border-top:1px solid var(--line);
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:10px;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.1em;
+  /* changes how the text LOOKS like uppercase without changing the actual html text */
   text-transform:uppercase;
 }
 body.night .calendar-shell{background:rgba(14,15,15,.74)}
 body.night .calendar-day.selected{
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:#f4f1eb;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:#090a0a;
 }
 body.night .calendar-day:hover:not(.selected){
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:rgba(244,241,235,.08);
 }
 
 .ripple{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
+  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
   border-radius:50%;
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:scale(0);
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:rippleAnim 700ms ease-out;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:var(--accent-soft);
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
   pointer-events:none;
 }
 
 @keyframes rippleAnim{to{transform:scale(6);opacity:0}}
 @keyframes grain{
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   0%{transform:translate(0,0)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   25%{transform:translate(-1%,1%)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   50%{transform:translate(1%,-1%)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   75%{transform:translate(.5%,.5%)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   100%{transform:translate(0,0)}
 }
 
@@ -610,9 +938,13 @@ body.night .calendar-day:hover:not(.selected){
   .layout{grid-template-columns:1fr}
   .sidebar{border-left:0;padding-left:0}
   .hero-meta{
+    /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
     width:100%;
+    /* controls how the children spread out across the main flex/grid direction */
     justify-content:space-between;
+    /* adds space above this without changing the spacing inside the box */
     margin-top:16px;
+    /* only adds inside space at the top */
     padding-top:14px;
   }
   .sidebar{border-top:1px solid var(--line);padding-top:28px}
@@ -631,28 +963,36 @@ body.night .calendar-day:hover:not(.selected){
 
 @media(max-width:760px){
   body.night .layout{
+    /* only adds inside space at the bottom */
     padding-bottom:28px;
   }
 
   body.night .night-command{
+    /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
     width:100%;
+    /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
     margin:18px 0 26px;
+    /* adds space INSIDE the box so the content doesnt sit right against the edge */
     padding:7px;
   }
 
   .command-links{
+    /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
 
   .command-link{
+    /* makes sure this stays at least this tall but it can still grow if the content needs more room */
     min-height:48px;
   }
 
   .command-link:nth-child(3){
+    /* only puts the divider line on the left edge */
     border-left:0;
   }
 
   .command-link strong{
+    /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
     font-size:15px;
   }
 }
@@ -663,39 +1003,59 @@ body.night .calendar-day:hover:not(.selected){
 
 /* Subtle full-page hazard-light background */
 .hazard-background{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
 body.night .hazard-background{
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:fixed;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
   inset:0;
+  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:-5;
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:block;
+  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
   overflow:hidden;
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
   pointer-events:none;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:#030303;
 }
 
 body.night .hazard-background video{
+  /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
   width:100%;
+  /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
   height:100%;
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:block;
+  /* controls how an image/video fits its box without stretching. cover fills/crops and contain shows all of it */
   object-fit:cover;
+  /* picks what part of the image/video stays centered when object-fit has to crop */
   object-position:center center;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:.14;
+  /* changes the finished layer with stuff like blur brightness contrast and saturation */
   filter:
     brightness(.54)
     contrast(1.18)
     saturate(.72)
     blur(.35px);
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:scale(1.025);
 }
 
 body.night .hazard-background::before{
   content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
   inset:0;
+  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:1;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     linear-gradient(90deg,rgba(3,4,4,.92) 0%,rgba(3,4,4,.72) 43%,rgba(3,4,4,.46) 100%),
     linear-gradient(180deg,rgba(3,4,4,.54),rgba(3,4,4,.78));
@@ -703,34 +1063,48 @@ body.night .hazard-background::before{
 
 body.night .hazard-background::after{
   content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
   inset:0;
+  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:2;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:.34;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     radial-gradient(ellipse at 76% 62%,rgba(210,69,26,.22),transparent 29%),
     radial-gradient(ellipse at 88% 55%,rgba(125,8,8,.15),transparent 38%);
+  /* changes the finished layer with stuff like blur brightness contrast and saturation */
   filter:blur(22px);
+  /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
   mix-blend-mode:screen;
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:hazardAmbientBloom 2.4s ease-in-out infinite alternate;
 }
 
 @keyframes hazardAmbientBloom{
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   from{opacity:.20;transform:scale(.98)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   to{opacity:.43;transform:scale(1.04)}
 }
 
 body:not(.night) .hazard-background{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
 @media(max-width:700px){
   body.night .hazard-background video{
+    /* picks what part of the image/video stays centered when object-fit has to crop */
     object-position:62% center;
+    /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
     opacity:.10;
   }
 
   body.night .hazard-background::before{
+    /* builds the background. multiple gradients/images stack in the order theyre written here */
     background:
       linear-gradient(90deg,rgba(3,4,4,.88),rgba(3,4,4,.60)),
       linear-gradient(180deg,rgba(3,4,4,.50),rgba(3,4,4,.80));
@@ -739,6 +1113,7 @@ body:not(.night) .hazard-background{
 
 @media(prefers-reduced-motion:reduce){
   body.night .hazard-background::after{
+    /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
     animation:none;
   }
 }
@@ -755,7 +1130,9 @@ body:not(.night) .hazard-background{
 }
 
 ::view-transition-image-pair(root) {
+  /* makes a separate stacking/blending area so effects here dont accidentally mix with the whole page */
   isolation: isolate;
+  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
   overflow: hidden;
 }
 
@@ -763,26 +1140,32 @@ body:not(.night) .hazard-background{
 ::view-transition-new(root) {
   animation-duration: 920ms;
   animation-timing-function: cubic-bezier(.22,.82,.22,1);
+  /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
   mix-blend-mode: normal;
+  /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
   height: 100%;
 }
 
 html[data-panorama-direction="next"]::view-transition-old(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:
     panorama-old-left 920ms cubic-bezier(.22,.82,.22,1),
     panorama-old-color-hard 920ms ease-in-out;
 }
 html[data-panorama-direction="next"]::view-transition-new(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:
     panorama-new-right 920ms cubic-bezier(.22,.82,.22,1),
     panorama-new-color-hard 920ms ease-in-out;
 }
 html[data-panorama-direction="prev"]::view-transition-old(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:
     panorama-old-right 920ms cubic-bezier(.22,.82,.22,1),
     panorama-old-color-hard 920ms ease-in-out;
 }
 html[data-panorama-direction="prev"]::view-transition-new(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:
     panorama-new-left 920ms cubic-bezier(.22,.82,.22,1),
     panorama-new-color-hard 920ms ease-in-out;
@@ -790,9 +1173,13 @@ html[data-panorama-direction="prev"]::view-transition-new(root) {
 
 ::view-transition-image-pair(root)::after {
   content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
   inset:-4%;
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
   pointer-events:none;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     linear-gradient(
       90deg,
@@ -803,17 +1190,25 @@ html[data-panorama-direction="prev"]::view-transition-new(root) {
       rgba(28,53,80,.34) 70%,
       transparent 100%
     );
+  /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
   mix-blend-mode:screen;
+  /* changes the finished layer with stuff like blur brightness contrast and saturation */
   filter:blur(7px) saturate(1.28);
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:0;
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:panoramaBlendFlashHard 920ms ease-in-out;
 }
 
 ::view-transition-image-pair(root)::before {
   content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
   inset:0;
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
   pointer-events:none;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     radial-gradient(
       ellipse at 50% 50%,
@@ -822,8 +1217,11 @@ html[data-panorama-direction="prev"]::view-transition-new(root) {
       rgba(19,35,60,.18) 48%,
       transparent 72%
     );
+  /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
   mix-blend-mode:color-dodge;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:0;
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:panoramaCenterBloomHard 920ms ease-in-out;
 }
 
@@ -833,43 +1231,65 @@ html[data-panorama-direction="prev"]::view-transition-new(root) {
 @keyframes panorama-new-left { from{transform:translateX(-100%)} to{transform:translateX(0)} }
 
 @keyframes panorama-old-color-hard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   0%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   38%{filter:saturate(.88) hue-rotate(-14deg) brightness(.90) contrast(1.05)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   72%{filter:saturate(.72) hue-rotate(-22deg) brightness(.72) contrast(1.12)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   100%{filter:saturate(.64) hue-rotate(-26deg) brightness(.58) contrast(1.14)}
 }
 @keyframes panorama-new-color-hard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   0%{filter:saturate(.60) hue-rotate(24deg) brightness(.56) contrast(1.14)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   30%{filter:saturate(.72) hue-rotate(18deg) brightness(.68) contrast(1.12)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   64%{filter:saturate(.88) hue-rotate(8deg) brightness(.88) contrast(1.05)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   100%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
 }
 @keyframes panoramaBlendFlashHard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   0%,100%{opacity:0}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   28%{opacity:.20}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   45%{opacity:.62}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   54%{opacity:.88}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   66%{opacity:.42}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   78%{opacity:.12}
 }
 @keyframes panoramaCenterBloomHard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   0%,100%{opacity:0;transform:scale(.96)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   42%{opacity:.18;transform:scale(1)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   52%{opacity:.58;transform:scale(1.06)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   64%{opacity:.22;transform:scale(1.10)}
 }
 
 /* Fallback when cross-document View Transitions are unavailable. */
 html.panorama-fallback-next body {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:fallback-enter-right 680ms cubic-bezier(.22,.82,.22,1) both;
 }
 html.panorama-fallback-prev body {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:fallback-enter-left 680ms cubic-bezier(.22,.82,.22,1) both;
 }
 body.panorama-fallback-exit-next {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:fallback-exit-left 680ms cubic-bezier(.22,.82,.22,1) both;
 }
 body.panorama-fallback-exit-prev {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:fallback-exit-right 680ms cubic-bezier(.22,.82,.22,1) both;
 }
 @keyframes fallback-enter-right { from{transform:translateX(18vw);opacity:.72} to{transform:none;opacity:1} }
@@ -893,6 +1313,7 @@ body.panorama-fallback-exit-prev {
 </head>
 <body class="night">
 
+<!-- hazard-background part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
 <div class="hazard-background" aria-hidden="true">
   <video autoplay muted loop playsinline preload="metadata">
     <source src="assets/hazards.mp4" type="video/mp4">
@@ -901,6 +1322,7 @@ body.panorama-fallback-exit-prev {
 
 
 
+<!-- wave-bg part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
 <div class="wave-bg" aria-hidden="true">
   <svg viewBox="0 0 1440 900" preserveAspectRatio="none">
     <defs>
@@ -934,25 +1356,35 @@ body.panorama-fallback-exit-prev {
 
 
 
+<!-- page part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
 <div class="page">
+  <!-- topbar part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
   <header class="topbar">
+    <!-- wordmark part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
     <div class="wordmark">Portfolio / Archive</div>
+    <!-- theme-toggle part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
     <div class="theme-toggle" aria-label="Theme switcher">
       <button id="nightBtn" class="active" type="button">Night</button>
       <button id="glassBtn" type="button">Glass</button>
     </div>
   </header>
 
+  <!-- main part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
   <main>
+    <!-- hero part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
     <section class="hero">
+      <!-- hero-title part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
       <div class="hero-title">
         <h1>Artur Tigirlas</h1>
         <p class="subtitle">Photography • Projects • Blog • Archive</p>
       </div>
 
+      <!-- night-command part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
       <nav class="night-command" aria-label="Night navigation">
+        <!-- command-haze part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
         <div class="command-haze" aria-hidden="true"></div>
 
+        <!-- command-links part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
         <div class="command-links">
           <a class="command-link" href="photos.html">
             <span class="command-index">01</span>
@@ -976,6 +1408,7 @@ body.panorama-fallback-exit-prev {
         </div>
       </nav>
 
+      <!-- hero-meta part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
       <div class="hero-meta">
         <span>St. Catharines</span>
         <span>Updated 2026</span>
@@ -986,70 +1419,136 @@ body.panorama-fallback-exit-prev {
 
 
 
+    <!-- layout part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
     <div class="layout">
+      <!-- section part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
       <section>
         <button class="section-label journal-reset" id="journalLabel" type="button" title="Show all journal entries">Journal / July 30, 2026</button>
+        <!-- journalList part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
         <div class="journal" id="journalList">
           <p class="journal-empty" id="journalEmpty" hidden>No journal entries for this date.</p>
+          <!-- entry part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
           <article class="entry" data-entry-date="2026-06-03">
+            <!-- entry-head part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
             <div class="entry-head">
+              <!-- div part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div>
+                <!-- entry-title part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
                 <div class="entry-title">First Entry</div>
+                <!-- entry-date part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
                 <div class="entry-date">June 3, 2026</div>
               </div>
+              <!-- entry-index part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div class="entry-index">01</div>
+              <!-- entry-icon part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div class="entry-icon">＋</div>
             </div>
+            <!-- entry-body part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
             <div class="entry-body">
               <p>Wave system restored. Clean glass UI with visible soft gradient background.</p>
             </div>
           </article>
 
+          <!-- entry part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
           <article class="entry" data-entry-date="2026-07-30">
+            <!-- entry-head part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
             <div class="entry-head">
+              <!-- div part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div>
+                <!-- entry-title part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
                 <div class="entry-title">Photo Archive Rebuilt</div>
+                <!-- entry-date part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
                 <div class="entry-date">July 30, 2026</div>
               </div>
+              <!-- entry-index part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div class="entry-index">02</div>
+              <!-- entry-icon part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div class="entry-icon">＋</div>
             </div>
+            <!-- entry-body part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
             <div class="entry-body">
               <p>The photo section was completely redone. Film, Pond and Selected Photos sections were added, along with a cleaner and more consistent interface.</p>
             </div>
           </article>
 
+          <!-- entry part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
           <article class="entry" data-entry-date="2026-07-30">
+            <!-- entry-head part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
             <div class="entry-head">
+              <!-- div part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div>
+                <!-- entry-title part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
                 <div class="entry-title">Entry Screen Added</div>
+                <!-- entry-date part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
                 <div class="entry-date">July 30, 2026</div>
               </div>
+              <!-- entry-index part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div class="entry-index">03</div>
+              <!-- entry-icon part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div class="entry-icon">＋</div>
             </div>
+            <!-- entry-body part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
             <div class="entry-body">
               <p>A cinematic entry screen was created for the website, using the BRXL Racing film as a full-screen opener before entering the main archive.</p>
             </div>
           </article>
 
+          <!-- entry part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
           <article class="entry" data-entry-date="2026-07-30">
+            <!-- entry-head part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
             <div class="entry-head">
+              <!-- div part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div>
+                <!-- entry-title part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
                 <div class="entry-title">Home Interface Updated</div>
+                <!-- entry-date part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
                 <div class="entry-date">July 30, 2026</div>
               </div>
+              <!-- entry-index part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div class="entry-index">04</div>
+              <!-- entry-icon part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div class="entry-icon">＋</div>
             </div>
+            <!-- entry-body part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
             <div class="entry-body">
               <p>The home page was updated with a cleaner interface and a Night version designed to match the entry screen more closely, while keeping the Glass theme as an alternate view.</p>
             </div>
           </article>
+
+          <!-- entry part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
+          <article class="entry" data-entry-date="2026-08-21">
+            <!-- entry-head part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
+            <div class="entry-head">
+              <!-- div part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
+              <div>
+                <!-- entry-title part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
+                <div class="entry-title">Photography Archive System Updated</div>
+                <!-- entry-date part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
+                <div class="entry-date">August 21, 2026</div>
+              </div>
+              <!-- entry-index part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
+              <div class="entry-index">05</div>
+              <!-- entry-icon part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
+              <div class="entry-icon">＋</div>
+            </div>
+            <!-- entry-body part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
+            <div class="entry-body">
+              <p>
+                The photography archive now runs from one shared library organized around the days I went out shooting.
+                Individual photo-set pages were added for each outing, Selected Work now merges captions
+                and dates with the scanned photo folders, Travel rolls are scrollable and
+                date-sorted, and the photo updater now generates stable event matching keys so the
+                different parts of the archive stay linked automatically.
+              </p>
+            </div>
+          </article>
+
         </div>
       </section>
 
+      <!-- sidebar part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
       <aside class="sidebar">
+        <!-- widget part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
         <div class="widget">
           <h3>Navigation</h3>
           <a class="nav-link" href="photos.html"><span>Photos</span><span>↗</span></a>
@@ -1058,17 +1557,24 @@ body.panorama-fallback-exit-prev {
           <a class="nav-link" href="cv.html"><span>CV / Résumé</span><span>↗</span></a>
         </div>
 
+        <!-- widget part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
         <div class="widget">
           <h3>Calendar</h3>
+          <!-- calendar-shell part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
           <div class="calendar-shell" aria-label="Monthly calendar">
+            <!-- calendar-top part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
             <div class="calendar-top">
+              <!-- calendarMonth part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div class="calendar-month" id="calendarMonth"></div>
+              <!-- calendar-controls part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
               <div class="calendar-controls">
                 <button class="calendar-control" id="calendarPrev" type="button" aria-label="Previous month">‹</button>
                 <button class="calendar-control" id="calendarNext" type="button" aria-label="Next month">›</button>
               </div>
             </div>
+            <!-- calendarGrid part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
             <div class="calendar-grid" id="calendarGrid"></div>
+            <!-- calendarSelected part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
             <div class="calendar-footer" id="calendarSelected"></div>
           </div>
         </div>
@@ -1078,44 +1584,71 @@ body.panorama-fallback-exit-prev {
 </div>
 
 <script>
+// saves this in body so this part can reuse the same value instead of finding/calculating it again
 const body = document.body;
+// saves this in glassBtn so this part can reuse the same value instead of finding/calculating it again
 const glassBtn = document.getElementById('glassBtn');
+// saves this in nightBtn so this part can reuse the same value instead of finding/calculating it again
 const nightBtn = document.getElementById('nightBtn');
+// saves this in waveOne so this part can reuse the same value instead of finding/calculating it again
 const waveOne = document.querySelector('.wave-one');
+// saves this in waveTwo so this part can reuse the same value instead of finding/calculating it again
 const waveTwo = document.querySelector('.wave-two');
 
 function setTheme(theme){
+  // saves this in night so this part can reuse the same value instead of finding/calculating it again
   const night = theme === 'night';
+  // flips this class on/off so the same action can switch between two states
   body.classList.toggle('night', night);
+  // flips this class on/off so the same action can switch between two states
   glassBtn.classList.toggle('active', !night);
+  // flips this class on/off so the same action can switch between two states
   nightBtn.classList.toggle('active', night);
   waveOne.setAttribute('fill', night ? 'url(#waveNightA)' : 'url(#waveGlassA)');
   waveTwo.setAttribute('fill', night ? 'url(#waveNightA)' : 'url(#waveGlassB)');
+  // saves this setting in the browser so the choice still exists next time the page loads
   localStorage.setItem('artur-theme-v2', theme);
 }
 
+// waits for this browser/user action and then runs the function when it happens
 glassBtn.addEventListener('click', () => setTheme('glass'));
+// waits for this browser/user action and then runs the function when it happens
 nightBtn.addEventListener('click', () => setTheme('night'));
 
+// reads the saved browser setting so it can survive page changes/reloads
 setTheme(localStorage.getItem('artur-theme-v2') || 'night');
 
+// saves this in calendarMonth so this part can reuse the same value instead of finding/calculating it again
 const calendarMonth = document.getElementById('calendarMonth');
+// saves this in calendarGrid so this part can reuse the same value instead of finding/calculating it again
 const calendarGrid = document.getElementById('calendarGrid');
+// saves this in calendarSelected so this part can reuse the same value instead of finding/calculating it again
 const calendarSelected = document.getElementById('calendarSelected');
+// saves this in calendarPrev so this part can reuse the same value instead of finding/calculating it again
 const calendarPrev = document.getElementById('calendarPrev');
+// saves this in calendarNext so this part can reuse the same value instead of finding/calculating it again
 const calendarNext = document.getElementById('calendarNext');
+// saves this in journalLabel so this part can reuse the same value instead of finding/calculating it again
 const journalLabel = document.getElementById('journalLabel');
+// saves this in journalEmpty so this part can reuse the same value instead of finding/calculating it again
 const journalEmpty = document.getElementById('journalEmpty');
+// saves this in journalEntries so this part can reuse the same value instead of finding/calculating it again
 const journalEntries = [...document.querySelectorAll('.entry')];
 
+// saves this in entryDates so this part can reuse the same value instead of finding/calculating it again
 const entryDates = new Set(journalEntries.map(entry => entry.dataset.entryDate));
+// saves this in today so this part can reuse the same value instead of finding/calculating it again
 const today = new Date();
+// saves this in latestEntryDate so this part can reuse the same value instead of finding/calculating it again
 const latestEntryDate = [...entryDates].sort().at(-1);
 const [latestYear, latestMonth, latestDay] = latestEntryDate.split('-').map(Number);
-let selectedDate = new Date(latestYear, latestMonth - 1, latestDay);
-let calendarView = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), 1);
+// this value changes while the page is running so i keep it in selectedDate instead of making it const
+let selectedDate = null;
+// this value changes while the page is running so i keep it in calendarView instead of making it const
+let calendarView = new Date(latestYear, latestMonth - 1, 1);
 
 function dateKey(date){
+  // sends this result back and stops this function here so whatever called it can use the value
   return [
     date.getFullYear(),
     String(date.getMonth() + 1).padStart(2, '0'),
@@ -1124,16 +1657,22 @@ function dateKey(date){
 }
 
 function showEntriesForDate(date){
+  // saves this in key so this part can reuse the same value instead of finding/calculating it again
   const key = dateKey(date);
+  // this value changes while the page is running so i keep it in visibleCount instead of making it const
   let visibleCount = 0;
 
   journalEntries.forEach(entry => {
+    // saves this in visible so this part can reuse the same value instead of finding/calculating it again
     const visible = entry.dataset.entryDate === key;
     entry.hidden = !visible;
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if(!visible) entry.classList.remove('open');
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if(visible) visibleCount++;
   });
 
+  // saves this in displayDate so this part can reuse the same value instead of finding/calculating it again
   const displayDate = date.toLocaleDateString('en-US', {
     month:'long',
     day:'numeric',
@@ -1154,9 +1693,15 @@ function showAllEntries(){
   journalLabel.setAttribute('aria-label', 'All journal entries shown. Click a calendar date to filter.');
 }
 
-journalLabel.addEventListener('click', showAllEntries);
+// waits for this browser/user action and then runs the function when it happens
+journalLabel.addEventListener('click', () => {
+  selectedDate = null;
+  showAllEntries();
+  renderCalendar();
+});
 
 function sameDate(a, b){
+  // sends this result back and stops this function here so whatever called it can use the value
   return a.getFullYear() === b.getFullYear() &&
     a.getMonth() === b.getMonth() &&
     a.getDate() === b.getDate();
@@ -1170,53 +1715,75 @@ function renderCalendar(){
 
   calendarGrid.innerHTML = '';
   ['Su','Mo','Tu','We','Th','Fr','Sa'].forEach(day => {
+    // saves this in label so this part can reuse the same value instead of finding/calculating it again
     const label = document.createElement('div');
     label.className = 'calendar-weekday';
     label.textContent = day;
+    // puts the new element into the page after it has been created/configured
     calendarGrid.appendChild(label);
   });
 
+  // saves this in year so this part can reuse the same value instead of finding/calculating it again
   const year = calendarView.getFullYear();
+  // saves this in month so this part can reuse the same value instead of finding/calculating it again
   const month = calendarView.getMonth();
+  // saves this in firstDay so this part can reuse the same value instead of finding/calculating it again
   const firstDay = new Date(year, month, 1).getDay();
+  // saves this in start so this part can reuse the same value instead of finding/calculating it again
   const start = new Date(year, month, 1 - firstDay);
 
   for(let i = 0; i < 42; i++){
+    // saves this in date so this part can reuse the same value instead of finding/calculating it again
     const date = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
+    // saves this in button so this part can reuse the same value instead of finding/calculating it again
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'calendar-day';
     button.textContent = date.getDate();
     button.setAttribute('aria-label', date.toDateString());
 
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if(date.getMonth() !== month) button.classList.add('outside');
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if(sameDate(date, today)) button.classList.add('today');
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if(entryDates.has(dateKey(date))) button.classList.add('has-entry');
-    if(sameDate(date, selectedDate)) button.classList.add('selected');
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
+    if(selectedDate && sameDate(date, selectedDate)) button.classList.add('selected');
 
+    // waits for this browser/user action and then runs the function when it happens
     button.addEventListener('click', () => {
       selectedDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
       calendarView = new Date(date.getFullYear(), date.getMonth(), 1);
       renderCalendar();
     });
 
+    // puts the new element into the page after it has been created/configured
     calendarGrid.appendChild(button);
   }
 
-  calendarSelected.textContent = selectedDate.toLocaleDateString('en-US', {
-    weekday:'long',
-    month:'long',
-    day:'numeric'
-  });
+  // only runs this part when the condition is true so it doesnt fire in the wrong state
+  if(selectedDate){
+    calendarSelected.textContent = selectedDate.toLocaleDateString('en-US', {
+      weekday:'long',
+      month:'long',
+      day:'numeric'
+    });
 
-  showEntriesForDate(selectedDate);
+    showEntriesForDate(selectedDate);
+  }else{
+    calendarSelected.textContent = 'Pick a date to filter';
+    showAllEntries();
+  }
 }
 
+// waits for this browser/user action and then runs the function when it happens
 calendarPrev.addEventListener('click', () => {
   calendarView = new Date(calendarView.getFullYear(), calendarView.getMonth() - 1, 1);
   renderCalendar();
 });
 
+// waits for this browser/user action and then runs the function when it happens
 calendarNext.addEventListener('click', () => {
   calendarView = new Date(calendarView.getFullYear(), calendarView.getMonth() + 1, 1);
   renderCalendar();
@@ -1224,18 +1791,29 @@ calendarNext.addEventListener('click', () => {
 
 renderCalendar();
 
+// finds ALL matching html elements so javascript can loop through/change each one
 document.querySelectorAll('.entry').forEach(entry => {
+  // waits for this browser/user action and then runs the function when it happens
   entry.querySelector('.entry-head').addEventListener('click', event => {
+    // flips this class on/off so the same action can switch between two states
     entry.classList.toggle('open');
 
+    // saves this in ripple so this part can reuse the same value instead of finding/calculating it again
     const ripple = document.createElement('span');
     ripple.className = 'ripple';
+    // saves this in rect so this part can reuse the same value instead of finding/calculating it again
     const rect = entry.getBoundingClientRect();
+    // saves this in size so this part can reuse the same value instead of finding/calculating it again
     const size = Math.max(rect.width, rect.height);
+    // changes this css value directly from javascript because it depends on the current interaction/state
     ripple.style.width = ripple.style.height = size + 'px';
+    // changes this css value directly from javascript because it depends on the current interaction/state
     ripple.style.left = event.clientX - rect.left - size / 2 + 'px';
+    // changes this css value directly from javascript because it depends on the current interaction/state
     ripple.style.top = event.clientY - rect.top - size / 2 + 'px';
+    // puts the new element into the page after it has been created/configured
     entry.appendChild(ripple);
+    // waits a little before running the next part so the animation/state has time to happen first
     setTimeout(() => ripple.remove(), 700);
   });
 });
@@ -1248,60 +1826,86 @@ document.querySelectorAll('.entry').forEach(entry => {
 
 <script>
 (() => {
+  // saves this in order so this part can reuse the same value instead of finding/calculating it again
   const order = ["home.html","photos.html","photos/travel-menu.html","photos/travel.html","photos/pond.html","photos/selected.html","projects.html","cv.html"];
+  // this value changes while the page is running so i keep it in navigating instead of making it const
   let navigating = false;
 
   function normalizedPath(urlLike) {
     try {
+      // saves this in url so this part can reuse the same value instead of finding/calculating it again
       const url = new URL(urlLike, location.href);
+      // this value changes while the page is running so i keep it in path instead of making it const
       let path = url.pathname.replace(/^\/+/, "");
+      // saves this in marker so this part can reuse the same value instead of finding/calculating it again
       const marker = "/photos/";
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
       if (path.includes(marker)) path = "photos/" + path.split(marker).pop();
+      // if the check above wasnt true this is the other route the code takes
       else path = path.split("/").pop() || "home.html";
+      // sends this result back and stops this function here so whatever called it can use the value
       return decodeURIComponent(path).toLowerCase();
     } catch (error) {
+      // sends this result back and stops this function here so whatever called it can use the value
       return "";
     }
   }
 
+  // saves this in currentPath so this part can reuse the same value instead of finding/calculating it again
   const currentPath = normalizedPath(location.href);
+  // saves this in currentIndex so this part can reuse the same value instead of finding/calculating it again
   const currentIndex = order.indexOf(currentPath);
+  // saves this in supportsCrossDocumentTransition so this part can reuse the same value instead of finding/calculating it again
   const supportsCrossDocumentTransition =
     CSS.supports("view-transition-name", "root");
 
   function directionFor(href) {
+    // saves this in targetIndex so this part can reuse the same value instead of finding/calculating it again
     const targetIndex = order.indexOf(normalizedPath(href));
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if (targetIndex === -1 || currentIndex === -1) return "next";
+    // sends this result back and stops this function here so whatever called it can use the value
     return targetIndex >= currentIndex ? "next" : "prev";
   }
 
   function navigateTo(href, direction) {
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if (navigating) return;
     navigating = true;
 
     try {
+      // saves this for the current browser tab so the next page can read it during navigation
       sessionStorage.setItem("panorama-direction", direction);
     } catch (error) {}
 
+    // puts/reads a small value in a data-* attribute so css or other javascript can react to it
     document.documentElement.dataset.panoramaDirection = direction;
 
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if (supportsCrossDocumentTransition) {
       location.href = href;
+      // sends this result back and stops this function here so whatever called it can use the value
       return;
     }
 
+    // adds this class. css watches the class and uses it to change the look/animation/state
     document.body.classList.add(
       direction === "next"
         ? "panorama-fallback-exit-next"
         : "panorama-fallback-exit-prev"
     );
 
+    // waits a little before running the next part so the animation/state has time to happen first
     setTimeout(() => { location.href = href; }, 640);
   }
 
+  // finds ALL matching html elements so javascript can loop through/change each one
   document.querySelectorAll('a[href]').forEach(link => {
+    // waits for this browser/user action and then runs the function when it happens
     link.addEventListener("click", event => {
+      // saves this in href so this part can reuse the same value instead of finding/calculating it again
       const href = link.getAttribute("href");
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
       if (
         !href ||
         href.startsWith("#") ||
@@ -1311,26 +1915,36 @@ document.querySelectorAll('.entry').forEach(entry => {
         event.button !== 0
       ) return;
 
+      // saves this in targetPath so this part can reuse the same value instead of finding/calculating it again
       const targetPath = normalizedPath(href);
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
       if (!order.includes(targetPath)) return;
 
+      // stops the browsers normal behavior here because im handling this interaction myself
       event.preventDefault();
       navigateTo(href, directionFor(href));
     });
   });
 
+  // waits for this browser/user action and then runs the function when it happens
   addEventListener("pageshow", () => {
     try {
+      // saves this in direction so this part can reuse the same value instead of finding/calculating it again
       const direction = sessionStorage.getItem("panorama-direction");
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
       if (!supportsCrossDocumentTransition && (direction === "next" || direction === "prev")) {
+        // adds this class. css watches the class and uses it to change the look/animation/state
         document.documentElement.classList.add(
           direction === "prev" ? "panorama-fallback-prev" : "panorama-fallback-next"
         );
       }
 
+      // waits a little before running the next part so the animation/state has time to happen first
       setTimeout(() => {
         sessionStorage.removeItem("panorama-direction");
+        // puts/reads a small value in a data-* attribute so css or other javascript can react to it
         delete document.documentElement.dataset.panoramaDirection;
+        // removes this class so the css/state goes back to the normal version
         document.documentElement.classList.remove(
           "panorama-fallback-next",
           "panorama-fallback-prev"

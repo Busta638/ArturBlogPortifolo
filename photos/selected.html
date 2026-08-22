@@ -15,7 +15,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selected Work — Artur Tigirlas</title>
+  <title>Photography — Artur Tigirlas</title>
 
   <style>
     * {
@@ -203,6 +203,16 @@
 
     .slide.is-active {
       pointer-events: auto;
+      cursor: pointer;
+    }
+
+    .slide.is-active .photo-frame {
+      transition: transform 180ms ease, border-color 180ms ease;
+    }
+
+    .slide.is-active:hover .photo-frame {
+      transform: translateY(-3px);
+      border-color: rgba(126, 185, 232, 0.42);
     }
 
     .photo-frame {
@@ -369,6 +379,193 @@
       }
     }
   
+
+/* MAIN PHOTOGRAPHY JOURNAL */
+.hero-wrap {
+  min-height: calc(100vh - 26px);
+  display: grid;
+  align-content: start;
+}
+
+.intro {
+  margin-top: 44px;
+}
+
+.gallery {
+  min-height: 670px;
+  grid-template-rows: minmax(500px, 1fr) auto auto;
+  padding-bottom: 68px;
+}
+
+.event-journal {
+  width: min(1380px, calc(100% - 36px));
+  margin: 32px auto 120px;
+  border-top: 1px solid var(--line);
+}
+
+.journal-heading {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+  align-items: end;
+  padding: 74px 0 44px;
+}
+
+.journal-heading h2 {
+  margin: 0;
+  font-size: clamp(52px, 9vw, 126px);
+  font-weight: normal;
+  line-height: .88;
+  letter-spacing: -.055em;
+}
+
+.journal-heading p {
+  max-width: 430px;
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.event-list {
+  border-top: 1px solid var(--line);
+}
+
+.photo-event {
+  position: relative;
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr) minmax(250px, 460px) auto;
+  gap: 28px;
+  align-items: center;
+  min-height: 210px;
+  padding: 30px 4px;
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
+  overflow: hidden;
+  transition: padding 220ms ease, background 220ms ease;
+}
+
+.photo-event:hover {
+  padding-inline: 18px;
+  background: rgba(126, 185, 232, 0.06);
+}
+
+.event-date {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.event-copy h3 {
+  margin: 0 0 8px;
+  font-size: clamp(30px, 4vw, 56px);
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+
+.event-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.event-preview {
+  position: relative;
+  height: 148px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255,255,255,.025);
+}
+
+.event-preview-placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 14px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.event-preview img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: saturate(.92) brightness(.88);
+  transition: transform 650ms cubic-bezier(.2,.8,.2,1), filter 250ms ease;
+}
+
+.photo-event:hover .event-preview img {
+  transform: scale(1.035);
+  filter: saturate(1) brightness(1);
+}
+
+.event-arrow {
+  color: var(--muted);
+  font-size: 22px;
+  transition: transform 220ms ease, color 220ms ease;
+}
+
+.photo-event:hover .event-arrow {
+  color: var(--text);
+  transform: translateX(5px);
+}
+
+.journal-empty {
+  padding: 56px 4px;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
+  .hero-wrap { min-height: auto; }
+  .gallery {
+    min-height: 610px;
+    grid-template-rows: minmax(440px, 1fr) auto auto;
+  }
+
+  .journal-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-event {
+    grid-template-columns: 105px 1fr auto;
+  }
+
+  .event-preview {
+    grid-column: 2 / -1;
+    height: 190px;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-event {
+    grid-template-columns: 1fr auto;
+    gap: 13px;
+    padding: 24px 2px;
+  }
+
+  .event-date {
+    grid-column: 1 / -1;
+  }
+
+  .event-preview {
+    grid-column: 1 / -1;
+    height: 180px;
+  }
+
+  .event-arrow {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
 /* TRUE HORIZONTAL CROSS-PAGE PANORAMA */
 @view-transition { navigation: auto; }
 
@@ -519,15 +716,15 @@ body.panorama-fallback-exit-prev {
   <div class="page-shell">
     <header class="topbar">
       <a class="back-link" href="../photos.html">← Photos</a>
-      <span class="topbar-label">📁 Selected Work</span>
+      <span class="topbar-label">Photography</span>
     </header>
 
+    <div class="hero-wrap">
     <section class="intro">
-      <p class="eyebrow">Curated Photography</p>
+      <p class="eyebrow">Photography</p>
       <h1>Selected Work</h1>
       <p>
-        A smaller collection of photographs chosen for their color, composition,
-        atmosphere, and the details that first caught my attention.
+        A rotating edit of photographs I keep coming back to.
       </p>
     </section>
 
@@ -537,7 +734,7 @@ body.panorama-fallback-exit-prev {
       <span class="spotlight bottom-left" aria-hidden="true"></span>
       <span class="spotlight bottom-right" aria-hidden="true"></span>
 
-      <div id="stage" class="stage" aria-label="Selected photography gallery"></div>
+      <div id="stage" class="stage" aria-label="Selected photography cover flow"></div>
 
       <div class="controls">
         <button id="previousButton" class="control-button" type="button" aria-label="Previous photograph">
@@ -553,17 +750,29 @@ body.panorama-fallback-exit-prev {
 
       <div>
         <p id="dateLine" class="date-line"></p>
-        <p class="hint">Drag, scroll, or use the arrow keys</p>
+        <p class="hint">Drag or use the arrows · click the center photo to open its full event</p>
       </div>
     </main>
+    </div>
+
+    <section class="event-journal" id="eventJournal">
+      <div class="journal-heading">
+        <h2>Photo Journal</h2>
+        <p>
+          Days, events and places kept as complete sets. Pick an entry to open
+          its own page and see the full sequence.
+        </p>
+      </div>
+
+      <div id="eventList" class="event-list"></div>
+    </section>
 
     <footer class="footer">
       © 2026 Artur Tigirlas. All photographs are original work and may not be
       reproduced or redistributed without permission.
     </footer>
   </div>
-
-  <script src="selected-data.js"></script>
+  <script src="photos-data.js"></script>
   <script>
     const stage = document.getElementById("stage");
     const counter = document.getElementById("counter");
@@ -571,7 +780,20 @@ body.panorama-fallback-exit-prev {
     const previousButton = document.getElementById("previousButton");
     const nextButton = document.getElementById("nextButton");
 
-    let selectedPhotos = shuffle(window.SELECTED_PHOTOS || []);
+    // Pick a fresh random sample every time the page loads.
+    // If fewer than 50 photos exist, it simply uses all of them.
+    const RANDOM_SELECTION_SIZE = 50;
+
+    // Shared library. The new updater will eventually write window.PHOTOS.
+    // The fallbacks keep the page usable while the old data file is still around.
+    const allPhotos =
+      window.PHOTOS ||
+      window.TRAVEL_PHOTOS ||
+      window.SELECTED_PHOTOS ||
+      [];
+
+    let selectedPhotos = shuffle(allPhotos)
+      .slice(0, RANDOM_SELECTION_SIZE);
     let currentIndex = 0;
     let dragStartX = 0;
     let dragging = false;
@@ -590,17 +812,84 @@ body.panorama-fallback-exit-prev {
     }
 
     function formatDate(value) {
-      if (!value) {
-        return "";
+      if (!value) return "";
+
+      const text = String(value).trim();
+
+      // Already-readable labels such as "Random." should stay as written.
+      // ISO dates from photos-data.js are parsed at noon to avoid timezone shifts.
+      let date;
+
+      if (/^\d{4}-\d{2}-\d{2}$/.test(text)) {
+        date = new Date(`${text}T12:00:00`);
+      } else {
+        date = new Date(text);
       }
 
-      const date = new Date(`${value}T12:00:00`);
+      if (Number.isNaN(date.getTime())) {
+        return text;
+      }
 
       return new Intl.DateTimeFormat("en-US", {
         year: "numeric",
         month: "long",
         day: "numeric"
       }).format(date);
+    }
+
+    /*
+      SHARED LIBRARY STRUCTURE
+
+        photos/
+          photos/
+            test/
+              01.jpg
+              02.jpg
+            future-event/
+              01.jpg
+
+      A source path such as:
+        photos/test/01.jpg
+
+      belongs to event:
+        test
+
+      and opens the matching generated page:
+        <event>-event.html
+    */
+    function getEventFolder(photo) {
+      // Prefer the explicit event field written by update-photos.py.
+      const explicitEvent = String(photo?.event || "").trim();
+      if (explicitEvent) return explicitEvent;
+
+      const src = String(photo?.src || "").replace(/\\/g, "/");
+      const parts = src.split("/").filter(Boolean);
+
+      // Expected page-relative shared path: photos/<event>/<filename>
+      const photosIndex = parts.findIndex(
+        part => part.toLowerCase() === "photos"
+      );
+
+      if (photosIndex !== -1 && parts.length >= photosIndex + 3) {
+        return parts[photosIndex + 1];
+      }
+
+      return "";
+    }
+
+    function getEventHref(photo) {
+      if (photo?.eventHref) return photo.eventHref;
+
+      const folder = getEventFolder(photo);
+      const meta = findEventMeta(folder);
+
+      if (meta.href) {
+        return meta.href;
+      }
+
+      return folder
+        ? `${encodeURIComponent(normalizeEventKey(folder))}-event.html`
+        : "test-event.html";
     }
 
     function calculateSlideSize(slide, ratio) {
@@ -629,9 +918,9 @@ body.panorama-fallback-exit-prev {
           <div class="empty-state">
             <strong>No selected photos found</strong>
             <p>
-              Add JPG, JPEG, PNG, or WEBP files to
-              <code>photos/selected-work/</code>, then run
-              <code>update-photos.bat</code>.
+              No photographs are currently available in the shared library.
+              The new library will use folders such as
+              <code>photos/test/</code>.
             </p>
           </div>
         `;
@@ -642,6 +931,22 @@ body.panorama-fallback-exit-prev {
         const slide = document.createElement("article");
         slide.className = "slide";
         slide.dataset.index = index;
+        slide.tabIndex = index === currentIndex ? 0 : -1;
+        slide.setAttribute("role", "link");
+        slide.setAttribute("aria-label", "Open the full event for this photograph");
+
+        const openEvent = () => {
+          if (index !== currentIndex) return;
+          window.location.href = getEventHref(photo);
+        };
+
+        slide.addEventListener("click", openEvent);
+        slide.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openEvent();
+          }
+        });
 
         const frame = document.createElement("div");
         frame.className = "photo-frame";
@@ -706,6 +1011,7 @@ body.panorama-fallback-exit-prev {
 
         slide.classList.toggle("is-active", index === currentIndex);
         slide.setAttribute("aria-hidden", index === currentIndex ? "false" : "true");
+        slide.tabIndex = index === currentIndex ? 0 : -1;
       });
 
       if (!selectedPhotos.length) {
@@ -744,6 +1050,7 @@ body.panorama-fallback-exit-prev {
     stage.addEventListener(
       "wheel",
       (event) => {
+        if (!event.shiftKey) return;
         event.preventDefault();
 
         wheelAmount += event.deltaY + event.deltaX;
@@ -763,7 +1070,14 @@ body.panorama-fallback-exit-prev {
     stage.addEventListener("pointerdown", (event) => {
       dragging = true;
       dragStartX = event.clientX;
-      stage.setPointerCapture(event.pointerId);
+
+      // On desktop, do not capture the mouse pointer.
+      // Pointer capture can make the final click belong to the stage
+      // instead of the active slide, which stops the photo click from opening its event.
+      // Touch/pen can still use capture so swiping remains reliable on mobile.
+      if (event.pointerType !== "mouse") {
+        stage.setPointerCapture(event.pointerId);
+      }
     });
 
     stage.addEventListener("pointerup", (event) => {
@@ -802,6 +1116,356 @@ body.panorama-fallback-exit-prev {
 
     createSlides();
     render();
+
+    // Every finished event page and its display metadata.
+    // The event value must match the folder inside photos/photos/<event>/.
+    const PHOTO_EVENTS = [
+      {
+            "event": "blue-jays-game-my-first-baseball-game",
+            "title": "Blue jays game - My first Baseball Game!",
+            "date": "June 22, 2025",
+            "description": "My first Baseball game with my girlfriend, taken with Pixel 9 pro xl",
+            "href": "blue-jays-game-my-first-baseball-game-event.html"
+      },
+      {
+            "event": "burlington-beach-walk-2026",
+            "title": "Burlington Beach Walk 2026",
+            "date": "June 3, 2026",
+            "description": "Burlington beach with my girlfriend, some street photography, landscape, enjoying the view and walk. Taken on my Z5 II",
+            "href": "burlington-beach-walk-2026-event.html"
+      },
+      {
+            "event": "burlington-bridge-on-the-ice-2025",
+            "title": "Burlington Bridge on the ice 2025",
+            "date": "February 9, 2026",
+            "description": "I had the chance before class to go out on the actual ice and take some pictures with my tripod. Was little scary but the results are amazing for the lens.",
+            "href": "burlington-bridge-on-the-ice-2025-event.html"
+      },
+      {
+            "event": "first-time-doing-portiort-2024",
+            "title": "First Time doing portiort 2024",
+            "date": "May 1, 2024",
+            "description": "I decided to take some pictures of my girlfriend for the first time and with my new tripod at the time.",
+            "href": "first-time-doing-portiort-2024-event.html"
+      },
+      {
+            "event": "hiking-with-ben-june-6-2026",
+            "title": "Hiking with Ben June 6 2026",
+            "date": "June 6, 2026",
+            "description": "Went hiking with my friend ben and his girlfriend. Trying out our cameras",
+            "href": "hiking-with-ben-june-6-2026-event.html"
+      },
+      {
+            "event": "hiking-with-sister-camping",
+            "title": "Hiking With Sister - Camping",
+            "date": "",
+            "description": "My sister and I went hiking for first time in the park. We were cmaping for few days there and decided to bring out our cameras and take pictures of the wildlife and forest.",
+            "href": "hiking-with-sister-camping-event.html"
+      },
+      {
+            "event": "import-expo-2024",
+            "title": "Import Expo 2024",
+            "date": "April 21, 2024",
+            "description": "My very first time taking my first camera out to a car show. I went with my friends and I got the opporunity to edit and take photos. Developing my editing style.",
+            "href": "import-expo-2024-event.html"
+      },
+      {
+            "event": "importfest-2024-drift-event",
+            "title": "ImportFest 2024 Drift Event",
+            "date": "August 18, 2024",
+            "description": "My first time taking a camera to a drift/track. Got to learn alot and how to edit and deal with huge batches of photos.",
+            "href": "importfest-2024-drift-event-event.html"
+      },
+      {
+            "event": "importfest-2025-drift-event",
+            "title": "ImportFest 2025 Drift Event",
+            "date": "June 18, 2025",
+            "description": "Went with my dad and sister to the drift night to see ride alongs and such. Took photos with my phone",
+            "href": "importfest-2025-drift-event-event.html"
+      },
+      {
+            "event": "importfest-aug-8-2026-drift-event",
+            "title": "ImportFest Aug 8 2026 Drift Event",
+            "date": "Aug 8, 2026",
+            "description": "Got to try my new camera at the event and see how it actually performs. Was amazed and loved the final shots.",
+            "href": "importfest-aug-8-2026-drift-event-event.html"
+      },
+      {
+            "event": "jordan-harbour-light-2026",
+            "title": "Jordan Harbour Light 2026",
+            "date": "June 29, 2026",
+            "description": "I pass this harbour every day when i drive to school and i always wanted to go take photos at sunset. I was almost late and missed it but i was able to take some great shots at the momment.",
+            "href": "jordan-harbour-light-2026-event.html"
+      },
+      {
+            "event": "photos-from-school-2025",
+            "title": "Photos from School 2025",
+            "date": "March 12, 2025",
+            "description": "I brought my sister to my university for the first time and i got the chance to walk aroud take photos with my phone.",
+            "href": "photos-from-school-2025-event.html"
+      },
+      {
+            "event": "random-stuff",
+            "title": "Random Stuff",
+            "date": "Random.",
+            "description": "Some stuff I took photos of but never catoerigiezed it.",
+            "href": "random-stuff-event.html"
+      },
+      {
+            "event": "street-photography-in-toronto-2025",
+            "title": "Street Photography in Toronto 2025",
+            "date": "January 5, 2026",
+            "description": "Went with my friends near winter time to go take photos around the city.",
+            "href": "street-photography-in-toronto-2025-event.html"
+      },
+      {
+            "event": "street-photography-in-toronto-2026",
+            "title": "Street Photography in Toronto 2026",
+            "date": "July 8, 2026",
+            "description": "It was my birthday and i wanted to do some street photography. I waalked around the city with my gf.",
+            "href": "street-photography-in-toronto-2026-event.html"
+      },
+      {
+            "event": "toronto-autoshow-2024",
+            "title": "Toronto AutoShow 2024",
+            "date": "March 2, 2024",
+            "description": "My first time using a camera and it was this event.",
+            "href": "toronto-autoshow-2024-event.html"
+      },
+      {
+            "event": "toronto-autoshow-2025",
+            "title": "Toronto Autoshow 2025",
+            "date": "February 19, 2025",
+            "description": "got to use my a7 iii at the time. Loved the photos and time there.",
+            "href": "toronto-autoshow-2025-event.html"
+      },
+      {
+            "event": "toronto-autoshow-2026",
+            "title": "Toronto AutoShow 2026",
+            "date": "February 22, 2026",
+            "description": "Used my z5 ii for this car show. I spent more time enjoying the cars, then taking the photos so the photos were subpar to my usually liking.",
+            "href": "toronto-autoshow-2026-event.html"
+      },
+      {
+            "event": "track-and-field-at-my-highschool-2024",
+            "title": "Track and Field at my Highschool 2024",
+            "date": "May 15, 2024",
+            "description": "I got to try sports photography first time. Was good i got good results for the camera at the time.",
+            "href": "track-and-field-at-my-highschool-2024-event.html"
+      },
+      {
+            "event": "using-my-first-camera-while-hiking-2024",
+            "title": "Using my first camera while hiking 2024",
+            "date": "March 12, 2024",
+            "description": "I bought my first camera a canon t5i. Went hiking for the first time too and got to learn how to edit.",
+            "href": "using-my-first-camera-while-hiking-2024-event.html"
+      },
+      {
+            "event": "using-my-new-camera-for-first-time-2026",
+            "title": "Using my New camera for first Time 2026...",
+            "date": "January 5, 2026",
+            "description": "I bought my first lens to try the new camera out. It was a 40mm f2",
+            "href": "using-my-new-camera-for-first-time-2026-event.html"
+      },
+      {
+            "event": "walk-to-parking-lot-at-school-2025",
+            "title": "Walk to Parking lot at School 2025",
+            "date": "March 5, 2025",
+            "description": "I was walking down to lot m to go home and i liked the view and took some photos of a guy walking through.",
+            "href": "walk-to-parking-lot-at-school-2025-event.html"
+      },
+      {
+            "event": "walk-with-girlfriend-2024",
+            "title": "Walk with girlfriend 2024",
+            "date": "October 18, 2024",
+            "description": "I got to try my new lens at the time the 17-70 on my full frame camera. Went on a walk with my girlfriend.",
+            "href": "walk-with-girlfriend-2024-event.html"
+      },
+      {
+            "event": "walk-with-girlfriend-aug-2026",
+            "title": "Walk with Girlfriend Aug 2026",
+            "date": "August 5, 2026",
+            "description": "Went on a walk on the beach with my girlfriend and took some photos of the ducks and her. Brought my flash to try to get a c ertain style.",
+            "href": "walk-with-girlfriend-aug-2026-event.html"
+      },
+      {
+            "event": "walk-with-girlfriend-march-2025",
+            "title": "Walk with Girlfriend March 2025",
+            "date": "March 19, 2025",
+            "description": "Some portorts of my girlfriend",
+            "href": "walk-with-girlfriend-march-2025-event.html"
+      }
+];
+
+    // Build the lower event journal automatically from the same shared library.
+    // One folder = one event. The first photo in the folder becomes its preview.
+    function prettifyEventName(value) {
+      return String(value || "")
+        .replace(/[-_]+/g, " ")
+        .replace(/\b\w/g, letter => letter.toUpperCase());
+    }
+
+    function normalizeEventKey(value) {
+      return String(value || "")
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    }
+
+    function findEventMeta(eventName) {
+      const key = normalizeEventKey(eventName);
+
+      return PHOTO_EVENTS.find(item =>
+        normalizeEventKey(item.event) === key ||
+        normalizeEventKey(item.title) === key
+      ) || {};
+    }
+
+    function buildEventJournal() {
+      const eventList = document.getElementById("eventList");
+      if (!eventList) return;
+
+      const grouped = new Map();
+
+      allPhotos.forEach(photo => {
+        const eventName = getEventFolder(photo);
+        if (!eventName) return;
+
+        if (!grouped.has(eventName)) {
+          grouped.set(eventName, []);
+        }
+
+        grouped.get(eventName).push(photo);
+      });
+
+      eventList.innerHTML = "";
+
+      /*
+        Merge scanned photo folders with the metadata you provided.
+
+        This fixes duplicates such as:
+          "ImportFest Aug 8 2026 Drift Event"
+        and:
+          "importfest-aug-8-2026-drift-event"
+
+        They now render as ONE journal entry:
+          - your supplied title/date/caption
+          - the photos/count/preview from photos-data.js
+          - the generated event HTML link
+      */
+      const entries = new Map();
+
+      grouped.forEach((photos, folderName) => {
+        const key = normalizeEventKey(folderName);
+        const meta = findEventMeta(folderName);
+
+        entries.set(key, {
+          key,
+          folderName,
+          photos,
+          meta
+        });
+      });
+
+      // Keep metadata-only events visible until photos are added to their folder.
+      PHOTO_EVENTS.forEach(meta => {
+        const key = normalizeEventKey(meta.event || meta.title);
+
+        if (!entries.has(key)) {
+          entries.set(key, {
+            key,
+            folderName: meta.event,
+            photos: [],
+            meta
+          });
+        }
+      });
+
+      if (!entries.size) {
+        eventList.innerHTML =
+          '<div class="journal-empty">No photo events found yet.</div>';
+        return;
+      }
+
+      function entryTimestamp(entry) {
+        // Only use the manual date from PHOTO_EVENTS for journal sorting.
+        // Do not use dates from the actual image files because Lightroom exports
+        // can change file/metadata dates when the 2049px versions are created.
+        const value = entry.meta.date;
+        if (!value) return -Infinity;
+
+        const text = String(value).trim();
+
+        if (/^\d{4}-\d{2}-\d{2}$/.test(text)) {
+          const timestamp = new Date(`${text}T12:00:00`).getTime();
+          return Number.isFinite(timestamp) ? timestamp : -Infinity;
+        }
+
+        const timestamp = new Date(text).getTime();
+        return Number.isFinite(timestamp) ? timestamp : -Infinity;
+      }
+
+      const sortedEntries = [...entries.values()].sort((a, b) => {
+        const dateDifference = entryTimestamp(b) - entryTimestamp(a);
+
+        if (dateDifference) {
+          return dateDifference;
+        }
+
+        const aTitle = a.meta.title || prettifyEventName(a.folderName);
+        const bTitle = b.meta.title || prettifyEventName(b.folderName);
+        return aTitle.localeCompare(bTitle);
+      });
+
+      sortedEntries.forEach(entry => {
+        const { folderName, photos, meta } = entry;
+        const cover = photos[0];
+
+        // The journal date shown on screen also comes only from PHOTO_EVENTS.
+        // Image file dates are ignored completely here.
+        const newestDate = meta.date || "";
+
+        const title = meta.title || prettifyEventName(folderName);
+
+        // Your provided caption wins. If none exists, show the photo count.
+        const description =
+          meta.description ||
+          `${photos.length} photograph${photos.length === 1 ? "" : "s"}`;
+
+        const href =
+          meta.href ||
+          `${encodeURIComponent(normalizeEventKey(folderName))}-event.html`;
+
+        const link = document.createElement("a");
+        link.className = "photo-event";
+        link.href = href;
+
+        const previewHtml = cover
+          ? `<div class="event-preview">
+               <img src="${cover.src}" alt="${title}" loading="lazy">
+             </div>`
+          : `<div class="event-preview event-preview-placeholder">
+               <span>${title}</span>
+             </div>`;
+
+        link.innerHTML = `
+          <div class="event-date">${newestDate ? formatDate(newestDate) : "Photo set"}</div>
+          <div class="event-copy">
+            <h3>${title}</h3>
+            <p>${description}</p>
+          </div>
+          ${previewHtml}
+          <span class="event-arrow" aria-hidden="true">↗</span>
+        `;
+
+        eventList.appendChild(link);
+      });
+    }
+
+    // Build the journal after the shared photo library is available.
+    buildEventJournal();
   </script>
 
 <script>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Walk with girlfriend 2024 — Artur Tigirlas</title>
+<style>
+* { box-sizing: border-box; }
+:root {
+  --bg: #071018;
+  --text: #f2f6f9;
+  --muted: #91a4b5;
+  --line: rgba(255,255,255,.12);
+  --accent: #7eb9e8;
+}
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 78% 8%, rgba(126,185,232,.12), transparent 28rem),
+    linear-gradient(180deg, #04080c, var(--bg));
+}
+a { color: inherit; }
+header {
+  position: sticky;
+  top: 12px;
+  z-index: 20;
+  width: min(1380px, calc(100% - 28px));
+  margin: 12px auto 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 17px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(7,14,21,.78);
+  backdrop-filter: blur(20px);
+}
+header a { text-decoration: none; }
+header span {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.intro {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 110px 0 58px;
+}
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+h1 {
+  margin: 0;
+  font-size: clamp(58px, 11vw, 150px);
+  font-weight: normal;
+  line-height: .86;
+  letter-spacing: -.055em;
+}
+.intro-copy {
+  max-width: 650px;
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.event-details {
+  display: grid;
+  grid-template-columns: 150px 180px minmax(0, 1fr);
+  gap: 28px;
+  margin-top: 48px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.event-details > div {
+  min-width: 0;
+}
+
+.detail-label {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.detail-value {
+  display: block;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.detail-note {
+  max-width: 620px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.gallery {
+  width: min(1380px, calc(100% - 36px));
+  margin: 0 auto 100px;
+  columns: 2 420px;
+  column-gap: 18px;
+}
+.photo {
+  break-inside: avoid;
+  margin: 0 0 18px;
+}
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  background: #020406;
+}
+.empty {
+  width: min(900px, calc(100% - 36px));
+  margin: 0 auto 100px;
+  padding: 40px 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+code { color: var(--accent); }
+
+.photo {
+  cursor: zoom-in;
+}
+
+.photo-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  place-items: center;
+  padding: 24px;
+  background: rgba(2, 5, 8, .88);
+  backdrop-filter: blur(10px);
+}
+
+.photo-lightbox.open {
+  display: grid;
+}
+
+.photo-lightbox-inner {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  max-width: 88vw;
+  max-height: 84vh;
+  margin: auto;
+}
+
+.photo-lightbox img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 88vw;
+  max-height: 84vh;
+  margin: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(0,0,0,.5);
+}
+
+.photo-lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.24);
+  border-radius: 50%;
+  color: rgba(255,255,255,.92);
+  background: rgba(10,14,18,.38);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  font-size: 23px;
+  line-height: 1;
+  transition: background .18s ease, transform .18s ease;
+}
+
+.photo-lightbox-close:hover {
+  background: rgba(10,14,18,.62);
+  transform: scale(1.04);
+}
+
+@media (max-width: 760px) {
+  .photo-lightbox {
+    padding: 14px;
+  }
+
+  .photo-lightbox-inner {
+    width: fit-content;
+    height: fit-content;
+    max-width: 92vw;
+    max-height: 78vh;
+    margin: auto;
+  }
+
+  .photo-lightbox img {
+    max-width: 92vw;
+    max-height: 78vh;
+    margin: auto;
+  }
+
+  .photo-lightbox-close {
+    top: 8px;
+    right: 8px;
+    width: 36px;
+    height: 36px;
+    font-size: 21px;
+  }
+}
+
+footer {
+  width: min(1380px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 34px 0 50px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 760px) {
+  header {
+    top: 8px;
+    width: calc(100% - 18px);
+    margin-top: 8px;
+    padding: 11px 14px;
+    border-radius: 16px;
+  }
+
+  header span {
+    display: none;
+  }
+
+  .intro {
+    width: calc(100% - 28px);
+    padding: 84px 0 36px;
+  }
+
+  h1 {
+    font-size: clamp(54px, 18vw, 92px);
+    line-height: .9;
+  }
+
+  .intro-copy {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .event-details {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 18px;
+    margin-top: 34px;
+  }
+
+  .event-details > div:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .gallery {
+    width: calc(100% - 20px);
+    columns: 2;
+    column-gap: 8px;
+    margin: 0 auto 64px;
+    padding: 0;
+  }
+
+  .photo {
+    display: block;
+    break-inside: avoid;
+    margin: 0 0 8px;
+  }
+
+  .photo img {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .empty {
+    width: calc(100% - 28px);
+  }
+
+  footer {
+    width: calc(100% - 28px);
+    padding-bottom: 36px;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .gallery {
+    width: calc(100% - 14px);
+    column-gap: 6px;
+  }
+
+  .photo {
+    margin-bottom: 6px;
+  }
+
+  .event-details {
+    grid-template-columns: 1fr;
+  }
+
+  .event-details > div:last-child {
+    grid-column: auto;
+  }
+
+  .detail-note {
+    font-size: 16px;
+  }
+}
+
+</style>
+</head>
+<body>
+<header>
+  <a href="selected.html">← Photography</a>
+  <span>Event</span>
+</header>
+
+<main>
+  <section class="intro">
+    <p class="eyebrow">Photo Journal</p>
+    <h1 id="eventTitle">Walk with girlfriend 2024</h1>
+    <p class="intro-copy">
+      A complete photographic set from one day, place, or event.
+    </p>
+
+    <div class="event-details">
+      <div>
+        <span class="detail-label">Date</span>
+        <span class="detail-value">October 18, 2024</span>
+      </div>
+      <div>
+        <span class="detail-label">Location</span>
+        <span class="detail-value">St. Catharines</span>
+      </div>
+      <div>
+        <span class="detail-label">Notes</span>
+        <p class="detail-note">
+          I got to try my new lens at the time the 17-70 on my full frame camera. Went on a walk with my girlfriend.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div id="gallery" class="gallery"></div>
+  <div id="empty" class="empty" hidden></div>
+</main>
+
+
+  <div id="photoLightbox" class="photo-lightbox" aria-hidden="true">
+    <div class="photo-lightbox-inner">
+      <button id="photoLightboxClose" class="photo-lightbox-close" type="button" aria-label="Close enlarged photo">×</button>
+      <img id="photoLightboxImage" alt="">
+    </div>
+  </div>
+
+<footer>Artur Tigirlas — Photography</footer>
+
+<script src="photos-data.js"></script>
+<script>
+/*
+  HOW THIS PAGE KNOWS WHICH PHOTOS BELONG HERE
+
+  This file:
+      test-event.html
+
+  maps to the shared library folder:
+      photos/test/
+
+  Future example:
+      car-meet-event.html
+      -> photos/car-meet/
+
+  Copy this HTML and rename it to match the event folder.
+*/
+const eventName = "walk-with-girlfriend-2024";
+
+function normalizeEventKey(value) {
+  return String(value || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+const eventKey = normalizeEventKey(eventName);
+
+const allPhotos =
+  window.PHOTOS ||
+  window.TRAVEL_PHOTOS ||
+  window.SELECTED_PHOTOS ||
+  [];
+
+const eventPhotos = allPhotos.filter(photo => {
+  const src = String(photo.src || "").replace(/\\/g, "/");
+  const explicitEvent = String(photo.event || "").trim();
+
+  const parts = src.split("/").filter(Boolean);
+  const photosIndex = parts.findIndex(
+    part => part.toLowerCase() === "photos"
+  );
+
+  const folderFromPath =
+    photosIndex !== -1 && parts.length >= photosIndex + 3
+      ? parts[photosIndex + 1]
+      : "";
+
+  return (
+    normalizeEventKey(explicitEvent) === eventKey ||
+    normalizeEventKey(folderFromPath) === eventKey
+  );
+});
+
+const title = 'Walk with girlfriend 2024';
+
+document.title = `${title} — Artur Tigirlas`;
+document.getElementById("eventTitle").textContent = title;
+
+const gallery = document.getElementById("gallery");
+const empty = document.getElementById("empty");
+const photoLightbox = document.getElementById("photoLightbox");
+const photoLightboxImage = document.getElementById("photoLightboxImage");
+const photoLightboxClose = document.getElementById("photoLightboxClose");
+
+function openPhotoLightbox(photo) {
+  photoLightboxImage.src = photo.src;
+  photoLightboxImage.alt = "";
+  photoLightbox.classList.add("open");
+  photoLightbox.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closePhotoLightbox() {
+  photoLightbox.classList.remove("open");
+  photoLightbox.setAttribute("aria-hidden", "true");
+  photoLightboxImage.src = "";
+  document.body.style.overflow = "";
+}
+
+photoLightboxClose.addEventListener("click", closePhotoLightbox);
+
+photoLightbox.addEventListener("click", event => {
+  if (event.target === photoLightbox) {
+    closePhotoLightbox();
+  }
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && photoLightbox.classList.contains("open")) {
+    closePhotoLightbox();
+  }
+});
+
+if (!eventPhotos.length) {
+  gallery.hidden = true;
+  empty.hidden = false;
+  empty.innerHTML = `
+    No matching photos were found for this event yet.<br><br>
+    Folder names with spaces and capitalization are matched automatically
+    through <code>photos-data.js</code>.
+  `;
+} else {
+  eventPhotos.forEach(photo => {
+    const figure = document.createElement("figure");
+    figure.className = "photo";
+
+    const img = document.createElement("img");
+    img.src = photo.src;
+    img.alt = "";
+    img.loading = "lazy";
+
+    figure.appendChild(img);
+    figure.addEventListener("click", () => openPhotoLightbox(photo));
+    gallery.appendChild(figure);
+  });
+}
+</script>
+</body>
+</html>

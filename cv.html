@@ -5,8 +5,11 @@
 <script>
 (() => {
   try {
+    // saves this in direction so this part can reuse the same value instead of finding/calculating it again
     const direction = sessionStorage.getItem("panorama-direction");
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if (direction === "next" || direction === "prev") {
+      // puts/reads a small value in a data-* attribute so css or other javascript can react to it
       document.documentElement.dataset.panoramaDirection = direction;
     }
   } catch (error) {}
@@ -30,101 +33,163 @@
 }
 html{background:var(--bg)}
 body{
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:0;
+  /* makes sure this stays at least this tall but it can still grow if the content needs more room */
   min-height:100vh;
+  /* only controls left/right overflow so i can stop side scrolling without touching vertical scroll */
   overflow-x:hidden;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--text);
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     radial-gradient(circle at 76% 16%,rgba(108,13,13,.17),transparent 30rem),
     linear-gradient(145deg,#0b0d0f,#050607);
+  /* sets the font used here and gives backup fonts if the first one isnt available */
   font-family:"Times New Roman",Times,serif;
 }
 body::after{
   content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:fixed;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
   inset:0;
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
   pointer-events:none;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:.10;
+  /* adds a gradient/image behind the content without needing another html element */
   background-image:radial-gradient(circle,rgba(255,255,255,.65) 0 .45px,transparent .8px);
+  /* controls how big the background image/pattern is which also changes how often it repeats */
   background-size:8px 8px;
 }
 .cv-page{
+  /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
   width:min(1320px,calc(100% - 36px));
+  /* makes sure this stays at least this tall but it can still grow if the content needs more room */
   min-height:100vh;
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:auto;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:42px 0 100px;
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:grid;
+  /* same idea as grid columns but this controls how tall each row is */
   grid-template-rows:auto 1fr;
 }
 .cv-top{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:grid;
+  /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
   grid-template-columns:1fr auto 1fr;
+  /* lines the children up across the other axis so they sit where i want inside the row/grid */
   align-items:center;
+  /* only adds inside space at the bottom */
   padding-bottom:20px;
+  /* only puts the divider line on the bottom edge */
   border-bottom:1px solid var(--line);
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:11px;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.15em;
+  /* changes how the text LOOKS like uppercase without changing the actual html text */
   text-transform:uppercase;
 }
 .cv-top > :last-child{
+  /* only moves this one grid item inside its own cell */
   justify-self:end;
 }
 .cv-back{
+  /* only moves this one grid item inside its own cell */
   justify-self:start;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--text);
+  /* removes/adds stuff like the normal browser underline on links */
   text-decoration:none;
+  /* smooths changes between old/new css values so hover/class changes dont just snap */
   transition:opacity .2s ease,transform .2s ease;
 }
 .cv-back:hover,
 .cv-back:focus-visible{
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:.72;
+  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
   transform:translateX(-3px);
   outline:none;
 }
 .cv-main{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:grid;
+  /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
   grid-template-columns:minmax(0,1fr) minmax(260px,420px);
+  /* adds space between flex/grid items without needing margins on every child */
   gap:56px;
+  /* lines the children up across the other axis so they sit where i want inside the row/grid */
   align-items:center;
 }
 h1{
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:0;
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:clamp(72px,12vw,178px);
+  /* controls space between text lines so paragraphs/headings dont get too cramped */
   line-height:.82;
+  /* controls how bold/light the text looks */
   font-weight:normal;
+  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:-.065em;
 }
 .cv-copy{
+  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
   margin:28px 0 0;
+  /* stops this getting too wide on big screens so the layout/text still looks right */
   max-width:670px;
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
+  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:clamp(18px,2vw,27px);
+  /* controls space between text lines so paragraphs/headings dont get too cramped */
   line-height:1.5;
 }
 .cv-card{
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:28px;
+  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
   border:1px solid var(--line);
+  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
   border-radius:22px;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:rgba(10,11,11,.66);
+  /* blurs whatever is BEHIND this transparent box which is what gives the glass look */
   backdrop-filter:blur(18px);
 }
 .cv-card h2{margin:0;font-size:34px;font-weight:normal}
 .cv-card p{color:var(--muted);line-height:1.6}
 .cv-open{
+  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:flex;
+  /* controls how the children spread out across the main flex/grid direction */
   justify-content:space-between;
+  /* adds space above this without changing the spacing inside the box */
   margin-top:28px;
+  /* adds space INSIDE the box so the content doesnt sit right against the edge */
   padding:16px 0 0;
+  /* only puts the divider line on the top edge */
   border-top:1px solid var(--line);
+  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--text);
+  /* removes/adds stuff like the normal browser underline on links */
   text-decoration:none;
 }
 @media(max-width:800px){
   .cv-top{
+    /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
     grid-template-columns:1fr auto;
   }
   .cv-top > :nth-child(2){
+    /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
     display:none;
   }
   .cv-main{grid-template-columns:1fr;align-content:center;padding-top:58px}
@@ -142,7 +207,9 @@ h1{
 }
 
 ::view-transition-image-pair(root) {
+  /* makes a separate stacking/blending area so effects here dont accidentally mix with the whole page */
   isolation: isolate;
+  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
   overflow: hidden;
 }
 
@@ -150,26 +217,32 @@ h1{
 ::view-transition-new(root) {
   animation-duration: 920ms;
   animation-timing-function: cubic-bezier(.22,.82,.22,1);
+  /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
   mix-blend-mode: normal;
+  /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
   height: 100%;
 }
 
 html[data-panorama-direction="next"]::view-transition-old(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:
     panorama-old-left 920ms cubic-bezier(.22,.82,.22,1),
     panorama-old-color-hard 920ms ease-in-out;
 }
 html[data-panorama-direction="next"]::view-transition-new(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:
     panorama-new-right 920ms cubic-bezier(.22,.82,.22,1),
     panorama-new-color-hard 920ms ease-in-out;
 }
 html[data-panorama-direction="prev"]::view-transition-old(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:
     panorama-old-right 920ms cubic-bezier(.22,.82,.22,1),
     panorama-old-color-hard 920ms ease-in-out;
 }
 html[data-panorama-direction="prev"]::view-transition-new(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:
     panorama-new-left 920ms cubic-bezier(.22,.82,.22,1),
     panorama-new-color-hard 920ms ease-in-out;
@@ -177,9 +250,13 @@ html[data-panorama-direction="prev"]::view-transition-new(root) {
 
 ::view-transition-image-pair(root)::after {
   content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
   inset:-4%;
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
   pointer-events:none;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     linear-gradient(
       90deg,
@@ -190,17 +267,25 @@ html[data-panorama-direction="prev"]::view-transition-new(root) {
       rgba(28,53,80,.34) 70%,
       transparent 100%
     );
+  /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
   mix-blend-mode:screen;
+  /* changes the finished layer with stuff like blur brightness contrast and saturation */
   filter:blur(7px) saturate(1.28);
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:0;
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:panoramaBlendFlashHard 920ms ease-in-out;
 }
 
 ::view-transition-image-pair(root)::before {
   content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
   inset:0;
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
   pointer-events:none;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
   background:
     radial-gradient(
       ellipse at 50% 50%,
@@ -209,8 +294,11 @@ html[data-panorama-direction="prev"]::view-transition-new(root) {
       rgba(19,35,60,.18) 48%,
       transparent 72%
     );
+  /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
   mix-blend-mode:color-dodge;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
   opacity:0;
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:panoramaCenterBloomHard 920ms ease-in-out;
 }
 
@@ -220,43 +308,65 @@ html[data-panorama-direction="prev"]::view-transition-new(root) {
 @keyframes panorama-new-left { from{transform:translateX(-100%)} to{transform:translateX(0)} }
 
 @keyframes panorama-old-color-hard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   0%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   38%{filter:saturate(.88) hue-rotate(-14deg) brightness(.90) contrast(1.05)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   72%{filter:saturate(.72) hue-rotate(-22deg) brightness(.72) contrast(1.12)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   100%{filter:saturate(.64) hue-rotate(-26deg) brightness(.58) contrast(1.14)}
 }
 @keyframes panorama-new-color-hard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   0%{filter:saturate(.60) hue-rotate(24deg) brightness(.56) contrast(1.14)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   30%{filter:saturate(.72) hue-rotate(18deg) brightness(.68) contrast(1.12)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   64%{filter:saturate(.88) hue-rotate(8deg) brightness(.88) contrast(1.05)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   100%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
 }
 @keyframes panoramaBlendFlashHard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   0%,100%{opacity:0}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   28%{opacity:.20}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   45%{opacity:.62}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   54%{opacity:.88}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   66%{opacity:.42}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   78%{opacity:.12}
 }
 @keyframes panoramaCenterBloomHard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   0%,100%{opacity:0;transform:scale(.96)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   42%{opacity:.18;transform:scale(1)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   52%{opacity:.58;transform:scale(1.06)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
   64%{opacity:.22;transform:scale(1.10)}
 }
 
 /* Fallback when cross-document View Transitions are unavailable. */
 html.panorama-fallback-next body {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:fallback-enter-right 680ms cubic-bezier(.22,.82,.22,1) both;
 }
 html.panorama-fallback-prev body {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:fallback-enter-left 680ms cubic-bezier(.22,.82,.22,1) both;
 }
 body.panorama-fallback-exit-next {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:fallback-exit-left 680ms cubic-bezier(.22,.82,.22,1) both;
 }
 body.panorama-fallback-exit-prev {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
   animation:fallback-exit-right 680ms cubic-bezier(.22,.82,.22,1) both;
 }
 @keyframes fallback-enter-right { from{transform:translateX(18vw);opacity:.72} to{transform:none;opacity:1} }
@@ -279,13 +389,17 @@ body.panorama-fallback-exit-prev {
 </style>
 </head>
 <body>
+<!-- cv-page part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
 <main class="cv-page">
+  <!-- cv-top part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
   <header class="cv-top">
     <a class="cv-back" href="projects.html">← Projects</a>
     <span>Portfolio / CV</span>
     <span>Updated 2026</span>
   </header>
+  <!-- cv-main part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
   <section class="cv-main">
+    <!-- div part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
     <div>
       <h1>CV</h1>
       <p class="cv-copy">
@@ -293,6 +407,7 @@ body.panorama-fallback-exit-prev {
         development work, and additional qualifications.
       </p>
     </div>
+    <!-- cv-card part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
     <div class="cv-card">
       <h2>Artur Tigirlas</h2>
       <p>Open the complete résumé as a PDF.</p>
@@ -308,60 +423,86 @@ body.panorama-fallback-exit-prev {
 
 <script>
 (() => {
+  // saves this in order so this part can reuse the same value instead of finding/calculating it again
   const order = ["home.html","photos.html","photos/travel-menu.html","photos/travel.html","photos/pond.html","photos/selected.html","projects.html","cv.html"];
+  // this value changes while the page is running so i keep it in navigating instead of making it const
   let navigating = false;
 
   function normalizedPath(urlLike) {
     try {
+      // saves this in url so this part can reuse the same value instead of finding/calculating it again
       const url = new URL(urlLike, location.href);
+      // this value changes while the page is running so i keep it in path instead of making it const
       let path = url.pathname.replace(/^\/+/, "");
+      // saves this in marker so this part can reuse the same value instead of finding/calculating it again
       const marker = "/photos/";
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
       if (path.includes(marker)) path = "photos/" + path.split(marker).pop();
+      // if the check above wasnt true this is the other route the code takes
       else path = path.split("/").pop() || "home.html";
+      // sends this result back and stops this function here so whatever called it can use the value
       return decodeURIComponent(path).toLowerCase();
     } catch (error) {
+      // sends this result back and stops this function here so whatever called it can use the value
       return "";
     }
   }
 
+  // saves this in currentPath so this part can reuse the same value instead of finding/calculating it again
   const currentPath = normalizedPath(location.href);
+  // saves this in currentIndex so this part can reuse the same value instead of finding/calculating it again
   const currentIndex = order.indexOf(currentPath);
+  // saves this in supportsCrossDocumentTransition so this part can reuse the same value instead of finding/calculating it again
   const supportsCrossDocumentTransition =
     CSS.supports("view-transition-name", "root");
 
   function directionFor(href) {
+    // saves this in targetIndex so this part can reuse the same value instead of finding/calculating it again
     const targetIndex = order.indexOf(normalizedPath(href));
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if (targetIndex === -1 || currentIndex === -1) return "next";
+    // sends this result back and stops this function here so whatever called it can use the value
     return targetIndex >= currentIndex ? "next" : "prev";
   }
 
   function navigateTo(href, direction) {
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if (navigating) return;
     navigating = true;
 
     try {
+      // saves this for the current browser tab so the next page can read it during navigation
       sessionStorage.setItem("panorama-direction", direction);
     } catch (error) {}
 
+    // puts/reads a small value in a data-* attribute so css or other javascript can react to it
     document.documentElement.dataset.panoramaDirection = direction;
 
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
     if (supportsCrossDocumentTransition) {
       location.href = href;
+      // sends this result back and stops this function here so whatever called it can use the value
       return;
     }
 
+    // adds this class. css watches the class and uses it to change the look/animation/state
     document.body.classList.add(
       direction === "next"
         ? "panorama-fallback-exit-next"
         : "panorama-fallback-exit-prev"
     );
 
+    // waits a little before running the next part so the animation/state has time to happen first
     setTimeout(() => { location.href = href; }, 640);
   }
 
+  // finds ALL matching html elements so javascript can loop through/change each one
   document.querySelectorAll('a[href]').forEach(link => {
+    // waits for this browser/user action and then runs the function when it happens
     link.addEventListener("click", event => {
+      // saves this in href so this part can reuse the same value instead of finding/calculating it again
       const href = link.getAttribute("href");
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
       if (
         !href ||
         href.startsWith("#") ||
@@ -371,26 +512,36 @@ body.panorama-fallback-exit-prev {
         event.button !== 0
       ) return;
 
+      // saves this in targetPath so this part can reuse the same value instead of finding/calculating it again
       const targetPath = normalizedPath(href);
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
       if (!order.includes(targetPath)) return;
 
+      // stops the browsers normal behavior here because im handling this interaction myself
       event.preventDefault();
       navigateTo(href, directionFor(href));
     });
   });
 
+  // waits for this browser/user action and then runs the function when it happens
   addEventListener("pageshow", () => {
     try {
+      // saves this in direction so this part can reuse the same value instead of finding/calculating it again
       const direction = sessionStorage.getItem("panorama-direction");
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
       if (!supportsCrossDocumentTransition && (direction === "next" || direction === "prev")) {
+        // adds this class. css watches the class and uses it to change the look/animation/state
         document.documentElement.classList.add(
           direction === "prev" ? "panorama-fallback-prev" : "panorama-fallback-next"
         );
       }
 
+      // waits a little before running the next part so the animation/state has time to happen first
       setTimeout(() => {
         sessionStorage.removeItem("panorama-direction");
+        // puts/reads a small value in a data-* attribute so css or other javascript can react to it
         delete document.documentElement.dataset.panoramaDirection;
+        // removes this class so the css/state goes back to the normal version
         document.documentElement.classList.remove(
           "panorama-fallback-next",
           "panorama-fallback-prev"

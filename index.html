@@ -7,53 +7,82 @@
 
   <style>
     * {
+      /* makes width/height include the padding and border too so sizing is way less annoying */
       box-sizing: border-box;
     }
 
     html,
     body {
+      /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
       width: 100%;
+      /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
       height: 100%;
+      /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
       margin: 0;
     }
 
     body {
+      /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
       overflow: hidden;
+      /* builds the background. multiple gradients/images stack in the order theyre written here */
       background: #020306;
+      /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
       color: #f4f1eb;
+      /* sets the font used here and gives backup fonts if the first one isnt available */
       font-family: "Times New Roman", Times, serif;
+      /* changes the mouse cursor so this feels clickable/interactable instead of plain content */
       cursor: pointer;
     }
 
     .intro {
+      /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
       position: fixed;
+      /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
       inset: 0;
+      /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
       overflow: hidden;
+      /* makes a separate stacking/blending area so effects here dont accidentally mix with the whole page */
       isolation: isolate;
+      /* builds the background. multiple gradients/images stack in the order theyre written here */
       background: #020306;
+      /* smooths changes between old/new css values so hover/class changes dont just snap */
       transition:
         transform 500ms ease,
         filter 500ms ease;
     }
 
     .bg-video {
+      /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
       position: absolute;
+      /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
       inset: 0;
+      /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
       z-index: 0;
+      /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
       width: 100%;
+      /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
       height: 100%;
+      /* controls how an image/video fits its box without stretching. cover fills/crops and contain shows all of it */
       object-fit: cover;
+      /* changes the finished layer with stuff like blur brightness contrast and saturation */
       filter: brightness(1.08) contrast(1.02) saturate(1.05);
+      /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
       transform: scale(1.01);
+      /* smooths changes between old/new css values so hover/class changes dont just snap */
       transition: transform 520ms ease, filter 520ms ease;
     }
 
     .intro::before {
       content: "";
+      /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
       position: absolute;
+      /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
       inset: 0;
+      /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
       z-index: 2;
+      /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
       pointer-events: none;
+      /* builds the background. multiple gradients/images stack in the order theyre written here */
       background:
         radial-gradient(
           circle at 50% 46%,
@@ -65,182 +94,274 @@
 
     .intro::after {
       content: "";
+      /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
       position: absolute;
+      /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
       inset: -12%;
+      /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
       z-index: 3;
+      /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
       pointer-events: none;
+      /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
       opacity: 0.12;
+      /* adds a gradient/image behind the content without needing another html element */
       background-image:
         radial-gradient(circle, rgba(255, 255, 255, 0.18) 0 0.7px, transparent 0.9px);
+      /* controls how big the background image/pattern is which also changes how often it repeats */
       background-size: 8px 8px;
+      /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
       mix-blend-mode: soft-light;
+      /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
       animation: grain 0.5s steps(2) infinite;
     }
 
     .light-bloom {
+      /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
       position: absolute;
+      /* sets how far this sits from the left edge when its positioned */
       left: 50%;
+      /* sets how far this sits from the bottom edge when its positioned */
       bottom: 18%;
+      /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
       z-index: 4;
+      /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
       width: 74vw;
+      /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
       height: 20vh;
+      /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
       transform: translateX(-50%);
+      /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
       pointer-events: none;
+      /* builds the background. multiple gradients/images stack in the order theyre written here */
       background:
         radial-gradient(ellipse at 34% 60%, rgba(255, 242, 205, 0.22), transparent 36%),
         radial-gradient(ellipse at 70% 60%, rgba(255, 40, 40, 0.19), transparent 42%);
+      /* changes the finished layer with stuff like blur brightness contrast and saturation */
       filter: blur(32px);
+      /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
       opacity: 0.65;
+      /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
       animation: breathe 4.8s ease-in-out infinite;
     }
 
     .content {
+      /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
       position: absolute;
+      /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
       inset: 0;
+      /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
       z-index: 10;
+      /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
       display: grid;
+      /* short way of lining grid items up in both directions. center puts them right in the middle */
       place-items: center;
+      /* adds space INSIDE the box so the content doesnt sit right against the edge */
       padding: 24px;
+      /* controls where the text lines up inside this box */
       text-align: center;
     }
 
     .copy {
+      /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
       transform: translateY(-3vh);
       text-shadow:
         0 2px 12px rgba(0, 0, 0, 0.9),
         0 0 30px rgba(0, 0, 0, 0.9);
+      /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
       animation: appear 1.2s ease both;
     }
 
     .brand {
+      /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
       margin: 0;
+      /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
       font-size: clamp(42px, 7vw, 104px);
+      /* controls how bold/light the text looks */
       font-weight: normal;
+      /* adds/removes space between letters. i use this a lot for the spaced out label look */
       letter-spacing: 0.16em;
+      /* changes how the text LOOKS like uppercase without changing the actual html text */
       text-transform: uppercase;
     }
 
     .prompt {
+      /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
       margin: 18px 0 0;
+      /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
       font-size: clamp(12px, 1.2vw, 17px);
+      /* adds/removes space between letters. i use this a lot for the spaced out label look */
       letter-spacing: 0.26em;
+      /* changes how the text LOOKS like uppercase without changing the actual html text */
       text-transform: uppercase;
+      /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
       color: rgba(255, 255, 255, 0.78);
+      /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
       animation: pulse 1.8s ease-in-out infinite;
     }
 
 
     .flash {
+      /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
       position: absolute;
+      /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
       inset: 0;
+      /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
       z-index: 30;
+      /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
       pointer-events: none;
+      /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
       opacity: 0;
+      /* builds the background. multiple gradients/images stack in the order theyre written here */
       background:
         radial-gradient(circle at 48% 72%, rgba(255, 255, 255, 1) 0 8%, rgba(255, 246, 219, 0.75) 15%, rgba(255, 90, 60, 0.18) 30%, transparent 48%),
         rgba(255, 255, 255, 0.18);
+      /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
       mix-blend-mode: screen;
     }
 
     body.entering .copy {
+      /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
       opacity: 0;
+      /* smooths changes between old/new css values so hover/class changes dont just snap */
       transition: opacity 130ms ease;
     }
 
     body.entering .intro {
+      /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
       transform: scale(1.055);
+      /* changes the finished layer with stuff like blur brightness contrast and saturation */
       filter: brightness(1.18) contrast(1.06);
     }
 
     body.entering .light-bloom {
+      /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
       transform: translateX(-50%) scale(1.22);
+      /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
       opacity: 1;
+      /* smooths changes between old/new css values so hover/class changes dont just snap */
       transition:
         transform 420ms ease,
         opacity 420ms ease;
     }
 
     body.entering .bg-video {
+      /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
       transform: scale(1.055);
+      /* changes the finished layer with stuff like blur brightness contrast and saturation */
       filter: brightness(0.98) contrast(1.04) saturate(0.92);
     }
 
     body.entering .flash {
+      /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
       animation: flash 520ms ease forwards;
     }
 
     @keyframes appear {
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       from {
+        /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
         opacity: 0;
+        /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
         transform: translateY(14px);
       }
 
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       to {
+        /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
         opacity: 1;
+        /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
         transform: translateY(0);
       }
     }
 
     @keyframes pulse {
       0%,
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       100% {
+        /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
         opacity: 0.58;
       }
 
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       50% {
+        /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
         opacity: 1;
       }
     }
 
     @keyframes breathe {
       0%,
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       100% {
+        /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
         opacity: 0.5;
+        /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
         transform: translateX(-50%) scale(1);
       }
 
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       50% {
+        /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
         opacity: 0.72;
+        /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
         transform: translateX(-50%) scale(1.045);
       }
     }
 
     @keyframes grain {
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       0% {
+        /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
         transform: translate(0, 0);
       }
 
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       25% {
+        /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
         transform: translate(-1%, 1%);
       }
 
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       50% {
+        /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
         transform: translate(1%, -1%);
       }
 
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       75% {
+        /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
         transform: translate(0.5%, 0.5%);
       }
 
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       100% {
+        /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
         transform: translate(0, 0);
       }
     }
 
     @keyframes flash {
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       0% {
+        /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
         opacity: 0;
       }
 
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       14% {
+        /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
         opacity: 1;
       }
 
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       45% {
+        /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
         opacity: 0.72;
       }
 
+      /* one point in the animation. css smoothly fills in the movement between this state and the next one */
       100% {
+        /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
         opacity: 0;
       }
     }
@@ -248,29 +369,40 @@
 
     @media (max-width: 700px) {
       .brand {
+        /* adds/removes space between letters. i use this a lot for the spaced out label look */
         letter-spacing: 0.1em;
       }
 
       .prompt {
+        /* adds/removes space between letters. i use this a lot for the spaced out label look */
         letter-spacing: 0.17em;
       }
 
       /* Show the full video frame on narrow screens instead of cropping the headlights. */
       .bg-video {
+        /* controls how an image/video fits its box without stretching. cover fills/crops and contain shows all of it */
         object-fit: contain;
+        /* picks what part of the image/video stays centered when object-fit has to crop */
         object-position: center center;
+        /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
         transform: scale(0.98);
+        /* builds the background. multiple gradients/images stack in the order theyre written here */
         background: #020306;
       }
 
       body.entering .bg-video {
+        /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
         transform: scale(1.015);
       }
 
       .light-bloom {
+        /* sets how far this sits from the bottom edge when its positioned */
         bottom: 24%;
+        /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
         width: 94vw;
+        /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
         height: 16vh;
+        /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
         opacity: 0.5;
       }
     }
@@ -280,6 +412,7 @@
       .intro::after,
       .light-bloom,
       .prompt {
+        /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
         animation: none;
       }
     }
@@ -287,49 +420,64 @@
 </head>
 
 <body>
+  <!-- intro part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
   <main class="intro" id="intro">
     <video class="bg-video" autoplay muted loop playsinline preload="auto">
       <source src="assets/brxlopener2.mp4" type="video/mp4">
     </video>
 
+    <!-- light-bloom part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
     <div class="light-bloom"></div>
 
+    <!-- content part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
     <section class="content">
+      <!-- copy part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
       <div class="copy">
         <h1 class="brand">BRXL Racing</h1>
         <p class="prompt">Press to Continue</p>
       </div>
     </section>
 
+    <!-- flash part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
     <div class="flash"></div>
   </main>
 
   <script>
+    // saves this in ENTER_URL so this part can reuse the same value instead of finding/calculating it again
     const ENTER_URL = "home.html";
 
+    // this value changes while the page is running so i keep it in isEntering instead of making it const
     let isEntering = false;
 
     function enterSite() {
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
       if (isEntering) {
+        // sends this result back and stops this function here so whatever called it can use the value
         return;
       }
 
       isEntering = true;
+      // adds this class. css watches the class and uses it to change the look/animation/state
       document.body.classList.add("entering");
 
+      // waits a little before running the next part so the animation/state has time to happen first
       window.setTimeout(() => {
         window.location.href = ENTER_URL;
       }, 430);
     }
 
+    // waits for this browser/user action and then runs the function when it happens
     document.addEventListener("click", enterSite);
 
+    // waits for this browser/user action and then runs the function when it happens
     document.addEventListener("keydown", (event) => {
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
       if (
         event.key === "Enter" ||
         event.key === " " ||
         event.key === "Spacebar"
       ) {
+        // stops the browsers normal behavior here because im handling this interaction myself
         event.preventDefault();
         enterSite();
       }

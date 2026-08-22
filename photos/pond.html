@@ -852,8 +852,9 @@ body.panorama-fallback-exit-prev {
     </div>
 
     <p id="emptyMessage" class="empty-message" hidden>
-      Add JPG, JPEG, PNG, or WEBP files to <strong>photos/travel-photos</strong>, run
-      <strong>update-photos.bat</strong>, then refresh this page.
+      Add JPG, JPEG, PNG, WEBP, or AVIF files inside an event folder under
+      <strong>photos/photos/</strong>, run <strong>update-photos.bat</strong>,
+      then refresh this page.
     </p>
   </main>
 
@@ -875,9 +876,13 @@ body.panorama-fallback-exit-prev {
     const fishingRig = document.getElementById("fishingRig");
     const catchCount = document.getElementById("catchCount");
 
-    const sourcePhotos = Array.isArray(window.TRAVEL_PHOTOS)
-      ? [...window.TRAVEL_PHOTOS]
-      : [];
+    const sourcePhotos = Array.isArray(window.PHOTOS)
+      ? [...window.PHOTOS]
+      : Array.isArray(window.TRAVEL_PHOTOS)
+        ? [...window.TRAVEL_PHOTOS]
+        : Array.isArray(window.SELECTED_PHOTOS)
+          ? [...window.SELECTED_PHOTOS]
+          : [];
 
     const maximumScenes = 3;
     const minimumDistanceBetweenScenes = 260;
@@ -1056,7 +1061,10 @@ body.panorama-fallback-exit-prev {
 
     function openLightbox(photo) {
       largeImage.src = photo.src;
-      largeDate.textContent = photo.date || "Date unavailable";
+      const eventLabel = photo.event
+        ? photo.event.replace(/[-_]+/g, " ").replace(/\b\w/g, letter => letter.toUpperCase())
+        : "";
+      largeDate.textContent = [eventLabel, photo.date || "Date unavailable"].filter(Boolean).join(" · ");
       lightbox.classList.add("open");
       lightbox.setAttribute("aria-hidden", "false");
     }
@@ -1126,7 +1134,7 @@ body.panorama-fallback-exit-prev {
       figure.style.setProperty("--drift-y", `${driftY}px`);
 
       image.src = photo.src;
-      image.alt = `Travel photograph from ${photo.date || "an unknown date"}`;
+      image.alt = `${photo.event ? photo.event.replace(/[-_]+/g, " ") + " · " : ""}photograph from ${photo.date || "an unknown date"}`;
       image.loading = "eager";
 
       figure.appendChild(image);
