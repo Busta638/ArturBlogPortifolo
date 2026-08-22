@@ -2,6 +2,17 @@
 <html lang="en">
 <head>
 <script>
+/* Clean nested GitHub Pages URL: /photos/<page-name> */
+(() => {
+  const cleanPath = '/photos/travel-archive';
+  const currentPath = window.location.pathname;
+  if (currentPath.endsWith("/travel-menu.html")) {
+    window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+  }
+})();
+</script>
+
+<script>
 (() => {
   try {
     const direction = sessionStorage.getItem("panorama-direction");
@@ -271,7 +282,7 @@ body.panorama-fallback-exit-prev {
   </section>
 
   <main class="book">
-    <a class="chapter" href="travel.html">
+    <a class="chapter" href="/photos/FilmSim">
       <span class="chapter-no">01</span>
       <div class="film-visual"><div id="filmRoll" class="film-roll"></div></div>
       <h2>Film Scanner</h2>
@@ -284,7 +295,7 @@ body.panorama-fallback-exit-prev {
       <div class="note">
         <h3>Pond Gallery</h3>
         <p>A smaller interactive study where photographs rise through ripples and drift across the water.</p>
-        <a class="small-link" href="pond.html">Enter experiment →</a>
+        <a class="small-link" href="/photos/pond-gallery">Enter experiment →</a>
       </div>
     </section>
   </main>

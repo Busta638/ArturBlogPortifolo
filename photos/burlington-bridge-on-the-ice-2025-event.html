@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+/* Clean URL for GitHub Pages: hide .html in the address bar. */
+(() => {
+  const cleanPath = "/photos/burlington-bridge-on-the-ice-2025-event";
+  const currentPath = window.location.pathname;
+  if (currentPath.endsWith("/burlington-bridge-on-the-ice-2025-event.html")) {
+    window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+  }
+})();
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Burlington Bridge on the ice 2025 — Artur Tigirlas</title>

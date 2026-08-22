@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+/* Clean nested GitHub Pages URL: /photos/<page-name> */
+(() => {
+  const cleanPath = '/photos/walk-with-girlfriend-aug-2026';
+  const currentPath = window.location.pathname;
+  if (currentPath.endsWith("/walk-with-girlfriend-aug-2026-event.html")) {
+    window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+  }
+})();
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Walk with Girlfriend Aug 2026 — Artur Tigirlas</title>
@@ -337,7 +348,7 @@ footer {
 </head>
 <body>
 <header>
-  <a href="selected.html">← Photography</a>
+  <a href="/photos/photography">← Photography</a>
   <span>Event</span>
 </header>
 

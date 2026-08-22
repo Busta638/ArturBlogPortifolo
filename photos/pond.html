@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+/* Clean nested GitHub Pages URL: /photos/<page-name> */
+(() => {
+  const cleanPath = '/photos/pond-gallery';
+  const currentPath = window.location.pathname;
+  if (currentPath.endsWith("/pond.html")) {
+    window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+  }
+})();
+</script>
+
 
 <script>
 (() => {
@@ -839,7 +850,7 @@ body.panorama-fallback-exit-prev {
     <div class="sand-halftone"></div>
 
     <nav class="toolbar">
-      <a href="travel-menu.html">← Travel</a>
+      <a href="/photos/travel-archive">← Travel</a>
       <strong>Pond Gallery</strong>
       <span class="toolbar-note">Move the hook, then click the water to catch a random photo</span>
       <button id="nextButton" type="button">Cast line</button>

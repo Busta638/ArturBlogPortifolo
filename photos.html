@@ -2,6 +2,19 @@
 <html lang="en">
 <head>
 <script>
+/* Clean GitHub Pages URL: hide the .html filename in the address bar. */
+(() => {
+  const cleanPath = '/photos';
+  const currentPath = window.location.pathname;
+  const expectedFile = 'photos.html';
+
+  if (currentPath.endsWith("/" + expectedFile) || currentPath === expectedFile) {
+    window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+  }
+})();
+</script>
+
+<script>
 (() => {
   try {
     // saves this in direction so this part can reuse the same value instead of finding/calculating it again

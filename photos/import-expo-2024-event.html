@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+/* Clean URL for GitHub Pages: hide .html in the address bar. */
+(() => {
+  const cleanPath = "/photos/import-expo-2024-event";
+  const currentPath = window.location.pathname;
+  if (currentPath.endsWith("/import-expo-2024-event.html")) {
+    window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+  }
+})();
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Import Expo 2024 — Artur Tigirlas</title>

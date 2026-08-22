@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+/* Clean URL for GitHub Pages: hide .html in the address bar. */
+(() => {
+  const cleanPath = "/photos/hiking-with-ben-june-6-2026-event";
+  const currentPath = window.location.pathname;
+  if (currentPath.endsWith("/hiking-with-ben-june-6-2026-event.html")) {
+    window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+  }
+})();
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hiking with Ben June 6 2026 — Artur Tigirlas</title>
