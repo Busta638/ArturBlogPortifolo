@@ -123,8 +123,20 @@ h1 {
 .gallery {
   width: min(1380px, calc(100% - 36px));
   margin: 0 auto 100px;
-  columns: 2 420px;
-  column-gap: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+/* two real columns instead of CSS newspaper columns.
+   this lets each loaded quarter fill across the page from top to bottom. */
+.gallery-column {
+  min-width: 0;
+}
+
+.gallery-column .photo:last-child {
+  margin-bottom: 0;
 }
 
 .photo {
@@ -291,8 +303,8 @@ footer {
 
   .gallery {
     width: calc(100% - 20px);
-    columns: 2;
-    column-gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
     margin: 0 auto 64px;
     padding: 0;
   }
@@ -325,7 +337,7 @@ footer {
 @media (max-width: 430px) {
   .gallery {
     width: calc(100% - 14px);
-    column-gap: 6px;
+    gap: 6px;
   }
 
   .photo {
@@ -379,7 +391,10 @@ footer {
     </div>
   </section>
 
-  <div id="gallery" class="gallery"></div>
+  <div id="gallery" class="gallery">
+    <div id="galleryLeft" class="gallery-column"></div>
+    <div id="galleryRight" class="gallery-column"></div>
+  </div>
   <div id="empty" class="empty" hidden></div>
 </main>
 
@@ -455,6 +470,8 @@ document.title = `${title} — Artur Tigirlas`;
 document.getElementById("eventTitle").textContent = title;
 
 const gallery = document.getElementById("gallery");
+const galleryLeft = document.getElementById("galleryLeft");
+const galleryRight = document.getElementById("galleryRight");
 const empty = document.getElementById("empty");
 const photoLightbox = document.getElementById("photoLightbox");
 const photoLightboxImage = document.getElementById("photoLightboxImage");
@@ -512,8 +529,9 @@ if (!eventPhotos.length) {
     photoChunks.push(eventPhotos.slice(start, start + chunkSize));
   }
 
-  // preloads one whole quarter before adding it to the visible masonry.
-  // this keeps each new section clean instead of dropping photos in one by one.
+  // preloads one whole quarter before adding it to the visible gallery.
+  // photos are then split left/right so each quarter fills across the page
+  // instead of filling the entire left side first.
   async function loadPhotoChunk(chunk, chunkIndex) {
     const readyPhotos = await Promise.all(
       chunk.map(photo => {
@@ -532,9 +550,10 @@ if (!eventPhotos.length) {
       })
     );
 
-    const fragment = document.createDocumentFragment();
+    const leftFragment = document.createDocumentFragment();
+    const rightFragment = document.createDocumentFragment();
 
-    readyPhotos.forEach(photo => {
+    readyPhotos.forEach((photo, index) => {
       const figure = document.createElement("figure");
       figure.className = "photo";
 
@@ -549,10 +568,18 @@ if (!eventPhotos.length) {
 
       figure.appendChild(img);
       figure.addEventListener("click", () => openPhotoLightbox(photo));
-      fragment.appendChild(figure);
+
+      // alternate between the real left and right columns.
+      // this makes the loaded quarter progress across the page top to bottom.
+      if (index % 2 === 0) {
+        leftFragment.appendChild(figure);
+      } else {
+        rightFragment.appendChild(figure);
+      }
     });
 
-    gallery.appendChild(fragment);
+    galleryLeft.appendChild(leftFragment);
+    galleryRight.appendChild(rightFragment);
   }
 
   // show quarter one first, then keep loading 2, 3 and 4 automatically.
