@@ -116,1369 +116,1369 @@ window.PHOTOS = [
     "file": "PXL_20250621_210225144.RAW-02.ORIGINAL-Enhanced-NR_2048px_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6314.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6314_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6314.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6314_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6316.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6316_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6316.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6316_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6321.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6321_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6321.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6321_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6324.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6324_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6324.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6324_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6330.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6330_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6330.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6330_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6332.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6332_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6332.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6332_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6334.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6334_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6334.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6334_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6340.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6340_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6340.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6340_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6341.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6341_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6341.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6341_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6342.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6342_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6342.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6342_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6345.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6345_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6345.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6345_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6349.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6349_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6349.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6349_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6351.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6351_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6351.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6351_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6355.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6355_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6355.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6355_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6357.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6357_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6357.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6357_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6360.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6360_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6360.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6360_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6363.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6363_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6363.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6363_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6367.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6367_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6367.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6367_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6368.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6368_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6368.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6368_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6371.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6371_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6371.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6371_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6389.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6389_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6389.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6389_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6391.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6391_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6391.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6391_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6392.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6392_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6392.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6392_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6403.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6403_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6403.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6403_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6406.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6406_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6406.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6406_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6407.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6407_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6407.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6407_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6408.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6408_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6408.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6408_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6410.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6410_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6410.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6410_result.webp"
   },
   {
-    "src": "photos/Burlington Beach Walk 2026/DSC_6413.jpg",
+    "src": "photos/Burlington Beach Walk 2026/DSC_6413_result.webp",
     "event": "Burlington Beach Walk 2026",
     "eventSlug": "burlington-beach-walk-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6413.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6413_result.webp"
   },
   {
-    "src": "photos/Burlington Bridge on the ice 2025/DSC_2156.jpg",
+    "src": "photos/Burlington Bridge on the ice 2025/DSC_2156_result.webp",
     "event": "Burlington Bridge on the ice 2025",
     "eventSlug": "burlington-bridge-on-the-ice-2025",
-    "date": "2026-08-21",
-    "file": "DSC_2156.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2156_result.webp"
   },
   {
-    "src": "photos/Burlington Bridge on the ice 2025/DSC_2162.jpg",
+    "src": "photos/Burlington Bridge on the ice 2025/DSC_2162_result.webp",
     "event": "Burlington Bridge on the ice 2025",
     "eventSlug": "burlington-bridge-on-the-ice-2025",
-    "date": "2026-08-21",
-    "file": "DSC_2162.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2162_result.webp"
   },
   {
-    "src": "photos/Burlington Bridge on the ice 2025/DSC_2164.jpg",
+    "src": "photos/Burlington Bridge on the ice 2025/DSC_2164_result.webp",
     "event": "Burlington Bridge on the ice 2025",
     "eventSlug": "burlington-bridge-on-the-ice-2025",
-    "date": "2026-08-21",
-    "file": "DSC_2164.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2164_result.webp"
   },
   {
-    "src": "photos/Burlington Bridge on the ice 2025/DSC_2169.jpg",
+    "src": "photos/Burlington Bridge on the ice 2025/DSC_2169_result.webp",
     "event": "Burlington Bridge on the ice 2025",
     "eventSlug": "burlington-bridge-on-the-ice-2025",
-    "date": "2026-08-21",
-    "file": "DSC_2169.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2169_result.webp"
   },
   {
-    "src": "photos/Burlington Bridge on the ice 2025/DSC_2178.jpg",
+    "src": "photos/Burlington Bridge on the ice 2025/DSC_2178_result.webp",
     "event": "Burlington Bridge on the ice 2025",
     "eventSlug": "burlington-bridge-on-the-ice-2025",
-    "date": "2026-08-21",
-    "file": "DSC_2178.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2178_result.webp"
   },
   {
-    "src": "photos/Burlington Bridge on the ice 2025/DSC_2180.jpg",
+    "src": "photos/Burlington Bridge on the ice 2025/DSC_2180_result.webp",
     "event": "Burlington Bridge on the ice 2025",
     "eventSlug": "burlington-bridge-on-the-ice-2025",
-    "date": "2026-08-21",
-    "file": "DSC_2180.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2180_result.webp"
   },
   {
-    "src": "photos/Burlington Bridge on the ice 2025/DSC_2219.jpg",
+    "src": "photos/Burlington Bridge on the ice 2025/DSC_2219_result.webp",
     "event": "Burlington Bridge on the ice 2025",
     "eventSlug": "burlington-bridge-on-the-ice-2025",
-    "date": "2026-08-21",
-    "file": "DSC_2219.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2219_result.webp"
   },
   {
-    "src": "photos/Burlington Bridge on the ice 2025/DSC_2223.jpg",
+    "src": "photos/Burlington Bridge on the ice 2025/DSC_2223_result.webp",
     "event": "Burlington Bridge on the ice 2025",
     "eventSlug": "burlington-bridge-on-the-ice-2025",
-    "date": "2026-08-21",
-    "file": "DSC_2223.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2223_result.webp"
   },
   {
-    "src": "photos/Burlington Bridge on the ice 2025/DSC_2225.jpg",
+    "src": "photos/Burlington Bridge on the ice 2025/DSC_2225_result.webp",
     "event": "Burlington Bridge on the ice 2025",
     "eventSlug": "burlington-bridge-on-the-ice-2025",
-    "date": "2026-08-21",
-    "file": "DSC_2225.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2225_result.webp"
   },
   {
-    "src": "photos/Burlington Bridge on the ice 2025/DSC_2230.jpg",
+    "src": "photos/Burlington Bridge on the ice 2025/DSC_2230_result.webp",
     "event": "Burlington Bridge on the ice 2025",
     "eventSlug": "burlington-bridge-on-the-ice-2025",
-    "date": "2026-08-21",
-    "file": "DSC_2230.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2230_result.webp"
   },
   {
-    "src": "photos/First Time doing portiort 2024/IMG_8131.jpg",
+    "src": "photos/First Time doing portiort 2024/IMG_8131_result.webp",
     "event": "First Time doing portiort 2024",
     "eventSlug": "first-time-doing-portiort-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8131.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8131_result.webp"
   },
   {
-    "src": "photos/First Time doing portiort 2024/IMG_8143.jpg",
+    "src": "photos/First Time doing portiort 2024/IMG_8143_result.webp",
     "event": "First Time doing portiort 2024",
     "eventSlug": "first-time-doing-portiort-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8143.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8143_result.webp"
   },
   {
-    "src": "photos/First Time doing portiort 2024/IMG_8159.jpg",
+    "src": "photos/First Time doing portiort 2024/IMG_8159_result.webp",
     "event": "First Time doing portiort 2024",
     "eventSlug": "first-time-doing-portiort-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8159.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8159_result.webp"
   },
   {
-    "src": "photos/First Time doing portiort 2024/IMG_8163.jpg",
+    "src": "photos/First Time doing portiort 2024/IMG_8163_result.webp",
     "event": "First Time doing portiort 2024",
     "eventSlug": "first-time-doing-portiort-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8163.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8163_result.webp"
   },
   {
-    "src": "photos/First Time doing portiort 2024/IMG_8258.jpg",
+    "src": "photos/First Time doing portiort 2024/IMG_8258_result.webp",
     "event": "First Time doing portiort 2024",
     "eventSlug": "first-time-doing-portiort-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8258.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8258_result.webp"
   },
   {
-    "src": "photos/First Time doing portiort 2024/IMG_8264.jpg",
+    "src": "photos/First Time doing portiort 2024/IMG_8264_result.webp",
     "event": "First Time doing portiort 2024",
     "eventSlug": "first-time-doing-portiort-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8264.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8264_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_5369.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_5369_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_5369.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_5369_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6441.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6441_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6441.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6441_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6449.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6449_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6449.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6449_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6450.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6450_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6450.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6450_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6463.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6463_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6463.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6463_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6467.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6467_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6467.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6467_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6468.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6468_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6468.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6468_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6474.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6474_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6474.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6474_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6476.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6476_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6476.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6476_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6478.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6478_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6478.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6478_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6479.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6479_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6479.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6479_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6480.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6480_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6480.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6480_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6482.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6482_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6482.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6482_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6496.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6496_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6496.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6496_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6507.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6507_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6507.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6507_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6523.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6523_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6523.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6523_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6528.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6528_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6528.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6528_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6532.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6532_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6532.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6532_result.webp"
   },
   {
-    "src": "photos/Hiking with Ben June 6 2026/DSC_6533.jpg",
+    "src": "photos/Hiking with Ben June 6 2026/DSC_6533_result.webp",
     "event": "Hiking with Ben June 6 2026",
     "eventSlug": "hiking-with-ben-june-6-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6533.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6533_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7114.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7114_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7114.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7114_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7156.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7156_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7156.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7156_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7161.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7161_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7161.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7161_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7175.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7175_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7175.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7175_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7180.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7180_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7180.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7180_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7184.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7184_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7184.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7184_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7186.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7186_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7186.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7186_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7187.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7187_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7187.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7187_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7188.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7188_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7188.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7188_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7194.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7194_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7194.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7194_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7218.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7218_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7218.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7218_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7226.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7226_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7226.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7226_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7248.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7248_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7248.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7248_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7251.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7251_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7251.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7251_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7264.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7264_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7264.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7264_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7269.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7269_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7269.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7269_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7280.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7280_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7280.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7280_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7290.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7290_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7290.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7290_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7307.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7307_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7307.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7307_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7314.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7314_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7314.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7314_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7319.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7319_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7319.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7319_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7324.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7324_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7324.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7324_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7329.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7329_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7329.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7329_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7346.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7334_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7346.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7334_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7334.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7336_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7334.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7336_result.webp"
   },
   {
-    "src": "photos/Hiking With Sister - Camping/DSC_7336.jpg",
+    "src": "photos/Hiking With Sister - Camping/DSC_7346_result.webp",
     "event": "Hiking With Sister - Camping",
     "eventSlug": "hiking-with-sister-camping",
-    "date": "2026-08-21",
-    "file": "DSC_7336.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7346_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_7847.jpg",
+    "src": "photos/Import Expo 2024/IMG_7847_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7847.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7847_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_7852.jpg",
+    "src": "photos/Import Expo 2024/IMG_7852_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7852.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7852_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_7861.jpg",
+    "src": "photos/Import Expo 2024/IMG_7861_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7861.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7861_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_7868-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_7868-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7868-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7868-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_7889-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_7889-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7889-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7889-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_7925.jpg",
+    "src": "photos/Import Expo 2024/IMG_7925_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7925.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7925_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_7958.jpg",
+    "src": "photos/Import Expo 2024/IMG_7958_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7958.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7958_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_7961-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_7961-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7961-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7961-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_7971-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_7971-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7971-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7971-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_7982-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_7982-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7982-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7982-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_7994.jpg",
+    "src": "photos/Import Expo 2024/IMG_7994_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7994.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7994_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8000.jpg",
+    "src": "photos/Import Expo 2024/IMG_8000_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8000.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8000_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8005-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_8005-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8005-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8005-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8015-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_8015-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8015-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8015-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8018.jpg",
+    "src": "photos/Import Expo 2024/IMG_8018_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8018.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8018_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8023-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_8023-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8023-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8023-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8028.jpg",
+    "src": "photos/Import Expo 2024/IMG_8028_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8028.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8028_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8043.jpg",
+    "src": "photos/Import Expo 2024/IMG_8043_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8043.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8043_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8057-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_8057-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8057-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8057-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8060.jpg",
+    "src": "photos/Import Expo 2024/IMG_8060_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8060.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8060_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8061-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_8061-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8061-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8061-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8072-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_8072_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8072-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8072_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8072.jpg",
+    "src": "photos/Import Expo 2024/IMG_8072-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8072.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8072-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8077-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_8077-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8077-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8077-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8082.jpg",
+    "src": "photos/Import Expo 2024/IMG_8082_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8082.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8082_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8087-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_8087-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8087-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8087-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Import Expo 2024/IMG_8104-Enhanced-NR.jpg",
+    "src": "photos/Import Expo 2024/IMG_8104-Enhanced-NR_result.webp",
     "event": "Import Expo 2024",
     "eventSlug": "import-expo-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8104-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8104-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08314.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00041_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08314.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00041_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08334.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00074_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08334.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00074_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08340-2.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00081_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08340-2.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00081_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08345-2.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00102_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08345-2.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00102_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08362.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00122_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08362.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00122_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08393-Enhanced-NR.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00155_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08393-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00155_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08439.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00178_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08439.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00178_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08451.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00186_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08451.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00186_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08524.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00201_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08524.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00201_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08623.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00552_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08623.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00552_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08665.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00580_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08665.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00580_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08712.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC00600-Enhanced-NR_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08712.jpg"
+    "date": "2026-09-02",
+    "file": "DSC00600-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08714.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08314_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08714.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08314_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08763.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08334_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08763.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08334_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08876.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08340-2_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08876.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08340-2_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08892.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08345-2_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08892.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08345-2_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08910.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08362_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08910.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08362_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08939.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08393-Enhanced-NR_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08939.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08393-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08964-2.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08439_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08964-2.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08439_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08982.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08451_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08982.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08451_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC08998-Enhanced-NR.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08524_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC08998-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08524_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09008.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08623_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09008.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08623_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09016.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08665_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09016.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08665_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09028.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08712_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09028.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08712_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09058.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08714_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09058.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08714_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09064.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08763_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09064.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08763_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09079.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08876_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09079.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08876_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09109.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08892_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09109.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08892_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09146.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08910_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09146.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08910_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09216.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08939_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09216.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08939_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09240.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08964-2_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09240.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08964-2_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09241.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08982_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09241.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08982_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09247.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC08998-Enhanced-NR_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09247.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08998-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09347.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09008_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09347.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09008_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09514.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09016_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09514.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09016_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09549.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09028_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09549.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09028_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09559.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09058_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09559.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09058_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09595.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09064_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09595.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09064_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09608.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09079_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09608.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09079_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09625-Enhanced-NR.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09109_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09625-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09109_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09625.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09146_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09625.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09146_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09637.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09216_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09637.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09216_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09681.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09240_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09681.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09240_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09730.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09241_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09730.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09241_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09816.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09247_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09816.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09247_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09824-2.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09347_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09824-2.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09347_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09843.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09514_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09843.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09514_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09858-2.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09549_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09858-2.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09549_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00041.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09559_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00041.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09559_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00074.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09595_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00074.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09595_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00081.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09608_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00081.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09608_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09880.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09625_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09880.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09625_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09891.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09625-Enhanced-NR_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09891.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09625-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09953-2.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09637_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09953-2.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09637_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC09961.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09681_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC09961.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09681_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00102.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09730_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00102.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09730_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00122.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09816_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00122.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09816_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00155.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09824-2_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00155.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09824-2_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00178.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09843_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00178.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09843_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00186.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09858-2_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00186.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09858-2_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00201.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09880_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00201.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09880_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00552.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09891_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00552.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09891_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00580.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09953-2_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00580.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09953-2_result.webp"
   },
   {
-    "src": "photos/ImportFest 2024 Drift Event/DSC00600-Enhanced-NR.jpg",
+    "src": "photos/ImportFest 2024 Drift Event/DSC09961_result.webp",
     "event": "ImportFest 2024 Drift Event",
     "eventSlug": "importfest-2024-drift-event",
-    "date": "2026-08-21",
-    "file": "DSC00600-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09961_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_225454601.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_223015774.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_225454601.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_223015774.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_223019531.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_223019531.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_223019531.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_223019531.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_223045289.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_223045289.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_223045289.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_223045289.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_225829517.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_225454601.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_225829517.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_225454601.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_223015774.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_225829517.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_223015774.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_225829517.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_225850111.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_225850111.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_225850111.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_225850111.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_225928021.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_225928021.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_225928021.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_225928021.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_230002629.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_230002629.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_230002629.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_230002629.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_230006868.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_230006868.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_230006868.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_230006868.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_230633877.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_230225506.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_230633877.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_230225506.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_235949247.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_230633877.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_235949247.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_230633877.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_230225506.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250607_235949247.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250607_230225506.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-07",
+    "file": "PXL_20250607_235949247.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250608_010717338.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250608_010717338.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250608_010717338.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-08",
+    "file": "PXL_20250608_010717338.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/ImportFest 2025 Drift Event/PXL_20250608_011918767.RAW-02.ORIGINAL.jpg",
+    "src": "photos/ImportFest 2025 Drift Event/PXL_20250608_011918767.RAW-02.ORIGINAL_result.webp",
     "event": "ImportFest 2025 Drift Event",
     "eventSlug": "importfest-2025-drift-event",
-    "date": "2026-08-21",
-    "file": "PXL_20250608_011918767.RAW-02.ORIGINAL.jpg"
+    "date": "2025-06-08",
+    "file": "PXL_20250608_011918767.RAW-02.ORIGINAL_result.webp"
   },
   {
     "src": "photos/ImportFest Aug 8 2026 Drift Event/DSC_7599_fullres_result.webp",
@@ -2272,4589 +2272,4589 @@ window.PHOTOS = [
     "file": "DSC_8851_fullres_result.webp"
   },
   {
-    "src": "photos/Jordan Harbour Light 2026/DSC_6731.jpg",
+    "src": "photos/Jordan Harbour Light 2026/DSC_6731_result.webp",
     "event": "Jordan Harbour Light 2026",
     "eventSlug": "jordan-harbour-light-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6731.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6731_result.webp"
   },
   {
-    "src": "photos/Jordan Harbour Light 2026/DSC_6732.jpg",
+    "src": "photos/Jordan Harbour Light 2026/DSC_6732_result.webp",
     "event": "Jordan Harbour Light 2026",
     "eventSlug": "jordan-harbour-light-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6732.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6732_result.webp"
   },
   {
-    "src": "photos/Jordan Harbour Light 2026/DSC_6740.jpg",
+    "src": "photos/Jordan Harbour Light 2026/DSC_6740_result.webp",
     "event": "Jordan Harbour Light 2026",
     "eventSlug": "jordan-harbour-light-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6740.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6740_result.webp"
   },
   {
-    "src": "photos/Jordan Harbour Light 2026/DSC_6747.jpg",
+    "src": "photos/Jordan Harbour Light 2026/DSC_6747_result.webp",
     "event": "Jordan Harbour Light 2026",
     "eventSlug": "jordan-harbour-light-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6747.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6747_result.webp"
   },
   {
-    "src": "photos/Jordan Harbour Light 2026/DSC_6759.jpg",
+    "src": "photos/Jordan Harbour Light 2026/DSC_6759_result.webp",
     "event": "Jordan Harbour Light 2026",
     "eventSlug": "jordan-harbour-light-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6759.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6759_result.webp"
   },
   {
-    "src": "photos/Jordan Harbour Light 2026/DSC_6761.jpg",
+    "src": "photos/Jordan Harbour Light 2026/DSC_6761_result.webp",
     "event": "Jordan Harbour Light 2026",
     "eventSlug": "jordan-harbour-light-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6761.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6761_result.webp"
   },
   {
-    "src": "photos/Jordan Harbour Light 2026/DSC_6766.jpg",
+    "src": "photos/Jordan Harbour Light 2026/DSC_6766_result.webp",
     "event": "Jordan Harbour Light 2026",
     "eventSlug": "jordan-harbour-light-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6766.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6766_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_160717765.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_160717765.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_160717765.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_160717765.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_161724901.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_161724901.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_161724901.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_161724901.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_162125874.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_162125874.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_162125874.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_162125874.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_163424157.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_163424157.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_163424157.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_163424157.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_163447678.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_163447678.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_163447678.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_163447678.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_163635679.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_163635679.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_163635679.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_163635679.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_163757277.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_163757277.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_163757277.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_163757277.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_165054253.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_164528978.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_165054253.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_164528978.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_164528978.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_165054253.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_164528978.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_165054253.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_173648740.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_173648740.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_173648740.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_173648740.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_173849264.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_173840171.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_173849264.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_173840171.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_173840171.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_173849264.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_173840171.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_173849264.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_184231774.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_184231774.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_184231774.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_184231774.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_184916100.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_184916100.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_184916100.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_184916100.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Photos from School 2025/PXL_20250310_190241688.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Photos from School 2025/PXL_20250310_190241688.RAW-02.ORIGINAL_result.webp",
     "event": "Photos from School 2025",
     "eventSlug": "photos-from-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_190241688.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_190241688.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Random Stuff/DSC07281 (2).jpg",
+    "src": "photos/Random Stuff/DSC07281 (2)_result.webp",
     "event": "Random Stuff",
     "eventSlug": "random-stuff",
-    "date": "2026-08-21",
-    "file": "DSC07281 (2).jpg"
+    "date": "2026-09-02",
+    "file": "DSC07281 (2)_result.webp"
   },
   {
-    "src": "photos/Random Stuff/DSC07281.jpg",
+    "src": "photos/Random Stuff/DSC07281_result.webp",
     "event": "Random Stuff",
     "eventSlug": "random-stuff",
-    "date": "2026-08-21",
-    "file": "DSC07281.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07281_result.webp"
   },
   {
-    "src": "photos/Random Stuff/DSC07282.jpg",
+    "src": "photos/Random Stuff/DSC07282_result.webp",
     "event": "Random Stuff",
     "eventSlug": "random-stuff",
-    "date": "2026-08-21",
-    "file": "DSC07282.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07282_result.webp"
   },
   {
-    "src": "photos/Random Stuff/DSC07284.jpg",
+    "src": "photos/Random Stuff/DSC07284_result.webp",
     "event": "Random Stuff",
     "eventSlug": "random-stuff",
-    "date": "2026-08-21",
-    "file": "DSC07284.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07284_result.webp"
   },
   {
-    "src": "photos/Random Stuff/DSC07285.jpg",
+    "src": "photos/Random Stuff/DSC07285_result.webp",
     "event": "Random Stuff",
     "eventSlug": "random-stuff",
-    "date": "2026-08-21",
-    "file": "DSC07285.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07285_result.webp"
   },
   {
-    "src": "photos/Random Stuff/DSC07291.jpg",
+    "src": "photos/Random Stuff/DSC07291_result.webp",
     "event": "Random Stuff",
     "eventSlug": "random-stuff",
-    "date": "2026-08-21",
-    "file": "DSC07291.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07291_result.webp"
   },
   {
-    "src": "photos/Random Stuff/DSC07296.jpg",
+    "src": "photos/Random Stuff/DSC07296_result.webp",
     "event": "Random Stuff",
     "eventSlug": "random-stuff",
-    "date": "2026-08-21",
-    "file": "DSC07296.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07296_result.webp"
   },
   {
-    "src": "photos/Random Stuff/DSC07305.jpg",
+    "src": "photos/Random Stuff/DSC07305_result.webp",
     "event": "Random Stuff",
     "eventSlug": "random-stuff",
-    "date": "2026-08-21",
-    "file": "DSC07305.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07305_result.webp"
   },
   {
-    "src": "photos/Random Stuff/DSC07306.jpg",
+    "src": "photos/Random Stuff/DSC07306_result.webp",
     "event": "Random Stuff",
     "eventSlug": "random-stuff",
-    "date": "2026-08-21",
-    "file": "DSC07306.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07306_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03628.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103121744_0183_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03628.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103121744_0183_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03632.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103122404_0184_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03632.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103122404_0184_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03636.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103122454_0187_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03636.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103122454_0187_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03646.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123524_0189_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03646.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103123524_0189_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03650.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123637_0192_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03650.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103123637_0192_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03651.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123659_0194_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03651.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103123659_0194_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03652.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123721_0195_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03652.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103123721_0195_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03653.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123821_0196_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03653.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103123821_0196_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03655.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123939_0202_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03655.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103123939_0202_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03658.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103134717_0221_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03658.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103134717_0221_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03659.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103134742_0223_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03659.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103134742_0223_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03660.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103135551_0226_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03660.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103135551_0226_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03662.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103135643_0230_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03662.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103135643_0230_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03664.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DJI_20260103142526_0235_D_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03664.jpg"
+    "date": "2026-01-03",
+    "file": "DJI_20260103142526_0235_D_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03666.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03628_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03666.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03628_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03667.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03632_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03667.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03632_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03669.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03636_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03669.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03636_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03665.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03646_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03665.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03646_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03672.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03650_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03672.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03650_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03677.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03651_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03677.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03651_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03678.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03652_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03678.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03652_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03684.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03653_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03684.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03653_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03694.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03655_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03694.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03655_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03696.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03658_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03696.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03658_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03699.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03659_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03699.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03659_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03701.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03660_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03701.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03660_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03704.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03662_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03704.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03662_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03717.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03664_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03717.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03664_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03721.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03665_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03721.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03665_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03723.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03666_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03723.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03666_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03724.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03667_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03724.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03667_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03725.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03669_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03725.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03669_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03727.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03672_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03727.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03672_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03728.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03677_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03728.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03677_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03729.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03678_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03729.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03678_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03734.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03684_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03734.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03684_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03735.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03694_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03735.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03694_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03738.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03696_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03738.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03696_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03741.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03699_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03741.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03699_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03742.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03701_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03742.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03701_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03743.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03704_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03743.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03704_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03746.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03717_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03746.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03717_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03758.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03721_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03758.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03721_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03759.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03723_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03759.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03723_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03764.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03724_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03764.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03724_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03772.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03725_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03772.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03725_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03773.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03727_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03773.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03727_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03775.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03728_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03775.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03728_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03776.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03729_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03776.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03729_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03782.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03734_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03782.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03734_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03783.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03735_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03783.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03735_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03800.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03738_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03800.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03738_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03801.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03741_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03801.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03741_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03803.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03742_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03803.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03742_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03805.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03743_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03805.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03743_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03806.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03746_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03806.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03746_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03817.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03758_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03817.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03758_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03821.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03759_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03821.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03759_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03822.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03764_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03822.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03764_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03825.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03772_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03825.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03772_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03832.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03773_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03832.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03773_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03837.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03775_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03837.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03775_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03838.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03776_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03838.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03776_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03839.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03782_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03839.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03782_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DSC03843.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03783_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DSC03843.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03783_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103121744_0183_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03800_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103121744_0183_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03800_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103122404_0184_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03801_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103122404_0184_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03801_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103122454_0187_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03803_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103122454_0187_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03803_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123524_0189_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03805_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103123524_0189_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03805_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123637_0192_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03806_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103123637_0192_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03806_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123659_0194_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03817_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103123659_0194_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03817_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123721_0195_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03821_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103123721_0195_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03821_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123821_0196_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03822_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103123821_0196_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03822_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103123939_0202_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03825_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103123939_0202_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03825_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103134717_0221_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03832_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103134717_0221_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03832_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103134742_0223_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03837_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103134742_0223_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03837_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103135551_0226_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03838_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103135551_0226_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03838_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103135643_0230_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03839_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103135643_0230_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03839_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2025/DJI_20260103142526_0235_D.jpg",
+    "src": "photos/Street Photography in Toronto 2025/DSC03843_result.webp",
     "event": "Street Photography in Toronto 2025",
     "eventSlug": "street-photography-in-toronto-2025",
-    "date": "2026-08-21",
-    "file": "DJI_20260103142526_0235_D.jpg"
+    "date": "2026-09-02",
+    "file": "DSC03843_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6798.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6798_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6798.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6798_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6807.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6807_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6807.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6807_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6810.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6810_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6810.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6810_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6811.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6811_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6811.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6811_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6813.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6813_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6813.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6813_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6818.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6818_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6818.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6818_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6823.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6823_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6823.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6823_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6827.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6827_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6827.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6827_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6831.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6831_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6831.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6831_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6839.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6839_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6839.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6839_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6843.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6843_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6843.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6843_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6847.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6847_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6847.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6847_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6878.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6878_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6878.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6878_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6887.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6887_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6887.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6887_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6897.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6897_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6897.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6897_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6902.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6902_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6902.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6902_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6904.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6904_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6904.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6904_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6908.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6908_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6908.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6908_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6909.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6909_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6909.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6909_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6910.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6910_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6910.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6910_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6911.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6911_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6911.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6911_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6914.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6914_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6914.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6914_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6915.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6915_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6915.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6915_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6916.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6916_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6916.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6916_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6933.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6933_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6933.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6933_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6936.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6936_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6936.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6936_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6943.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6943_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6943.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6943_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6967.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6967_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6967.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6967_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6976.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6976_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6976.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6976_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6978.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6978_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6978.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6978_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6980.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6980_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6980.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6980_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6985.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6985_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6985.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6985_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6992.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6992_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6992.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6992_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_6996.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_6996_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_6996.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_6996_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7001.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7001_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7001.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7001_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7004.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7004_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7004.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7004_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7011.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7011_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7011.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7011_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7020.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7020_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7020.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7020_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7033.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7033_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7033.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7033_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7035.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7035_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7035.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7035_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7041.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7041_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7041.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7041_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7044.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7044_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7044.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7044_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7046.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7046_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7046.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7046_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7047.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7047_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7047.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7047_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7052.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7052_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7052.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7052_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7055.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7055_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7055.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7055_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7058.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7058_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7058.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7058_result.webp"
   },
   {
-    "src": "photos/Street Photography in Toronto 2026/DSC_7060.jpg",
+    "src": "photos/Street Photography in Toronto 2026/DSC_7060_result.webp",
     "event": "Street Photography in Toronto 2026",
     "eventSlug": "street-photography-in-toronto-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7060.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7060_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/20240219_114516.jpg",
+    "src": "photos/Toronto AutoShow 2024/20240219_114516_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "20240219_114516.jpg"
+    "date": "2024-02-19",
+    "file": "20240219_114516_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6707.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6707_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6707.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6707_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6717.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6717_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6717.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6717_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6723.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6723_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6723.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6723_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6727.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6727_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6727.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6727_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6732.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6732_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6732.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6732_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6822.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6822_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6822.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6822_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6823.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6823_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6823.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6823_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6825.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6825_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6825.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6825_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6844.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6844_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6844.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6844_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6861.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6861_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6861.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6861_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6956.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6956_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6956.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6956_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_6981.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_6981_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_6981.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_6981_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_7009.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_7009_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7009.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7009_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_7010.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_7010_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7010.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7010_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_7011.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_7011_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7011.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7011_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_7017.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_7017_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7017.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7017_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_7031.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_7031_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7031.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7031_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_7039.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_7039_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7039.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7039_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2024/IMG_7045.jpg",
+    "src": "photos/Toronto AutoShow 2024/IMG_7045_result.webp",
     "event": "Toronto AutoShow 2024",
     "eventSlug": "toronto-autoshow-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7045.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7045_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08329-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08329-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08329-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08329-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08331-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08331-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08331-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08331-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08344-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08342-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08344-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08342-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08342-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08344_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08342-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08344_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08344.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08344-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08344.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08344-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08347-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08347-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08347-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08347-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08355-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08355-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08355-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08355-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08357-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08357-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08357-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08357-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08363-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08363-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08363-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08363-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08365-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08365-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08365-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08365-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08371-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08371-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08371-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08371-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08380-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08380-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08380-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08380-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08384-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08384-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08384-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08384-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08392-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08392-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08392-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08392-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08410-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08410_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08410-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08410_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08410.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08410-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08410.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08410-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08418-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08418-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08418-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08418-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08440-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08424-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08440-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08424-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08424-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08440-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08424-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08440-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08468-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08468-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08468-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08468-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08553-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08553-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08553-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08553-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08556-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08556-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08556-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08556-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08561-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08561-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08561-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08561-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08569-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08569-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08569-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08569-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08571-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08571-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08571-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08571-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08591-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08591-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08591-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08591-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08612-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08594-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08612-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08594-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto Autoshow 2025/DSC08594-Enhanced-NR.jpg",
+    "src": "photos/Toronto Autoshow 2025/DSC08612-Enhanced-NR_result.webp",
     "event": "Toronto Autoshow 2025",
     "eventSlug": "toronto-autoshow-2025",
-    "date": "2026-08-21",
-    "file": "DSC08594-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC08612-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2643.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2643_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2643.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2643_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2648.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2645_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2648.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2645_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2658.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2648_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2658.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2648_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2645.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2656_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2645.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2656_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2656.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2658_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2656.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2658_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2662.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2662_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2662.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2662_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2664.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2664_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2664.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2664_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2669.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2669_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2669.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2669_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2677.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2677_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2677.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2677_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2680.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2680_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2680.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2680_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2683.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2682_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2683.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2682_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2682.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2683_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2682.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2683_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2685.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2685_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2685.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2685_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2687.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2687_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2687.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2687_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2691.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2691_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2691.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2691_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2694.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2694_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2694.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2694_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2696.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2696_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2696.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2696_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2698.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2698_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2698.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2698_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2701.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2701_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2701.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2701_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2706.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2706_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2706.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2706_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2712.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2712_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2712.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2712_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2714.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2714_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2714.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2714_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2717.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2717_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2717.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2717_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2720.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2720_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2720.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2720_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2725.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2725_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2725.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2725_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2730.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2730_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2730.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2730_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2732.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2732_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2732.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2732_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2738.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2738_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2738.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2738_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2740.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2740_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2740.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2740_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2745.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2745_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2745.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2745_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2747.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2747_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2747.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2747_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2749.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2749_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2749.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2749_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2751.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2751_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2751.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2751_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2763.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2763_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2763.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2763_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2767.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2767_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2767.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2767_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2778.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2778_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2778.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2778_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2782.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2782_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2782.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2782_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2794.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2794_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2794.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2794_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2796.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2796_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2796.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2796_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2797.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2797_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2797.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2797_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2817.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2817_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2817.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2817_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2829.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2829_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2829.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2829_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2841.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2841_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2841.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2841_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2843.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2843_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2843.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2843_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2848.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2848_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2848.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2848_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2853.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2853_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2853.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2853_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2858.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2858_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2858.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2858_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2863.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2863_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2863.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2863_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2869.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2869_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2869.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2869_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2874.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2874_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2874.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2874_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2884.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2884_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2884.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2884_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2893.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2893_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2893.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2893_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2897.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2897_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2897.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2897_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2903.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2903_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2903.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2903_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2905.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2905_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2905.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2905_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2912.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2912_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2912.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2912_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2916.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2916_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2916.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2916_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2921.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2921_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2921.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2921_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2924.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2924_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2924.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2924_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2925.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2925_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2925.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2925_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2927.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2927_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2927.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2927_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2930.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2930_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2930.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2930_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2933.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2933_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2933.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2933_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2936.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2936_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2936.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2936_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2937.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2937_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2937.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2937_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2938.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2938_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2938.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2938_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2943.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2943_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2943.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2943_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2948.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2948_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2948.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2948_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2951.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2951_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2951.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2951_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2952.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2952_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2952.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2952_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2959.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2959_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2959.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2959_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2963.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2963_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2963.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2963_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2965.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2965_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2965.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2965_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2967.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2967_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2967.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2967_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2970.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2970_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2970.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2970_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2972.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2972_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2972.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2972_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2974.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2974_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2974.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2974_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2978.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2978_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2978.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2978_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2981.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2981_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2981.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2981_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2983.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2983_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2983.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2983_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2985.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2985_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2985.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2985_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2987.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2987_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2987.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2987_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2990.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2990_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2990.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2990_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_2991.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_2991_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_2991.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_2991_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3000.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3000_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3000.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3000_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3002.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3002_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3002.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3002_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3004.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3004_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3004.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3004_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3008.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3008_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3008.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3008_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3015.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3015_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3015.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3015_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3019.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3019_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3019.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3019_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3024.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3024_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3024.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3024_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3026.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3026_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3026.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3026_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3036.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3036_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3036.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3036_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3045.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3045_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3045.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3045_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3050.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3050_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3050.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3050_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3051.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3051_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3051.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3051_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3054.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3054_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3054.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3054_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3060.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3060_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3060.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3060_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3064.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3064_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3064.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3064_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3066.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3066_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3066.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3066_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3068.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3068_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3068.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3068_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3069.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3069_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3069.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3069_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3080.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3080_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3080.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3080_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3084.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3084_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3084.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3084_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3089.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3089_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3089.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3089_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3094.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3094_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3094.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3094_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3098.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3098_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3098.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3098_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3101.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3101_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3101.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3101_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3104.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3104_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3104.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3104_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3113.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3113_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3113.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3113_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3120.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3120_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3120.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3120_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3129.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3129_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3129.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3129_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3133.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3133_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3133.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3133_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3135.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3135_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3135.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3135_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3140.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3140_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3140.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3140_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3142.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3142_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3142.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3142_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3144.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3144_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3144.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3144_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3148.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3148_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3148.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3148_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3154.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3154_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3154.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3154_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3159.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3159_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3159.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3159_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3162.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3162_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3162.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3162_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3169.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3169_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3169.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3169_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3178.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3178_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3178.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3178_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3179.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3179_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3179.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3179_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3181.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3181_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3181.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3181_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3188.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3188_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3188.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3188_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3190.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3190_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3190.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3190_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3197.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3197_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3197.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3197_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3201.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3201_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3201.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3201_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3203.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3203_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3203.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3203_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3206.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3206_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3206.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3206_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3208.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3208_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3208.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3208_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3214.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3214_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3214.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3214_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3215.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3215_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3215.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3215_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3217.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3217_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3217.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3217_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3228.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3228_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3228.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3228_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3230.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3230_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3230.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3230_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3238.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3238_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3238.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3238_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3240.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3240_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3240.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3240_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3244.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3244_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3244.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3244_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3246.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3246_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3246.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3246_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3249.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3249_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3249.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3249_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3254.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3254_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3254.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3254_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3255.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3255_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3255.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3255_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3256.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3256_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3256.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3256_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3260.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3260_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3260.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3260_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3262.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3262_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3262.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3262_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3264.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3264_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3264.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3264_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3269.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3269_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3269.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3269_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3272.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3272_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3272.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3272_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3279.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3279_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3279.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3279_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3284.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3284_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3284.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3284_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3288.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3288_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3288.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3288_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3294.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3294_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3294.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3294_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3296.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3296_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3296.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3296_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3299.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3299_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3299.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3299_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3312.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3312_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3312.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3312_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3313.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3313_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3313.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3313_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3320.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3320_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3320.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3320_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3324.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3324_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3324.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3324_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3325.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3325_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3325.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3325_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3333.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3333_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3333.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3333_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3337.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3337_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3337.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3337_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3344.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3344_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3344.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3344_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3346.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3346_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3346.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3346_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3347.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3347_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3347.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3347_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3349.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3349_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3349.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3349_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3351.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3351_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3351.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3351_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3354.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3354_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3354.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3354_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3356.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3356_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3356.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3356_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3357.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3357_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3357.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3357_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3362.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3362_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3362.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3362_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3365.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3365_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3365.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3365_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3368.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3368_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3368.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3368_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3370.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3370_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3370.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3370_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3372.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3372_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3372.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3372_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3378.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3378_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3378.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3378_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3380.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3380_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3380.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3380_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3385.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3385_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3385.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3385_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3389.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3389_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3389.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3389_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3394.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3394_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3394.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3394_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3395.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3395_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3395.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3395_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3400.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3400_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3400.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3400_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3402.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3402_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3402.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3402_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3406.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3406_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3406.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3406_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3409.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3409_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3409.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3409_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3413.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3413_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3413.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3413_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3416.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3416_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3416.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3416_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3418.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3418_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3418.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3418_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3419.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3419_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3419.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3419_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3421.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3421_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3421.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3421_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3428.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3428_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3428.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3428_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3429.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3429_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3429.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3429_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3441 - Copy.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3441 - Copy_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3441 - Copy.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3441 - Copy_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3443.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3443_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3443.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3443_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3506.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3506_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3506.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3506_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3509.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3509_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3509.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3509_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3511.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3511_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3511.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3511_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3515.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3515_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3515.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3515_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3517.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3517_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3517.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3517_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3549 - Copy.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3549 - Copy_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3549 - Copy.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3549 - Copy_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3560.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3560_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3560.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3560_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3565.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3565_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3565.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3565_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3575.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3575_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3575.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3575_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3578.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3578_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3578.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3578_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3584.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3584_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3584.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3584_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3592.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3592_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3592.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3592_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3598.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3598_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3598.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3598_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3599.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3599_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3599.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3599_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3600.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3600_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3600.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3600_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3611.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3611_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3611.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3611_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3612.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3612_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3612.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3612_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3620.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3620_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3620.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3620_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3621 - Copy.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3621 - Copy_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3621 - Copy.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3621 - Copy_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3622 - Copy.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3622 - Copy_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3622 - Copy.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3622 - Copy_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3623.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3623_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3623.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3623_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3626.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3626_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3626.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3626_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3627.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3627_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3627.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3627_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3628.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3628_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3628.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3628_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3629.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3629_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3629.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3629_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3632.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3632_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3632.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3632_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3633.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3633_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3633.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3633_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3638.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3638_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3638.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3638_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3644.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3644_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3644.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3644_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3647.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3647_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3647.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3647_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3649.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3649_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3649.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3649_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3652.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3652_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3652.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3652_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3654.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3654_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3654.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3654_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3661.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3661_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3661.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3661_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3664.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3664_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3664.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3664_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3666.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3666_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3666.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3666_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3670.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3670_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3670.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3670_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3671.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3671_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3671.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3671_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3673.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3673_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3673.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3673_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3675.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3675_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3675.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3675_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3677.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3677_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3677.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3677_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3679.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3679_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3679.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3679_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3686.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3686_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3686.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3686_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3688.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3688_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3688.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3688_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3689.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3689_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3689.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3689_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3692.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3692_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3692.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3692_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3695.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3695_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3695.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3695_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3698.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3698_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3698.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3698_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3702.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3702_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3702.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3702_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3713.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3713_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3713.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3713_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3717.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3717_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3717.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3717_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3720.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3720_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3720.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3720_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3721.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3721_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3721.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3721_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3724.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3724_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3724.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3724_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3728.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3728_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3728.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3728_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3729.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3729_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3729.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3729_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3730.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3730_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3730.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3730_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3731.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3731_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3731.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3731_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3735.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3735_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3735.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3735_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3739.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3739_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3739.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3739_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3740.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3740_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3740.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3740_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3741.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3741_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3741.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3741_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3742.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3742_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3742.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3742_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3746.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3746_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3746.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3746_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3748.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3748_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3748.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3748_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3749.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3749_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3749.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3749_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3751.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3751_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3751.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3751_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3755.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3755_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3755.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3755_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3757.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3757_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3757.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3757_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3759.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3759_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3759.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3759_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3763.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3763_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3763.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3763_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3768.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3768_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3768.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3768_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3769.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3769_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3769.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3769_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3770.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3770_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3770.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3770_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3785.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3785_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3785.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3785_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3787.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3787_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3787.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3787_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3790.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3790_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3790.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3790_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3793.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3793_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3793.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3793_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3795.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3795_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3795.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3795_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3798.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3798_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3798.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3798_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3799.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3799_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3799.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3799_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3801.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3801_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3801.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3801_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3802.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3802_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3802.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3802_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3804.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3804_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3804.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3804_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3805.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3805_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3805.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3805_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3808.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3808_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3808.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3808_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3810.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3810_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3810.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3810_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3812.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3812_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3812.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3812_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3814.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3814_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3814.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3814_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3815.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3815_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3815.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3815_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3817.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3817_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3817.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3817_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3819.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3819_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3819.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3819_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3821.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3821_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3821.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3821_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3822.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3822_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3822.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3822_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3826.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3826_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3826.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3826_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3829.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3829_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3829.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3829_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3832.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3832_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3832.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3832_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3834.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3834_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3834.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3834_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3844.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3844_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3844.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3844_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3848.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3848_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3848.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3848_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3849.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3849_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3849.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3849_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3861.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3861_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3861.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3861_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3863.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3863_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3863.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3863_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3864.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3864_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3864.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3864_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3866.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3866_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3866.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3866_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3868.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3868_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3868.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3868_result.webp"
   },
   {
-    "src": "photos/Toronto AutoShow 2026/DSC_3869.jpg",
+    "src": "photos/Toronto AutoShow 2026/DSC_3869_result.webp",
     "event": "Toronto AutoShow 2026",
     "eventSlug": "toronto-autoshow-2026",
-    "date": "2026-08-21",
-    "file": "DSC_3869.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_3869_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8443.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06729_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8443.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06729_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8449.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06731_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8449.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06731_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8452.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06737_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8452.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06737_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8454.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06750_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8454.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06750_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8479.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06764_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8479.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06764_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8497.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06766_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8497.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06766_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8501.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06767_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8501.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06767_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8520.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06774_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8520.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06774_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8529.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06827_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8529.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06827_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8534.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06900_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8534.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06900_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8546.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06910_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8546.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06910_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8568.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06921_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8568.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06921_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8614.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06923_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8614.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06923_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8635.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06967_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8635.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06967_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8642.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC06977_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8642.jpg"
+    "date": "2026-09-02",
+    "file": "DSC06977_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8654.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC07001_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8654.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07001_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8660.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC07005_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8660.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07005_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8668.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC07052_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8668.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07052_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8675.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC07059_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8675.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07059_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8680.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC07067_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8680.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07067_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8713.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC07068_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8713.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07068_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8714.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/DSC07098_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8714.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07098_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06729.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8443_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06729.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8443_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06731.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8449_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06731.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8449_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06750.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8452_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06750.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8452_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8728.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8454_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8728.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8454_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/IMG_8740.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8479_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "IMG_8740.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8479_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06737.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8497_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06737.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8497_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06764.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8501_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06764.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8501_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06766.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8520_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06766.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8520_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06767.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8529_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06767.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8529_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06774.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8534_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06774.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8534_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06827.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8546_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06827.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8546_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06900.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8568_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06900.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8568_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06910.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8614_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06910.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8614_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06921.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8635_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06921.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8635_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06923.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8642_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06923.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8642_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06967.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8654_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06967.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8654_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC06977.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8660_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC06977.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8660_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC07001.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8668_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC07001.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8668_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC07005.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8675_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC07005.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8675_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC07052.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8680_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC07052.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8680_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC07059.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8713_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC07059.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8713_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC07067.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8714_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC07067.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8714_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC07068.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8728_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC07068.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8728_result.webp"
   },
   {
-    "src": "photos/Track and Field at my Highschool 2024/DSC07098.jpg",
+    "src": "photos/Track and Field at my Highschool 2024/IMG_8740_result.webp",
     "event": "Track and Field at my Highschool 2024",
     "eventSlug": "track-and-field-at-my-highschool-2024",
-    "date": "2026-08-21",
-    "file": "DSC07098.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_8740_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7415.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7391_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7415.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7391_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7391.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7409_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7391.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7409_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7409.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7411-Enhanced-NR_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7409.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7411-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7411-Enhanced-NR.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7415_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7411-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7415_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7427.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7427_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7427.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7427_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7436.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7436_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7436.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7436_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7462-Enhanced-NR.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7462-Enhanced-NR_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7462-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7462-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7467.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7467_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7467.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7467_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7479.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7479_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7479.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7479_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7480.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7480_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7480.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7480_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7495-Enhanced-NR.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7495-Enhanced-NR_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7495-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7495-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7500.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7500_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7500.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7500_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7544.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7544_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7544.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7544_result.webp"
   },
   {
-    "src": "photos/Using my first camera while hiking 2024/IMG_7545.jpg",
+    "src": "photos/Using my first camera while hiking 2024/IMG_7545_result.webp",
     "event": "Using my first camera while hiking 2024",
     "eventSlug": "using-my-first-camera-while-hiking-2024",
-    "date": "2026-08-21",
-    "file": "IMG_7545.jpg"
+    "date": "2026-09-02",
+    "file": "IMG_7545_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0243.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0242_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0243.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0242_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0249.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0243_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0249.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0243_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0299.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0249_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0299.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0249_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0345.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0299_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0345.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0299_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0242.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0331_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0242.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0331_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0343.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0343_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0343.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0343_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0346.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0345_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0346.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0345_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0355.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0346_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0355.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0346_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0331.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0355_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0331.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0355_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0357.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0357_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0357.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0357_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0359.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0359_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0359.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0359_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0360.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0360_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0360.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0360_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0366.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0366_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0366.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0366_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0367.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0367_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0367.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0367_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0369.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0369_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0369.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0369_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0376.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0376_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0376.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0376_result.webp"
   },
   {
-    "src": "photos/Using my New camera for first Time 2026/DSC_0380.jpg",
+    "src": "photos/Using my New camera for first Time 2026/DSC_0380_result.webp",
     "event": "Using my New camera for first Time 2026",
     "eventSlug": "using-my-new-camera-for-first-time-2026",
-    "date": "2026-08-21",
-    "file": "DSC_0380.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_0380_result.webp"
   },
   {
-    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224812809.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224807149.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "Walk to Parking lot at School 2025",
     "eventSlug": "walk-to-parking-lot-at-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250305_224812809.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-03-05",
+    "file": "PXL_20250305_224807149.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224820052.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224812809.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "Walk to Parking lot at School 2025",
     "eventSlug": "walk-to-parking-lot-at-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250305_224820052.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-03-05",
+    "file": "PXL_20250305_224812809.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224826761.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224820052.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "Walk to Parking lot at School 2025",
     "eventSlug": "walk-to-parking-lot-at-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250305_224826761.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-03-05",
+    "file": "PXL_20250305_224820052.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224830081.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224826761.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "Walk to Parking lot at School 2025",
     "eventSlug": "walk-to-parking-lot-at-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250305_224830081.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-03-05",
+    "file": "PXL_20250305_224826761.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224904712.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224830081.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "Walk to Parking lot at School 2025",
     "eventSlug": "walk-to-parking-lot-at-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250305_224904712.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-03-05",
+    "file": "PXL_20250305_224830081.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224807149.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224904712.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "Walk to Parking lot at School 2025",
     "eventSlug": "walk-to-parking-lot-at-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250305_224807149.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-03-05",
+    "file": "PXL_20250305_224904712.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224936299.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_224936299.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "Walk to Parking lot at School 2025",
     "eventSlug": "walk-to-parking-lot-at-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250305_224936299.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-03-05",
+    "file": "PXL_20250305_224936299.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_225011911.RAW-02.ORIGINAL-Enhanced-NR.jpg",
+    "src": "photos/Walk to Parking lot at School 2025/PXL_20250305_225011911.RAW-02.ORIGINAL-Enhanced-NR_result.webp",
     "event": "Walk to Parking lot at School 2025",
     "eventSlug": "walk-to-parking-lot-at-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250305_225011911.RAW-02.ORIGINAL-Enhanced-NR.jpg"
+    "date": "2025-03-05",
+    "file": "PXL_20250305_225011911.RAW-02.ORIGINAL-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk to Parking lot at School 2025/PXL_20250310_160717765.RAW-02.ORIGINAL.jpg",
+    "src": "photos/Walk to Parking lot at School 2025/PXL_20250310_160717765.RAW-02.ORIGINAL_result.webp",
     "event": "Walk to Parking lot at School 2025",
     "eventSlug": "walk-to-parking-lot-at-school-2025",
-    "date": "2026-08-21",
-    "file": "PXL_20250310_160717765.RAW-02.ORIGINAL.jpg"
+    "date": "2025-03-10",
+    "file": "PXL_20250310_160717765.RAW-02.ORIGINAL_result.webp"
   },
   {
-    "src": "photos/Walk with girlfriend 2024/DSC07562.jpg",
+    "src": "photos/Walk with girlfriend 2024/DSC07562_result.webp",
     "event": "Walk with girlfriend 2024",
     "eventSlug": "walk-with-girlfriend-2024",
-    "date": "2026-08-21",
-    "file": "DSC07562.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07562_result.webp"
   },
   {
-    "src": "photos/Walk with girlfriend 2024/DSC07564-Enhanced-NR.jpg",
+    "src": "photos/Walk with girlfriend 2024/DSC07564-Enhanced-NR_result.webp",
     "event": "Walk with girlfriend 2024",
     "eventSlug": "walk-with-girlfriend-2024",
-    "date": "2026-08-21",
-    "file": "DSC07564-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07564-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk with girlfriend 2024/DSC07567.jpg",
+    "src": "photos/Walk with girlfriend 2024/DSC07567_result.webp",
     "event": "Walk with girlfriend 2024",
     "eventSlug": "walk-with-girlfriend-2024",
-    "date": "2026-08-21",
-    "file": "DSC07567.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07567_result.webp"
   },
   {
-    "src": "photos/Walk with girlfriend 2024/DSC07596.jpg",
+    "src": "photos/Walk with girlfriend 2024/DSC07596_result.webp",
     "event": "Walk with girlfriend 2024",
     "eventSlug": "walk-with-girlfriend-2024",
-    "date": "2026-08-21",
-    "file": "DSC07596.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07596_result.webp"
   },
   {
-    "src": "photos/Walk with girlfriend 2024/DSC07612.jpg",
+    "src": "photos/Walk with girlfriend 2024/DSC07612_result.webp",
     "event": "Walk with girlfriend 2024",
     "eventSlug": "walk-with-girlfriend-2024",
-    "date": "2026-08-21",
-    "file": "DSC07612.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07612_result.webp"
   },
   {
-    "src": "photos/Walk with girlfriend 2024/DSC07618.jpg",
+    "src": "photos/Walk with girlfriend 2024/DSC07618_result.webp",
     "event": "Walk with girlfriend 2024",
     "eventSlug": "walk-with-girlfriend-2024",
-    "date": "2026-08-21",
-    "file": "DSC07618.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07618_result.webp"
   },
   {
-    "src": "photos/Walk with girlfriend 2024/DSC07619-Enhanced-NR.jpg",
+    "src": "photos/Walk with girlfriend 2024/DSC07619-Enhanced-NR_result.webp",
     "event": "Walk with girlfriend 2024",
     "eventSlug": "walk-with-girlfriend-2024",
-    "date": "2026-08-21",
-    "file": "DSC07619-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07619-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk with girlfriend 2024/DSC07627-Enhanced-NR.jpg",
+    "src": "photos/Walk with girlfriend 2024/DSC07627-Enhanced-NR_result.webp",
     "event": "Walk with girlfriend 2024",
     "eventSlug": "walk-with-girlfriend-2024",
-    "date": "2026-08-21",
-    "file": "DSC07627-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07627-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk with girlfriend 2024/DSC07633.jpg",
+    "src": "photos/Walk with girlfriend 2024/DSC07633_result.webp",
     "event": "Walk with girlfriend 2024",
     "eventSlug": "walk-with-girlfriend-2024",
-    "date": "2026-08-21",
-    "file": "DSC07633.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07633_result.webp"
   },
   {
-    "src": "photos/Walk with girlfriend 2024/DSC07645-Enhanced-NR.jpg",
+    "src": "photos/Walk with girlfriend 2024/DSC07645-Enhanced-NR_result.webp",
     "event": "Walk with girlfriend 2024",
     "eventSlug": "walk-with-girlfriend-2024",
-    "date": "2026-08-21",
-    "file": "DSC07645-Enhanced-NR.jpg"
+    "date": "2026-09-02",
+    "file": "DSC07645-Enhanced-NR_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7484-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7484-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7484-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7484-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7486-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7486-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7486-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7486-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7488-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7488-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7488-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7488-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7489-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7489-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7489-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7489-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7490-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7490-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7490-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7490-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7505-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7505-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7505-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7505-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7506-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7506-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7506-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7506-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7507-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7507-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7507-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7507-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7509-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7509-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7509-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7509-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7514-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7514-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7514-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7514-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7519-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7519-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7519-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7519-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7523-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7523-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7523-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7523-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7526-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7526-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7526-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7526-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7535-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7535-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7535-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7535-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7538-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7538-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7538-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7538-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7539-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7539-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7539-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7539-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7542-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7542-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7542-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7542-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7543-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7543-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7543-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7543-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7546-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7546-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7546-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7546-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7552-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7552-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7552-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7552-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7556-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7556-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7556-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7556-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7561-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7561-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7561-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7561-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7563-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7563-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7563-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7563-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7569-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7569-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7569-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7569-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7574-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7574-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7574-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7574-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7577-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7577-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7577-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7577-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7584-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7584-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7584-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7584-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7586-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7586-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7586-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7586-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7588-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7588-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7588-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7588-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7589-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7589-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7589-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7589-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7590-2_2048px.jpg",
+    "src": "photos/Walk with Girlfriend Aug 2026/DSC_7590-2_2048px_result.webp",
     "event": "Walk with Girlfriend Aug 2026",
     "eventSlug": "walk-with-girlfriend-aug-2026",
-    "date": "2026-08-21",
-    "file": "DSC_7590-2_2048px.jpg"
+    "date": "2026-09-02",
+    "file": "DSC_7590-2_2048px_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09368.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09368_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09368.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09368_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09373.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09373_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09373.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09373_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09377.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09377_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09377.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09377_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09380.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09380_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09380.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09380_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09392.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09392_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09392.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09392_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09395.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09395_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09395.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09395_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09400.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09400_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09400.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09400_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09414.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09414_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09414.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09414_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09420.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09420_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09420.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09420_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09432.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09432_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09432.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09432_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09440.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09440_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09440.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09440_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09441.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09441_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09441.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09441_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09448.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09448_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09448.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09448_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09464.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09464_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09464.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09464_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09471.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09471_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09471.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09471_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09484.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09484_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09484.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09484_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09505.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09505_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09505.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09505_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09513.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09513_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09513.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09513_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09515.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09515_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09515.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09515_result.webp"
   },
   {
-    "src": "photos/Walk with Girlfriend March 2025/DSC09527.jpg",
+    "src": "photos/Walk with Girlfriend March 2025/DSC09527_result.webp",
     "event": "Walk with Girlfriend March 2025",
     "eventSlug": "walk-with-girlfriend-march-2025",
-    "date": "2026-08-21",
-    "file": "DSC09527.jpg"
+    "date": "2026-09-02",
+    "file": "DSC09527_result.webp"
   }
 ];
 

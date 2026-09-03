@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-/* Clean nested GitHub Pages URL: /photos/<page-name> */
-(() => {
-  const cleanPath = '/photos/photography';
-  const currentPath = window.location.pathname;
-  if (currentPath.endsWith("/selected.html")) {
-    window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
-  }
-})();
-</script>
-
 
 <script>
 (() => {
@@ -577,6 +566,326 @@
   }
 }
 
+
+/* PHOTO FRAME MODE
+   stays completely inactive until the person presses the button.
+   the setup appears first, then playback takes over the screen. */
+.frame-launch-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.frame-launch-button {
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  background: rgba(255,255,255,.045);
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.frame-launch-button:hover {
+  background: rgba(126,185,232,.12);
+  border-color: rgba(126,185,232,.38);
+  transform: translateY(-1px);
+}
+
+/* setup box shown before the frame starts */
+.photo-frame-setup {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: none;
+  place-items: center;
+  padding: 20px;
+  background: rgba(2,5,8,.84);
+  backdrop-filter: blur(18px);
+}
+
+.photo-frame-setup.open {
+  display: grid;
+}
+
+.photo-frame-setup-card {
+  width: min(520px, 100%);
+  padding: 26px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 12px;
+  background: rgba(9,16,23,.94);
+  box-shadow: 0 28px 80px rgba(0,0,0,.48);
+}
+
+.photo-frame-setup-card h2 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: normal;
+  letter-spacing: -.035em;
+}
+
+.photo-frame-setup-card > p {
+  margin: 9px 0 24px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.frame-option-group {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.frame-option-label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.frame-choice-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* all photo-frame option pickers use one shared box.
+   the | dividers separate each choice, and the selected word gets
+   a little larger and bolder without turning into another pill. */
+.frame-choice-row.frame-inline-picker {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255,255,255,.035);
+}
+
+.frame-inline-picker .frame-choice span {
+  min-height: 0;
+  padding: 2px 10px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  transition:
+    color 180ms ease,
+    font-size 180ms ease,
+    font-weight 180ms ease,
+    transform 180ms ease;
+}
+
+.frame-inline-picker .frame-choice input:checked + span {
+  color: var(--text);
+  border: 0;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 700;
+  transform: translateY(-1px);
+}
+
+.frame-inline-picker .frame-choice:hover span {
+  color: var(--text);
+}
+
+.frame-inline-divider {
+  color: rgba(255,255,255,.28);
+  font-size: 14px;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+.frame-choice {
+  position: relative;
+}
+
+.frame-choice input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.frame-choice span {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.frame-choice input:checked + span {
+  color: var(--text);
+  border-color: rgba(126,185,232,.5);
+  background: rgba(126,185,232,.12);
+}
+
+.frame-setup-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.frame-setup-actions button,
+.photo-frame-controls button {
+  min-height: 44px;
+  padding: 9px 15px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #f3f6f8;
+  background: rgba(255,255,255,.07);
+  cursor: pointer;
+}
+
+.frame-setup-actions .primary {
+  border-color: rgba(126,185,232,.44);
+  background: rgba(126,185,232,.16);
+}
+
+/* actual digital frame.
+   both image layers stay mounted so crossfades never flash an empty background. */
+.photo-frame-mode {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  display: none;
+  overflow: hidden;
+  background: #000;
+}
+
+.photo-frame-mode.open {
+  display: block;
+}
+
+.photo-frame-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  background: #000;
+  transition: opacity 1400ms ease;
+}
+
+.photo-frame-layer.visible {
+  opacity: 1;
+}
+
+.photo-frame-mode.transition-cut .photo-frame-layer {
+  transition: none;
+}
+
+.photo-frame-mode.transition-fade .photo-frame-layer {
+  transition: opacity 800ms ease;
+}
+
+/* fade-to-black uses this layer between photos */
+.photo-frame-blackout {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background: #000;
+  opacity: 0;
+  transition: opacity 450ms ease;
+}
+
+.photo-frame-blackout.show {
+  opacity: 1;
+}
+
+.photo-frame-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.photo-frame-mode.controls-visible .photo-frame-controls,
+.photo-frame-controls:focus-within {
+  opacity: 1;
+}
+
+.photo-frame-progress {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  z-index: 5;
+  color: rgba(255,255,255,.62);
+  font-size: 12px;
+  letter-spacing: .08em;
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.photo-frame-mode.controls-visible .photo-frame-progress {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .frame-choice-row.frame-inline-picker {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 8px;
+  }
+
+  .frame-inline-picker .frame-choice span {
+    padding: 2px 8px;
+    font-size: 13px;
+  }
+
+  .frame-inline-picker .frame-choice input:checked + span {
+    font-size: 14px;
+  }
+
+  .photo-frame-setup-card {
+    padding: 22px 18px;
+  }
+
+  .frame-setup-actions {
+    justify-content: stretch;
+  }
+
+  .frame-setup-actions button {
+    flex: 1;
+  }
+
+  .photo-frame-controls {
+    width: calc(100% - 24px);
+    bottom: 14px;
+  }
+
+  .photo-frame-controls button {
+    flex: 1 1 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-frame-layer,
+  .photo-frame-blackout {
+    transition-duration: .01ms !important;
+  }
+}
+
 /* TRUE HORIZONTAL CROSS-PAGE PANORAMA */
 @view-transition { navigation: auto; }
 
@@ -762,6 +1071,11 @@ body.panorama-fallback-exit-prev {
       <div>
         <p id="dateLine" class="date-line"></p>
         <p class="hint">Drag or use the arrows · click the center photo to open its full event</p>
+        <div class="frame-launch-row">
+          <button id="openPhotoFrameSetup" class="frame-launch-button" type="button">
+            Start Photo Frame
+          </button>
+        </div>
       </div>
     </main>
     </div>
@@ -783,6 +1097,95 @@ body.panorama-fallback-exit-prev {
       reproduced or redistributed without permission.
     </footer>
   </div>
+
+  <!-- asks for the frame settings first. nothing starts loading until this is opened. -->
+  <div id="photoFrameSetup" class="photo-frame-setup" aria-hidden="true">
+    <div class="photo-frame-setup-card" role="dialog" aria-modal="true" aria-labelledby="photoFrameSetupTitle">
+      <h2 id="photoFrameSetupTitle">Photo Frame</h2>
+      <p>Choose how the archive should play, then start the frame.</p>
+
+      <div class="frame-option-group">
+        <span class="frame-option-label">Transition</span>
+        <div class="frame-choice-row frame-inline-picker">
+          <label class="frame-choice">
+            <input type="radio" name="frameTransition" value="crossfade" checked>
+            <span>Crossfade</span>
+          </label>
+          <span class="frame-inline-divider" aria-hidden="true">|</span>
+          <label class="frame-choice">
+            <input type="radio" name="frameTransition" value="fade">
+            <span>Fade to black</span>
+          </label>
+          <span class="frame-inline-divider" aria-hidden="true">|</span>
+          <label class="frame-choice">
+            <input type="radio" name="frameTransition" value="cut">
+            <span>Cut</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="frame-option-group">
+        <span class="frame-option-label">Change photo every</span>
+        <div class="frame-choice-row frame-inline-picker">
+          <label class="frame-choice">
+            <input type="radio" name="frameInterval" value="3000">
+            <span>3 sec</span>
+          </label>
+          <span class="frame-inline-divider" aria-hidden="true">|</span>
+          <label class="frame-choice">
+            <input type="radio" name="frameInterval" value="5000" checked>
+            <span>5 sec</span>
+          </label>
+          <span class="frame-inline-divider" aria-hidden="true">|</span>
+          <label class="frame-choice">
+            <input type="radio" name="frameInterval" value="8000">
+            <span>8 sec</span>
+          </label>
+          <span class="frame-inline-divider" aria-hidden="true">|</span>
+          <label class="frame-choice">
+            <input type="radio" name="frameInterval" value="12000">
+            <span>12 sec</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="frame-option-group">
+        <span class="frame-option-label">Photo order</span>
+        <div class="frame-choice-row frame-inline-picker">
+          <label class="frame-choice">
+            <input type="radio" name="frameOrder" value="random" checked>
+            <span>Random</span>
+          </label>
+          <span class="frame-inline-divider" aria-hidden="true">|</span>
+          <label class="frame-choice">
+            <input type="radio" name="frameOrder" value="library">
+            <span>Library order</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="frame-setup-actions">
+        <button id="cancelPhotoFrame" type="button">Cancel</button>
+        <button id="startPhotoFrame" class="primary" type="button">Start</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- fullscreen-style playback area. controls only show after moving/tapping. -->
+  <div id="photoFrameMode" class="photo-frame-mode" aria-hidden="true">
+    <img id="photoFrameLayerA" class="photo-frame-layer" alt="">
+    <img id="photoFrameLayerB" class="photo-frame-layer" alt="">
+    <div id="photoFrameBlackout" class="photo-frame-blackout" aria-hidden="true"></div>
+
+    <div class="photo-frame-progress" id="photoFrameProgress"></div>
+
+    <div class="photo-frame-controls" aria-label="Photo frame controls">
+      <button id="photoFramePause" type="button">Pause</button>
+      <button id="photoFrameFullscreen" type="button">Fullscreen</button>
+      <button id="photoFrameExit" type="button">Exit</button>
+    </div>
+  </div>
+
   <script src="photos-data.js"></script>
   <script>
     const stage = document.getElementById("stage");
@@ -1169,7 +1572,7 @@ body.panorama-fallback-exit-prev {
       {
             "event": "hiking-with-sister-camping",
             "title": "Hiking With Sister - Camping",
-            "date": "",
+            "date": "July 28, 2026",
             "description": "My sister and I went hiking for first time in the park. We were cmaping for few days there and decided to bring out our cameras and take pictures of the wildlife and forest.",
             "href": "hiking-with-sister-camping-event.html"
       },
@@ -1478,6 +1881,297 @@ body.panorama-fallback-exit-prev {
     // Build the journal after the shared photo library is available.
     buildEventJournal();
   </script>
+
+
+<script>
+(() => {
+  /*
+    PHOTO FRAME MODE
+
+    this does absolutely nothing while Selected Work is being browsed normally.
+    the slideshow starts only after Start Photo Frame -> setup -> Start.
+  */
+  const openSetupButton = document.getElementById("openPhotoFrameSetup");
+  const setup = document.getElementById("photoFrameSetup");
+  const cancelButton = document.getElementById("cancelPhotoFrame");
+  const startButton = document.getElementById("startPhotoFrame");
+
+  const mode = document.getElementById("photoFrameMode");
+  const layerA = document.getElementById("photoFrameLayerA");
+  const layerB = document.getElementById("photoFrameLayerB");
+  const blackout = document.getElementById("photoFrameBlackout");
+  const progress = document.getElementById("photoFrameProgress");
+  const pauseButton = document.getElementById("photoFramePause");
+  const fullscreenButton = document.getElementById("photoFrameFullscreen");
+  const exitButton = document.getElementById("photoFrameExit");
+
+  let framePhotos = [];
+  let frameIndex = 0;
+  let visibleLayer = layerA;
+  let hiddenLayer = layerB;
+  let frameTimer = null;
+  let controlsTimer = null;
+  let playing = false;
+  let intervalMs = 5000;
+  let transition = "crossfade";
+
+  function selectedRadio(name) {
+    return document.querySelector(`input[name="${name}"]:checked`)?.value;
+  }
+
+  // shuffles once at startup so random mode does not repeatedly choose
+  // the same photo by accident.
+  function shuffledFramePhotos(items) {
+    const copy = [...items];
+
+    for (let index = copy.length - 1; index > 0; index -= 1) {
+      const randomIndex = Math.floor(Math.random() * (index + 1));
+      [copy[index], copy[randomIndex]] = [copy[randomIndex], copy[index]];
+    }
+
+    return copy;
+  }
+
+  function openSetup() {
+    setup.classList.add("open");
+    setup.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    startButton.focus();
+  }
+
+  function closeSetup() {
+    setup.classList.remove("open");
+    setup.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    openSetupButton.focus();
+  }
+
+  function showControls() {
+    mode.classList.add("controls-visible");
+    clearTimeout(controlsTimer);
+
+    controlsTimer = setTimeout(() => {
+      mode.classList.remove("controls-visible");
+    }, 2600);
+  }
+
+  // preloads the next image before a transition starts.
+  function preloadPhoto(photo) {
+    return new Promise(resolve => {
+      const image = new Image();
+      image.src = photo.src;
+      image.decoding = "async";
+
+      const finish = () => resolve(photo);
+      image.addEventListener("load", finish, { once: true });
+      image.addEventListener("error", finish, { once: true });
+
+      if (image.complete) resolve(photo);
+    });
+  }
+
+  function updateProgress() {
+    if (!framePhotos.length) {
+      progress.textContent = "";
+      return;
+    }
+
+    progress.textContent =
+      `${String(frameIndex + 1).padStart(2, "0")} / ${String(framePhotos.length).padStart(2, "0")}`;
+  }
+
+  async function showCurrentPhoto(firstPhoto = false) {
+    if (!framePhotos.length) return;
+
+    const photo = framePhotos[frameIndex];
+    await preloadPhoto(photo);
+
+    hiddenLayer.src = photo.src;
+    hiddenLayer.alt = "";
+
+    if (firstPhoto) {
+      hiddenLayer.classList.add("visible");
+      visibleLayer.classList.remove("visible");
+      [visibleLayer, hiddenLayer] = [hiddenLayer, visibleLayer];
+      updateProgress();
+      return;
+    }
+
+    if (transition === "cut") {
+      visibleLayer.classList.remove("visible");
+      hiddenLayer.classList.add("visible");
+    } else if (transition === "fade") {
+      blackout.classList.add("show");
+
+      await new Promise(resolve => setTimeout(resolve, 440));
+
+      visibleLayer.classList.remove("visible");
+      hiddenLayer.classList.add("visible");
+
+      requestAnimationFrame(() => {
+        blackout.classList.remove("show");
+      });
+    } else {
+      // default crossfade: both photos overlap while opacity swaps.
+      hiddenLayer.classList.add("visible");
+      visibleLayer.classList.remove("visible");
+    }
+
+    [visibleLayer, hiddenLayer] = [hiddenLayer, visibleLayer];
+    updateProgress();
+  }
+
+  function scheduleNext() {
+    clearTimeout(frameTimer);
+
+    if (!playing || framePhotos.length < 2) return;
+
+    frameTimer = setTimeout(async () => {
+      frameIndex = (frameIndex + 1) % framePhotos.length;
+      await showCurrentPhoto();
+      scheduleNext();
+    }, intervalMs);
+  }
+
+  async function startFrame() {
+    const library = window.PHOTOS || [];
+
+    if (!library.length) {
+      return;
+    }
+
+    transition = selectedRadio("frameTransition") || "crossfade";
+    intervalMs = Number(selectedRadio("frameInterval")) || 5000;
+    const order = selectedRadio("frameOrder") || "random";
+
+    framePhotos =
+      order === "random"
+        ? shuffledFramePhotos(library)
+        : [...library];
+
+    frameIndex = 0;
+    playing = true;
+    pauseButton.textContent = "Pause";
+
+    mode.classList.remove("transition-crossfade", "transition-fade", "transition-cut");
+    mode.classList.add(`transition-${transition}`);
+
+    setup.classList.remove("open");
+    setup.setAttribute("aria-hidden", "true");
+
+    mode.classList.add("open");
+    mode.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+
+    visibleLayer.classList.remove("visible");
+    hiddenLayer.classList.remove("visible");
+    visibleLayer.src = "";
+    hiddenLayer.src = "";
+
+    await showCurrentPhoto(true);
+
+    // start preloading the next photo immediately while the first is being viewed.
+    if (framePhotos.length > 1) {
+      preloadPhoto(framePhotos[1]);
+    }
+
+    showControls();
+    scheduleNext();
+  }
+
+  function togglePause() {
+    playing = !playing;
+    pauseButton.textContent = playing ? "Pause" : "Play";
+
+    if (playing) {
+      scheduleNext();
+    } else {
+      clearTimeout(frameTimer);
+    }
+
+    showControls();
+  }
+
+  async function enterFullscreen() {
+    try {
+      if (!document.fullscreenElement && mode.requestFullscreen) {
+        await mode.requestFullscreen();
+      } else if (document.fullscreenElement && document.exitFullscreen) {
+        await document.exitFullscreen();
+      }
+    } catch (error) {
+      // the fixed overlay still works when a mobile browser blocks true fullscreen.
+    }
+
+    showControls();
+  }
+
+  async function exitFrame() {
+    playing = false;
+    clearTimeout(frameTimer);
+    clearTimeout(controlsTimer);
+
+    if (document.fullscreenElement && document.exitFullscreen) {
+      try {
+        await document.exitFullscreen();
+      } catch (error) {}
+    }
+
+    mode.classList.remove("open", "controls-visible");
+    mode.setAttribute("aria-hidden", "true");
+    blackout.classList.remove("show");
+
+    visibleLayer.classList.remove("visible");
+    hiddenLayer.classList.remove("visible");
+    visibleLayer.src = "";
+    hiddenLayer.src = "";
+
+    framePhotos = [];
+    frameIndex = 0;
+    document.body.style.overflow = "";
+    openSetupButton.focus();
+  }
+
+  openSetupButton.addEventListener("click", openSetup);
+  cancelButton.addEventListener("click", closeSetup);
+  startButton.addEventListener("click", startFrame);
+  pauseButton.addEventListener("click", togglePause);
+  fullscreenButton.addEventListener("click", enterFullscreen);
+  exitButton.addEventListener("click", exitFrame);
+
+  setup.addEventListener("click", event => {
+    if (event.target === setup) closeSetup();
+  });
+
+  // tapping or moving over the frame briefly reveals the controls.
+  mode.addEventListener("pointermove", showControls);
+  mode.addEventListener("pointerdown", showControls);
+
+  document.addEventListener("fullscreenchange", () => {
+    fullscreenButton.textContent =
+      document.fullscreenElement ? "Exit Fullscreen" : "Fullscreen";
+  });
+
+  document.addEventListener("keydown", event => {
+    if (setup.classList.contains("open") && event.key === "Escape") {
+      closeSetup();
+      return;
+    }
+
+    if (!mode.classList.contains("open")) return;
+
+    if (event.key === "Escape" && !document.fullscreenElement) {
+      exitFrame();
+      return;
+    }
+
+    if (event.key === " ") {
+      event.preventDefault();
+      togglePause();
+    }
+  });
+})();
+</script>
 
 <script>
 (() => {

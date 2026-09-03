@@ -154,6 +154,7 @@ h1 {
 
 
 
+
 .roll-picker {
   width:min(1320px,calc(100% - 24px));
   margin:18px auto 14px;
@@ -211,16 +212,14 @@ h1 {
   background:rgba(213,189,120,.48);
 }
 
+/*
+  Simpler roll cards.
+  Kept the same overall layout, just made the film look more graphic and less busy.
+*/
 .roll-btn {
-  --roll-film:#7d432b;
-  --roll-film-mid:#b76d4d;
-  --roll-film-hot:#d58d68;
-  --roll-film-dark:#4b2318;
-  --roll-hole:rgba(255,239,224,.92);
-
   position:relative;
-  flex:0 0 250px;
-  height:88px;
+  flex:0 0 235px;
+  height:84px;
   padding:0;
   overflow:visible;
   border:0;
@@ -229,7 +228,6 @@ h1 {
   text-align:left;
   cursor:pointer;
   scroll-snap-align:start;
-  isolation:isolate;
   transition:transform .2s ease,filter .2s ease;
 }
 
@@ -238,121 +236,83 @@ h1 {
   filter:brightness(1.04);
 }
 
-/* slim 35mm-style canister */
+/* simple canister on the left */
 .roll-btn::before {
   content:"";
   position:absolute;
-  z-index:7;
-  left:5px;
-  top:9px;
-  width:40px;
-  height:66px;
-  border-radius:6px 6px 8px 8px;
-  background:
-    linear-gradient(90deg,
-      #0b0c0d 0 12%,
-      #2d3033 13% 23%,
-      #111315 24% 45%,
-      #d4aa2e 46% 60%,
-      #efc943 61% 75%,
-      #17191b 76% 100%);
-  border:1px solid rgba(255,255,255,.14);
-  box-shadow:
-    0 8px 14px rgba(0,0,0,.24),
-    inset 3px 0 5px rgba(255,255,255,.06),
-    inset -5px 0 8px rgba(0,0,0,.44);
+  left:6px;
+  top:10px;
+  width:39px;
+  height:62px;
+  border-radius:7px;
+  background:linear-gradient(90deg,#11151a 0 38%,#252b31 38% 52%,#efc943 52% 70%,#11151a 70% 100%);
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 6px 16px rgba(0,0,0,.22);
 }
 
-/* canister spool cap */
+/* little cap so it still reads like a film canister */
 .roll-btn::after {
   content:"";
   position:absolute;
-  z-index:8;
-  left:11px;
-  top:3px;
-  width:27px;
-  height:9px;
-  border-radius:50% 50% 3px 3px;
-  background:linear-gradient(#36393c,#090a0b);
-  border:1px solid rgba(255,255,255,.1);
-  box-shadow:0 2px 4px rgba(0,0,0,.32);
+  left:12px;
+  top:4px;
+  width:25px;
+  height:10px;
+  border-radius:8px 8px 3px 3px;
+  background:#13171b;
+  border:1px solid rgba(255,255,255,.10);
 }
 
 /*
-  Real film element.
-  This replaces the old title pseudo-element so the film is one solid,
-  thick piece instead of a thin orange line.
+  Main orange film block.
+  White square holes are done with repeating gradients top and bottom.
 */
 .roll-film-strip {
   position:absolute;
-  z-index:2;
-  left:42px;
-  right:10px;
-  top:13px;
-  height:60px;
+  left:38px;
+  right:8px;
+  top:16px;
+  height:52px;
   display:flex;
   flex-direction:column;
   justify-content:center;
-  padding:0 15px 0 16px;
+  padding:0 14px 0 18px;
   overflow:hidden;
-  border-radius:2px 7px 7px 2px;
+  border-radius:3px 10px 10px 3px;
   background:
     repeating-linear-gradient(
       90deg,
-      transparent 0 8px,
-      var(--roll-hole) 8px 13px,
-      transparent 13px 22px
-    ) top 5px left / auto 6px no-repeat,
+      rgba(255,255,255,0) 0 10px,
+      rgba(255,248,238,.92) 10px 15px,
+      rgba(255,255,255,0) 15px 25px
+    ) top 7px left / auto 5px no-repeat,
     repeating-linear-gradient(
       90deg,
-      transparent 0 8px,
-      var(--roll-hole) 8px 13px,
-      transparent 13px 22px
-    ) bottom 5px left / auto 6px no-repeat,
-    linear-gradient(
-      90deg,
-      var(--roll-film-dark) 0%,
-      var(--roll-film) 17%,
-      var(--roll-film-mid) 49%,
-      var(--roll-film-hot) 63%,
-      var(--roll-film) 84%,
-      var(--roll-film-dark) 100%
-    );
-  border-block:1px solid rgba(255,218,187,.22);
-  box-shadow:
-    inset 0 0 17px rgba(255,184,130,.10),
-    inset 0 -10px 15px rgba(60,19,8,.12),
-    0 6px 12px rgba(0,0,0,.10);
+      rgba(255,255,255,0) 0 10px,
+      rgba(255,248,238,.92) 10px 15px,
+      rgba(255,255,255,0) 15px 25px
+    ) bottom 7px left / auto 5px no-repeat,
+    linear-gradient(90deg,#8f4c34 0%,#c77553 46%,#e09c76 65%,#a85f41 100%);
+  border:1px solid rgba(255,237,220,.20);
+  box-shadow:0 6px 14px rgba(0,0,0,.10);
 }
 
-/* small folded end kept INSIDE the film element */
+/* tiny rounded end so the strip doesn't look cut off */
 .roll-film-strip::after {
   content:"";
   position:absolute;
-  z-index:3;
-  right:-4px;
-  top:6px;
-  width:17px;
-  height:48px;
-  border-radius:4px 7px 8px 4px;
-  transform:perspective(90px) rotateY(-36deg);
-  transform-origin:left center;
-  background:
-    repeating-linear-gradient(
-      180deg,
-      transparent 0 7px,
-      rgba(255,239,224,.68) 7px 11px,
-      transparent 11px 19px
-    ) right 3px top / 4px auto no-repeat,
-    linear-gradient(90deg,var(--roll-film-dark),var(--roll-film),var(--roll-film-hot));
-  box-shadow:3px 4px 7px rgba(0,0,0,.11);
-  pointer-events:none;
+  right:-1px;
+  top:0;
+  width:12px;
+  height:100%;
+  border-radius:0 10px 10px 0;
+  background:linear-gradient(90deg,rgba(255,255,255,.06),rgba(111,48,27,.18));
 }
 
 .roll-btn-name,
 .roll-btn-count {
   position:relative;
-  z-index:4;
+  z-index:2;
   display:block;
   overflow:hidden;
   text-overflow:ellipsis;
@@ -360,49 +320,55 @@ h1 {
 }
 
 .roll-btn-name {
-  color:#fff8f0;
-  font-size:.94rem;
+  color:#fff9f3;
+  font-size:.91rem;
   font-weight:700;
   line-height:1.05;
-  text-shadow:0 1px 2px rgba(0,0,0,.48);
+  text-shadow:0 1px 2px rgba(0,0,0,.35);
 }
 
 .roll-btn-count {
-  margin-top:5px;
-  color:rgba(255,244,233,.82);
-  font-size:.63rem;
+  margin-top:4px;
+  color:rgba(255,247,239,.92);
+  font-size:.62rem;
   letter-spacing:.04em;
 }
 
 .roll-btn.active {
-  --roll-film:#935038;
-  --roll-film-mid:#cf805c;
-  --roll-film-hot:#e19a73;
-  --roll-film-dark:#57271a;
-  filter:brightness(1.06) saturate(1.05);
-}
-
-.roll-btn.active::before {
-  box-shadow:
-    0 0 0 2px rgba(213,189,120,.65),
-    0 9px 16px rgba(0,0,0,.27),
-    inset 3px 0 5px rgba(255,255,255,.06),
-    inset -5px 0 8px rgba(0,0,0,.44);
+  filter:brightness(1.05);
 }
 
 .roll-btn.active .roll-film-strip {
   box-shadow:
-    inset 0 0 18px rgba(255,190,135,.15),
-    0 0 0 2px rgba(213,189,120,.45),
-    0 6px 14px rgba(0,0,0,.12);
+    0 0 0 1px rgba(213,189,120,.48),
+    0 8px 18px rgba(0,0,0,.12);
 }
 
-body:not(.night) .roll-btn {
-  --roll-film:#a45d42;
-  --roll-film-mid:#d38d69;
-  --roll-film-hot:#e4aa89;
-  --roll-film-dark:#6a3122;
-  --roll-hole:rgba(255,250,245,.94);
+.roll-btn.active::before {
+  box-shadow:
+    0 0 0 1px rgba(213,189,120,.48),
+    0 6px 16px rgba(0,0,0,.22);
+}
+
+body:not(.night) .roll-btn::before {
+  background:linear-gradient(90deg,#20242a 0 38%,#3b4147 38% 52%,#efc943 52% 70%,#20242a 70% 100%);
+}
+
+body:not(.night) .roll-film-strip {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0) 0 10px,
+      rgba(255,255,255,.96) 10px 15px,
+      rgba(255,255,255,0) 15px 25px
+    ) top 7px left / auto 5px no-repeat,
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0) 0 10px,
+      rgba(255,255,255,.96) 10px 15px,
+      rgba(255,255,255,0) 15px 25px
+    ) bottom 7px left / auto 5px no-repeat,
+    linear-gradient(90deg,#a85d43 0%,#d38461 48%,#ebb18d 68%,#b26648 100%);
 }
 
 @media(max-width:620px) {
@@ -423,36 +389,36 @@ body:not(.night) .roll-btn {
   }
 
   .roll-btn {
-    flex-basis:210px;
-    height:78px;
+    flex-basis:205px;
+    height:76px;
   }
 
   .roll-btn::before {
     width:34px;
     height:56px;
-    top:9px;
+    top:10px;
   }
 
   .roll-btn::after {
-    left:10px;
-    width:23px;
+    left:11px;
+    width:21px;
     height:8px;
   }
 
   .roll-film-strip {
-    left:36px;
+    left:34px;
     right:7px;
-    top:12px;
-    height:52px;
-    padding-inline:12px;
+    top:15px;
+    height:46px;
+    padding:0 12px 0 16px;
   }
 
   .roll-btn-name {
-    font-size:.86rem;
+    font-size:.84rem;
   }
 
   .roll-btn-count {
-    font-size:.59rem;
+    font-size:.58rem;
   }
 }
 
