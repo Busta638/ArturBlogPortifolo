@@ -117,38 +117,24 @@
     a, button { font: inherit; }
 
     .site-header {
-      /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
+      /* CV-style header: no pill, just the three items sitting over one clean divider line. */
       position: fixed;
-      /* moves this away from the top edge when position is doing something like fixed/sticky/absolute */
       top: 14px;
-      /* sets how far this sits from the left edge when its positioned */
       left: 50%;
-      /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
       z-index: 100;
-      /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
       width: min(1380px, calc(100% - 28px));
-      /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
       transform: translateX(-50%);
-      /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
       display: grid;
-      /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
       grid-template-columns: 1fr auto 1fr;
-      /* lines the children up across the other axis so they sit where i want inside the row/grid */
       align-items: center;
-      /* adds space between flex/grid items without needing margins on every child */
       gap: 18px;
-      /* adds space INSIDE the box so the content doesnt sit right against the edge */
-      padding: 12px 15px;
-      /* draws the outline around this box. var/rgba keeps it tied to the current theme */
-      border: 1px solid var(--line);
-      /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
-      border-radius: 999px;
-      /* builds the background. multiple gradients/images stack in the order theyre written here */
-      background: color-mix(in srgb, var(--panel) 88%, transparent);
-      /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
-      box-shadow: 0 10px 42px rgba(0,0,0,.12);
-      /* blurs whatever is BEHIND this transparent box which is what gives the glass look */
-      backdrop-filter: blur(var(--glass-blur));
+      padding: 12px 0 16px;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      backdrop-filter: none;
     }
 
     .home-link,
@@ -169,42 +155,82 @@
     }
 
     .theme-switch {
-      /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
+      /* keeps the 2 theme buttons sitting in one row */
       display: flex;
-      /* adds space between flex/grid items without needing margins on every child */
-      gap: 3px;
-      /* adds space INSIDE the box so the content doesnt sit right against the edge */
-      padding: 3px;
-      /* draws the outline around this box. var/rgba keeps it tied to the current theme */
-      border: 1px solid var(--line);
-      /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
-      border-radius: 999px;
-      /* builds the background. multiple gradients/images stack in the order theyre written here */
-      background: color-mix(in srgb, var(--bg) 35%, transparent);
+      /* gives them some breathing room so they dont feel jammed together */
+      align-items: center;
+      /* space between Night and Glass */
+      gap: 18px;
+      /* no outer box now. user wanted this floating cleaner look */
+      padding: 0;
+      /* no pill border around the full switch */
+      border: 0;
+      /* no shape around the switch */
+      border-radius: 0;
+      /* stays transparent so it feels lighter and cleaner */
+      background: transparent;
     }
 
     .theme-switch button {
-      /* stops this from shrinking past this size so the content/control doesnt get crushed */
-      min-width: 64px;
-      /* adds space INSIDE the box so the content doesnt sit right against the edge */
-      padding: 7px 12px;
-      /* draws the outline around this box. var/rgba keeps it tied to the current theme */
+      /* lets button width just fit the text instead of making chunky pills */
+      min-width: 0;
+      /* small bottom space so the underline has room to sit under the word */
+      padding: 4px 0 7px;
+      /* no button border because the underline handles the active state */
       border: 0;
-      /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
-      border-radius: 999px;
-      /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
+      /* no rounded shape now */
+      border-radius: 0;
+      /* default muted color before hover/active */
       color: var(--muted);
-      /* builds the background. multiple gradients/images stack in the order theyre written here */
+      /* keeps the theme switch clean with no fill box */
       background: transparent;
-      /* changes the mouse cursor so this feels clickable/interactable instead of plain content */
+      /* shows its clickable */
       cursor: pointer;
+      /* smooth little polish when theme state changes */
+      transition: color .18s ease, font-weight .18s ease;
+      /* needed so the pseudo underline can anchor to each word */
+      position: relative;
+    }
+
+    .theme-switch button::after {
+      /* makes the small underline under the active word */
+      content: "";
+      /* positions the underline under each button label */
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 1px;
+      /* thin clean line, same idea as the other updated files */
+      height: 1px;
+      /* uses currentColor so in glass mode it turns dark too */
+      background: currentColor;
+      /* hidden by default until hover/active */
+      transform: scaleX(0);
+      /* makes the line open from center which looks cleaner */
+      transform-origin: center;
+      /* animates the underline in and out */
+      transition: transform .18s ease;
+    }
+
+    .theme-switch button:hover {
+      /* hover makes it easier to see before clicking */
+      color: var(--text);
     }
 
     .theme-switch button.active {
-      /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
-      color: var(--bg);
-      /* builds the background. multiple gradients/images stack in the order theyre written here */
-      background: var(--text);
+      /* active one becomes fully readable */
+      color: var(--text);
+      /* still no background box */
+      background: transparent;
+      /* tiny emphasis so the active theme stands out */
+      font-weight: 700;
+      /* makes sure no older box shadow style sneaks in */
+      box-shadow: none;
+    }
+
+    .theme-switch button.active::after {
+      /* reveals the underline on the current theme */
+      transform: scaleX(1);
     }
 
     .intro {
@@ -811,11 +837,6 @@
     }
 
     @media (max-width: 560px) {
-      .site-header {
-        /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
-        border-radius: 18px;
-      }
-
       .intro {
         /* only adds inside space at the top */
         padding-top: 92px;

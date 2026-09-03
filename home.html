@@ -138,9 +138,9 @@ body:not(.night)::after{opacity:.025}
 .wave-bg svg{width:100%;height:100%;display:block}
 body.night .wave-bg{
   /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
-  opacity:.34;
-  /* changes the finished layer with stuff like blur brightness contrast and saturation */
-  filter:saturate(.92) contrast(1.04);
+  opacity:.273;
+  /* making the red wave a little softer/darker so it is there but not screaming */
+  filter:saturate(.82) brightness(.924) contrast(1.02);
 }
 
 .page{
@@ -175,53 +175,50 @@ body.night .wave-bg{
 }
 
 .theme-toggle{
-  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:flex;
-  /* lines the children up across the other axis so they sit where i want inside the row/grid */
   align-items:center;
-  /* adds space between flex/grid items without needing margins on every child */
-  gap:4px;
-  /* adds space INSIDE the box so the content doesnt sit right against the edge */
-  padding:4px;
-  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
-  border:1px solid var(--line);
-  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
-  border-radius:999px;
-  /* builds the background. multiple gradients/images stack in the order theyre written here */
-  background:var(--panel);
-  /* blurs whatever is BEHIND this transparent box which is what gives the glass look */
-  backdrop-filter:blur(18px);
-  /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
-  box-shadow:0 8px 24px rgba(0,0,0,.04);
+  gap:18px;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  backdrop-filter:none;
+  box-shadow:none;
 }
 .theme-toggle button{
-  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
+  position:relative;
+  min-width:0;
   border:0;
-  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
-  border-radius:999px;
-  /* builds the background. multiple gradients/images stack in the order theyre written here */
+  border-radius:0;
   background:transparent;
-  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:var(--muted);
-  /* adds space INSIDE the box so the content doesnt sit right against the edge */
-  padding:9px 14px;
-  /* copies/sets the font in one line so buttons/links dont fall back to browser default fonts */
+  padding:4px 0 7px;
   font:inherit;
-  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:12px;
-  /* adds/removes space between letters. i use this a lot for the spaced out label look */
   letter-spacing:.12em;
-  /* changes how the text LOOKS like uppercase without changing the actual html text */
   text-transform:uppercase;
-  /* changes the mouse cursor so this feels clickable/interactable instead of plain content */
   cursor:pointer;
+  transition:color .18s ease,font-weight .18s ease;
 }
+.theme-toggle button::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:1px;
+  height:1px;
+  background:currentColor;
+  transform:scaleX(0);
+  transform-origin:center;
+  transition:transform .18s ease;
+}
+.theme-toggle button:hover{color:var(--text)}
 .theme-toggle button.active{
-  /* builds the background. multiple gradients/images stack in the order theyre written here */
-  background:var(--text);
-  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
-  color:var(--bg-2);
+  background:transparent;
+  color:var(--text);
+  font-weight:700;
 }
+.theme-toggle button.active::after{transform:scaleX(1)}
 
 .hero{
   /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
@@ -418,7 +415,7 @@ body.night .wave-bg{
   /* caps the height so this doesnt keep growing past the space i want it to use */
   max-height:0;
   /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
-  opacity:0;
+  opacity:.16;
   /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
   overflow:hidden;
   /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
@@ -519,238 +516,170 @@ body.night .layout{
 }
 
 body.night .night-command{
-  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
+  /* no outer card here — the links sit directly in the page so they feel more open */
   position:relative;
-  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:30;
-  /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
   width:100%;
-  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:block;
-  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
-  margin:28px 0 0;
-  /* adds space INSIDE the box so the content doesnt sit right against the edge */
-  padding:8px 10px;
-  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
-  overflow:hidden;
-  /* draws the outline around this box. var/rgba keeps it tied to the current theme */
-  border:1px solid rgba(244,241,235,.12);
-  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
-  border-radius:18px;
-  /* builds the background. multiple gradients/images stack in the order theyre written here */
-  background:
-    linear-gradient(180deg,rgba(13,9,9,.86),rgba(4,4,4,.94));
-  /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
-  box-shadow:
-    0 20px 58px rgba(0,0,0,.48),
-    0 0 38px rgba(105,10,10,.09),
-    inset 0 1px rgba(255,255,255,.035);
-  /* blurs whatever is BEHIND this transparent box which is what gives the glass look */
-  backdrop-filter:blur(18px);
+  margin:36px 0 4px;
+  padding:6px 0 2px;
+  overflow:visible;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  backdrop-filter:none;
 }
 
+/* very faint ambient haze behind the floating navigation, not a box */
 .command-haze{
-  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
-  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
-  inset:-55% -15%;
-  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
+  left:8%;
+  right:8%;
+  top:50%;
+  height:110px;
+  transform:translateY(-50%);
   pointer-events:none;
-  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
-  opacity:.58;
-  /* builds the background. multiple gradients/images stack in the order theyre written here */
+  opacity:.30;
   background:
-    radial-gradient(ellipse at 22% 56%,rgba(144,18,18,.28),transparent 28%),
-    radial-gradient(ellipse at 74% 42%,rgba(93,7,7,.22),transparent 31%);
-  /* changes the finished layer with stuff like blur brightness contrast and saturation */
-  filter:blur(24px);
-  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
-  animation:commandHaze 8s ease-in-out infinite alternate;
+    radial-gradient(ellipse at 18% 50%,rgba(92,8,10,.18),transparent 32%),
+    radial-gradient(ellipse at 50% 52%,rgba(66,5,7,.12),transparent 30%),
+    radial-gradient(ellipse at 82% 48%,rgba(104,9,11,.16),transparent 32%);
+  filter:blur(34px);
+  animation:commandHaze 9s ease-in-out infinite alternate;
 }
 
 @keyframes commandHaze{
-  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
-  from{transform:translate3d(-3%,1%,0) scale(1)}
-  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
-  to{transform:translate3d(5%,-2%,0) scale(1.08)}
+  from{transform:translateY(-50%) translateX(-1.5%) scale(1)}
+  to{transform:translateY(-50%) translateX(1.5%) scale(1.04)}
 }
 
 .command-id{
-  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
 .command-links{
-  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
-  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:2;
-  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:grid;
-  /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
   grid-template-columns:repeat(4,minmax(0,1fr));
-  /* adds space between flex/grid items without needing margins on every child */
-  gap:4px;
+  gap:clamp(24px,4vw,72px);
+  align-items:center;
 }
 
 .command-link{
-  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
-  /* stops this from shrinking past this size so the content/control doesnt get crushed */
   min-width:0;
-  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
+  min-height:78px;
   display:grid;
-  /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
-  grid-template-columns:28px minmax(0,1fr) 28px;
-  /* lines the children up across the other axis so they sit where i want inside the row/grid */
-  align-items:center;
-  /* adds space between flex/grid items without needing margins on every child */
-  gap:9px;
-  /* makes sure this stays at least this tall but it can still grow if the content needs more room */
-  min-height:56px;
-  /* adds space INSIDE the box so the content doesnt sit right against the edge */
-  padding:8px 14px;
-  /* rounds the corners. huge values like 999px basically turn it into a pill/circle */
-  border-radius:12px;
-  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
-  color:rgba(244,241,235,.58);
-  /* removes/adds stuff like the normal browser underline on links */
+  grid-template-columns:1fr;
+  align-content:center;
+  justify-items:center;
+  gap:0;
+  padding:14px 8px 16px;
+  border:0;
+  border-radius:0;
+  color:rgba(244,241,235,.72);
   text-decoration:none;
-  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
-  overflow:hidden;
-  /* smooths changes between old/new css values so hover/class changes dont just snap */
-  transition:
-    color .2s ease,
-    background .2s ease,
-    transform .2s ease;
+  overflow:visible;
+  background:transparent;
+  box-shadow:none;
+  transition:color .22s ease,transform .22s ease,opacity .22s ease;
 }
 
+/* no dividers between items anymore */
 .command-link + .command-link{
-  /* only puts the divider line on the left edge */
-  border-left:1px solid rgba(255,255,255,.07);
+  border-left:0;
 }
 
+/* short red line below each label; it grows on hover instead of filling a card */
 .command-link::before{
   content:"";
-  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:absolute;
-  /* sets how far this sits from the left edge when its positioned */
-  left:8%;
-  /* sets how far this sits from the right edge when its positioned */
-  right:8%;
-  /* sets how far this sits from the bottom edge when its positioned */
-  bottom:0;
-  /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
+  left:50%;
+  bottom:3px;
+  width:26px;
   height:1px;
-  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
+  opacity:.20;
+  background:#8f2426;
+  box-shadow:0 0 10px rgba(143,36,38,.18);
+  transform:translateX(-50%) scaleX(.55);
+  transition:opacity .2s ease,transform .24s ease,width .24s ease;
+}
+
+/* tiny glow under the text. keeps the nav feeling a bit mysterious without adding a big box */
+.command-link::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:150px;
+  height:54px;
+  transform:translate(-50%,-50%);
   opacity:0;
-  /* builds the background. multiple gradients/images stack in the order theyre written here */
-  background:#d2554f;
-  /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
-  box-shadow:0 0 12px rgba(210,85,79,.55);
-  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
-  transform:scaleX(.35);
-  /* smooths changes between old/new css values so hover/class changes dont just snap */
-  transition:opacity .2s ease,transform .25s ease;
+  pointer-events:none;
+  background:radial-gradient(ellipse,rgba(92,8,10,.12),transparent 68%);
+  filter:blur(8px);
+  transition:opacity .22s ease;
 }
 
 .command-index{
-  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
-  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:2;
-  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:rgba(210,85,79,.62);
-  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
   font-size:9px;
-  /* adds/removes space between letters. i use this a lot for the spaced out label look */
-  letter-spacing:.14em;
+  letter-spacing:.17em;
 }
 
 .command-link strong{
-  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
   position:relative;
-  /* decides what layer this sits on. bigger numbers show above lower ones inside the same stacking area */
   z-index:2;
-  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
-  overflow:hidden;
-  /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
-  font-size:17px;
-  /* controls how bold/light the text looks */
+  overflow:visible;
+  font-size:clamp(20px,1.65vw,26px);
   font-weight:normal;
-  /* controls where the text lines up inside this box */
   text-align:center;
   white-space:nowrap;
-  text-overflow:ellipsis;
+  text-overflow:clip;
+  letter-spacing:.01em;
+  text-shadow:0 0 16px rgba(255,255,255,.04);
 }
 
+/* old underline is replaced by the one on the whole link */
 .command-link strong::after{
-  content:"";
-  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
-  display:block;
-  /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
-  width:18px;
-  /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
-  height:1px;
-  /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
-  margin:6px auto 0;
-  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
-  opacity:0;
-  /* builds the background. multiple gradients/images stack in the order theyre written here */
-  background:#d2554f;
-  /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
-  box-shadow:0 0 10px rgba(210,85,79,.55);
-  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
-  transform:scaleX(.4);
-  /* smooths changes between old/new css values so hover/class changes dont just snap */
-  transition:opacity .2s ease,transform .24s ease;
-}
-
-.command-link:hover strong::after,
-.command-link:focus-visible strong::after{
-  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
-  opacity:1;
-  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
-  transform:scaleX(1);
+  display:none;
 }
 
 .command-link small{
-  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
 .command-link:hover,
 .command-link:focus-visible{
-  /* sets the text/icon color here and most stuff inside inherits it unless it overrides it */
   color:#fff;
-  /* builds the background. multiple gradients/images stack in the order theyre written here */
-  background:
-    linear-gradient(180deg,rgba(118,18,18,.18),rgba(70,7,7,.10));
-  /* adds shadow/glow around or inside the box so it has depth instead of looking flat */
-  box-shadow:
-    inset 0 0 22px rgba(150,28,28,.07),
-    0 8px 24px rgba(0,0,0,.18);
-  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
-  transform:translateY(-2px);
+  background:transparent;
+  box-shadow:none;
+  transform:translateY(-3px);
   outline:none;
 }
 
 .command-link:hover::before,
 .command-link:focus-visible::before{
-  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
+  width:48px;
+  opacity:.82;
+  transform:translateX(-50%) scaleX(1);
+}
+
+.command-link:hover::after,
+.command-link:focus-visible::after{
   opacity:1;
-  /* moves/rotates/scales this visually without changing where normal document layout thinks it is */
-  transform:scaleX(1);
 }
 
 .command-status{
-  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
 /* Glass keeps the original navigation rail. */
 body:not(.night) .night-command{
-  /* changes how this box lays out its children. flex/grid gives me way more control than normal block layout */
   display:none;
 }
 
@@ -970,43 +899,32 @@ body.night .calendar-day:hover:not(.selected){
   .entry-head{grid-template-columns:1fr auto}
   .entry-date{grid-column:1/-1;grid-row:2}
   .entry-index{display:none}
-  .theme-toggle button{padding:8px 10px}
+  .theme-toggle button{padding:4px 0 7px}
 }
 
 
 @media(max-width:760px){
   body.night .layout{
-    /* only adds inside space at the bottom */
     padding-bottom:28px;
   }
 
   body.night .night-command{
-    /* controls how wide this gets. min/calc/percent values keep it responsive instead of locking it to one screen */
     width:100%;
-    /* adds space OUTSIDE this box. auto is also how some centered sections stay in the middle */
-    margin:18px 0 26px;
-    /* adds space INSIDE the box so the content doesnt sit right against the edge */
-    padding:7px;
+    margin:24px 0 18px;
+    padding:2px 0;
   }
 
   .command-links{
-    /* makes the grid columns and tells each one how much room it gets. fr uses leftover space and auto follows content */
     grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:18px 28px;
   }
 
   .command-link{
-    /* makes sure this stays at least this tall but it can still grow if the content needs more room */
-    min-height:48px;
-  }
-
-  .command-link:nth-child(3){
-    /* only puts the divider line on the left edge */
-    border-left:0;
+    min-height:62px;
   }
 
   .command-link strong{
-    /* controls the text size. clamp/rem/vw values help some text scale between phone and desktop */
-    font-size:15px;
+    font-size:17px;
   }
 }
 
@@ -1350,8 +1268,8 @@ body.panorama-fallback-exit-prev {
         <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
       </linearGradient>
       <linearGradient id="waveNightA" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#8e1212" stop-opacity=".62"/>
-        <stop offset="52%" stop-color="#4d0707" stop-opacity=".34"/>
+        <stop offset="0%" stop-color="#701010" stop-opacity=".50"/>
+        <stop offset="52%" stop-color="#330505" stop-opacity=".24"/>
         <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
       </linearGradient>
     </defs>
@@ -1400,22 +1318,18 @@ body.panorama-fallback-exit-prev {
         <!-- command-links part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
         <div class="command-links">
           <a class="command-link" href="photos.html">
-            <span class="command-index">01</span>
             <strong>Photos</strong>
           </a>
 
           <a class="command-link" href="projects.html">
-            <span class="command-index">02</span>
             <strong>Projects</strong>
           </a>
 
           <a class="command-link" href="photos/selected.html">
-            <span class="command-index">03</span>
             <strong>Selected Work</strong>
           </a>
 
           <a class="command-link" href="cv.html">
-            <span class="command-index">04</span>
             <strong>CV / Résumé</strong>
           </a>
         </div>
