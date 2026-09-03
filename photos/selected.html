@@ -36,10 +36,15 @@
 
     html {
       scroll-behavior: smooth;
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
     }
 
     body {
       margin: 0;
+      width: 100%;
+      max-width: 100%;
       min-height: 100vh;
       overflow-x: hidden;
       font-family: "Times New Roman", Times, serif;
@@ -55,6 +60,8 @@
 
     .page-shell {
       width: min(1560px, calc(100% - 32px));
+      max-width: 100%;
+      min-width: 0;
       margin: 0 auto;
     }
 
@@ -349,23 +356,71 @@
       .gallery {
         min-height: 670px;
         grid-template-rows: minmax(480px, 1fr) auto auto;
+        /* mobile should only scroll vertically. carousel art gets clipped inside this area */
+        overflow: hidden;
       }
 
       .stage {
+        width: 100%;
+        max-width: 100vw;
         min-height: 480px;
+        overflow: hidden;
+        /* keep vertical page scrolling natural while horizontal drags still control the cover flow */
+        touch-action: pan-y;
       }
 
       .slide {
+        max-width: 82vw;
         transform:
           translate(-50%, -50%)
-          translateX(calc(var(--offset) * 55vw))
-          translateZ(calc(var(--distance) * -120px))
-          rotateY(calc(var(--offset) * -34deg))
-          scale(calc(1 - var(--distance) * 0.08));
+          translateX(calc(var(--offset) * 48vw))
+          translateZ(calc(var(--distance) * -90px))
+          rotateY(calc(var(--offset) * -28deg))
+          scale(calc(1 - var(--distance) * 0.09));
       }
 
       .intro {
         margin-top: 48px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page-shell {
+        width: 100%;
+        padding-inline: 14px;
+        overflow-x: hidden;
+      }
+
+      .gallery {
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+      }
+
+      .stage {
+        width: calc(100% + 28px);
+        max-width: none;
+        margin-inline: -14px;
+        min-height: 430px;
+        overflow: hidden;
+      }
+
+      .slide {
+        max-width: 76vw;
+        transform:
+          translate(-50%, -50%)
+          translateX(calc(var(--offset) * 44vw))
+          translateZ(calc(var(--distance) * -70px))
+          rotateY(calc(var(--offset) * -24deg))
+          scale(calc(1 - var(--distance) * 0.10));
+      }
+
+      .photo-frame {
+        padding: 7px;
+      }
+
+      .reflection {
+        display: none;
       }
     }
 
@@ -1423,6 +1478,12 @@ body.panorama-fallback-exit-prev {
         slide.style.setProperty("--distance", distance);
         slide.style.zIndex = String(20 - distance);
 
+        // On phones only keep the center photo and its immediate neighbours rendered.
+        // This stops a long row of off-screen slides from making the page feel horizontally scrollable.
+        const phoneLayout = window.matchMedia("(max-width: 600px)").matches;
+        const keepVisible = !phoneLayout || Math.abs(offset) <= 1;
+        slide.style.visibility = keepVisible ? "visible" : "hidden";
+
         slide.classList.toggle("is-active", index === currentIndex);
         slide.setAttribute("aria-hidden", index === currentIndex ? "false" : "true");
         slide.tabIndex = index === currentIndex ? 0 : -1;
@@ -1526,6 +1587,9 @@ body.panorama-fallback-exit-prev {
         const ratio = Number(slide.dataset.ratio || 1.5);
         calculateSlideSize(slide, ratio);
       });
+
+      // refresh the mobile visibility rule if the browser crosses the phone breakpoint.
+      render();
     });
 
     createSlides();
