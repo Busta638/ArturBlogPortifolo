@@ -1289,6 +1289,10 @@ body.panorama-fallback-exit-prev {
       // ISO dates from photos-data.js are parsed at noon to avoid timezone shifts.
       let date;
 
+      if (/^\d{4}$/.test(text)) {
+        return text;
+      }
+
       if (/^\d{4}-\d{2}-\d{2}$/.test(text)) {
         date = new Date(`${text}T12:00:00`);
       } else {
@@ -1599,6 +1603,27 @@ body.panorama-fallback-exit-prev {
     // The event value must match the folder inside photos/photos/<event>/.
     const PHOTO_EVENTS = [
       {
+            "event": "DMCC Drift Event Aug",
+            "title": "DMCC Drift Event Round 5",
+            "date": "September 5, 2026",
+            "description": "Round 5 of the DMCC drift event in Quebec.",
+            "href": "dmcc-drift-event-aug-event.html"
+      },
+      {
+            "event": "Monteal-2026",
+            "title": "Montreal 2026",
+            "date": "2026",
+            "description": "Went to visit family friends and walked around the city.",
+            "href": "montreal-2026-event.html"
+      },
+      {
+            "event": "ottawa-2026",
+            "title": "Ottawa 2026",
+            "date": "2026",
+            "description": "Went to Ottawa this year after more than a decade and got to see so much there.",
+            "href": "ottawa-2026-event.html"
+      },
+      {
             "event": "blue-jays-game-my-first-baseball-game",
             "title": "Blue jays game - My first Baseball Game!",
             "date": "June 22, 2025",
@@ -1875,6 +1900,11 @@ body.panorama-fallback-exit-prev {
         if (!value) return -Infinity;
 
         const text = String(value).trim();
+
+        if (/^\d{4}$/.test(text)) {
+          const timestamp = new Date(`${text}-01-01T12:00:00`).getTime();
+          return Number.isFinite(timestamp) ? timestamp : -Infinity;
+        }
 
         if (/^\d{4}-\d{2}-\d{2}$/.test(text)) {
           const timestamp = new Date(`${text}T12:00:00`).getTime();
