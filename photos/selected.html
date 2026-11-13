@@ -452,8 +452,10 @@
   padding-bottom: 68px;
 }
 
+
+
 .event-journal {
-  width: min(1380px, calc(100% - 36px));
+  width: min(1500px, calc(100% - 36px));
   margin: 32px auto 120px;
   border-top: 1px solid var(--line);
 }
@@ -463,7 +465,7 @@
   grid-template-columns: 1fr auto;
   gap: 30px;
   align-items: end;
-  padding: 74px 0 44px;
+  padding: 74px 0 28px;
 }
 
 .journal-heading h2 {
@@ -482,67 +484,201 @@
   line-height: 1.55;
 }
 
-.event-list {
-  border-top: 1px solid var(--line);
-}
-
-.photo-event {
-  position: relative;
-  display: grid;
-  grid-template-columns: 150px minmax(0, 1fr) minmax(250px, 460px) auto;
-  gap: 28px;
-  align-items: center;
-  min-height: 210px;
-  padding: 30px 4px;
+/* Simple text-only category jump bar.
+   No pills, no cards — just a quiet editorial index. */
+.journal-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  padding: 0 0 34px;
   border-bottom: 1px solid var(--line);
-  color: var(--text);
-  text-decoration: none;
-  overflow: hidden;
-  transition: padding 220ms ease, background 220ms ease;
 }
 
-.photo-event:hover {
-  padding-inline: 18px;
-  background: rgba(126, 185, 232, 0.06);
-}
-
-.event-date {
+.journal-index a {
+  position: relative;
+  padding-bottom: 4px;
   color: var(--muted);
+  text-decoration: none;
   font-size: 11px;
-  line-height: 1.6;
   letter-spacing: .14em;
   text-transform: uppercase;
 }
 
+.journal-index a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--text);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.journal-index a:hover {
+  color: var(--text);
+}
+
+.journal-index a:hover::after {
+  transform: scaleX(1);
+}
+
+/* The categories themselves form two independent vertical columns. */
+#eventList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 56px;
+  row-gap: 0;
+  align-items: start;
+}
+
+.journal-category {
+  position: relative;
+  min-width: 0;
+  padding: 54px 0 64px;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 92px;
+  overflow: hidden;
+}
+
+.journal-category:nth-child(-n + 2) {
+  border-top: 0;
+}
+
+/* Big faint section number gives personality without creating a box. */
+.journal-category-number {
+  position: absolute;
+  top: 30px;
+  right: 2px;
+  z-index: 0;
+  color: rgba(255,255,255,.035);
+  font-size: clamp(94px, 10vw, 170px);
+  line-height: .8;
+  letter-spacing: -.08em;
+  pointer-events: none;
+  user-select: none;
+}
+
+.journal-category-heading {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7px;
+  align-items: end;
+  margin-bottom: 22px;
+}
+
+.journal-category-title {
+  margin: 0;
+  max-width: 90%;
+  font-size: clamp(36px, 4.2vw, 68px);
+  font-weight: normal;
+  line-height: .95;
+  letter-spacing: -.045em;
+}
+
+.journal-category-description {
+  max-width: 520px;
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.journal-category-meta {
+  margin-top: 3px;
+  color: var(--accent);
+  font-size: 9px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+/* One event per row. Bigger image, quieter date, strong title. */
+.photo-event {
+  position: relative;
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr) minmax(178px, 220px) 22px;
+  gap: 16px;
+  align-items: center;
+  min-width: 0;
+  min-height: 184px;
+  padding: 24px 2px;
+  border-top: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
+  overflow: hidden;
+  transition:
+    padding 220ms ease,
+    background 220ms ease;
+}
+
+.photo-event:hover {
+  padding-inline: 10px;
+  background: rgba(126, 185, 232, 0.035);
+}
+
+.event-date {
+  align-self: start;
+  padding-top: 6px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.55;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.event-copy {
+  min-width: 0;
+}
+
 .event-copy h3 {
   margin: 0 0 8px;
-  font-size: clamp(30px, 4vw, 56px);
+  font-size: clamp(27px, 2.55vw, 43px);
   font-weight: normal;
-  line-height: 1;
+  line-height: .98;
   letter-spacing: -.035em;
+  transition: color 180ms ease, transform 180ms ease;
 }
 
 .event-copy p {
+  display: -webkit-box;
+  max-width: 560px;
   margin: 0;
+  overflow: hidden;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.5;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .event-preview {
   position: relative;
-  height: 148px;
+  width: 100%;
+  height: 132px;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255,255,255,.025);
+  border-radius: 4px;
+  background: rgba(255,255,255,.02);
 }
 
 .event-preview-placeholder {
   display: grid;
   place-items: center;
+  padding: 10px;
+  text-align: center;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 10px;
   letter-spacing: .08em;
   text-transform: uppercase;
 }
@@ -552,72 +688,129 @@
   height: 100%;
   display: block;
   object-fit: cover;
-  filter: saturate(.92) brightness(.88);
-  transition: transform 650ms cubic-bezier(.2,.8,.2,1), filter 250ms ease;
+  filter: saturate(.88) brightness(.84);
+  transition:
+    transform 650ms cubic-bezier(.2,.8,.2,1),
+    filter 250ms ease;
 }
 
 .photo-event:hover .event-preview img {
-  transform: scale(1.035);
+  transform: scale(1.03);
   filter: saturate(1) brightness(1);
+}
+
+.photo-event:hover .event-copy h3 {
+  transform: translateX(2px);
 }
 
 .event-arrow {
   color: var(--muted);
-  font-size: 22px;
+  font-size: 17px;
   transition: transform 220ms ease, color 220ms ease;
 }
 
 .photo-event:hover .event-arrow {
   color: var(--text);
-  transform: translateX(5px);
+  transform: translate(3px, -1px);
 }
 
 .journal-empty {
-  padding: 56px 4px;
+  grid-column: 1 / -1;
+  padding: 42px 4px;
   color: var(--muted);
-  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
 }
 
-@media (max-width: 900px) {
-  .hero-wrap { min-height: auto; }
-  .gallery {
-    min-height: 610px;
-    grid-template-rows: minmax(440px, 1fr) auto auto;
+@media (max-width: 1180px) {
+  #eventList {
+    grid-template-columns: 1fr;
+    column-gap: 0;
   }
 
-  .journal-heading {
-    grid-template-columns: 1fr;
+  .journal-category:nth-child(2) {
+    border-top: 1px solid var(--line);
   }
 
   .photo-event {
-    grid-template-columns: 105px 1fr auto;
+    grid-template-columns: 105px minmax(0, 1fr) minmax(200px, 300px) 24px;
   }
 
   .event-preview {
-    grid-column: 2 / -1;
-    height: 190px;
+    height: 150px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
+  .journal-heading {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .journal-index {
+    gap: 8px 14px;
+    padding-bottom: 26px;
+  }
+
+  .journal-category {
+    padding: 42px 0 52px;
+  }
+
+  .journal-category-number {
+    top: 22px;
+    font-size: 100px;
+  }
+
+  .journal-category-title {
+    max-width: 82%;
+  }
+
   .photo-event {
     grid-template-columns: 1fr auto;
-    gap: 13px;
-    padding: 24px 2px;
+    gap: 12px;
+    min-height: 0;
+    padding: 22px 0;
   }
 
   .event-date {
     grid-column: 1 / -1;
+    padding-top: 0;
   }
 
   .event-preview {
     grid-column: 1 / -1;
-    height: 180px;
+    grid-row: auto;
+    height: 210px;
+  }
+
+  .event-copy p {
+    -webkit-line-clamp: 2;
   }
 
   .event-arrow {
     grid-column: 2;
     grid-row: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .event-journal {
+    width: calc(100% - 28px);
+  }
+
+  .journal-heading {
+    padding-top: 58px;
+  }
+
+  .journal-category-title {
+    font-size: clamp(36px, 12vw, 54px);
+  }
+
+  .event-copy h3 {
+    font-size: clamp(28px, 8.5vw, 40px);
+  }
+
+  .event-preview {
+    height: 190px;
   }
 }
 
@@ -1139,12 +1332,14 @@ body.panorama-fallback-exit-prev {
       <div class="journal-heading">
         <h2>Photo Journal</h2>
         <p>
-          Days, events and places kept as complete sets. Pick an entry to open
-          its own page and see the full sequence.
+          Complete sets grouped by the kind of photography. Each section stays
+          ordered by date, newest first.
         </p>
       </div>
 
-      <div id="eventList" class="event-list"></div>
+      <nav id="journalIndex" class="journal-index" aria-label="Photography categories"></nav>
+
+      <div id="eventList"></div>
     </section>
 
     <footer class="footer">
@@ -1846,17 +2041,8 @@ body.panorama-fallback-exit-prev {
       eventList.innerHTML = "";
 
       /*
-        Merge scanned photo folders with the metadata you provided.
-
-        This fixes duplicates such as:
-          "ImportFest Aug 8 2026 Drift Event"
-        and:
-          "importfest-aug-8-2026-drift-event"
-
-        They now render as ONE journal entry:
-          - your supplied title/date/caption
-          - the photos/count/preview from photos-data.js
-          - the generated event HTML link
+        Merge scanned photo folders with your manual event metadata.
+        One folder = one event, and manual dates always control sorting.
       */
       const entries = new Map();
 
@@ -1893,9 +2079,7 @@ body.panorama-fallback-exit-prev {
       }
 
       function entryTimestamp(entry) {
-        // Only use the manual date from PHOTO_EVENTS for journal sorting.
-        // Do not use dates from the actual image files because Lightroom exports
-        // can change file/metadata dates when the 2049px versions are created.
+        // Only manual dates from PHOTO_EVENTS control the journal order.
         const value = entry.meta.date;
         if (!value) return -Infinity;
 
@@ -1915,60 +2099,216 @@ body.panorama-fallback-exit-prev {
         return Number.isFinite(timestamp) ? timestamp : -Infinity;
       }
 
+      /*
+        CATEGORY RULES
+
+        Explicit event names come first so the archive stays predictable.
+        The fallback keywords make future folders land somewhere sensible
+        without needing to rewrite this function every time.
+      */
+      const CATEGORY_ORDER = [
+        "Street Photography",
+        "Automotive / Planes",
+        "Portrait",
+        "Wildlife",
+        "Sports",
+        "Random"
+      ];
+
+      const CATEGORY_DESCRIPTIONS = {
+        "Street Photography": "Cities, walks, travel and everyday places.",
+        "Sports": "Games, track and anything centered around sport.",
+        "Portrait": "People, portraits and more personal photo sets.",
+        "Wildlife": "Hiking, animals, forests and nature-focused sets.",
+        "Automotive / Planes": "Cars, motorsport, shows and future aviation sets.",
+        "Random": "Everything that does not need its own category yet."
+      };
+
+      const explicitCategories = {
+        // Street / city / travel / walking
+        "monteal-2026": "Street Photography",
+        "ottawa-2026": "Street Photography",
+        "burlington-beach-walk-2026": "Street Photography",
+        "burlington-bridge-on-the-ice-2025": "Street Photography",
+        "jordan-harbour-light-2026": "Street Photography",
+        "photos-from-school-2025": "Street Photography",
+        "street-photography-in-toronto-2025": "Street Photography",
+        "street-photography-in-toronto-2026": "Street Photography",
+        "walk-to-parking-lot-at-school-2025": "Street Photography",
+
+        // Sports
+        "blue-jays-game-my-first-baseball-game": "Sports",
+        "track-and-field-at-my-highschool-2024": "Sports",
+
+        // Portrait
+        "first-time-doing-portiort-2024": "Portrait",
+        "walk-with-girlfriend-2024": "Portrait",
+        "walk-with-girlfriend-aug-2026": "Portrait",
+        "walk-with-girlfriend-march-2025": "Portrait",
+
+        // Automotive / planes
+        "dmcc-drift-event-aug": "Automotive / Planes",
+        "import-expo-2024": "Automotive / Planes",
+        "importfest-2024-drift-event": "Automotive / Planes",
+        "importfest-2025-drift-event": "Automotive / Planes",
+        "importfest-aug-8-2026-drift-event": "Automotive / Planes",
+        "toronto-autoshow-2024": "Automotive / Planes",
+        "toronto-autoshow-2025": "Automotive / Planes",
+        "toronto-autoshow-2026": "Automotive / Planes",
+
+        // Wildlife / nature
+        "hiking-with-ben-june-6-2026": "Wildlife",
+        "hiking-with-sister-camping": "Wildlife",
+        "using-my-first-camera-while-hiking-2024": "Wildlife",
+
+        // Random / uncategorized
+        "random-stuff": "Random",
+        "using-my-new-camera-for-first-time-2026": "Random"
+      };
+
+      function categoryFor(entry) {
+        const key = normalizeEventKey(entry.meta.event || entry.folderName || entry.meta.title);
+        if (explicitCategories[key]) return explicitCategories[key];
+
+        const text = [
+          entry.folderName,
+          entry.meta.event,
+          entry.meta.title,
+          entry.meta.description
+        ].filter(Boolean).join(" ").toLowerCase();
+
+        if (/(car|auto|drift|motor|vehicle|plane|aviation|airshow|aircraft)/.test(text)) {
+          return "Automotive / Planes";
+        }
+
+        if (/(baseball|sport|track|field|game)/.test(text)) {
+          return "Sports";
+        }
+
+        if (/(portrait|portiort|girlfriend|people|person)/.test(text)) {
+          return "Portrait";
+        }
+
+        if (/(wildlife|animal|bird|duck|forest|hiking|camping|nature|trail)/.test(text)) {
+          return "Wildlife";
+        }
+
+        if (/(street|city|toronto|montreal|monteal|ottawa|walk|harbour|beach|school)/.test(text)) {
+          return "Street Photography";
+        }
+
+        return "Random";
+      }
+
       const sortedEntries = [...entries.values()].sort((a, b) => {
         const dateDifference = entryTimestamp(b) - entryTimestamp(a);
 
-        if (dateDifference) {
-          return dateDifference;
-        }
+        if (dateDifference) return dateDifference;
 
         const aTitle = a.meta.title || prettifyEventName(a.folderName);
         const bTitle = b.meta.title || prettifyEventName(b.folderName);
         return aTitle.localeCompare(bTitle);
       });
 
+      const categorized = new Map(
+        CATEGORY_ORDER.map(category => [category, []])
+      );
+
       sortedEntries.forEach(entry => {
-        const { folderName, photos, meta } = entry;
-        const cover = photos[0];
+        categorized.get(categoryFor(entry)).push(entry);
+      });
 
-        // The journal date shown on screen also comes only from PHOTO_EVENTS.
-        // Image file dates are ignored completely here.
-        const newestDate = meta.date || "";
+      const journalIndex = document.getElementById("journalIndex");
+      if (journalIndex) {
+        journalIndex.innerHTML = "";
 
-        const title = meta.title || prettifyEventName(folderName);
+        CATEGORY_ORDER.forEach(category => {
+          const categoryEntries = categorized.get(category) || [];
+          if (!categoryEntries.length) return;
 
-        // Your provided caption wins. If none exists, show the photo count.
-        const description =
-          meta.description ||
-          `${photos.length} photograph${photos.length === 1 ? "" : "s"}`;
+          const link = document.createElement("a");
+          link.href = `#journal-${normalizeEventKey(category)}`;
+          link.textContent = category;
+          journalIndex.appendChild(link);
+        });
+      }
 
-        const href =
-          meta.href ||
-          `${encodeURIComponent(normalizeEventKey(folderName))}-event.html`;
+      CATEGORY_ORDER.forEach(category => {
+        const categoryEntries = categorized.get(category) || [];
+        if (!categoryEntries.length) return;
 
-        const link = document.createElement("a");
-        link.className = "photo-event";
-        link.href = href;
+        const section = document.createElement("section");
+        section.className = "journal-category";
 
-        const previewHtml = cover
-          ? `<div class="event-preview">
-               <img src="${cover.src}" alt="${title}" loading="lazy">
-             </div>`
-          : `<div class="event-preview event-preview-placeholder">
-               <span>${title}</span>
-             </div>`;
+        const categoryIndex = CATEGORY_ORDER.indexOf(category) + 1;
+        const categoryId = `journal-${normalizeEventKey(category)}`;
+        section.id = categoryId;
 
-        link.innerHTML = `
-          <div class="event-date">${newestDate ? formatDate(newestDate) : "Photo set"}</div>
-          <div class="event-copy">
-            <h3>${title}</h3>
-            <p>${description}</p>
+        const number = document.createElement("div");
+        number.className = "journal-category-number";
+        number.setAttribute("aria-hidden", "true");
+        number.textContent = String(categoryIndex).padStart(2, "0");
+
+        const heading = document.createElement("div");
+        heading.className = "journal-category-heading";
+        heading.innerHTML = `
+          <div>
+            <h3 class="journal-category-title">${category}</h3>
+            <p class="journal-category-description">${CATEGORY_DESCRIPTIONS[category] || ""}</p>
           </div>
-          ${previewHtml}
-          <span class="event-arrow" aria-hidden="true">↗</span>
+          <div class="journal-category-meta">
+            ${categoryEntries.length} set${categoryEntries.length === 1 ? "" : "s"} · newest first
+          </div>
         `;
 
-        eventList.appendChild(link);
+        const list = document.createElement("div");
+        list.className = "event-list";
+        list.setAttribute("aria-label", `${category} photo sets`);
+
+        categoryEntries.forEach(entry => {
+          const { folderName, photos, meta } = entry;
+          const cover = photos[0];
+
+          const newestDate = meta.date || "";
+          const title = meta.title || prettifyEventName(folderName);
+
+          const description =
+            meta.description ||
+            `${photos.length} photograph${photos.length === 1 ? "" : "s"}`;
+
+          const href =
+            meta.href ||
+            `${encodeURIComponent(normalizeEventKey(folderName))}-event.html`;
+
+          const link = document.createElement("a");
+          link.className = "photo-event";
+          link.href = href;
+
+          const previewHtml = cover
+            ? `<div class="event-preview">
+                 <img src="${cover.src}" alt="${title}" loading="lazy">
+               </div>`
+            : `<div class="event-preview event-preview-placeholder">
+                 <span>${title}</span>
+               </div>`;
+
+          link.innerHTML = `
+            <div class="event-date">${newestDate ? formatDate(newestDate) : "Photo set"}</div>
+            <div class="event-copy">
+              <h3>${title}</h3>
+              <p>${description}</p>
+            </div>
+            ${previewHtml}
+            <span class="event-arrow" aria-hidden="true">↗</span>
+          `;
+
+          list.appendChild(link);
+        });
+
+        section.appendChild(number);
+        section.appendChild(heading);
+        section.appendChild(list);
+        eventList.appendChild(section);
       });
     }
 

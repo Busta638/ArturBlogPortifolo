@@ -121,35 +121,34 @@ h1 {
 }
 
 .gallery {
-  width: min(1380px, calc(100% - 36px));
+  width: min(1720px, calc(100% - 16px));
   margin: 0 auto 100px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  align-items: start;
 }
 
-/* two real columns instead of CSS newspaper columns.
-   this lets each loaded quarter fill across the page from top to bottom. */
-.gallery-column {
-  min-width: 0;
-}
-
-.gallery-column .photo:last-child {
-  margin-bottom: 0;
+/* desktop: Flickr-style justified rows.
+   every row fills the width while each photo keeps its natural aspect ratio. */
+.justified-row {
+  display: flex;
+  width: 100%;
+  gap: 9px;
+  margin-bottom: 9px;
 }
 
 .photo {
-  break-inside: avoid;
-  margin: 0 0 18px;
+  min-width: 0;
+  margin: 0;
+  cursor: zoom-in;
 }
+
 .photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 0;
   background: #020406;
 }
+
 .empty {
   width: min(900px, calc(100% - 36px));
   margin: 0 auto 100px;
@@ -160,10 +159,6 @@ h1 {
   line-height: 1.6;
 }
 code { color: var(--accent); }
-
-.photo {
-  cursor: zoom-in;
-}
 
 .photo-lightbox {
   position: fixed;
@@ -303,24 +298,30 @@ footer {
 
   .gallery {
     width: calc(100% - 20px);
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
     margin: 0 auto 64px;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+    align-items: start;
+  }
+
+  .justified-row {
+    display: contents;
   }
 
   .photo {
     display: block;
-    break-inside: avoid;
-    margin: 0 0 8px;
+    margin: 0;
   }
 
   .photo img {
     width: 100%;
+    height: auto !important;
     max-width: none;
     max-height: none;
-    height: auto;
     border-radius: 6px;
+    object-fit: contain;
   }
 
   .empty {
@@ -341,7 +342,7 @@ footer {
   }
 
   .photo {
-    margin-bottom: 6px;
+    margin: 0;
   }
 
   .event-details {
@@ -391,10 +392,7 @@ footer {
     </div>
   </section>
 
-  <div id="gallery" class="gallery">
-    <div id="galleryLeft" class="gallery-column"></div>
-    <div id="galleryRight" class="gallery-column"></div>
-  </div>
+  <div id="gallery" class="gallery"></div>
   <div id="empty" class="empty" hidden></div>
 </main>
 
@@ -470,12 +468,15 @@ document.title = `${title} — Artur Tigirlas`;
 document.getElementById("eventTitle").textContent = title;
 
 const gallery = document.getElementById("gallery");
-const galleryLeft = document.getElementById("galleryLeft");
-const galleryRight = document.getElementById("galleryRight");
 const empty = document.getElementById("empty");
 const photoLightbox = document.getElementById("photoLightbox");
 const photoLightboxImage = document.getElementById("photoLightboxImage");
 const photoLightboxClose = document.getElementById("photoLightboxClose");
+
+/* Keep every loaded photo's natural dimensions.
+   We can rebuild the whole layout whenever the viewport changes. */
+const loadedEntries = [];
+let galleryResizeTimer = null;
 
 function openPhotoLightbox(photo) {
   photoLightboxImage.src = photo.src;
@@ -529,66 +530,173 @@ if (!eventPhotos.length) {
     photoChunks.push(eventPhotos.slice(start, start + chunkSize));
   }
 
-  // preloads one whole quarter before adding it to the visible gallery.
-  // photos are then split left/right so each quarter fills across the page
-  // instead of filling the entire left side first.
+  // preload one quarter at a time, exactly like before.
+  // the only change is how each loaded quarter is arranged on desktop.
   async function loadPhotoChunk(chunk, chunkIndex) {
     const readyPhotos = await Promise.all(
       chunk.map(photo => {
         return new Promise(resolve => {
           const preload = new Image();
-          preload.src = photo.src;
-          preload.decoding = "async";
 
-          const finish = () => resolve(photo);
+          const finish = () => {
+            resolve({
+              photo,
+              width: preload.naturalWidth || 1,
+              height: preload.naturalHeight || 1
+            });
+          };
+
           preload.addEventListener("load", finish, { once: true });
           preload.addEventListener("error", finish, { once: true });
 
-          // browser cache can finish before the listener gets a chance to fire.
-          if (preload.complete) resolve(photo);
+          preload.decoding = "async";
+          preload.src = photo.src;
+
+          if (preload.complete) finish();
         });
       })
     );
 
-    const leftFragment = document.createDocumentFragment();
-    const rightFragment = document.createDocumentFragment();
+    appendPhotos(readyPhotos);
+  }
 
-    readyPhotos.forEach((photo, index) => {
-      const figure = document.createElement("figure");
-      figure.className = "photo";
+  function makePhotoFigure(photo, height = null, width = null) {
+    const figure = document.createElement("figure");
+    figure.className = "photo";
 
-      const img = document.createElement("img");
-      img.src = photo.src;
-      img.alt = "";
-      img.decoding = "async";
+    if (height !== null) figure.style.height = `${height}px`;
+    if (width !== null) {
+      figure.style.width = `${width}px`;
+      figure.style.flex = `0 0 ${width}px`;
+    }
 
-      // first quarter is already needed immediately.
-      // later quarters are already preloaded by the time they are inserted.
-      img.loading = chunkIndex === 0 ? "eager" : "lazy";
+    const img = document.createElement("img");
+    img.src = photo.src;
+    img.alt = "";
+    img.decoding = "async";
+    img.loading = "lazy";
 
-      figure.appendChild(img);
-      figure.addEventListener("click", () => openPhotoLightbox(photo));
+    figure.appendChild(img);
+    figure.addEventListener("click", () => openPhotoLightbox(photo));
+    return figure;
+  }
 
-      // alternate between the real left and right columns.
-      // this makes the loaded quarter progress across the page top to bottom.
-      if (index % 2 === 0) {
-        leftFragment.appendChild(figure);
-      } else {
-        rightFragment.appendChild(figure);
+  function renderGalleryForCurrentWidth() {
+    gallery.innerHTML = "";
+
+    if (!loadedEntries.length) return;
+
+    // Phone: keep the compact two-column layout.
+    // No fixed dimensions: every photo keeps its natural ratio.
+    if (window.matchMedia("(max-width: 760px)").matches) {
+      const fragment = document.createDocumentFragment();
+
+      loadedEntries.forEach(({ photo }) => {
+        fragment.appendChild(makePhotoFigure(photo));
+      });
+
+      gallery.appendChild(fragment);
+      return;
+    }
+
+    // Desktop/tablet: justified rows rebuilt from current container width.
+    const availableWidth = gallery.clientWidth;
+    const gap = 9;
+
+    // Scale target height from the gallery width itself.
+    // This keeps rows readable when the browser is zoomed out instead of
+    // endlessly fitting more and more tiny photos across one row.
+    const targetHeight = Math.max(220, Math.min(300, availableWidth / 5.35));
+
+    let row = [];
+    let aspectSum = 0;
+
+    function flushRow(isLastRow = false) {
+      if (!row.length) return;
+
+      const gapsWidth = gap * Math.max(0, row.length - 1);
+      const usableWidth = Math.max(1, availableWidth - gapsWidth);
+
+      let rowHeight = usableWidth / aspectSum;
+
+      // The incomplete final row should not stretch into gigantic photos.
+      if (isLastRow) {
+        rowHeight = Math.min(rowHeight, targetHeight);
+      }
+
+      const rowEl = document.createElement("div");
+      rowEl.className = "justified-row";
+
+      row.forEach(entry => {
+        const width = Math.max(1, rowHeight * entry.aspect);
+        rowEl.appendChild(makePhotoFigure(entry.photo, rowHeight, width));
+      });
+
+      gallery.appendChild(rowEl);
+      row = [];
+      aspectSum = 0;
+    }
+
+    loadedEntries.forEach(entry => {
+      const aspect = Math.max(0.25, entry.width / entry.height);
+
+      row.push({ ...entry, aspect });
+      aspectSum += aspect;
+
+      const projectedWidth =
+        aspectSum * targetHeight +
+        gap * Math.max(0, row.length - 1);
+
+      // Once this group would fill the available width, justify it.
+      if (projectedWidth >= availableWidth) {
+        flushRow(false);
       }
     });
 
-    galleryLeft.appendChild(leftFragment);
-    galleryRight.appendChild(rightFragment);
+    flushRow(true);
   }
 
-  // show quarter one first, then keep loading 2, 3 and 4 automatically.
+  function appendPhotos(entries) {
+    loadedEntries.push(...entries);
+    renderGalleryForCurrentWidth();
+  }
+
+  // Recalculate the entire photo wall whenever browser width changes.
+  // Debounced so dragging a desktop window stays smooth.
+  window.addEventListener("resize", () => {
+    clearTimeout(galleryResizeTimer);
+
+    galleryResizeTimer = setTimeout(() => {
+      renderGalleryForCurrentWidth();
+    }, 120);
+  });
+
+  window.addEventListener("orientationchange", () => {
+    clearTimeout(galleryResizeTimer);
+
+    galleryResizeTimer = setTimeout(() => {
+      renderGalleryForCurrentWidth();
+    }, 180);
+  });
+
+  // Browser zoom can change the gallery's CSS width without behaving exactly like
+  // a normal desktop resize in every browser. Watching the gallery itself catches that.
+  if ("ResizeObserver" in window) {
+    const galleryObserver = new ResizeObserver(() => {
+      clearTimeout(galleryResizeTimer);
+      galleryResizeTimer = setTimeout(renderGalleryForCurrentWidth, 100);
+    });
+    galleryObserver.observe(gallery);
+  }
+
+  // Still one continuous page:
+  // quarter 1 appears first, then 2, 3 and 4 automatically append underneath it.
+  // No pagination, no page flipping, no "load more" button.
   async function loadGalleryInQuarters() {
     for (let i = 0; i < photoChunks.length; i++) {
       await loadPhotoChunk(photoChunks[i], i);
 
-      // gives the browser one frame to paint the quarter that just finished
-      // before it starts working on the next group.
+      // let the browser paint the newly appended rows before starting the next quarter.
       await new Promise(resolve => requestAnimationFrame(resolve));
     }
   }
