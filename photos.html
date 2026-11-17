@@ -77,7 +77,7 @@ h1{
   margin:clamp(24px,4vw,56px) 0 0 -.05em;
   color:#fff;
   mix-blend-mode:difference;
-  font-size:clamp(100px,26vw,380px);
+  font-size:clamp(100px,23vw,340px);
   font-weight:400;
   line-height:.76;
   letter-spacing:-.05em;
@@ -90,46 +90,70 @@ h1{
   position:relative;
   z-index:1;
   display:grid;
-  grid-template-columns:1.3fr 1fr;
-  gap:clamp(28px,5vw,80px);
+  grid-template-columns:1.12fr .88fr;
+  gap:clamp(70px,9vw,150px);
   align-items:start;
-  margin-top:calc(-1 * clamp(56px,11vw,170px));
+  margin-top:calc(-1 * clamp(46px,9vw,135px));
 }
 .chapter{display:block;color:var(--ink);text-decoration:none}
 
 /* keep the second option slightly lower for the editorial offset,
    but much higher than the previous smart-ink version */
-.chapter:last-child{margin-top:clamp(40px,7vw,110px)}
+.chapter:last-child{margin-top:clamp(92px,11vw,165px)}
 
-.frame{position:relative;overflow:hidden;aspect-ratio:5/4}
-.chapter:last-child .frame{aspect-ratio:4/5}
+.frame{position:relative;overflow:hidden;aspect-ratio:5/4;background:transparent}
+.chapter:last-child .frame{aspect-ratio:4/5;width:88%;margin-left:auto}
 /* a vertical photo in the first chapter gets a tall frame, a bit taller than the landscape one so it has more room */
-.chapter:first-child .frame.portrait{aspect-ratio:4/5;width:72%}
-.frame canvas,.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.frame.no-clean-ink::after{content:"";position:absolute;inset:12% 8%;border-top:1px solid color-mix(in srgb,var(--ink) 18%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 10%,transparent);opacity:.55}
+.chapter:first-child .frame.portrait{aspect-ratio:4/5;width:68%}
+.frame canvas,.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
 
-/* the ink layer is black on transparent. in night mode it flips to white lines on black */
-.frame canvas{opacity:0;transition:opacity .7s ease}
-.frame canvas.ready{opacity:1}
-body.night .frame canvas{filter:invert(1)}
+/* DEFAULT = the clean ink drawing.
+   HOVER = the same photo in the darker monochrome treatment.
+   Both layers are prepared on load so hover is instant. */
+.frame canvas.ink-layer{
+  opacity:0;
+  z-index:2;
+  transition:opacity .42s ease,transform .48s cubic-bezier(.22,.82,.22,1);
+}
+.frame canvas.ink-layer.ready{opacity:1}
+body.night .frame canvas.ink-layer{filter:invert(1)}
 
-/* the real photo waits underneath in black and white and only shows when you hover the chapter */
-.frame img{opacity:0;filter:grayscale(1) contrast(1.15);transition:opacity .5s ease}
-.chapter:hover .frame canvas.ready,.chapter:focus-visible .frame canvas.ready{opacity:0}
-.chapter:hover .frame img,.chapter:focus-visible .frame img{opacity:1}
+.frame img.dark-layer{
+  opacity:0;
+  z-index:1;
+  transform:scale(1.008);
+  filter:
+    grayscale(1)
+    contrast(var(--hover-contrast,2.35))
+    brightness(var(--hover-brightness,.72));
+  transition:opacity .42s ease,transform .48s cubic-bezier(.22,.82,.22,1),filter .42s ease;
+}
 
-/* if the canvas cant read the photo (like file://) this keeps the same idea with a plain css filter */
-.frame img.fallback{
+/* Hover swaps from drawing -> dark photo. */
+.chapter:hover .frame canvas.ink-layer.ready,
+.chapter:focus-visible .frame canvas.ink-layer.ready{
+  opacity:0;
+  transform:scale(1.008);
+}
+.chapter:hover .frame img.dark-layer,
+.chapter:focus-visible .frame img.dark-layer{
   opacity:1;
-  filter:grayscale(1) contrast(2.15) brightness(1.58);
-  mix-blend-mode:multiply;
-}
-body.night .frame img.fallback{
-  filter:grayscale(1) contrast(2.15) brightness(1.58) invert(1);
-  mix-blend-mode:screen;
+  transform:scale(1);
 }
 
-.chapter h2{margin:20px 0 6px;font-size:clamp(32px,4.2vw,60px);font-weight:400;line-height:1;letter-spacing:-.045em}
+/* local/file fallback: still show the image if canvas pixel reads are blocked */
+.frame img.dark-layer.fallback{
+  opacity:1;
+}
+body.night .frame img.dark-layer{
+  filter:
+    grayscale(1)
+    contrast(var(--hover-contrast,2.35))
+    brightness(var(--hover-brightness,.72))
+    invert(1);
+}
+
+.chapter h2{margin:14px 0 6px;font-size:clamp(32px,4.2vw,60px);font-weight:400;line-height:1;letter-spacing:-.045em}
 .chapter p{max-width:38ch;margin:0;color:var(--muted);font-size:18px;line-height:1.55}
 .open{display:inline-block;margin-top:16px;border-bottom:1px solid var(--ink);padding-bottom:3px;transition:padding .2s ease}
 .chapter:hover .open{padding-right:18px}
@@ -374,7 +398,6 @@ body.panorama-fallback-exit-prev {
 </div>
 
 <script src="photos/photos-data.js"></script>
-<!-- optional: saved photo brightness numbers, made by make_photo_darkness.py. if the file is missing the page just skips it -->
 <script src="photos/photo-darkness.js"></script>
 <script>
 function shuffled(items){return [...items].sort(()=>Math.random()-.5)}
@@ -387,22 +410,74 @@ function previewSrc(photo){
   return src.startsWith("photos/") ? `photos/${src}` : `photos/photos/${src}`;
 }
 
+function metricKey(photo){
+  let src=String(photo?.src||"").replace(/\\/g,"/").replace(/^\.\//,"");
+  while(src.toLowerCase().startsWith("photos/"))src=src.slice(7);
+  try{return decodeURIComponent(src)}catch(error){return src}
+}
+
+function photoMetrics(photo){
+  const table=window.PHOTO_DARKNESS||{};
+  const key=metricKey(photo);
+
+  let value=table[key];
+  if(value===undefined){
+    const wanted=key.toLowerCase();
+    const actual=Object.keys(table).find(item=>item.toLowerCase()===wanted);
+    if(actual)value=table[actual];
+  }
+
+  if(typeof value==="number"){
+    return {dark:value,ink:null,heavy:null};
+  }
+  if(value&&typeof value==="object"){
+    return {
+      dark:typeof value.dark==="number"?value.dark:null,
+      ink:typeof value.ink==="number"?value.ink:null,
+      heavy:typeof value.heavy==="number"?value.heavy:null
+    };
+  }
+  return {dark:null,ink:null,heavy:null};
+}
+
+function applyDarkHoverTreatment(img,photo){
+  const m=photoMetrics(photo);
+
+  // The BAT/Python metrics decide how hard the dark hover treatment should hit.
+  // A naturally dark image is brightened slightly so it does not become a black blob.
+  // Cleaner/lighter images can take stronger contrast.
+  const dark=m.dark ?? .28;
+  const ink=m.ink ?? .20;
+  const heavy=m.heavy ?? .16;
+
+  let contrast=2.55;
+  let brightness=.69;
+
+  if(dark>.70){
+    contrast=2.02;
+    brightness=.94;
+  }else if(dark>.55){
+    contrast=2.15;
+    brightness=.86;
+  }else if(dark>.40){
+    contrast=2.28;
+    brightness=.79;
+  }
+
+  // Heavy predicted ink gets slightly softened too.
+  if(heavy>.27 || ink>.34){
+    contrast-=.16;
+    brightness+=.055;
+  }else if(heavy<.11 && ink<.15){
+    contrast+=.12;
+    brightness-=.025;
+  }
+
+  img.style.setProperty("--hover-contrast",contrast.toFixed(2));
+  img.style.setProperty("--hover-brightness",brightness.toFixed(3));
+}
+
 /* turns a photo into black ink on transparent: levels it, keeps the darkest tones solid, and draws edges wherever a pixel is darker than the area around it */
-/* tone controls for the ink. these three decide how heavy the drawing feels */
-/* photos that are mostly black arent good for this page. if more than MAX_DARK_SHARE of a photo is darker than DARK_LEVEL, the frame tries another photo */
-const MAX_DARK_SHARE=.58;      // allow darker originals if the final ink still looks clean
-const MAX_INK_SHARE=.30;        // ideal final drawing: overall visible ink
-const MAX_HEAVY_INK=.12;        // ideal final drawing: near-solid ink
-const MAX_LOCAL_BLACK=.40;      // ideal final drawing: worst large local region
-const MAX_COMPONENT=.16;        // ideal final drawing: biggest connected black blob
-const MIN_INK_SHARE=.008;       // avoid drawings that disappear completely
-const MAX_TRIES=120;            // search deeper through the archive before settling
-const DARK_LEVEL=45;
-
-const TONE_SOFTEN=.80;         // keep enough detail so the drawing does not disappear
-const DENSE_RELIEF=.76;        // still thin dense areas, but less aggressively
-const EDGE_FEATHER=.11;        // dissolve edges into the page
-
 function inkify(img){
   const maxW=1100;
   const scale=Math.min(1,maxW/img.naturalWidth);
@@ -422,11 +497,6 @@ function inkify(img){
   for(let i=0;i<w*h;i++){
     lum[i]=px[i*4]*.299+px[i*4+1]*.587+px[i*4+2]*.114;
   }
-
-  // share of the photo that is basically black, measured before the exposure gets evened out
-  let dark=0;
-  for(let i=0;i<lum.length;i++)if(lum[i]<DARK_LEVEL)dark++;
-  canvas.darkShare=dark/lum.length;
 
   // Normalize exposure so bright and dark photos behave more similarly.
   const hist=new Uint32Array(256);
@@ -484,7 +554,6 @@ function inkify(img){
   const mediumR=Math.max(3,Math.round(w/180));
   const wideR=Math.max(14,Math.round(w/24));
   const output=new Uint8ClampedArray(px.length);
-  const inkMap=new Float32Array(w*h);
 
   // Sobel + local contrast. The key part: broad dark areas get suppressed when
   // they do not differ much from their neighbourhood. Strong boundaries survive.
@@ -510,61 +579,49 @@ function inkify(img){
       const localDifference=Math.abs(fine.mean-medium.mean);
       const broadDifference=Math.abs(medium.mean-wide.mean);
 
-      // Texture score helps preserve wheel spokes, outlines, branches, signs, etc.
-      const detail=gradient*.70 + localDifference*.75 + medium.sd*.34 + broadDifference*.22;
+      // CLEANER INK:
+      // Favor actual boundaries much more than texture. This keeps car/body/person
+      // contours, wheel edges, branches, etc. while letting busy shelves, pavement,
+      // crowds and tiny background detail wash back toward white.
+      const detail=
+        gradient*.88 +
+        localDifference*.82 +
+        medium.sd*.10 +
+        broadDifference*.06;
 
-      // Big uniformly dark regions are usually background/shadow. Fade them harder.
-      const uniformDark=1-smoothstep(7,24,wide.sd);
-      const darkField=1-smoothstep(42,110,wide.mean);
-      const backgroundPenalty=uniformDark*darkField;
+      // Broad dark / low-structure areas are usually shadow or background mass.
+      // Suppress them more aggressively than the older version.
+      const uniformDark=1-smoothstep(8,30,wide.sd);
+      const darkField=1-smoothstep(48,122,wide.mean);
+      const lowStructure=1-smoothstep(12,34,gradient+localDifference*.55);
+      const backgroundPenalty=
+        uniformDark*darkField*40 +
+        lowStructure*14;
 
-      // Important isolated dark details can still survive if edge/detail is strong.
-      let score=detail-(backgroundPenalty*28);
+      let score=detail-backgroundPenalty;
 
-      // Smooth alpha ramp instead of binary black/transparent.
-      // Low detail vanishes, medium detail becomes faint ink, strongest edges go solid black.
-      let alpha=smoothstep(11,42,score);
-      alpha=Math.pow(alpha,.78);
+      // Raise the floor so weak texture disappears instead of becoming grey noise.
+      // Strong edges still become dark, but mid-level detail is intentionally thinner.
+      let alpha=smoothstep(20,54,score);
+      alpha=Math.pow(alpha,.92);
 
-      // A second soft fade removes weak interior texture while preserving the strongest contour.
-      const contourBoost=smoothstep(24,70,gradient+localDifference*.6);
-      alpha*=.55+.45*contourBoost;
+      // Contours get priority; texture without a clear contour fades heavily.
+      const contourBoost=smoothstep(30,76,gradient+localDifference*.72);
+      alpha*=.22+.78*contourBoost;
 
-      // Near-white paper areas with almost no contrast disappear completely.
-      if(wide.mean>226 && detail<22)alpha*=.18;
+      // Bright, low-detail paper/background areas should almost vanish.
+      if(wide.mean>214 && detail<32)alpha*=.035;
 
-      // Keep truly strong contour lines crisp.
-      if(gradient>62 || (localDifference>36 && medium.sd>18))alpha=Math.max(alpha,.92);
+      // Kill very weak micro-texture entirely.
+      if(gradient<11 && localDifference<10 && medium.sd<19)alpha*=.04;
 
-      inkMap[i]=clamp(alpha,0,1);
-    }
-  }
+      // Keep genuinely strong contour lines crisp and slightly darker.
+      if(gradient>66 || (localDifference>40 && medium.sd>19)){
+        alpha=Math.max(alpha,.96);
+      }
 
-  // second pass: where ink piles up into a heavy dark patch, thin it out so the whole thing isnt harsh
-  const inkIntegral=new Float64Array(stride*(h+1));
-  for(let y=0;y<h;y++){
-    let row=0;
-    for(let x=0;x<w;x++){
-      row+=inkMap[y*w+x];
-      inkIntegral[(y+1)*stride+x+1]=inkIntegral[y*stride+x+1]+row;
-    }
-  }
-  const densityR=Math.max(12,Math.round(w/36));
-  for(let y=0;y<h;y++){
-    for(let x=0;x<w;x++){
-      const i=y*w+x;
-      const x0=Math.max(0,x-densityR),y0=Math.max(0,y-densityR);
-      const x1=Math.min(w,x+densityR+1),y1=Math.min(h,y+densityR+1);
-      const sum=inkIntegral[y1*stride+x1]-inkIntegral[y0*stride+x1]-inkIntegral[y1*stride+x0]+inkIntegral[y0*stride+x0];
-      const density=sum/((x1-x0)*(y1-y0));
-
-      let alpha=inkMap[i]*(1-DENSE_RELIEF*smoothstep(.45,.85,density));
-      alpha*=TONE_SOFTEN;
-
-      // third pass: the sides of the picture fade into the page instead of ending in a hard corner to corner edge
-      const fadeX=Math.min(x,w-1-x)/(w*EDGE_FEATHER);
-      const fadeY=Math.min(y,h-1-y)/(h*EDGE_FEATHER);
-      alpha*=smoothstep(0,1,Math.min(fadeX,fadeY));
+      // Darken surviving ink only — do not create new detail.
+      alpha=clamp(alpha*1.04,0,1);
 
       const out=i*4;
       output[out]=0;
@@ -576,313 +633,35 @@ function inkify(img){
 
   data.data.set(output);
   ctx.putImageData(data,0,0);
-
-  // FINAL artwork quality metrics. This is the important part: a photo is judged
-  // by the ink drawing the visitor will actually see, not only by the source exposure.
-  let alphaTotal=0,heavyInk=0;
-  const alphaMap=new Float32Array(w*h);
-  for(let i=0;i<w*h;i++){
-    const a=output[i*4+3]/255;
-    alphaMap[i]=a;
-    alphaTotal+=a;
-    if(a>.78)heavyInk++;
-  }
-  canvas.inkShare=alphaTotal/(w*h);
-  canvas.heavyInkShare=heavyInk/(w*h);
-
-  // Integral alpha map -> worst large-area density. A dark road/wall/car interior
-  // cannot hide behind a low global average anymore.
-  const aStride=w+1;
-  const aIntegral=new Float64Array(aStride*(h+1));
-  for(let y=0;y<h;y++){
-    let row=0;
-    for(let x=0;x<w;x++){
-      row+=alphaMap[y*w+x];
-      aIntegral[(y+1)*aStride+x+1]=aIntegral[y*aStride+x+1]+row;
-    }
-  }
-  const regionMean=(x0,y0,x1,y1)=>{
-    const A=y0*aStride+x0,B=y0*aStride+x1,C=y1*aStride+x0,D=y1*aStride+x1;
-    return (aIntegral[D]-aIntegral[B]-aIntegral[C]+aIntegral[A]) / Math.max(1,(x1-x0)*(y1-y0));
-  };
-  const winW=Math.max(24,Math.round(w*.30));
-  const winH=Math.max(24,Math.round(h*.30));
-  const stepX=Math.max(10,Math.round(winW*.38));
-  const stepY=Math.max(10,Math.round(winH*.38));
-  let worstLocal=0;
-  for(let y=0;y<h;y+=stepY){
-    for(let x=0;x<w;x+=stepX){
-      worstLocal=Math.max(worstLocal,regionMean(x,y,Math.min(w,x+winW),Math.min(h,y+winH)));
-    }
-  }
-  canvas.localBlackShare=worstLocal;
-
-  // Connected-component test on a downsampled binary ink mask. This directly catches
-  // the failure from the screenshots: one enormous continuous black silhouette.
-  const sampleStep=Math.max(2,Math.round(Math.max(w,h)/360));
-  const sw=Math.ceil(w/sampleStep),sh=Math.ceil(h/sampleStep);
-  const mask=new Uint8Array(sw*sh);
-  let blackCells=0;
-  for(let sy=0;sy<sh;sy++){
-    for(let sx=0;sx<sw;sx++){
-      const pxX=Math.min(w-1,sx*sampleStep);
-      const pxY=Math.min(h-1,sy*sampleStep);
-      const on=alphaMap[pxY*w+pxX]>.56;
-      if(on){mask[sy*sw+sx]=1;blackCells++;}
-    }
-  }
-  const seen=new Uint8Array(mask.length);
-  let largest=0;
-  const stack=[];
-  for(let i=0;i<mask.length;i++){
-    if(!mask[i]||seen[i])continue;
-    seen[i]=1;stack.push(i);let size=0;
-    while(stack.length){
-      const cur=stack.pop();size++;
-      const x=cur%sw,y=(cur/sw)|0;
-      const add=n=>{if(n>=0&&n<mask.length&&mask[n]&&!seen[n]){seen[n]=1;stack.push(n)}};
-      if(x>0)add(cur-1);if(x<sw-1)add(cur+1);if(y>0)add(cur-sw);if(y<sh-1)add(cur+sw);
-    }
-    if(size>largest)largest=size;
-  }
-  canvas.componentShare=largest/Math.max(1,sw*sh);
-
   return canvas;
 }
 
-// loads one photo and makes its ink drawing. canvas stays null if the browser wont let us read the pixels
-function loadInk(photo){
-  return new Promise(resolve=>{
-    const img=document.createElement("img");
-    img.alt="";
-    img.onload=()=>{
-      let canvas=null;
-      try{canvas=inkify(img)}catch(error){}
-      resolve({photo,img,canvas});
-    };
-    img.onerror=()=>resolve(null);
-    img.src=previewSrc(photo);
-  });
-}
+// builds BOTH treatments from the same photo:
+ // clean ink is visible normally, dark monochrome fades in on hover
+function buildFrame(frame,photo){
+  const img=document.createElement("img");
+  img.alt="";
+  img.className="dark-layer";
+  img.src=previewSrc(photo);
+  applyDarkHoverTreatment(img,photo);
+  frame.appendChild(img);
 
-// how black a photo is. measured from the pixels when the browser allows it, otherwise read from photo-darkness.js (made by make_photo_darkness.py), otherwise unknown
-function darknessKey(photo){
-  let src=String(photo?.src||"").replace(/\\/g,"/").replace(/^\.\//,"");
-  while(src.toLowerCase().startsWith("photos/"))src=src.slice(7);
-  try{return decodeURIComponent(src)}catch(error){return src}
-}
+  const draw=()=>{
+    frame.classList.toggle("portrait",img.naturalHeight>img.naturalWidth*1.05);
 
-function savedPhotoMetrics(photo){
-  const table=window.PHOTO_DARKNESS||{};
-  const key=darknessKey(photo);
-  let saved=table[key];
-  if(saved===undefined){
-    const wanted=key.toLowerCase();
-    const actual=Object.keys(table).find(k=>k.toLowerCase()===wanted);
-    if(actual)saved=table[actual];
-  }
-
-  // v2 file was just a number. v3 stores {dark,ink,heavy}.
-  if(typeof saved==="number")return {dark:saved,ink:null,heavy:null};
-  if(saved&&typeof saved==="object")return {
-    dark:typeof saved.dark==="number"?saved.dark:null,
-    ink:typeof saved.ink==="number"?saved.ink:null,
-    heavy:typeof saved.heavy==="number"?saved.heavy:null
-  };
-  return {dark:null,ink:null,heavy:null};
-}
-
-function savedCandidateLooksUsable(photo){
-  const m=savedPhotoMetrics(photo);
-
-  // Raw darkness is NOT a hard reject.
-  // A photo can be 70% dark and still make a clean ink illustration if the dark
-  // areas are smooth and do not turn into giant filled blobs.
-  //
-  // The cheap first pass only rejects photos whose estimated ink result is
-  // already obviously too dense.
-  if(m.ink!==null&&m.ink>.36)return false;
-  if(m.heavy!==null&&m.heavy>.20)return false;
-  return true;
-}
-
-function finalMetrics(result){
-  if(!result.canvas)return null;
-  return {
-    dark:result.canvas.darkShare,
-    ink:result.canvas.inkShare,
-    heavy:result.canvas.heavyInkShare,
-    local:result.canvas.localBlackShare,
-    component:result.canvas.componentShare
-  };
-}
-
-function finalDrawingPasses(m){
-  return !!m &&
-    // Final ink structure decides pass/fail. Original darkness does not.
-    m.ink>=MIN_INK_SHARE && m.ink<=MAX_INK_SHARE &&
-    m.heavy<=MAX_HEAVY_INK &&
-    m.local<=MAX_LOCAL_BLACK &&
-    m.component<=MAX_COMPONENT;
-}
-
-function acceptableDrawingPasses(m){
-  // Second tier: still blocks the ugly screenshot-style black masses,
-  // but allows darker originals when their final ink structure is clean.
-  return !!m &&
-    m.ink>=MIN_INK_SHARE && m.ink<=.38 &&
-    m.heavy<=.17 &&
-    m.local<=.52 &&
-    m.component<=.22;
-}
-
-function qualityScore(m){
-  // Connected black masses are punished hardest, then local density, then global ink.
-  // Original darkness is only a tiny tie-breaker, never a rejection rule.
-  return m.component*5.6 + m.local*3.5 + m.heavy*3.0 + m.ink*1.6 + m.dark*.02;
-}
-
-// Local file:// mode often blocks canvas pixel reads.
-// When that happens, use the v3 metrics generated by the BAT instead of rejecting
-// every image. Hosted/GitHub mode still uses the actual rendered canvas metrics.
-function savedFallbackPasses(m, ideal=true){
-  if(!m)return false;
-
-  // Local file:// mode cannot inspect connected blobs in-browser, so the v3
-  // estimated ink/heavy values are the gate. Raw source darkness is allowed.
-  const inkOK=m.ink!==null && m.ink <= (ideal ? .20 : .28);
-  const heavyOK=m.heavy!==null && m.heavy <= (ideal ? .085 : .135);
-
-  return inkOK && heavyOK;
-}
-
-function savedFallbackScore(m){
-  return
-    (m.ink===null ? .28 : m.ink*2.6) +
-    (m.heavy===null ? .14 : m.heavy*4.2) +
-    // tiny penalty only so dark photos are not automatically buried
-    (m.dark===null ? .02 : m.dark*.035);
-}
-
-function rankFromSavedMetrics(candidates){
-  const scored=[];
-  for(const photo of candidates){
-    const metrics=savedPhotoMetrics(photo);
-    if(metrics.ink===null || metrics.heavy===null)continue;
-    if(!savedFallbackPasses(metrics,false))continue;
-    scored.push({photo,metrics,score:savedFallbackScore(metrics)});
-  }
-  scored.sort((a,b)=>a.score-b.score);
-  return scored;
-}
-
-function randomFromQualityBand(ranked, excludePhoto=null){
-  const available=ranked.filter(item=>item.photo!==excludePhoto);
-  if(!available.length)return null;
-
-  // Keep quality under control, but do NOT always choose from the same top 10.
-  // Use a broad quality band: up to the better ~45% of acceptable candidates,
-  // capped at 80 photos so refreshes actually feel random.
-  const bandSize=Math.min(
-    80,
-    Math.max(18, Math.ceil(available.length*.45))
-  );
-  const band=available.slice(0,bandSize);
-
-  // Mild weighting toward cleaner results without making the first few dominate.
-  // Squaring Math.random biases a little toward the front while still allowing
-  // the whole band to appear.
-  const index=Math.min(
-    band.length-1,
-    Math.floor(Math.pow(Math.random(),1.35)*band.length)
-  );
-  return band[index];
-}
-
-function loadPlainPhoto(photo){
-  return new Promise(resolve=>{
-    const img=document.createElement("img");
-    img.alt="";
-    img.onload=()=>resolve({photo,img,canvas:null});
-    img.onerror=()=>resolve(null);
-    img.src=previewSrc(photo);
-  });
-}
-
-// FAST PATH:
-// local file:// mode never attempts canvas. The BAT already analyzed all 1000+
-// photos, so use those saved numbers to choose a clean candidate immediately.
-// Hosted mode only runs the expensive canvas renderer on a tiny pre-ranked shortlist.
-async function buildFrame(frame,candidates){
-  const isLocalFile=location.protocol==="file:";
-  const ranked=rankFromSavedMetrics(candidates);
-
-  if(isLocalFile && ranked.length){
-    // Choose from a much wider acceptable quality band so repeated refreshes do
-    // not keep showing the same handful of photos.
-    const pick=randomFromQualityBand(ranked);
-    const result=pick ? await loadPlainPhoto(pick.photo) : null;
-    if(!result)return null;
-
-    frame.classList.toggle("portrait",result.img.naturalHeight>result.img.naturalWidth*1.05);
-    frame.appendChild(result.img);
-    result.img.classList.add("fallback");
-    return result.photo;
-  }
-
-  // Hosted/GitHub: choose a RANDOM shortlist from the broad acceptable band,
-  // then let the real canvas analysis make the final decision.
-  let shortlist;
-  if(ranked.length){
-    const bandSize=Math.min(70,Math.max(18,Math.ceil(ranked.length*.40)));
-    const band=shuffled(ranked.slice(0,bandSize));
-    shortlist=band.slice(0,10).map(item=>item.photo);
-  }else{
-    shortlist=shuffled(candidates.filter(savedCandidateLooksUsable)).slice(0,10);
-  }
-
-  const loaded=(await Promise.all(shortlist.map(loadInk))).filter(Boolean);
-  const ideal=[];
-  const acceptable=[];
-  let safest=null;
-
-  for(const result of loaded){
-    if(!result.canvas){
-      const saved=savedPhotoMetrics(result.photo);
-      result.qualityScore=savedFallbackScore(saved);
-      if(!safest||result.qualityScore<safest.qualityScore)safest=result;
-      if(savedFallbackPasses(saved,true))ideal.push(result);
-      else if(savedFallbackPasses(saved,false))acceptable.push(result);
-      continue;
+    try{
+      const canvas=inkify(img);
+      canvas.classList.add("ink-layer");
+      frame.appendChild(canvas);
+      requestAnimationFrame(()=>canvas.classList.add("ready"));
+    }catch(error){
+      // file:// can block getImageData; localhost / GitHub Pages will show real ink
+      img.classList.add("fallback");
     }
+  };
 
-    const metrics=finalMetrics(result);
-    result.metrics=metrics;
-    result.qualityScore=qualityScore(metrics);
-    if(!safest||result.qualityScore<safest.qualityScore)safest=result;
-    if(finalDrawingPasses(metrics))ideal.push(result);
-    else if(acceptableDrawingPasses(metrics))acceptable.push(result);
-  }
-
-  const pool=ideal.length?ideal:(acceptable.length?acceptable:(safest?[safest]:[]));
-  if(!pool.length)return null;
-  pool.sort((a,b)=>a.qualityScore-b.qualityScore);
-
-  // Do not always pick the absolute mathematical winner. Anything in this
-  // passing pool is visually acceptable, so randomize among up to 8 of them.
-  pool.sort((a,b)=>a.qualityScore-b.qualityScore);
-  const bestWindow=pool.slice(0,Math.min(8,pool.length));
-  const best=bestWindow[Math.floor(Math.random()*bestWindow.length)];
-
-  frame.classList.toggle("portrait",best.img.naturalHeight>best.img.naturalWidth*1.05);
-  frame.appendChild(best.img);
-  if(best.canvas){
-    frame.appendChild(best.canvas);
-    requestAnimationFrame(()=>best.canvas.classList.add("ready"));
-  }else{
-    best.img.classList.add("fallback");
-  }
-  return best.photo;
+  if(img.complete&&img.naturalWidth)draw();
+  else img.addEventListener("load",draw,{once:true});
 }
 
 // Only use photos from the three visual groups that represent this landing page best.
@@ -925,15 +704,51 @@ function landingPhotoAllowed(photo){
 }
 
 const landingPhotos=allPhotos.filter(landingPhotoAllowed);
-const picks=shuffled(landingPhotos.length ? landingPhotos : allPhotos);
 
+// Metrics are a SOFT quality gate only. Raw darkness is never a hard reject.
+// We mainly avoid photos predicted to turn into extremely dense/noisy drawings.
+const metricFiltered=landingPhotos.filter(photo=>{
+  const m=photoMetrics(photo);
+  if(m.ink!==null && m.ink>.43)return false;
+  if(m.heavy!==null && m.heavy>.39)return false;
+  return true;
+});
+
+const pool=metricFiltered.length>=12
+  ? metricFiltered
+  : (landingPhotos.length ? landingPhotos : allPhotos);
+
+// Avoid showing the same previews over and over across refreshes.
+const RECENT_KEY="photos-clean-ink-recent";
+function recentPreviewKeys(){
+  try{
+    const value=JSON.parse(localStorage.getItem(RECENT_KEY)||"[]");
+    return Array.isArray(value)?value:[];
+  }catch(error){return []}
+}
+function photoKey(photo){
+  return String(photo?.src||photo?.file||"").toLowerCase();
+}
+function rememberPreview(photo){
+  const key=photoKey(photo);
+  if(!key)return;
+  const recent=recentPreviewKeys().filter(item=>item!==key);
+  recent.unshift(key);
+  try{localStorage.setItem(RECENT_KEY,JSON.stringify(recent.slice(0,20)))}catch(error){}
+}
+
+let recent=new Set(recentPreviewKeys());
+let fresh=pool.filter(photo=>!recent.has(photoKey(photo)));
+if(fresh.length<2)fresh=pool;
+
+const picks=shuffled(fresh);
 if(picks.length){
-  (async()=>{
-    const first=await buildFrame(document.getElementById("travelPreview"),picks);
-    // the second frame never reuses the first photo unless it is the only one
-    const rest=picks.filter(photo=>photo!==first);
-    await buildFrame(document.getElementById("selectedPreview"),rest.length?rest:picks);
-  })();
+  const first=picks[0];
+  const second=picks.find(photo=>photo!==first)||picks[0];
+  buildFrame(document.getElementById("travelPreview"),first);
+  buildFrame(document.getElementById("selectedPreview"),second);
+  rememberPreview(first);
+  rememberPreview(second);
 }
 
 const body=document.body;

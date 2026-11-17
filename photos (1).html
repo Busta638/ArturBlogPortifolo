@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+/* Clean GitHub Pages URL: hide the .html filename in the address bar. */
+(() => {
+  const cleanPath = '/photos';
+  const currentPath = window.location.pathname;
+  const expectedFile = 'photos.html';
+
+  if (currentPath.endsWith("/" + expectedFile) || currentPath === expectedFile) {
+    window.history.replaceState(null, "", cleanPath + window.location.search + window.location.hash);
+  }
+})();
+</script>
+
+<script>
+(() => {
+  try {
+    // saves this in direction so this part can reuse the same value instead of finding/calculating it again
+    const direction = sessionStorage.getItem("panorama-direction");
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
+    if (direction === "next" || direction === "prev") {
+      // puts/reads a small value in a data-* attribute so css or other javascript can react to it
+      document.documentElement.dataset.panoramaDirection = direction;
+    }
+  } catch (error) {}
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photos — Artur Tigirlas</title>
+<style>
+*{box-sizing:border-box}
+:root{
+  /* pure black and white on purpose. no tinted greys so the ink actually reads as ink */
+  --paper:#fff;
+  --ink:#000;
+  --muted:#6b6b6b;
+}
+body.night{
+  --paper:#000;
+  --ink:#fff;
+  --muted:#9a9a9a;
+}
+html{background:var(--paper);scroll-behavior:smooth}
+body{
+  margin:0;
+  min-height:100vh;
+  overflow-x:hidden;
+  color:var(--ink);
+  background:var(--paper);
+  font-family:"Times New Roman",Times,serif;
+  transition:background .35s ease,color .35s ease;
+}
+a,button{font:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:6px}
+
+/* isolation keeps the title blend inside this box so it blends with the paper color and nothing else */
+.shell{position:relative;isolation:isolate;background:var(--paper);width:min(1380px,calc(100% - 40px));margin:auto;padding:18px 0 56px;transition:background .35s ease}
+
+.topbar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding:10px 0}
+.back{color:var(--ink);text-decoration:none;justify-self:start}
+.back:hover{text-decoration:underline;text-underline-offset:5px}
+.mark{justify-self:end;color:var(--muted);font-size:15px}
+.theme-switch{display:flex;align-items:center;gap:20px}
+.theme-switch button{position:relative;padding:4px 0 7px;border:0;background:transparent;color:var(--muted);cursor:pointer;transition:color .18s ease}
+.theme-switch button::after{content:"";position:absolute;left:0;right:0;bottom:1px;height:1px;background:currentColor;transform:scaleX(0);transition:transform .18s ease}
+.theme-switch button:hover{color:var(--ink)}
+.theme-switch button.active{color:var(--ink);font-weight:700}
+.theme-switch button.active::after{transform:scaleX(1)}
+
+/* the title is white with blend-mode difference: black on the white page, flips to white wherever it crosses the ink */
+h1{
+  position:relative;
+  z-index:2;
+  margin:clamp(24px,4vw,56px) 0 0 -.05em;
+  color:#fff;
+  mix-blend-mode:difference;
+  font-size:clamp(100px,26vw,380px);
+  font-weight:400;
+  line-height:.76;
+  letter-spacing:-.05em;
+  pointer-events:none;
+  user-select:none;
+}
+
+/* chapters sit under the bottom of the title so the word cuts across the first drawing */
+.album{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:clamp(28px,5vw,80px);
+  align-items:start;
+  margin-top:calc(-1 * clamp(56px,11vw,170px));
+}
+.chapter{display:block;color:var(--ink);text-decoration:none}
+
+/* keep the second option slightly lower for the editorial offset,
+   but much higher than the previous smart-ink version */
+.chapter:last-child{margin-top:clamp(40px,7vw,110px)}
+
+.frame{position:relative;overflow:hidden;aspect-ratio:5/4}
+.chapter:last-child .frame{aspect-ratio:4/5}
+/* a vertical photo in the first chapter gets a tall frame, a bit taller than the landscape one so it has more room */
+.chapter:first-child .frame.portrait{aspect-ratio:4/5;width:72%}
+.frame canvas,.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+
+/* the ink layer is black on transparent. in night mode it flips to white lines on black */
+.frame canvas{opacity:0;transition:opacity .7s ease}
+.frame canvas.ready{opacity:1}
+body.night .frame canvas{filter:invert(1)}
+
+/* the real photo waits underneath in black and white and only shows when you hover the chapter */
+.frame img{opacity:0;filter:grayscale(1) contrast(1.15);transition:opacity .5s ease}
+.chapter:hover .frame canvas.ready,.chapter:focus-visible .frame canvas.ready{opacity:0}
+.chapter:hover .frame img,.chapter:focus-visible .frame img{opacity:1}
+
+/* if the canvas cant read the photo (like file://) this keeps the same idea with a plain css filter */
+.frame img.fallback{opacity:1;filter:grayscale(1) contrast(3.6) brightness(1.42);mix-blend-mode:multiply}
+body.night .frame img.fallback{filter:grayscale(1) contrast(3.6) brightness(1.42) invert(1);mix-blend-mode:screen}
+
+.chapter h2{margin:20px 0 6px;font-size:clamp(32px,4.2vw,60px);font-weight:400;line-height:1;letter-spacing:-.045em}
+.chapter p{max-width:38ch;margin:0;color:var(--muted);font-size:18px;line-height:1.55}
+.open{display:inline-block;margin-top:16px;border-bottom:1px solid var(--ink);padding-bottom:3px;transition:padding .2s ease}
+.chapter:hover .open{padding-right:18px}
+
+.footer{margin-top:clamp(64px,9vw,120px);color:var(--muted);font-size:14px}
+
+@media(max-width:760px){
+  .topbar{grid-template-columns:1fr auto}
+  .mark{display:none}
+  .album{grid-template-columns:1fr;width:100%;margin-left:0;margin-top:calc(-1 * clamp(30px,10vw,60px))}
+  .chapter:first-child,.chapter:last-child{transform:none}
+  .chapter:last-child{margin-top:0}
+  .chapter:first-child .frame.portrait{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+  .frame canvas,.frame img,.open,body,.shell{transition:none}
+}
+/* TRUE HORIZONTAL CROSS-PAGE PANORAMA */
+/* TRUE HORIZONTAL CROSS-PAGE PANORAMA */
+@view-transition { navigation: auto; }
+
+::view-transition-group(root) {
+  animation-duration: 920ms;
+  animation-timing-function: cubic-bezier(.22,.82,.22,1);
+}
+
+::view-transition-image-pair(root) {
+  /* makes a separate stacking/blending area so effects here dont accidentally mix with the whole page */
+  isolation: isolate;
+  /* decides what happens if content goes outside the box. hidden clips it and auto can make it scroll */
+  overflow: hidden;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 920ms;
+  animation-timing-function: cubic-bezier(.22,.82,.22,1);
+  /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
+  mix-blend-mode: normal;
+  /* controls the height. vh/percent/calc lets it follow the screen or parent instead of one fixed size */
+  height: 100%;
+}
+
+html[data-panorama-direction="next"]::view-transition-old(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
+  animation:
+    panorama-old-left 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-old-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="next"]::view-transition-new(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
+  animation:
+    panorama-new-right 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-new-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="prev"]::view-transition-old(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
+  animation:
+    panorama-old-right 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-old-color-hard 920ms ease-in-out;
+}
+html[data-panorama-direction="prev"]::view-transition-new(root) {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
+  animation:
+    panorama-new-left 920ms cubic-bezier(.22,.82,.22,1),
+    panorama-new-color-hard 920ms ease-in-out;
+}
+
+::view-transition-image-pair(root)::after {
+  content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
+  position:absolute;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
+  inset:-4%;
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
+  pointer-events:none;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
+  background:
+    linear-gradient(
+      90deg,
+      rgba(17,34,59,.42) 0%,
+      rgba(74,16,20,.30) 30%,
+      rgba(214,72,56,.58) 49%,
+      rgba(242,174,133,.42) 54%,
+      rgba(28,53,80,.34) 70%,
+      transparent 100%
+    );
+  /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
+  mix-blend-mode:screen;
+  /* changes the finished layer with stuff like blur brightness contrast and saturation */
+  filter:blur(7px) saturate(1.28);
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
+  opacity:0;
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
+  animation:panoramaBlendFlashHard 920ms ease-in-out;
+}
+
+::view-transition-image-pair(root)::before {
+  content:"";
+  /* decides how this is positioned. relative keeps its spot, absolute/fixed/sticky lets me place it more manually */
+  position:absolute;
+  /* sets top right bottom and left together. 0 usually stretches this across the whole parent/screen */
+  inset:0;
+  /* decides if this layer can catch clicks. none lets the click go through to stuff under it */
+  pointer-events:none;
+  /* builds the background. multiple gradients/images stack in the order theyre written here */
+  background:
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(255,212,186,.30) 0%,
+      rgba(194,49,37,.24) 24%,
+      rgba(19,35,60,.18) 48%,
+      transparent 72%
+    );
+  /* tells this layer to blend its colors with whats underneath instead of just sitting normally on top */
+  mix-blend-mode:color-dodge;
+  /* controls how see-through the whole layer is. 0 is invisible and 1 is fully visible */
+  opacity:0;
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
+  animation:panoramaCenterBloomHard 920ms ease-in-out;
+}
+
+@keyframes panorama-old-left { from{transform:translateX(0)} to{transform:translateX(-100%)} }
+@keyframes panorama-new-right { from{transform:translateX(100%)} to{transform:translateX(0)} }
+@keyframes panorama-old-right { from{transform:translateX(0)} to{transform:translateX(100%)} }
+@keyframes panorama-new-left { from{transform:translateX(-100%)} to{transform:translateX(0)} }
+
+@keyframes panorama-old-color-hard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  0%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  38%{filter:saturate(.88) hue-rotate(-14deg) brightness(.90) contrast(1.05)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  72%{filter:saturate(.72) hue-rotate(-22deg) brightness(.72) contrast(1.12)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  100%{filter:saturate(.64) hue-rotate(-26deg) brightness(.58) contrast(1.14)}
+}
+@keyframes panorama-new-color-hard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  0%{filter:saturate(.60) hue-rotate(24deg) brightness(.56) contrast(1.14)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  30%{filter:saturate(.72) hue-rotate(18deg) brightness(.68) contrast(1.12)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  64%{filter:saturate(.88) hue-rotate(8deg) brightness(.88) contrast(1.05)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  100%{filter:saturate(1) hue-rotate(0deg) brightness(1) contrast(1)}
+}
+@keyframes panoramaBlendFlashHard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  0%,100%{opacity:0}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  28%{opacity:.20}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  45%{opacity:.62}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  54%{opacity:.88}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  66%{opacity:.42}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  78%{opacity:.12}
+}
+@keyframes panoramaCenterBloomHard {
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  0%,100%{opacity:0;transform:scale(.96)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  42%{opacity:.18;transform:scale(1)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  52%{opacity:.58;transform:scale(1.06)}
+  /* one point in the animation. css smoothly fills in the movement between this state and the next one */
+  64%{opacity:.22;transform:scale(1.10)}
+}
+
+/* Fallback when cross-document View Transitions are unavailable. */
+html.panorama-fallback-next body {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
+  animation:fallback-enter-right 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+html.panorama-fallback-prev body {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
+  animation:fallback-enter-left 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+body.panorama-fallback-exit-next {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
+  animation:fallback-exit-left 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+body.panorama-fallback-exit-prev {
+  /* runs one of the keyframes. the time/easing/repeat parts after the name control how it plays */
+  animation:fallback-exit-right 680ms cubic-bezier(.22,.82,.22,1) both;
+}
+@keyframes fallback-enter-right { from{transform:translateX(18vw);opacity:.72} to{transform:none;opacity:1} }
+@keyframes fallback-enter-left { from{transform:translateX(-18vw);opacity:.72} to{transform:none;opacity:1} }
+@keyframes fallback-exit-left { from{transform:none;opacity:1} to{transform:translateX(-18vw);opacity:.72} }
+@keyframes fallback-exit-right { from{transform:none;opacity:1} to{transform:translateX(18vw);opacity:.72} }
+
+@media(prefers-reduced-motion:reduce) {
+  ::view-transition-group(root),
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  html.panorama-fallback-next body,
+  html.panorama-fallback-prev body,
+  body.panorama-fallback-exit-next,
+  body.panorama-fallback-exit-prev {
+    animation-duration:.01ms!important;
+  }
+}
+
+</style>
+
+</head>
+<body>
+<!-- shell part. keeping this grouped makes it easier for the css/javascript to target this whole piece together -->
+<div class="shell">
+  <header class="topbar">
+    <a class="back" href="home.html">← Home</a>
+    <div class="theme-switch" aria-label="Theme">
+      <button id="glassButton" class="active" type="button">Light</button>
+      <button id="nightButton" type="button">Night</button>
+    </div>
+    <span class="mark">Photography archive</span>
+  </header>
+
+  <h1>Photos</h1>
+
+  <main class="album" aria-label="Photography album">
+    <a class="chapter" href="photos/travel-menu.html">
+      <!-- the ink drawing gets built into this frame by the script below -->
+      <div id="travelPreview" class="frame"></div>
+      <h2>Travel Film</h2>
+      <p>Dated rolls and variable formats, in the order they were shot.</p>
+      <span class="open">Open chapter</span>
+    </a>
+
+    <a class="chapter" href="photos/selected.html">
+      <div id="selectedPreview" class="frame"></div>
+      <h2>Selected Work</h2>
+      <p>A smaller edit chosen for atmosphere, composition, and detail.</p>
+      <span class="open">Open chapter</span>
+    </a>
+  </main>
+
+  <footer class="footer">© 2026 Artur Tigirlas. All photographs are original work.</footer>
+</div>
+
+<script src="photos/photos-data.js"></script>
+<script>
+function shuffled(items){return [...items].sort(()=>Math.random()-.5)}
+const allPhotos=Array.isArray(window.PHOTOS)
+  ? window.PHOTOS
+  : [];
+
+function previewSrc(photo){
+  const src=String(photo?.src||"").replace(/\\/g,"/");
+  return src.startsWith("photos/") ? `photos/${src}` : `photos/photos/${src}`;
+}
+
+/* turns a photo into black ink on transparent: levels it, keeps the darkest tones solid, and draws edges wherever a pixel is darker than the area around it */
+function inkify(img){
+  const maxW=1100;
+  const scale=Math.min(1,maxW/img.naturalWidth);
+  const w=Math.max(2,Math.round(img.naturalWidth*scale));
+  const h=Math.max(2,Math.round(img.naturalHeight*scale));
+  const canvas=document.createElement("canvas");
+  canvas.width=w;
+  canvas.height=h;
+  const ctx=canvas.getContext("2d");
+  ctx.drawImage(img,0,0,w,h);
+
+  // Throws on file:// / unreadable cross-origin images; caller uses fallback.
+  const data=ctx.getImageData(0,0,w,h);
+  const px=data.data;
+  const lum=new Float32Array(w*h);
+
+  for(let i=0;i<w*h;i++){
+    lum[i]=px[i*4]*.299+px[i*4+1]*.587+px[i*4+2]*.114;
+  }
+
+  // Normalize exposure so bright and dark photos behave more similarly.
+  const hist=new Uint32Array(256);
+  for(let i=0;i<lum.length;i++)hist[Math.max(0,Math.min(255,lum[i]|0))]++;
+  const percentile=p=>{
+    let sum=0;
+    const target=lum.length*p;
+    for(let v=0;v<256;v++){
+      sum+=hist[v];
+      if(sum>=target)return v;
+    }
+    return 255;
+  };
+  const lo=percentile(.02);
+  const hi=Math.max(percentile(.985),lo+1);
+  for(let i=0;i<lum.length;i++){
+    lum[i]=Math.max(0,Math.min(255,(lum[i]-lo)/(hi-lo)*255));
+  }
+
+  // Integral image = cheap local averages at two different scales.
+  const stride=w+1;
+  const integral=new Float64Array(stride*(h+1));
+  const integralSq=new Float64Array(stride*(h+1));
+  for(let y=0;y<h;y++){
+    let row=0,rowSq=0;
+    for(let x=0;x<w;x++){
+      const v=lum[y*w+x];
+      row+=v;
+      rowSq+=v*v;
+      const pos=(y+1)*stride+x+1;
+      integral[pos]=integral[y*stride+x+1]+row;
+      integralSq[pos]=integralSq[y*stride+x+1]+rowSq;
+    }
+  }
+
+  function boxStats(x,y,r){
+    const x0=Math.max(0,x-r),y0=Math.max(0,y-r);
+    const x1=Math.min(w,x+r+1),y1=Math.min(h,y+r+1);
+    const count=(x1-x0)*(y1-y0);
+    const a=y0*stride+x0,b=y0*stride+x1,c=y1*stride+x0,d=y1*stride+x1;
+    const sum=integral[d]-integral[b]-integral[c]+integral[a];
+    const sumSq=integralSq[d]-integralSq[b]-integralSq[c]+integralSq[a];
+    const mean=sum/count;
+    const variance=Math.max(0,sumSq/count-mean*mean);
+    return {mean,sd:Math.sqrt(variance)};
+  }
+
+  const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+  const smoothstep=(a,b,v)=>{
+    const t=clamp((v-a)/(b-a),0,1);
+    return t*t*(3-2*t);
+  };
+
+  const fineR=1;
+  const mediumR=Math.max(3,Math.round(w/180));
+  const wideR=Math.max(14,Math.round(w/24));
+  const output=new Uint8ClampedArray(px.length);
+
+  // Sobel + local contrast. The key part: broad dark areas get suppressed when
+  // they do not differ much from their neighbourhood. Strong boundaries survive.
+  for(let y=0;y<h;y++){
+    for(let x=0;x<w;x++){
+      const i=y*w+x;
+      const xm=Math.max(0,x-1),xp=Math.min(w-1,x+1);
+      const ym=Math.max(0,y-1),yp=Math.min(h-1,y+1);
+
+      const tl=lum[ym*w+xm],tc=lum[ym*w+x],tr=lum[ym*w+xp];
+      const ml=lum[y*w+xm],                 mr=lum[y*w+xp];
+      const bl=lum[yp*w+xm],bc=lum[yp*w+x],br=lum[yp*w+xp];
+
+      const gx=(-tl-2*ml-bl)+(tr+2*mr+br);
+      const gy=(-tl-2*tc-tr)+(bl+2*bc+br);
+      const gradient=Math.sqrt(gx*gx+gy*gy)/4;
+
+      const fine=boxStats(x,y,fineR);
+      const medium=boxStats(x,y,mediumR);
+      const wide=boxStats(x,y,wideR);
+
+      // Difference from local surroundings finds actual shapes/details.
+      const localDifference=Math.abs(fine.mean-medium.mean);
+      const broadDifference=Math.abs(medium.mean-wide.mean);
+
+      // Texture score helps preserve wheel spokes, outlines, branches, signs, etc.
+      const detail=gradient*.70 + localDifference*.75 + medium.sd*.34 + broadDifference*.22;
+
+      // Big uniformly dark regions are usually background/shadow. Fade them harder.
+      const uniformDark=1-smoothstep(7,24,wide.sd);
+      const darkField=1-smoothstep(42,110,wide.mean);
+      const backgroundPenalty=uniformDark*darkField;
+
+      // Important isolated dark details can still survive if edge/detail is strong.
+      let score=detail-(backgroundPenalty*28);
+
+      // Smooth alpha ramp instead of binary black/transparent.
+      // Low detail vanishes, medium detail becomes faint ink, strongest edges go solid black.
+      let alpha=smoothstep(11,42,score);
+      alpha=Math.pow(alpha,.78);
+
+      // A second soft fade removes weak interior texture while preserving the strongest contour.
+      const contourBoost=smoothstep(24,70,gradient+localDifference*.6);
+      alpha*=.55+.45*contourBoost;
+
+      // Near-white paper areas with almost no contrast disappear completely.
+      if(wide.mean>226 && detail<22)alpha*=.18;
+
+      // Keep truly strong contour lines crisp.
+      if(gradient>62 || (localDifference>36 && medium.sd>18))alpha=Math.max(alpha,.92);
+
+      const out=i*4;
+      output[out]=0;
+      output[out+1]=0;
+      output[out+2]=0;
+      output[out+3]=Math.round(clamp(alpha,0,1)*255);
+    }
+  }
+
+  data.data.set(output);
+  ctx.putImageData(data,0,0);
+  return canvas;
+}
+
+// builds one frame: the real photo sits underneath, the ink drawing goes on top
+function buildFrame(frame,photo){
+  const img=document.createElement("img");
+  img.alt="";
+  img.src=previewSrc(photo);
+  frame.appendChild(img);
+  const draw=()=>{
+    // vertical photos get a vertical frame instead of being cropped to landscape
+    frame.classList.toggle("portrait",img.naturalHeight>img.naturalWidth*1.05);
+    try{
+      const canvas=inkify(img);
+      frame.appendChild(canvas);
+      // one frame later so the fade actually plays
+      requestAnimationFrame(()=>canvas.classList.add("ready"));
+    }catch(error){
+      img.classList.add("fallback");
+    }
+  };
+  if(img.complete&&img.naturalWidth)draw();
+  else img.addEventListener("load",draw);
+}
+
+// Only use photos from the three visual groups that represent this landing page best.
+// This keeps portraits, sports, girlfriend sets, random folders, etc. out of the ink artwork.
+function landingPhotoAllowed(photo){
+  const source=[
+    photo?.event,
+    photo?.eventSlug,
+    photo?.src,
+    photo?.file
+  ].filter(Boolean).join(" ").toLowerCase();
+
+  const allowedEventKeys=[
+    // AUTOMOTIVE / PLANES
+    "dmcc drift event",
+    "import expo",
+    "importfest",
+    "toronto autoshow",
+    "drift event",
+
+    // STREET PHOTOGRAPHY / CITY / PLACE SETS
+    "street photography in toronto",
+    "monteal-2026",
+    "montreal 2026",
+    "ottawa-2026",
+    "ottawa 2026",
+    "burlington beach walk",
+    "burlington bridge on the ice",
+    "jordan harbour light",
+    "photos from school",
+    "walk to parking lot at school",
+
+    // WILDLIFE / NATURE / HIKING
+    "hiking with ben",
+    "hiking with sister",
+    "using my first camera while hiking"
+  ];
+
+  return allowedEventKeys.some(key=>source.includes(key));
+}
+
+const landingPhotos=allPhotos.filter(landingPhotoAllowed);
+const picks=shuffled(landingPhotos.length ? landingPhotos : allPhotos);
+
+if(picks.length){
+  buildFrame(document.getElementById("travelPreview"),picks[0]);
+  buildFrame(document.getElementById("selectedPreview"),picks[1]||picks[0]);
+}
+
+const body=document.body;
+const nightButton=document.getElementById("nightButton");
+const glassButton=document.getElementById("glassButton");
+function setTheme(theme){
+  const night=theme==="night";
+  body.classList.toggle("night",night);
+  nightButton.classList.toggle("active",night);
+  glassButton.classList.toggle("active",!night);
+  try{localStorage.setItem("artur-theme",theme)}catch(error){}
+}
+nightButton.addEventListener("click",()=>setTheme("night"));
+glassButton.addEventListener("click",()=>setTheme("glass"));
+// this page is white by default, but a saved choice still wins
+try{setTheme(localStorage.getItem("artur-theme")||"glass")}catch(error){setTheme("glass")}
+</script>
+<script>
+(() => {
+  // saves this in order so this part can reuse the same value instead of finding/calculating it again
+  const order = ["home.html","photos.html","photos/travel-menu.html","photos/travel.html","photos/pond.html","photos/selected.html","projects.html","cv.html"];
+  // this value changes while the page is running so i keep it in navigating instead of making it const
+  let navigating = false;
+
+  function normalizedPath(urlLike) {
+    try {
+      // saves this in url so this part can reuse the same value instead of finding/calculating it again
+      const url = new URL(urlLike, location.href);
+      // this value changes while the page is running so i keep it in path instead of making it const
+      let path = url.pathname.replace(/^\/+/, "");
+      // saves this in marker so this part can reuse the same value instead of finding/calculating it again
+      const marker = "/photos/";
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
+      if (path.includes(marker)) path = "photos/" + path.split(marker).pop();
+      // if the check above wasnt true this is the other route the code takes
+      else path = path.split("/").pop() || "home.html";
+      // sends this result back and stops this function here so whatever called it can use the value
+      return decodeURIComponent(path).toLowerCase();
+    } catch (error) {
+      // sends this result back and stops this function here so whatever called it can use the value
+      return "";
+    }
+  }
+
+  // saves this in currentPath so this part can reuse the same value instead of finding/calculating it again
+  const currentPath = normalizedPath(location.href);
+  // saves this in currentIndex so this part can reuse the same value instead of finding/calculating it again
+  const currentIndex = order.indexOf(currentPath);
+  // saves this in supportsCrossDocumentTransition so this part can reuse the same value instead of finding/calculating it again
+  const supportsCrossDocumentTransition =
+    CSS.supports("view-transition-name", "root");
+
+  function directionFor(href) {
+    // saves this in targetIndex so this part can reuse the same value instead of finding/calculating it again
+    const targetIndex = order.indexOf(normalizedPath(href));
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
+    if (targetIndex === -1 || currentIndex === -1) return "next";
+    // sends this result back and stops this function here so whatever called it can use the value
+    return targetIndex >= currentIndex ? "next" : "prev";
+  }
+
+  function navigateTo(href, direction) {
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
+    if (navigating) return;
+    navigating = true;
+
+    try {
+      // saves this for the current browser tab so the next page can read it during navigation
+      sessionStorage.setItem("panorama-direction", direction);
+    } catch (error) {}
+
+    // puts/reads a small value in a data-* attribute so css or other javascript can react to it
+    document.documentElement.dataset.panoramaDirection = direction;
+
+    // only runs this part when the condition is true so it doesnt fire in the wrong state
+    if (supportsCrossDocumentTransition) {
+      location.href = href;
+      // sends this result back and stops this function here so whatever called it can use the value
+      return;
+    }
+
+    // adds this class. css watches the class and uses it to change the look/animation/state
+    document.body.classList.add(
+      direction === "next"
+        ? "panorama-fallback-exit-next"
+        : "panorama-fallback-exit-prev"
+    );
+
+    // waits a little before running the next part so the animation/state has time to happen first
+    setTimeout(() => { location.href = href; }, 640);
+  }
+
+  // finds ALL matching html elements so javascript can loop through/change each one
+  document.querySelectorAll('a[href]').forEach(link => {
+    // waits for this browser/user action and then runs the function when it happens
+    link.addEventListener("click", event => {
+      // saves this in href so this part can reuse the same value instead of finding/calculating it again
+      const href = link.getAttribute("href");
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
+      if (
+        !href ||
+        href.startsWith("#") ||
+        href.startsWith("javascript:") ||
+        href.startsWith("mailto:") ||
+        event.metaKey || event.ctrlKey || event.shiftKey || event.altKey ||
+        event.button !== 0
+      ) return;
+
+      // saves this in targetPath so this part can reuse the same value instead of finding/calculating it again
+      const targetPath = normalizedPath(href);
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
+      if (!order.includes(targetPath)) return;
+
+      // stops the browsers normal behavior here because im handling this interaction myself
+      event.preventDefault();
+      navigateTo(href, directionFor(href));
+    });
+  });
+
+  // waits for this browser/user action and then runs the function when it happens
+  addEventListener("pageshow", () => {
+    try {
+      // saves this in direction so this part can reuse the same value instead of finding/calculating it again
+      const direction = sessionStorage.getItem("panorama-direction");
+      // only runs this part when the condition is true so it doesnt fire in the wrong state
+      if (!supportsCrossDocumentTransition && (direction === "next" || direction === "prev")) {
+        // adds this class. css watches the class and uses it to change the look/animation/state
+        document.documentElement.classList.add(
+          direction === "prev" ? "panorama-fallback-prev" : "panorama-fallback-next"
+        );
+      }
+
+      // waits a little before running the next part so the animation/state has time to happen first
+      setTimeout(() => {
+        sessionStorage.removeItem("panorama-direction");
+        // puts/reads a small value in a data-* attribute so css or other javascript can react to it
+        delete document.documentElement.dataset.panoramaDirection;
+        // removes this class so the css/state goes back to the normal version
+        document.documentElement.classList.remove(
+          "panorama-fallback-next",
+          "panorama-fallback-prev"
+        );
+      }, 1000);
+    } catch (error) {}
+  });
+})();
+</script>
+</body>
+</html>

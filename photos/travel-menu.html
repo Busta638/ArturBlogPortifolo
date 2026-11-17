@@ -28,98 +28,138 @@
 <style>
 *{box-sizing:border-box}
 :root{
-  --bg:#eee2cf;--page:#f8f1e5;--page2:#e8d8c0;--ink:#30251e;--muted:#76685d;
-  --line:rgba(64,44,31,.18);--accent:#8f3f32;--shadow:0 34px 90px rgba(69,45,27,.18);
+  --bg:#f8f8fb;--ink:#0b0b0e;--muted:#6c6c78;--line:rgba(11,11,14,.18);--accent:#ff4f9a;
+  --petal:#f7cdd9;--petal2:#ea9fb6;--core:#c95874;--branch:#4a3340;
+  --gutter:max(20px,calc((100vw - 1240px) / 2));--film:#0d0b10;--hole:#f8f8fb;--amber:#e9a766;--btn:#0b0b0e;--btn-ink:#fff;
 }
 body.night{
-  --bg:#080706;--page:#1a1612;--page2:#231813;--ink:#f1e8dc;--muted:#aa9a8a;
-  --line:rgba(241,232,220,.14);--accent:#d2554f;--shadow:0 38px 100px rgba(0,0,0,.5);
+  --bg:#060607;--ink:#f5f2f7;--muted:#a09ca8;--line:rgba(245,242,247,.18);--accent:#ff6aa8;
+  --petal:#f7d0db;--petal2:#e99fb6;--core:#d65b7b;--branch:#6e4659;
+  --film:#000;--hole:#060607;--btn:#f5f2f7;--btn-ink:#060607;
 }
-html{background:var(--bg)}
-body{
-  margin:0;min-height:100vh;color:var(--ink);font-family:"Times New Roman",Times,serif;
-  background:linear-gradient(135deg,var(--bg),color-mix(in srgb,var(--bg) 80%,#000));
-}
+@property --fx{syntax:"<percentage>";inherits:true;initial-value:20%}
+@property --fy{syntax:"<percentage>";inherits:true;initial-value:15%}
+html{background:var(--bg);overflow-x:hidden}
+body{margin:0;min-height:100vh;overflow-x:hidden;color:var(--ink);font-family:"Times New Roman",Times,serif;background:var(--bg);transition:background-color .35s ease,color .35s ease}
 a,button{font:inherit}
-.shell{width:min(1180px,calc(100% - 28px));margin:auto;padding:16px 0 44px}
-.topbar{
-  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding:10px 0 16px;
-  border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;
-  backdrop-filter:none;
-}
-.back{color:var(--ink);text-decoration:none}
-.label{justify-self:end;color:var(--muted);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
-.theme-switch{display:flex;align-items:center;gap:18px;padding:0;border:0;border-radius:0;background:transparent}
-.theme-switch button{position:relative;min-width:0;padding:4px 0 7px;border:0;border-radius:0;color:var(--muted);background:transparent;cursor:pointer;transition:color .18s ease,font-weight .18s ease}
-.theme-switch button::after{content:"";position:absolute;left:0;right:0;bottom:1px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:center;transition:transform .18s ease}
-.theme-switch button:hover{color:var(--ink)}
-.theme-switch button.active{background:transparent;color:var(--ink);font-weight:700;box-shadow:none}
-.theme-switch button.active::after{transform:scaleX(1)}
-.intro{padding:52px 0 26px;text-align:center}
-.intro .eyebrow{margin:0 0 9px;color:var(--accent);font-size:11px;letter-spacing:.2em;text-transform:uppercase}
-h1{margin:0;font-size:clamp(54px,9vw,116px);font-weight:normal;line-height:.86;letter-spacing:-.055em}
-.intro p:last-child{max-width:650px;margin:20px auto 0;color:var(--muted);font-size:18px;line-height:1.55}
-.book{
-  position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);min-height:590px;border:1px solid var(--line);
-  border-radius:26px;overflow:hidden;background:var(--page);box-shadow:var(--shadow);
-}
-.book::before{
-  content:"";position:absolute;left:67.5%;top:0;bottom:0;width:1px;z-index:4;background:var(--line);
-  box-shadow:-14px 0 28px rgba(50,31,18,.12),14px 0 28px rgba(50,31,18,.08);
-}
-.chapter{
-  position:relative;display:flex;flex-direction:column;padding:clamp(34px,5vw,66px);color:var(--ink);
-  text-decoration:none;overflow:hidden;background:var(--page);
-}
-.chapter.secondary{
-  min-height:0;
-  justify-content:center;
-  background:
-    radial-gradient(circle at 72% 26%,color-mix(in srgb,var(--accent) 12%,transparent),transparent 34%),
-    var(--page2);
-}
-.chapter-no{font-size:11px;letter-spacing:.16em;color:var(--muted)}
-.film-visual{position:relative;flex:1;min-height:290px;margin:28px 0;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#190b07}
-.film-roll{position:absolute;inset:-8%;display:flex;align-items:center;gap:14px;padding:30px;transform:rotate(-2deg);background:linear-gradient(#3a160e,#7a2e19 50%,#38140c);transition:transform .8s cubic-bezier(.2,.8,.2,1)}
-.chapter:hover .film-roll{transform:rotate(-1deg) translateX(-5%)}
-.film-roll::before,.film-roll::after{content:"";position:absolute;left:0;right:0;height:18px;background:repeating-linear-gradient(90deg,#1b0a06 0 14px,#c0844c 14px 25px,#251009 25px 39px)}
-.film-roll::before{top:12px}.film-roll::after{bottom:12px}
-.film-roll span{position:relative;z-index:2;flex:0 0 42%;height:68%;overflow:hidden;border:6px solid rgba(28,11,7,.76);background:#2a1610}
-.film-roll img{width:100%;height:100%;object-fit:cover}
-.chapter h2{margin:0;font-size:clamp(38px,5vw,70px);font-weight:normal;line-height:.92;letter-spacing:-.045em}
-.chapter p{margin:16px 0 0;color:var(--muted);font-size:17px;line-height:1.55}
-.open{display:flex;justify-content:space-between;margin-top:28px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
-.note{
-  position:relative;
-  margin:0;
-  padding:34px 30px;
-  border:1px solid var(--line);
-  border-radius:18px;
-  background:color-mix(in srgb,var(--page2) 86%,transparent);
-  box-shadow:0 18px 45px rgba(0,0,0,.08);
-}
-.note::before{
-  content:"";
-  display:block;
-  width:42px;
-  height:42px;
-  margin-bottom:28px;
-  border:1px solid var(--line);
-  border-radius:50%;
-  background:
-    radial-gradient(circle at 50% 50%,transparent 0 28%,color-mix(in srgb,var(--accent) 34%,transparent) 30% 31%,transparent 33%),
-    radial-gradient(circle at 50% 50%,transparent 0 45%,color-mix(in srgb,var(--accent) 18%,transparent) 47% 48%,transparent 50%);
-}
-.note h3{margin:0;font-size:32px;font-weight:normal}
-.note p{font-size:16px}
-.note .small-link{display:inline-block;margin-top:22px;color:var(--ink);text-decoration:none;border-bottom:1px solid currentColor}
-@media(max-width:760px){
-  .topbar{grid-template-columns:1fr auto}.label{display:none}
-  .book{grid-template-columns:1fr}.book::before{display:none}
-  .chapter + .chapter{border-top:1px solid var(--line)}
-  .chapter.secondary{padding-block:34px}
-  .note{padding:28px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
 
+/* isolation keeps the masthead blend inside this box so it blends with the page color and the photo only */
+.shell{position:relative;isolation:isolate;background:var(--bg);width:min(1240px,calc(100% - 40px));margin:auto;padding:16px 0 70px;transition:background-color .35s ease}
+.topbar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding:10px 0}
+.back{justify-self:start;color:var(--ink);text-decoration:none}
+.back:hover{text-decoration:underline;text-underline-offset:5px}
+.label{justify-self:end;color:var(--muted);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.theme-switch{display:flex;align-items:center;gap:18px}
+.theme-switch button{position:relative;padding:4px 0 7px;border:0;background:transparent;color:var(--muted);cursor:pointer;transition:color .18s ease}
+.theme-switch button::after{content:"";position:absolute;left:0;right:0;bottom:1px;height:1px;background:currentColor;transform:scaleX(0);transition:transform .18s ease}
+.theme-switch button:hover{color:var(--ink)}
+.theme-switch button.active{color:var(--ink);font-weight:700}
+.theme-switch button.active::after{transform:scaleX(1)}
+
+/* the cover: masthead and the ask on the left, one huge flash photo on the right */
+.cover{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);padding:clamp(40px,6vw,84px) 0 clamp(44px,6vw,80px)}
+.left{display:flex;flex-direction:column;justify-content:space-between;gap:48px}
+/* the masthead is white with blend-mode difference, black on the page and inverted where it crosses the photo */
+h1{position:relative;z-index:4;margin:0;color:var(--ink);font-size:clamp(70px,12vw,168px);font-weight:400;line-height:.8;letter-spacing:-.065em;white-space:nowrap;pointer-events:none;user-select:none}
+h1 span,h1 em{display:block}
+h1 em{margin-left:.16em;font-style:italic}
+
+.shot{position:relative;display:block;align-self:end;color:inherit;text-decoration:none}
+.shot.portrait{width:74%;margin-left:auto}
+/* the plate holds the photo, a second print peeking out behind it, and print crop marks around the corners */
+.plate{position:relative}
+.behind{position:absolute;inset:0;z-index:0;overflow:hidden;border:6px solid #f1f1f4;background:#f1f1f4;transform:translate(16px,15px) rotate(3.2deg);box-shadow:0 14px 30px rgba(0,0,0,.16)}
+.behind[hidden]{display:none}
+.behind img,.behind canvas{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.02) brightness(1)}
+.shot-frame{position:relative;z-index:1;overflow:hidden;aspect-ratio:5/4;background:#000;transition:--fx .35s ease-out,--fy .35s ease-out}
+.shot.portrait .shot-frame{aspect-ratio:4/5}
+.marks{position:absolute;inset:-14px;z-index:2;pointer-events:none;background:
+  linear-gradient(var(--muted),var(--muted)) 0 0/12px 1px,linear-gradient(var(--muted),var(--muted)) 0 0/1px 12px,
+  linear-gradient(var(--muted),var(--muted)) 100% 0/12px 1px,linear-gradient(var(--muted),var(--muted)) 100% 0/1px 12px,
+  linear-gradient(var(--muted),var(--muted)) 0 100%/12px 1px,linear-gradient(var(--muted),var(--muted)) 0 100%/1px 12px,
+  linear-gradient(var(--muted),var(--muted)) 100% 100%/12px 1px,linear-gradient(var(--muted),var(--muted)) 100% 100%/1px 12px;
+  background-repeat:no-repeat}
+/* flash photography: hard contrast, bright highlights, then a hot spot where the flash hit. the hot spot follows the cursor */
+.shot-frame img,.shot-frame canvas{display:block;width:100%;height:100%;object-fit:cover;filter:contrast(1.05) brightness(1.03) saturate(1.05)}
+.shot-frame::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:screen;opacity:.3;background:radial-gradient(circle at var(--fx) var(--fy),rgba(255,255,255,.6),rgba(255,255,255,0) 42%)}
+.shot-frame::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse at 50% 45%,transparent 60%,rgba(0,0,0,.12))}
+/* one white pop when you hover, like a camera flash */
+/* date burned into the corner like an old film camera */
+.stamp{position:absolute;z-index:4;right:4%;bottom:5%;padding:3px 9px;border-radius:2px;background:rgba(0,0,0,.5);color:#ffb347;font-family:"Courier New",Courier,monospace;font-size:clamp(13px,1.3vw,18px);font-weight:700;letter-spacing:.08em;pointer-events:none}
+.caption{display:flex;justify-content:space-between;margin-top:12px;color:var(--muted);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+
+
+.pick{max-width:420px}
+.deck{margin:0;color:var(--muted);font-size:20px;line-height:1.5}
+.btn{display:inline-flex;align-items:center;gap:16px;margin-top:26px;padding:17px 30px;background:var(--btn);color:var(--btn-ink);text-decoration:none;font-size:13px;letter-spacing:.16em;text-transform:uppercase;transition:background-color .25s ease,color .25s ease,gap .25s ease}
+.btn:hover{background:var(--accent);color:#fff;gap:28px}
+
+/* the pond stays small */
+.pondlink{display:flex;align-items:center;gap:16px;margin-top:34px;padding-top:22px;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.pondlink svg{flex:0 0 64px;width:64px;height:auto;overflow:visible}
+.pondlink .ring{fill:none;stroke:var(--muted);stroke-width:1;opacity:.7}
+.pondlink .wave{fill:none;stroke:var(--accent);stroke-width:1;opacity:0;transform-box:fill-box;transform-origin:center;animation:ripple 6s ease-out infinite}
+.pondlink .wave:nth-of-type(2){animation-delay:3s}
+.pondlink:hover .wave{animation-duration:3.4s}
+@keyframes ripple{0%{transform:scale(.2);opacity:.9}100%{transform:scale(1);opacity:0}}
+.pondlink .dot{fill:var(--accent)}
+.pondlink b{display:block;font-size:22px;font-weight:400;letter-spacing:-.03em}
+.pondlink small{display:block;margin-top:4px;color:var(--muted);font-size:14px;line-height:1.45}
+.pondlink:hover b{text-decoration:underline;text-underline-offset:4px}
+
+/* slow ticker between the cover and the film */
+.ticker{margin:0 calc(50% - 50vw) 0;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;white-space:nowrap}
+.ticker-track{display:inline-flex;gap:0;animation:ticker 48s linear infinite}
+.ticker-track span{flex:none;padding-right:34px;color:var(--muted);font-size:11px;letter-spacing:.3em;text-transform:uppercase}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* the roll: a full width film strip you can drag through. smaller than the cover photo, it is a quick menu */
+.reel{position:relative;margin:0 calc(50% - 50vw);padding:40px 0 28px;background:var(--film)}
+.reel::before,.reel::after{content:"";position:absolute;left:0;right:0;height:8px;background:repeating-linear-gradient(90deg,transparent 0 10px,var(--hole) 10px 24px,transparent 24px 34px);opacity:.9}
+.reel::before{top:12px}
+.reel::after{bottom:12px}
+.edge{padding:0 var(--gutter);margin-bottom:10px;overflow:hidden;white-space:nowrap;color:var(--amber);font-family:"Courier New",Courier,monospace;font-size:10px;letter-spacing:.2em;opacity:.8}
+.edge span{margin-right:30px}
+.track{--h:clamp(170px,19vw,250px);display:flex;gap:10px;padding:0 var(--gutter);overflow-x:auto;scrollbar-width:none;scroll-snap-type:x proximity;scroll-padding-left:var(--gutter);cursor:grab;-webkit-overflow-scrolling:touch}
+.track::-webkit-scrollbar{display:none}
+.track.dragging{cursor:grabbing;scroll-snap-type:none}
+.track::after{content:"";flex:0 0 calc(var(--gutter) - 10px)}
+.cell{flex:none;scroll-snap-align:start}
+.cell a{display:block;color:inherit;text-decoration:none;-webkit-user-drag:none}
+/* every frame is the same height and keeps its own shape, so vertical photos stay vertical */
+.frame{height:var(--h);aspect-ratio:var(--ar,1.5);overflow:hidden;background:#000;border-radius:2px}
+.frame img,.frame canvas{display:block;width:100%;height:100%;object-fit:cover;-webkit-user-drag:none;user-select:none;filter:saturate(.85) contrast(1.04);transition:filter .5s ease}
+.cell a:hover .frame img,.cell a:hover .frame canvas{filter:none}
+.cell em{display:block;margin-top:8px;color:var(--amber);font-family:"Courier New",Courier,monospace;font-size:10px;font-style:normal;letter-spacing:.16em}
+/* the film fades out on the right, it keeps going */
+.reel .fade{position:absolute;top:0;bottom:0;right:0;z-index:3;width:clamp(40px,8vw,120px);pointer-events:none;background:linear-gradient(90deg,transparent,var(--film))}
+.reel-note{display:flex;justify-content:space-between;padding:18px var(--gutter) 0;color:var(--muted);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.reel-note a{color:var(--ink);text-decoration:none}
+.reel-note a:hover{text-decoration:underline;text-underline-offset:5px}
+
+@media(max-width:900px){
+  .cover{grid-template-columns:1fr}
+  h1{font-size:clamp(72px,19vw,150px)}
+  .shot.portrait{width:80%}
+  /* on small screens the order is masthead, photo, then the button and the pond */
+  .left{display:contents}
+  h1{order:1}
+  .photo-col{order:2;margin-top:46px}
+  .behind{transform:translate(8px,8px) rotate(2.4deg)}
+  .pick{order:3}
+}
+@media(max-width:760px){
+  .topbar{grid-template-columns:1fr auto}
+  .label{display:none}
+  .track{--h:clamp(150px,42vw,210px)}
+}
+@media(prefers-reduced-motion:reduce){
+  .pondlink .wave{animation:none}
+  .ticker-track{animation:none}
+  .shot-frame{transition:none}
+  .pondlink .wave{opacity:.5;transform:scale(.6)}
+  .btn,.frame img,.frame canvas{transition:none}
 }
 /* TRUE HORIZONTAL CROSS-PAGE PANORAMA */
 @view-transition { navigation: auto; }
@@ -266,198 +306,6 @@ body.panorama-fallback-exit-prev {
 
 
 </style>
-
-<style id="wow-atelier-override">
-/* === Designed / art-forward override for Travel Archive === */
-body{
-  background:
-    radial-gradient(circle at 84% 10%,rgba(169,48,32,.16),transparent 24rem),
-    radial-gradient(circle at 8% 3%,rgba(255,255,255,.16),transparent 20rem),
-    linear-gradient(180deg,#070809 0%,#090706 100%);
-}
-body.night{--ink:#f4ece2;--muted:#af9f91;--line:rgba(255,255,255,.1);--accent:#d76553;--page:#090a0d;--page2:#0d1117}
-body:not(.night){
-  background:
-    radial-gradient(circle at 10% 2%,rgba(255,255,255,.58),transparent 22rem),
-    linear-gradient(180deg,#efe8dc 0%,#e4d7c7 100%);
-}
-.shell{width:min(1320px,calc(100% - 34px));padding:16px 0 50px}
-.topbar{padding:8px 0 16px;border-bottom:1px solid var(--line)}
-.intro{
-  display:grid;
-  grid-template-columns:minmax(0,1.05fr) minmax(280px,.7fr);
-  align-items:end;
-  gap:30px;
-  padding:44px 0 24px;
-  text-align:left;
-}
-.intro .eyebrow{grid-column:1 / -1}
-.intro p:last-child{margin:0 0 8px auto;max-width:430px;font-size:16px;line-height:1.7}
-.book{
-  display:grid;
-  grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);
-  gap:34px;
-  min-height:unset;
-  border:0;
-  border-radius:0;
-  background:none;
-  box-shadow:none;
-  overflow:visible;
-}
-.book::before{display:none}
-.chapter{
-  position:relative;
-  padding:0;
-  overflow:visible;
-  background:none;
-  text-decoration:none;
-  color:var(--ink);
-}
-.chapter-no{
-  display:block;
-  margin-bottom:16px;
-  padding-bottom:10px;
-  border-bottom:1px solid var(--line);
-  color:var(--muted);
-  letter-spacing:.18em;
-}
-.chapter:first-child::before{
-  content:"01";
-  position:absolute;
-  right:0;
-  top:22px;
-  font-size:clamp(84px,13vw,180px);
-  line-height:.8;
-  letter-spacing:-.09em;
-  color:rgba(255,255,255,.035);
-  pointer-events:none;
-}
-.film-visual{
-  position:relative;
-  min-height:380px;
-  margin:0 0 22px;
-  overflow:hidden;
-  border-radius:28px;
-  border:0;
-  background:
-    linear-gradient(180deg,rgba(255,255,255,.03),transparent 20%),
-    linear-gradient(180deg,#090d12,#040507 70%);
-  box-shadow:
-    inset 0 0 0 1px rgba(255,255,255,.08),
-    0 32px 70px rgba(0,0,0,.24);
-}
-.film-visual::before{
-  content:"ARCHIVE ROLL / SCAN THROUGH FRAMES";
-  position:absolute;
-  left:18px;top:14px;z-index:6;
-  color:rgba(255,255,255,.5);
-  font-size:10px;letter-spacing:.18em;text-transform:uppercase;
-}
-.film-visual::after{
-  content:"";
-  position:absolute;
-  right:-60px;top:18%;
-  width:220px;height:220px;
-  border-radius:50%;
-  background:radial-gradient(circle,rgba(255,255,255,.08),transparent 64%);
-  filter:blur(3px);
-}
-.film-roll{
-  inset:12px;
-  gap:16px;
-  padding:34px 28px;
-  transform:rotate(-2deg) translateX(-3%);
-  border-radius:22px;
-  background:
-    radial-gradient(circle,#d5ae74 0 4px,transparent 4.5px) 10px 11px / 28px 18px repeat-x,
-    radial-gradient(circle,#d5ae74 0 4px,transparent 4.5px) 10px calc(100% - 11px) / 28px 18px repeat-x,
-    linear-gradient(90deg,#5f1f12 0%,#7f2b17 40%,#95593a 58%,#5f1d11 100%);
-  box-shadow:0 30px 55px rgba(0,0,0,.34), inset 0 0 0 1px rgba(255,255,255,.06);
-}
-.chapter:hover .film-roll{transform:rotate(-1.2deg) translateX(-7%)}
-.film-roll::before,.film-roll::after{display:none}
-.film-roll span{
-  flex:0 0 min(31%,240px);
-  height:68%;
-  border:10px solid rgba(26,10,8,.76);
-  box-shadow:0 10px 26px rgba(0,0,0,.28);
-}
-.chapter h2{margin:0;font-size:clamp(52px,6vw,86px);line-height:.88;letter-spacing:-.055em}
-.chapter p{margin:14px 0 0;max-width:44ch;color:var(--muted);font-size:17px;line-height:1.65}
-.open{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;letter-spacing:.16em}
-.chapter.secondary{
-  padding-top:28px;
-  justify-content:flex-start;
-  background:none;
-}
-.chapter.secondary::before{
-  content:"02";
-  position:absolute;
-  right:0;
-  top:0;
-  font-size:clamp(84px,10vw,148px);
-  line-height:.8;
-  letter-spacing:-.08em;
-  color:rgba(255,255,255,.032);
-  pointer-events:none;
-}
-.note{
-  position:relative;
-  padding:32px 30px 34px;
-  margin:0;
-  border:0;
-  border-radius:30px;
-  background:
-    radial-gradient(circle at 74% 24%,rgba(63,108,148,.35),transparent 30%),
-    linear-gradient(180deg,rgba(10,15,22,.96),rgba(5,8,12,.98));
-  box-shadow:
-    inset 0 0 0 1px rgba(255,255,255,.08),
-    0 30px 65px rgba(0,0,0,.22);
-  overflow:hidden;
-}
-.note::before{
-  content:"";
-  position:absolute;
-  inset:18px;
-  margin:0;
-  width:auto;height:auto;
-  border:0;border-radius:0;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.78' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M198 112c26-37 69-65 116-69 35-3 71 8 101 27 27 17 50 43 60 73 11 35 5 76-16 107-27 38-72 63-119 67-45 3-92-12-126-42-34-29-57-73-53-118 2-18 9-36 19-51 18-27 43-43 71-57'/%3E%3Cpath d='M248 155c17-12 39-18 60-17 14 1 28 5 40 12'/%3E%3Cpath d='M233 191c20 16 49 26 76 25 27-1 58-13 77-32'/%3E%3Cpath d='M264 110c18 8 36 11 55 8'/%3E%3Cpath d='M299 117c-8 15-12 30-13 47'/%3E%3Cpath d='M322 117c10 14 15 30 16 47'/%3E%3Cpath d='M276 205c14-7 27-18 35-31 8 12 19 22 31 29'/%3E%3Cpath d='M169 272c36-6 66 5 93 21 32 18 71 35 110 28 16-3 33-9 47-17'/%3E%3Cpath d='M186 87c12-16 28-28 45-40'/%3E%3Cpath d='M420 101c22 14 42 30 57 51'/%3E%3C/g%3E%3C/svg%3E");
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:cover;
-  opacity:.16;
-  pointer-events:none;
-}
-.note::after{
-  content:"POND / EXPERIMENT";
-  position:absolute;
-  top:14px;left:18px;
-  color:rgba(255,255,255,.5);
-  font-size:10px;letter-spacing:.18em;text-transform:uppercase;
-}
-.note h3{position:relative;z-index:2;margin:110px 0 0;font-size:clamp(36px,4vw,56px);line-height:.95}
-.note p{position:relative;z-index:2;margin-top:16px;max-width:28ch;color:var(--muted);line-height:1.7}
-.note .small-link{position:relative;z-index:2;margin-top:22px;padding-bottom:5px;border-bottom:1px solid currentColor;transition:transform .2s ease,color .2s ease}
-.note .small-link:hover{transform:translateX(4px);color:var(--accent)}
-@media (max-width:980px){
-  .intro{grid-template-columns:1fr;gap:12px}
-  .intro p:last-child{margin:0;max-width:60ch}
-  .book{grid-template-columns:1fr;gap:40px}
-  .chapter.secondary{padding-top:0}
-}
-@media (max-width:760px){
-  .shell{width:min(100%,calc(100% - 20px))}
-  .intro{padding:30px 0 20px}
-  .film-visual{min-height:290px;border-radius:20px}
-  .film-roll{inset:10px;padding:22px 16px}
-  .film-roll span{border-width:8px}
-  .chapter h2{font-size:clamp(44px,12vw,70px)}
-  .note{border-radius:22px;padding:24px 22px 26px}
-  .note h3{margin-top:86px}
-}
-</style>
-
 </head>
 <body class="night">
 <div class="shell">
@@ -467,45 +315,211 @@ body:not(.night){
       <button id="nightButton" class="active" type="button">Night</button>
       <button id="glassButton" type="button">Light</button>
     </div>
-    <span class="label">Travel Chapter</span>
+    <span></span>
   </header>
 
-  <section class="intro">
-    <p class="eyebrow">Chapter 01</p>
-    <h1>Travel Archive</h1>
-    <p>A dated photographic roll presented through the film scanner, with one smaller interface experiment kept beside it.</p>
+  <section class="cover">
+    <div class="left">
+      <h1><span>Travel</span><em>Archive</em></h1>
+
+      <div class="pick">
+        <p class="deck">A dated roll of travel photos, loaded through the film scanner. Move through it, change formats, reveal full color, and open any frame at its original resolution.</p>
+        <a class="btn" href="FilmSim.html"><span>Open the scanner</span><span>→</span></a>
+
+        <a class="pondlink" href="/photos/pond-gallery">
+          <svg viewBox="0 0 64 32" aria-hidden="true">
+            <ellipse class="ring" cx="32" cy="16" rx="30" ry="13"/>
+            <ellipse class="wave" cx="32" cy="16" rx="28" ry="12"/>
+            <ellipse class="wave" cx="32" cy="16" rx="28" ry="12"/>
+            <ellipse class="dot" cx="26" cy="15" rx="2.6" ry="1.6" transform="rotate(-20 26 15)"/>
+          </svg>
+          <span>
+            <b>Pond Gallery</b>
+            <small>A small game where photographs rise through ripples and drift across the water.</small>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="photo-col">
+      <a class="shot" id="shot" href="FilmSim.html" aria-label="Open the film scanner">
+        <div class="plate">
+          <!-- second print peeking out from behind, filled by the script below -->
+          <div class="behind" id="behind" hidden></div>
+          <div class="shot-frame" id="shotFrame">
+            <span class="stamp" id="stamp"></span>
+          </div>
+          <i class="marks" aria-hidden="true"></i>
+        </div>
+        <div class="caption"><span id="shotNumber">▸ Travel roll</span><span>Chapter 01</span></div>
+      </a>
+    </div>
   </section>
 
-  <main class="book">
-    <a class="chapter" href="FilmSim.html">
-      <span class="chapter-no">01</span>
-      <div class="film-visual"><div id="filmRoll" class="film-roll"></div></div>
-      <h2>Film Scanner</h2>
-      <p>Move through the roll, change formats, reveal full color, and open each frame at its original resolution.</p>
-      <span class="open"><span>Open scanner</span><span>01</span></span>
-    </a>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Travel Archive / Dated rolls / Film Scanner / Pond Gallery / Chapter 01 /</span>
+      <span>Travel Archive / Dated rolls / Film Scanner / Pond Gallery / Chapter 01 /</span>
+      <span>Travel Archive / Dated rolls / Film Scanner / Pond Gallery / Chapter 01 /</span>
+      <span>Travel Archive / Dated rolls / Film Scanner / Pond Gallery / Chapter 01 /</span>
+    </div>
+  </div>
 
-    <section class="chapter secondary">
-      <span class="chapter-no">02</span>
-      <div class="note">
-        <h3>Pond Gallery</h3>
-        <p>A smaller interactive study where photographs rise through ripples and drift across the water.</p>
-        <a class="small-link" href="/photos/pond-gallery">Enter experiment →</a>
-      </div>
-    </section>
-  </main>
+  <!-- the roll: frames are added by the script below. drag it sideways with the mouse, or swipe on a phone -->
+  <section class="reel" aria-label="Travel film roll">
+    <div class="edge" id="edge" aria-hidden="true"></div>
+    <div class="track" id="track"></div>
+    <i class="fade" aria-hidden="true"></i>
+    <div class="reel-note"><span>The roll · drag to move through it</span><a href="FilmSim.html">Open the scanner →</a></div>
+  </section>
 </div>
 
 <script src="photos-data.js"></script>
 <script>
-const roll=document.getElementById("filmRoll");
-const photos=[...(window.TRAVEL_PHOTOS||[])].sort(()=>Math.random()-.5).slice(0,3);
-photos.forEach(photo=>{
-  const span=document.createElement("span");
+/* random frames from the travel roll. the first is the big photo, the second is the print behind it, the rest run along the film */
+const shot=document.getElementById("shot");
+const shotFrame=document.getElementById("shotFrame");
+const track=document.getElementById("track");
+const edge=document.getElementById("edge");
+/* some photos have a white border built into the file. when the browser lets us read the pixels (on the live site, not when the page is opened as a local file) this finds the border and crops it off, so it never shows up as a white frame on the film. returns a canvas, or null when there is no border */
+function trimBorder(img){
+  try{
+    const scale=Math.min(1,320/img.naturalWidth);
+    const w=Math.max(1,Math.round(img.naturalWidth*scale));
+    const h=Math.max(1,Math.round(img.naturalHeight*scale));
+    const small=document.createElement("canvas");
+    small.width=w;small.height=h;
+    const sctx=small.getContext("2d",{willReadFrequently:true});
+    sctx.drawImage(img,0,0,w,h);
+    const px=sctx.getImageData(0,0,w,h).data;
+    const luma=(x,y)=>{const i=(y*w+x)*4;return px[i]*.299+px[i+1]*.587+px[i+2]*.114};
+    // a line counts as border when it is almost pure white with no detail in it
+    function plainRow(y){let sum=0,sq=0;for(let x=0;x<w;x++){const v=luma(x,y);sum+=v;sq+=v*v}const m=sum/w;return m>240&&Math.sqrt(Math.max(0,sq/w-m*m))<7}
+    function plainCol(x){let sum=0,sq=0;for(let y=0;y<h;y++){const v=luma(x,y);sum+=v;sq+=v*v}const m=sum/h;return m>240&&Math.sqrt(Math.max(0,sq/h-m*m))<7}
+    let top=0;while(top<h*.25&&plainRow(top))top++;
+    let bottom=0;while(bottom<h*.25&&plainRow(h-1-bottom))bottom++;
+    let left=0;while(left<w*.25&&plainCol(left))left++;
+    let right=0;while(right<w*.25&&plainCol(w-1-right))right++;
+    // a real border runs around at least three sides, a bright sky only touches one
+    const sides=[top>=h*.012,bottom>=h*.012,left>=w*.012,right>=w*.012].filter(Boolean).length;
+    if(sides<3)return null;
+    const pad=.004;
+    const sx=Math.round((left/w+pad)*img.naturalWidth);
+    const sy=Math.round((top/h+pad)*img.naturalHeight);
+    const sw=Math.round((1-(left+right)/w-pad*2)*img.naturalWidth);
+    const sh=Math.round((1-(top+bottom)/h-pad*2)*img.naturalHeight);
+    if(sw<50||sh<50)return null;
+    const out=document.createElement("canvas");
+    const outScale=Math.min(1,1100/sw);
+    out.width=Math.round(sw*outScale);
+    out.height=Math.round(sh*outScale);
+    out.getContext("2d").drawImage(img,sx,sy,sw,sh,0,0,out.width,out.height);
+    return out;
+  }catch(error){
+    // pixels are locked (local file), keep the photo as it is
+    return null;
+  }
+}
+
+const photos=[...(window.TRAVEL_PHOTOS||[])].sort(()=>Math.random()-.5).slice(0,10);
+const firstFrame=Math.floor(Math.random()*20)+4;
+if(photos[0]){
+  const hero=document.createElement("img");
+  hero.alt="";
+  hero.src=photos[0].src;
+  // vertical photos get a vertical frame instead of being cropped
+  hero.addEventListener("load",()=>{
+    let width=hero.naturalWidth,height=hero.naturalHeight;
+    const trimmed=trimBorder(hero);
+    if(trimmed){hero.replaceWith(trimmed);width=trimmed.width;height=trimmed.height}
+    shot.classList.toggle("portrait",height>width*1.05);
+  });
+  shotFrame.insertBefore(hero,shotFrame.firstChild);
+  document.getElementById("shotNumber").textContent="▸ "+firstFrame;
+}
+// the second photo becomes the print behind the big one
+if(photos[1]){
+  const backImg=document.createElement("img");
+  backImg.alt="";
+  backImg.src=photos[1].src;
+  backImg.addEventListener("load",()=>{const trimmed=trimBorder(backImg);if(trimmed)backImg.replaceWith(trimmed)});
+  const behind=document.getElementById("behind");
+  behind.appendChild(backImg);
+  behind.hidden=false;
+}
+// every other photo goes onto the roll
+photos.slice(2).forEach((photo,index)=>{
+  const cell=document.createElement("div");
+  cell.className="cell";
+  const link=document.createElement("a");
+  link.href="FilmSim.html";
+  link.draggable=false;
+  const frame=document.createElement("div");
+  frame.className="frame";
   const img=document.createElement("img");
-  img.src=photo.src;img.alt="";
-  span.appendChild(img);roll.appendChild(span);
+  img.src=photo.src;img.alt="";img.draggable=false;
+  // each frame keeps its own shape, so a vertical one stays vertical
+  img.addEventListener("load",()=>{
+    let width=img.naturalWidth,height=img.naturalHeight;
+    const trimmed=trimBorder(img);
+    if(trimmed){img.replaceWith(trimmed);width=trimmed.width;height=trimmed.height}
+    frame.style.setProperty("--ar",(width/height).toFixed(3));
+  });
+  frame.appendChild(img);
+  const number=document.createElement("em");
+  number.textContent="▸ "+(firstFrame+index+2)+(index%2?"A":"");
+  link.append(frame,number);
+  cell.appendChild(link);
+  track.appendChild(cell);
 });
+
+/* edge print along the top of the film, same numbers as the frames */
+const printed=[];
+for(let i=0;i<Math.max(photos.length,4)+3;i++){
+  printed.push("<span>▸ TRAVEL 400</span><span>▸ "+(firstFrame+i)+(i%2?"A":"")+"</span>");
+}
+edge.innerHTML=printed.join("");
+
+/* drag the film with the mouse. a drag never counts as a click on a frame */
+let dragStart=null;
+let moved=false;
+track.addEventListener("pointerdown",event=>{
+  if(event.pointerType!=="mouse"||event.button!==0)return;
+  dragStart={x:event.clientX,left:track.scrollLeft};
+  moved=false;
+});
+window.addEventListener("pointermove",event=>{
+  if(!dragStart)return;
+  const distance=event.clientX-dragStart.x;
+  if(Math.abs(distance)>6){moved=true;track.classList.add("dragging")}
+  if(moved)track.scrollLeft=dragStart.left-distance;
+});
+window.addEventListener("pointerup",()=>{
+  dragStart=null;
+  track.classList.remove("dragging");
+});
+track.addEventListener("click",event=>{
+  if(moved){event.preventDefault();event.stopPropagation();moved=false}
+},true);
+
+/* a soft glow follows the cursor over the photo and drifts back when it leaves */
+shot.addEventListener("pointermove",event=>{
+  const box=shotFrame.getBoundingClientRect();
+  const x=Math.min(100,Math.max(0,(event.clientX-box.left)/box.width*100));
+  const y=Math.min(100,Math.max(0,(event.clientY-box.top)/box.height*100));
+  shotFrame.style.setProperty("--fx",x.toFixed(1)+"%");
+  shotFrame.style.setProperty("--fy",y.toFixed(1)+"%");
+});
+shot.addEventListener("pointerleave",()=>{
+  shotFrame.style.removeProperty("--fx");
+  shotFrame.style.removeProperty("--fy");
+});
+
+/* date stamp like an old film camera, uses today's date */
+const now=new Date();
+const two=value=>String(value).padStart(2,"0");
+document.getElementById("stamp").textContent="'"+String(now.getFullYear()).slice(2)+" "+two(now.getMonth()+1)+" "+two(now.getDate());
+
 const body=document.body;
 const nightButton=document.getElementById("nightButton");
 const glassButton=document.getElementById("glassButton");

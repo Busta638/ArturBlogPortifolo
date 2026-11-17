@@ -1530,6 +1530,10 @@ allPhotos.forEach(photo=>{
 // The actual image file dates are NOT used for roll sorting because Lightroom
 // exports can change metadata/file dates when I replace photos with 2049px versions.
 const ROLL_DATES={
+  "dmcc-drift-event-aug":"September 5, 2026",
+  "monteal-2026":"2026",
+  "montreal-2026":"2026",
+  "ottawa-2026":"2026",
   "blue-jays-game-my-first-baseball-game":"June 22, 2025",
   "burlington-beach-walk-2026":"June 3, 2026",
   "burlington-bridge-on-the-ice-2025":"February 9, 2026",
@@ -1568,9 +1572,31 @@ function normalizeRollKey(value){
 
 function rollTimestamp(rollName){
   const value=ROLL_DATES[normalizeRollKey(rollName)]||"";
-  if(!value)return -Infinity;
-
   const text=String(value).trim();
+
+  // Montreal/Ottawa currently only have the year written in the archive metadata.
+  // When a roll only has a year (or no manual date), use the newest photo.date in
+  // that roll so the recent trips still sort where they actually belong.
+  if(!text || /^\d{4}$/.test(text)){
+    const photoDates=(rollMap.get(rollName)||[])
+      .map(photo=>String(photo?.date||"").trim())
+      .filter(Boolean)
+      .map(dateText=>{
+        const parsed=/^\d{4}-\d{2}-\d{2}$/.test(dateText)
+          ? new Date(`${dateText}T12:00:00`)
+          : new Date(dateText);
+        return parsed.getTime();
+      })
+      .filter(Number.isFinite);
+
+    if(photoDates.length)return Math.max(...photoDates);
+
+    if(/^\d{4}$/.test(text)){
+      return new Date(`${text}-01-01T12:00:00`).getTime();
+    }
+    return -Infinity;
+  }
+
   const date=/^\d{4}-\d{2}-\d{2}$/.test(text)
     ? new Date(`${text}T12:00:00`)
     : new Date(text);
